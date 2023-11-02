@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1698946497">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ModuleTop_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="ModuleTop_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="ModuleTop.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="ModuleTop.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ModuleTop.ltx"/>
+  <File Type="RBD_FILE" Name="ModuleTop.rbd"/>
+  <File Type="NPI_FILE" Name="ModuleTop.npi"/>
+  <File Type="RNPI_FILE" Name="ModuleTop.rnpi"/>
+  <File Type="CFI_FILE" Name="ModuleTop.cfi"/>
+  <File Type="RCFI_FILE" Name="ModuleTop.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="ModuleTop_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="ModuleTop_soc.pdi"/>
+  <File Type="RDI-RDI" Name="ModuleTop.vdi"/>
+  <File Type="PDI-FILE" Name="ModuleTop.pdi"/>
+  <File Type="BITSTR-MMI" Name="ModuleTop.mmi"/>
+  <File Type="BITSTR-BMM" Name="ModuleTop_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="ModuleTop.nky"/>
+  <File Type="BITSTR-RBT" Name="ModuleTop.rbt"/>
+  <File Type="BITSTR-MSK" Name="ModuleTop.msk"/>
+  <File Type="BG-BIN" Name="ModuleTop.bin"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="ModuleTop.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ModuleTop_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ModuleTop_postroute_physopt.dcp"/>
+  <File Type="BG-DRC" Name="ModuleTop.drc"/>
+  <File Type="ROUTE-RQS-PB" Name="ModuleTop_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ModuleTop_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ModuleTop_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ModuleTop_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ModuleTop_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="ModuleTop_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ModuleTop_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="ModuleTop_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ModuleTop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ModuleTop_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="ModuleTop_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ModuleTop_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="ModuleTop_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ModuleTop_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ModuleTop_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ModuleTop_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ModuleTop_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="ModuleTop_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="ModuleTop_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="ModuleTop_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ModuleTop_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="ModuleTop_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ModuleTop_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="ModuleTop_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="ModuleTop_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ModuleTop_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ModuleTop_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ModuleTop_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="ModuleTop_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="ModuleTop_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ModuleTop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ModuleTop_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="ModuleTop_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ModuleTop_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="ModuleTop_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ModuleTop_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="ModuleTop_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="ModuleTop_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="ModuleTop_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="ModuleTop_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="ModuleTop_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="ModuleTop_rqa_opted.pb"/>
+  <File Type="OPT-HWDEF" Name="ModuleTop.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ModuleTop_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="ModuleTop_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ModuleTop_opt.dcp"/>
+  <File Type="OPT-TIMING" Name="ModuleTop_timing_summary_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="ModuleTop_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="ModuleTop_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="ModuleTop.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/GB_UNIT_design/GB_UNIT_design.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/GB_UNIT_design_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PGENDIR/sources_1/bd/GB_UNIT_design/hdl/GB_UNIT_design_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1698942003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Own_Files/VHDL_files/top.vhdl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Own_Files/VHDL_files/UART_RX.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Own_Files/VHDL_files/UART_TX.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ModuleTop"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Own_Files/constraints/Zybo-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/ModuleTop.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="GB_UNIT_design_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GB_UNIT_design_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GB_UNIT_design_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="GB_UNIT_design_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>

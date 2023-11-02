@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/GB_UNIT_design/ip/GB_UNIT_design_axi_bram_ctrl_0_0/sim/GB_UNIT_design_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/GB_UNIT_design/ip/GB_UNIT_design_rst_ps7_0_50M_0/sim/GB_UNIT_design_rst_ps7_0_50M_0.vhd" \
+"../../../bd/GB_UNIT_design/sim/GB_UNIT_design.vhd" \
+
+# Do not sort compile order
+nosort
