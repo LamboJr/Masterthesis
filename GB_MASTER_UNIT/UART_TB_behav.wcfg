@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="UART_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="UART_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="127.001 ns"></ZoomEndTime>
+      <Cursor1Time time="8.451 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject type="logic" fp_name="/UART_TB/r_CLOCK">
+      <obj_property name="ElementShortName">r_CLOCK</obj_property>
+      <obj_property name="ObjectShortName">r_CLOCK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/r_TX_DV">
+      <obj_property name="ElementShortName">r_TX_DV</obj_property>
+      <obj_property name="ObjectShortName">r_TX_DV</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/UART_TB/r_TX_HWORD">
+      <obj_property name="ElementShortName">r_TX_HWORD[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_TX_HWORD[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/w_TX_SERIAL">
+      <obj_property name="ElementShortName">w_TX_SERIAL</obj_property>
+      <obj_property name="ObjectShortName">w_TX_SERIAL</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/w_TX_DONE">
+      <obj_property name="ElementShortName">w_TX_DONE</obj_property>
+      <obj_property name="ObjectShortName">w_TX_DONE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/w_RX_DV">
+      <obj_property name="ElementShortName">w_RX_DV</obj_property>
+      <obj_property name="ObjectShortName">w_RX_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/UART_TB/w_RX_HWORD">
+      <obj_property name="ElementShortName">w_RX_HWORD[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_RX_HWORD[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/r_RX_SERIAL">
+      <obj_property name="ElementShortName">r_RX_SERIAL</obj_property>
+      <obj_property name="ObjectShortName">r_RX_SERIAL</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/c_CLKS_PER_BIT">
+      <obj_property name="ElementShortName">c_CLKS_PER_BIT</obj_property>
+      <obj_property name="ObjectShortName">c_CLKS_PER_BIT</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/CLK_PERIOD">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/c_BIT_PERIOD">
+      <obj_property name="ElementShortName">c_BIT_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">c_BIT_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider23" type="divider">
+      <obj_property name="label">UART TX SIGNALS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/UART_TX_INST/i_TX_DV">
+      <obj_property name="ElementShortName">i_TX_DV</obj_property>
+      <obj_property name="ObjectShortName">i_TX_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/UART_TB/UART_TX_INST/i_TX_Hword">
+      <obj_property name="ElementShortName">i_TX_Hword[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_TX_Hword[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/UART_TX_INST/o_TX_Active">
+      <obj_property name="ElementShortName">o_TX_Active</obj_property>
+      <obj_property name="ObjectShortName">o_TX_Active</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/UART_TX_INST/o_TX_Serial">
+      <obj_property name="ElementShortName">o_TX_Serial</obj_property>
+      <obj_property name="ObjectShortName">o_TX_Serial</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/UART_TX_INST/o_TX_Done">
+      <obj_property name="ElementShortName">o_TX_Done</obj_property>
+      <obj_property name="ObjectShortName">o_TX_Done</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/UART_TX_INST/r_SM_Main">
+      <obj_property name="ElementShortName">r_SM_Main</obj_property>
+      <obj_property name="ObjectShortName">r_SM_Main</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/UART_TX_INST/r_Clk_Count">
+      <obj_property name="ElementShortName">r_Clk_Count</obj_property>
+      <obj_property name="ObjectShortName">r_Clk_Count</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/UART_TX_INST/r_Bit_Index">
+      <obj_property name="ElementShortName">r_Bit_Index</obj_property>
+      <obj_property name="ObjectShortName">r_Bit_Index</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider32" type="divider">
+      <obj_property name="label">UART RX SIGNALS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/UART_RX_INST/i_RX_Serial">
+      <obj_property name="ElementShortName">i_RX_Serial</obj_property>
+      <obj_property name="ObjectShortName">i_RX_Serial</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/UART_RX_INST/o_RX_DV">
+      <obj_property name="ElementShortName">o_RX_DV</obj_property>
+      <obj_property name="ObjectShortName">o_RX_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/UART_TB/UART_RX_INST/o_RX_HWord">
+      <obj_property name="ElementShortName">o_RX_HWord[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_RX_HWord[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/UART_RX_INST/r_SM_Main">
+      <obj_property name="ElementShortName">r_SM_Main</obj_property>
+      <obj_property name="ObjectShortName">r_SM_Main</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/UART_RX_INST/r_RX_Data_R">
+      <obj_property name="ElementShortName">r_RX_Data_R</obj_property>
+      <obj_property name="ObjectShortName">r_RX_Data_R</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/UART_TB/UART_RX_INST/r_RX_Data">
+      <obj_property name="ElementShortName">r_RX_Data</obj_property>
+      <obj_property name="ObjectShortName">r_RX_Data</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/UART_RX_INST/r_CLK_Count">
+      <obj_property name="ElementShortName">r_CLK_Count</obj_property>
+      <obj_property name="ObjectShortName">r_CLK_Count</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/UART_TB/UART_RX_INST/r_Bit_Index">
+      <obj_property name="ElementShortName">r_Bit_Index</obj_property>
+      <obj_property name="ObjectShortName">r_Bit_Index</obj_property>
+   </wvobject>
+</wave_config>
