@@ -17,7 +17,7 @@ entity UART_TX is
         g_CLKS_PER_BIT : integer := 1085);       ---Needs to be set to (sysclk freqeuncy)/(Frequency of UART, BAUD RATE) =1085.069
     Port ( sysclk : in STD_LOGIC;
            i_TX_DV : in STD_LOGIC;
-           i_TX_Hword : in STD_LOGIC_VECTOR (15 downto 0);
+           i_TX_Word : in STD_LOGIC_VECTOR (15 downto 0);
            o_TX_Active : out STD_LOGIC;
            o_TX_Serial : out STD_LOGIC;
            o_TX_Done : out STD_LOGIC);
@@ -47,7 +47,7 @@ begin
                 r_Bit_Index <= 0;
  
                 if i_TX_DV = '1' then
-                    r_TX_Data <= i_TX_HWord;
+                    r_TX_Data <= i_TX_Word;
                     r_SM_Main <= s_TX_Start_Bit;
                 else
                     r_SM_Main <= s_Idle; 

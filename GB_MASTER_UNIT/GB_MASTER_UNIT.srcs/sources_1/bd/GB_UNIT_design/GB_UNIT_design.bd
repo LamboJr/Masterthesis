@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x63C1EFE8596E864",
+      "boundary_crc": "0x63C1EFE386AC11E",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design",
       "name": "GB_UNIT_design",
@@ -276,7 +276,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "50.000000"
+            "value": "125.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -336,7 +336,7 @@
             "value": "666.666666"
           },
           "PCW_CLK0_FREQ": {
-            "value": "50000000"
+            "value": "125000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -424,6 +424,9 @@
           },
           "PCW_EN_USB0": {
             "value": "1"
+          },
+          "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "125"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"

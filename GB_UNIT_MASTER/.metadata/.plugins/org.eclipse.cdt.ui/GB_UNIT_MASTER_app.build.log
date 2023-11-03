@@ -1,30 +1,10 @@
-18:38:47 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
+12:26:46 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building file: ../src/platform.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
- 
-Building target: GB_UNIT_MASTER_app.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bsplib/lib -o "GB_UNIT_MASTER_app.elf" ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: GB_UNIT_MASTER_app.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size GB_UNIT_MASTER_app.elf  |tee "GB_UNIT_MASTER_app.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22201	   1144	  22568	  45913	   b359	GB_UNIT_MASTER_app.elf
-Finished building: GB_UNIT_MASTER_app.elf.size
- 
+make[1]: Nothing to be done for 'main-build'.
 
-18:38:48 Build Finished (took 837ms)
+12:26:47 Build Finished (took 524ms)
 

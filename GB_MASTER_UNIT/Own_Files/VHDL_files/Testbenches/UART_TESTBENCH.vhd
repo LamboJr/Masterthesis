@@ -43,7 +43,7 @@ architecture Behavioral of UART_TB is
         port (
         sysclk       : in  std_logic;
         i_TX_DV     : in  std_logic;
-        i_TX_HWord   : in  std_logic_vector(15 downto 0);
+        i_TX_Word   : in  std_logic_vector(15 downto 0);
         o_TX_Active : out std_logic;
         o_TX_Serial : out std_logic;
         o_TX_Done   : out std_logic
@@ -58,7 +58,7 @@ architecture Behavioral of UART_TB is
         sysclk       : in  std_logic;
         i_RX_Serial : in  std_logic;
         o_RX_DV     : out std_logic;
-        o_RX_HWord   : out std_logic_vector(15 downto 0)
+        o_RX_Word   : out std_logic_vector(15 downto 0)
         );
     end component uart_rx;
   
@@ -74,11 +74,11 @@ architecture Behavioral of UART_TB is
    
     signal r_CLOCK     : std_logic                    := '0';
     signal r_TX_DV     : std_logic                    := '0';
-    signal r_TX_HWORD   : std_logic_vector(15 downto 0) := (others => '0');
+    signal r_TX_WORD   : std_logic_vector(15 downto 0) := (others => '0');
     signal w_TX_SERIAL : std_logic;
     signal w_TX_DONE   : std_logic;
     signal w_RX_DV     : std_logic;
-    signal w_RX_HWORD   : std_logic_vector(15 downto 0);
+    signal w_RX_WORD   : std_logic_vector(15 downto 0);
     signal r_RX_SERIAL : std_logic := '1'; 
   
     -- Low-level byte-write
@@ -111,7 +111,7 @@ begin
     port map (
       sysclk       => r_CLOCK,
       i_TX_DV     => r_TX_DV,
-      i_TX_HWord   => r_TX_HWORD,
+      i_TX_Word   => r_TX_WORD,
       o_TX_Active => open,
       o_TX_Serial => w_TX_SERIAL,
       o_TX_Done   => w_TX_DONE
@@ -126,7 +126,7 @@ begin
       sysclk       => r_CLOCK,
       i_RX_Serial => r_RX_SERIAL,
       o_RX_DV     => w_RX_DV,
-      o_RX_HWord   => w_RX_HWORD
+      o_RX_Word   => w_RX_WORD
       );
  
  
@@ -142,7 +142,7 @@ begin
         wait until rising_edge(r_CLOCK);
         wait until rising_edge(r_CLOCK);
         r_TX_DV   <= '1';
-        r_TX_HWORD <= X"ABCD";
+        r_TX_WORD <= X"ABCD";
         wait until rising_edge(r_CLOCK);
         r_TX_DV   <= '0';
         wait until w_TX_DONE = '1';
@@ -154,7 +154,7 @@ begin
         wait until rising_edge(r_CLOCK);
  
         -- Check that the correct command was received
-        if w_RX_HWORD = X"3FCD" then
+        if w_RX_WORD = X"3FCD" then
             report "Test Passed - Correct Data Received" severity note;
         else
             report "Test Failed - Incorrect Data Received" severity note;

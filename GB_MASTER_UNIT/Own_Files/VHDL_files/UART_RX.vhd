@@ -18,7 +18,7 @@ entity UART_RX is
     Port ( sysclk : in STD_LOGIC;
            i_RX_Serial : in STD_LOGIC;
            o_RX_DV : out STD_LOGIC;
-           o_RX_HWord : out STD_LOGIC_VECTOR (15 downto 0));
+           o_RX_Word : out STD_LOGIC_VECTOR (15 downto 0));
 end UART_RX;
 
 architecture Behavioral of UART_RX is
@@ -31,7 +31,7 @@ architecture Behavioral of UART_RX is
     
     signal r_CLK_Count : integer range 0 to g_CLKS_PER_BIT - 1 := 0;
     signal r_Bit_Index : integer range 0 to 15 := 0 ; --- 16 Data bits total
-    signal r_RX_HWord : std_logic_vector(15 downto 0) := (others => '0');
+    signal r_RX_Word : std_logic_vector(15 downto 0) := (others => '0');
     signal r_RX_DV : std_logic := '0';
     
 begin
@@ -73,7 +73,7 @@ begin
                     r_SM_Main   <= s_RX_Data_Bits;
                 else
                     r_Clk_Count            <= 0;
-                    r_RX_HWord(r_Bit_Index) <= r_RX_Data;
+                    r_RX_Word(r_Bit_Index) <= r_RX_Data;
                     -- Check if we have sent out all bits
                     if r_Bit_Index < 15 then
                         r_Bit_Index <= r_Bit_Index + 1;
@@ -103,6 +103,6 @@ begin
         end if;
      end process p_UART_RX;
     o_RX_DV <= r_RX_DV;
-    o_RX_HWord <= r_RX_HWord;
+    o_RX_Word <= r_RX_Word;
 
 end Behavioral;

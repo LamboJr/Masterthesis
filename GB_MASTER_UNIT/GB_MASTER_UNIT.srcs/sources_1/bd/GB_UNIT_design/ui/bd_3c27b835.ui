@@ -16,10 +16,10 @@ preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 -120 310 -10 740 -260 11
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 750 -170n
 preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 4 30 -200 310J -270 NJ -270 1130
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 4 310J -300 NJ -300 N -300 1440
+preplace netloc axi_smc_M00_AXI 1 0 5 30 -360 NJ -360 NJ -360 NJ -360 1410
 preplace netloc processing_system7_0_DDR 1 2 3 710J -290 N -290 1430
 preplace netloc processing_system7_0_FIXED_IO 1 2 3 720J -280 N -280 1420
 preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 730J -250 1110
-preplace netloc axi_smc_M00_AXI 1 0 5 30 -360 NJ -360 NJ -360 NJ -360 1410
 levelinfo -pg 1 0 170 510 930 1270 1460
 pagesize -pg 1 -db -bbox -sgen -170 -470 1630 200
 "
