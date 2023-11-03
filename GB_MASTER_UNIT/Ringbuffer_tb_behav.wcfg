@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Ringbuffer_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Ringbuffer_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="173.777 ns"></ZoomEndTime>
+      <Cursor1Time time="8.451 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/wr_en">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Ringbuffer_tb/ringbuffer_inst/wr_data">
+      <obj_property name="ElementShortName">wr_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/rd_en">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/rd_valid">
+      <obj_property name="ElementShortName">rd_valid</obj_property>
+      <obj_property name="ObjectShortName">rd_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Ringbuffer_tb/ringbuffer_inst/rd_data">
+      <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/empty">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/empty_next">
+      <obj_property name="ElementShortName">empty_next</obj_property>
+      <obj_property name="ObjectShortName">empty_next</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/full_next">
+      <obj_property name="ElementShortName">full_next</obj_property>
+      <obj_property name="ObjectShortName">full_next</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Ringbuffer_tb/ringbuffer_inst/fill_count">
+      <obj_property name="ElementShortName">fill_count</obj_property>
+      <obj_property name="ObjectShortName">fill_count</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Ringbuffer_tb/ringbuffer_inst/ram">
+      <obj_property name="ElementShortName">ram[0:2047][31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:2047][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Ringbuffer_tb/ringbuffer_inst/head">
+      <obj_property name="ElementShortName">head</obj_property>
+      <obj_property name="ObjectShortName">head</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Ringbuffer_tb/ringbuffer_inst/tail">
+      <obj_property name="ElementShortName">tail</obj_property>
+      <obj_property name="ObjectShortName">tail</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/empty_i">
+      <obj_property name="ElementShortName">empty_i</obj_property>
+      <obj_property name="ObjectShortName">empty_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Ringbuffer_tb/ringbuffer_inst/full_i">
+      <obj_property name="ElementShortName">full_i</obj_property>
+      <obj_property name="ObjectShortName">full_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Ringbuffer_tb/ringbuffer_inst/fill_count_i">
+      <obj_property name="ElementShortName">fill_count_i</obj_property>
+      <obj_property name="ObjectShortName">fill_count_i</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,6 +1,4 @@
 Time resolution is 1 ps
-Note: Test Passed - Correct Data Received
-Time: 312504 ns  Iteration: 1  Process: /UART_TB/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/UART_TESTBENCH.vhd
 Failure: Tests Complete
-Time: 312504 ns  Iteration: 1  Process: /UART_TB/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/UART_TESTBENCH.vhd
-$finish called at time : 312504 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/UART_TESTBENCH.vhd" Line 163
+Time: 1000072 ns  Iteration: 0  Process: /Ringbuffer_tb/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/Ringbuffer_tb.vhd
+$finish called at time : 1000072 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/Ringbuffer_tb.vhd" Line 125

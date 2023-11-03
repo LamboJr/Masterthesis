@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Own_Files/VHDL_files/Ringbuffer.vhd" \
+"../../../../Own_Files/VHDL_files/Testbenches/Ringbuffer_tb.vhd" \
+
+# Do not sort compile order
+nosort

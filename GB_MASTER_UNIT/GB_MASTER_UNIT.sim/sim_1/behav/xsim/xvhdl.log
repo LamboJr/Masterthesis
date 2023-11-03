@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/UART_RX.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'UART_RX'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/UART_TX.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'UART_TX'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/UART_TESTBENCH.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'UART_TB'
