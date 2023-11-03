@@ -50,26 +50,39 @@
 #include "xil_printf.h"
 #include "xparameters.h"
 
+
 int main()
 {
-	u32 *address = NULL;
 
+	u32 *address = NULL;
 	u32 count = 0;
+	u32 tempaddress;
+	//u32 count = 0;
     init_platform();
 
-    print("BRAM test application start\n");
+    print("BRAM trading test application start\n");
+
+    //main_fbg();
 
     address = (u32 *) XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR;
+
+    /*while(1){
+    	tempaddress = *(address);
+    	if(tempaddress != 0x1234CDEF){
+    		xil_printf("0x%08x    ",tempaddress);
+    		    	if ((count % 8 == 0) && (count != 0)){xil_printf("\n");count = 0;}
+    		    	else{count++;}
+    	}
+
+    }*/
     while(1){
-    for (u32 i = 0; i<2048; i++){
-
-    	if ((count % 8 == 0) && (count != 0)){xil_printf("\n");count = 0;}
-    	else{count++;}
-    	xil_printf("c:%d i:%04d 0x%08x\t",count,i,*(address+i));
-
-
-    }
-
+    	if (*(address+1) == 0){
+    		tempaddress = *(address);
+    		xil_printf("0x%08x    ",tempaddress);
+    		if(tempaddress == 0x8FFFB9A0){count = 8;}
+    		if ((count % 8 == 0) && (count != 0)){xil_printf("\n");count = 0;}
+    		else{count++;}
+    	}
     }
     cleanup_platform();
     return 0;

@@ -29,3 +29,5 @@ platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xs
 platform generate -domains 
 platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
 platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
