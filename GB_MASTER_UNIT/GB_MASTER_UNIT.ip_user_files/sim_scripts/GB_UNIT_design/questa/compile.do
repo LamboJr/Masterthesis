@@ -7,6 +7,9 @@ vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/axi_bram_ctrl_v4_1_8
 vlib questa_lib/msim/lib_cdc_v1_0_2
 vlib questa_lib/msim/proc_sys_reset_v5_0_13
+vlib questa_lib/msim/axi_lite_ipif_v3_0_4
+vlib questa_lib/msim/interrupt_control_v3_1_4
+vlib questa_lib/msim/axi_gpio_v2_0_30
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
 vmap xpm questa_lib/msim/xpm
@@ -14,6 +17,9 @@ vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap axi_bram_ctrl_v4_1_8 questa_lib/msim/axi_bram_ctrl_v4_1_8
 vmap lib_cdc_v1_0_2 questa_lib/msim/lib_cdc_v1_0_2
 vmap proc_sys_reset_v5_0_13 questa_lib/msim/proc_sys_reset_v5_0_13
+vmap axi_lite_ipif_v3_0_4 questa_lib/msim/axi_lite_ipif_v3_0_4
+vmap interrupt_control_v3_1_4 questa_lib/msim/interrupt_control_v3_1_4
+vmap axi_gpio_v2_0_30 questa_lib/msim/axi_gpio_v2_0_30
 
 vlog -work xilinx_vip -64 -incr -mfcu  -sv -L axi_vip_v1_1_14 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_16 -L xilinx_vip "+incdir+/tools/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
 "/tools/Xilinx/Vivado/2023.1/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -35,7 +41,7 @@ vcom -work xpm -64 -93  \
 "/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xil_defaultlib -64 -93  \
-"/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_processing_system7_0_0/GB_UNIT_design_processing_system7_0_0_sim_netlist.vhdl" \
+"../../../bd/GB_UNIT_design/ip/GB_UNIT_design_processing_system7_0_0/GB_UNIT_design_processing_system7_0_0_sim_netlist.vhdl" \
 
 vcom -work axi_bram_ctrl_v4_1_8 -64 -93  \
 "../../../../GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/85f5/hdl/axi_bram_ctrl_v4_1_rfs.vhd" \
@@ -53,6 +59,18 @@ vcom -work proc_sys_reset_v5_0_13 -64 -93  \
 vcom -work xil_defaultlib -64 -93  \
 "../../../bd/GB_UNIT_design/ip/GB_UNIT_design_rst_ps7_0_50M_0/sim/GB_UNIT_design_rst_ps7_0_50M_0.vhd" \
 "../../../bd/GB_UNIT_design/sim/GB_UNIT_design.vhd" \
+
+vcom -work axi_lite_ipif_v3_0_4 -64 -93  \
+"../../../../GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vcom -work interrupt_control_v3_1_4 -64 -93  \
+"../../../../GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+
+vcom -work axi_gpio_v2_0_30 -64 -93  \
+"../../../../GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93  \
+"../../../bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_0_0/sim/GB_UNIT_design_axi_gpio_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

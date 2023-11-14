@@ -48,6 +48,8 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include "xgpio.h"
+#include "xil_types.h"
 #include "xparameters.h"
 //#include "decode_trainer_data.h"
 #include "decode_Pokemon_structure.h"
@@ -80,8 +82,24 @@ u32 trainerdatabuffer[1000];
 u32 MasterMask = 0xFFFF0000;
 u32 SlaveMask = 0x0000FFFF;
 
+//AXI GPIO
+#define PL_TO_PS_BUFFER_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define PL_TO_PS_BUFFER_CHANNEL 1
+#define PL_TO_PS_BUFFER_MASK 0xFFFFFFFF
+
+
+
 int main()
 {
+	XGpio_Config *cfg_ptr;
+	XGpio PL_TO_PS_BUFFER_Device;
+
+	cfg_ptr = XGpio_LookupConfig(PL_TO_PS_BUFFER_DEVICE_ID);
+	XGpio_CfgInitialize(&PL_TO_PS_BUFFER_Device, cfg_ptr, cfg_ptr->BaseAddress);
+
+	XGpio_SetDataDirection(&PL_TO_PS_BUFFER_Device, PL_TO_PS_BUFFER_CHANNEL, 1);
+
+
 	u16 PokemonMasterSlot1[50];
 	u16 PokemonMasterSlot2[50];
 	u16 PokemonMasterSlot3[50];
@@ -464,11 +482,16 @@ int main()
 
 			default:break;
 			}//end switch system state
-
-#ifdef PRINT_DATA_FRAMES
-			xil_printf("0x%08x    ",data);
-#endif
-			if ((frameCount % 8 == 0) && (frameCount != 0)){xil_printf("\n");frameCount = 0;}
+			u32 dump = XGpio_DiscreteRead(&PL_TO_PS_BUFFER_Device, PL_TO_PS_BUFFER_CHANNEL);
+			if ( (dump & 0x1) == 1){
+				xil_printf("0x%08x    ",data);
+			}
+			if ((frameCount % 8 == 0) && (frameCount != 0)){
+				if ( (dump & 0x1) == 1){
+					xil_printf("\n");
+				}
+				frameCount = 0;
+			}
 			else{frameCount++;}
 
     	}

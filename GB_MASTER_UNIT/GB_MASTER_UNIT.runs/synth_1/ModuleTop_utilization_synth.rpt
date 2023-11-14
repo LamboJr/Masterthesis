@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Fri Nov  3 13:58:32 2023
+| Date         : Tue Nov 14 18:19:11 2023
 | Host         : Acer running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_utilization -file ModuleTop_utilization_synth.rpt -pb ModuleTop_utilization_synth.pb
 | Design       : ModuleTop
@@ -93,7 +93,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |    4 |     0 |          0 |       125 |  3.20 |
+| Bonded IOB                  |    5 |     0 |          0 |       125 |  4.00 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |  0.00 |
@@ -155,7 +155,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | LUT4     |   25 |                 LUT |
 | LUT3     |   13 |                 LUT |
 | LUT5     |   11 |                 LUT |
-| IBUF     |    3 |                  IO |
+| IBUF     |    4 |                  IO |
 | CARRY4   |    3 |          CarryLogic |
 | RAMB36E1 |    2 |        Block Memory |
 | LUT1     |    2 |                 LUT |
@@ -172,6 +172,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | GB_UNIT_design_rst_ps7_0_50M_0        |    1 |
 | GB_UNIT_design_processing_system7_0_0 |    1 |
 | GB_UNIT_design_axi_smc_0              |    1 |
+| GB_UNIT_design_axi_gpio_0_0           |    1 |
 | GB_UNIT_design_axi_bram_ctrl_0_0      |    1 |
 +---------------------------------------+------+
 

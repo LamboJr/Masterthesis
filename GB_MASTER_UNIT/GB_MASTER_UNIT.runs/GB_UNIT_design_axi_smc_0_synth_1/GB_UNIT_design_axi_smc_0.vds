@@ -3,16 +3,16 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Nov  3 11:36:11 2023
-# Process ID: 9193
+# Start of session at: Tue Nov 14 18:15:17 2023
+# Process ID: 20410
 # Current directory: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/GB_UNIT_design_axi_smc_0_synth_1
 # Command line: vivado -log GB_UNIT_design_axi_smc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GB_UNIT_design_axi_smc_0.tcl
 # Log file: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/GB_UNIT_design_axi_smc_0_synth_1/GB_UNIT_design_axi_smc_0.vds
 # Journal file: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/GB_UNIT_design_axi_smc_0_synth_1/vivado.jou
-# Running On: Acer, OS: Linux, CPU Frequency: 3392.276 MHz, CPU Physical cores: 4, Host memory: 8236 MB
+# Running On: Acer, OS: Linux, CPU Frequency: 2593.944 MHz, CPU Physical cores: 4, Host memory: 8236 MB
 #-----------------------------------------------------------
 source GB_UNIT_design_axi_smc_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2063.000 ; gain = 125.992 ; free physical = 1027 ; free virtual = 4525
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2063.027 ; gain = 125.992 ; free physical = 1001 ; free virtual = 2833
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: GB_UNIT_design_axi_smc_0
 Command: synth_design -top GB_UNIT_design_axi_smc_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -21,7 +21,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9279
+INFO: [Synth 8-7075] Helper process launched with PID 20443
 WARNING: [Synth 8-11067] parameter 'K_MAX_EP_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:87]
 WARNING: [Synth 8-11067] parameter 'K_MAX_SC_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:88]
 WARNING: [Synth 8-11067] parameter 'K_MAX_CMD_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:89]
@@ -125,11 +125,11 @@ WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_DESCEND' declared inside package '
 INFO: [Common 17-14] Message 'Synth 8-11067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-11014] non-net output port 'upsizer_valid' cannot be initialized at declaration in SystemVerilog mode [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/66be/hdl/sc_node_v1_0_vl_rfs.sv:2589]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2833.895 ; gain = 377.801 ; free physical = 129 ; free virtual = 3504
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2838.859 ; gain = 377.770 ; free physical = 137 ; free virtual = 1791
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/synth/GB_UNIT_design_axi_smc_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_5375' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:10]
-INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_3KKJZR' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:789]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_3KKJZR' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1320]
 INFO: [Synth 8-6157] synthesizing module 'bd_5375_one_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_0/synth/bd_5375_one_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
@@ -181,175 +181,237 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/daniel/Maste
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 INFO: [Synth 8-256] done synthesizing module 'bd_5375_psr_aclk_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_1/synth/bd_5375_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_5375_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:824]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_5375_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:824]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_5375_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:824]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_5375_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:824]
-WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_5375_psr_aclk_0' has 10 connections declared, but only 6 given [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:824]
-INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_3KKJZR' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:789]
-INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1VTMAY4' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:833]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00e_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_12/synth/bd_5375_m00e_0.sv:53]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_5375_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1361]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_5375_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1361]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_5375_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1361]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_5375_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1361]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_5375_psr_aclk_0' has 10 connections declared, but only 6 given [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1361]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_3KKJZR' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1320]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1VTMAY4' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1370]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00e_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_22/synth/bd_5375_m00e_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00e_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_12/synth/bd_5375_m00e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1VTMAY4' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:833]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00s2a_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_11/synth/bd_5375_m00s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00s2a_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_11/synth/bd_5375_m00s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_s00a2s_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_5/synth/bd_5375_s00a2s_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_s00a2s_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_5/synth/bd_5375_s00a2s_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_X45ZAN' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1204]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_s00mmu_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_2/synth/bd_5375_s00mmu_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_s00mmu_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_2/synth/bd_5375_s00mmu_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_s00sic_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_4/synth/bd_5375_s00sic_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_s00sic_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_4/synth/bd_5375_s00sic_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_s00tr_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_3/synth/bd_5375_s00tr_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_s00tr_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_3/synth/bd_5375_s00tr_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_X45ZAN' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1204]
-INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_RFNRAT' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1858]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_sarn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_6/synth/bd_5375_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00e_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_22/synth/bd_5375_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1VTMAY4' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1370]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_19KUXFK' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1741]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00arn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_17/synth/bd_5375_m00arn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_sarn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_6/synth/bd_5375_sarn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_sawn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_8/synth/bd_5375_sawn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_sawn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_8/synth/bd_5375_sawn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_sbn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_10/synth/bd_5375_sbn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_sbn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_10/synth/bd_5375_sbn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_srn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_7/synth/bd_5375_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00arn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_17/synth/bd_5375_m00arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00awn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_19/synth/bd_5375_m00awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00awn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_19/synth/bd_5375_m00awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00bn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_21/synth/bd_5375_m00bn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized1' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_srn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_7/synth/bd_5375_srn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_5375_swn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_9/synth/bd_5375_swn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
-INFO: [Synth 8-6155] done synthesizing module 'bd_5375_swn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_9/synth/bd_5375_swn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_RFNRAT' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1858]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00bn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_21/synth/bd_5375_m00bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00rn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_18/synth/bd_5375_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00rn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_18/synth/bd_5375_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00wn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_20/synth/bd_5375_m00wn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized4' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized4' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized4' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized4' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00wn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_20/synth/bd_5375_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_19KUXFK' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1741]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m00s2a_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_16/synth/bd_5375_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m00s2a_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_16/synth/bd_5375_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_1R2W1F0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:2037]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m01e_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_29/synth/bd_5375_m01e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m01e_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_29/synth/bd_5375_m01e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_1R2W1F0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:2037]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_FW9KTY' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:2338]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m01arn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_24/synth/bd_5375_m01arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m01arn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_24/synth/bd_5375_m01arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m01awn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_26/synth/bd_5375_m01awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m01awn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_26/synth/bd_5375_m01awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m01bn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_28/synth/bd_5375_m01bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m01bn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_28/synth/bd_5375_m01bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m01rn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_25/synth/bd_5375_m01rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m01rn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_25/synth/bd_5375_m01rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m01wn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_27/synth/bd_5375_m01wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m01wn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_27/synth/bd_5375_m01wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_FW9KTY' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:2338]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_m01s2a_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_23/synth/bd_5375_m01s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_m01s2a_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_23/synth/bd_5375_m01s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_s00a2s_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_10/synth/bd_5375_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_s00a2s_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_10/synth/bd_5375_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_X45ZAN' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:2634]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_s00mmu_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_7/synth/bd_5375_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_s00mmu_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_7/synth/bd_5375_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_s00sic_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_9/synth/bd_5375_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_s00sic_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_9/synth/bd_5375_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_s00tr_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_8/synth/bd_5375_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_s00tr_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_8/synth/bd_5375_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_X45ZAN' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:2634]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_RFNRAT' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:3288]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_sarn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_11/synth/bd_5375_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized5' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized5' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized5' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized5' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized6' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized6' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized6' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized6' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_sarn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_11/synth/bd_5375_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_sawn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_13/synth/bd_5375_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_sawn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_13/synth/bd_5375_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_sbn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_15/synth/bd_5375_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized7' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized7' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized7' (0#1) [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8550]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_sbn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_15/synth/bd_5375_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_srn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_12/synth/bd_5375_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_srn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_12/synth/bd_5375_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_swn_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_14/synth/bd_5375_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_swn_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_14/synth/bd_5375_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_RFNRAT' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:3288]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_2ISVS1' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:3584]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_arsw_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_2/synth/bd_5375_arsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_arsw_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_2/synth/bd_5375_arsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_awsw_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_4/synth/bd_5375_awsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_awsw_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_4/synth/bd_5375_awsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_bsw_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_6/synth/bd_5375_bsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_bsw_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_6/synth/bd_5375_bsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_rsw_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_3/synth/bd_5375_rsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_rsw_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_3/synth/bd_5375_rsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_5375_wsw_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_5/synth/bd_5375_wsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5375_wsw_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_5/synth/bd_5375_wsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_2ISVS1' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:3584]
 INFO: [Synth 8-6155] done synthesizing module 'bd_5375' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'GB_UNIT_design_axi_smc_0' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/synth/GB_UNIT_design_axi_smc_0.v:53]
-WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_3KKJZR does not have driver. [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:805]
-WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_3KKJZR does not have driver. [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/synth/bd_5375.v:1340]
 WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[69] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[68] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[67] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[66] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[65] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[64] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[63] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[62] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[61] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[60] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[59] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[58] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[57] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[56] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[55] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[54] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[53] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[52] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[51] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[50] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[49] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[48] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[47] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[46] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[45] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[44] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[43] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[42] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[41] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[40] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[39] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[38] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[37] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[36] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[35] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[34] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[33] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[32] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[31] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[30] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[29] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[28] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[27] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[26] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[25] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[24] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[22] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[21] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[20] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[19] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[13] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[12] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_14_reg_slice3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_14_reg_slice3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_14_reg_slice3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized5 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_req[0] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axis_arb_tvalid in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_14_si_handler__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_6_top__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_6_top__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_6_top__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_6_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module switchboards_imp_2ISVS1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[52] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[51] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[50] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[49] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[48] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[47] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[46] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[45] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[44] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[43] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[42] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[41] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[40] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[39] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[38] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[37] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[36] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[35] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[34] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[33] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[32] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[31] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[30] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[29] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[28] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[27] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[26] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[25] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[24] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[22] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[21] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[20] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[19] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[13] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[12] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base__parameterized5 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3004.676 ; gain = 548.582 ; free physical = 145 ; free virtual = 3322
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3063.672 ; gain = 602.582 ; free physical = 148 ; free virtual = 1578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3013.582 ; gain = 557.488 ; free physical = 140 ; free virtual = 3320
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3069.609 ; gain = 608.520 ; free physical = 148 ; free virtual = 1578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3013.582 ; gain = 557.488 ; free physical = 140 ; free virtual = 3320
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3069.609 ; gain = 608.520 ; free physical = 148 ; free virtual = 1578
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.72 . Memory (MB): peak = 3016.551 ; gain = 0.000 ; free physical = 136 ; free virtual = 3315
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3115.414 ; gain = 0.000 ; free physical = 134 ; free virtual = 1520
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -366,60 +428,131 @@ Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/G
 Finished Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/GB_UNIT_design_axi_smc_0_synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/GB_UNIT_design_axi_smc_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/GB_UNIT_design_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-1714] 19 XPM XDC files have been applied to the design.
+INFO: [Project 1-1714] 65 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3273.082 ; gain = 0.000 ; free physical = 132 ; free virtual = 3194
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3591.414 ; gain = 0.000 ; free physical = 170 ; free virtual = 1197
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3284.988 ; gain = 11.906 ; free physical = 131 ; free virtual = 3193
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.74 . Memory (MB): peak = 3591.414 ; gain = 0.000 ; free physical = 158 ; free virtual = 1198
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 141 ; free virtual = 3190
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:37 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 161 ; free virtual = 1200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 143 ; free virtual = 3191
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:37 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 161 ; free virtual = 1200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/GB_UNIT_design_axi_smc_0_synth_1/dont_touch.xdc, line 71).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/GB_UNIT_design_axi_smc_0_synth_1/dont_touch.xdc, line 154).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_exit_pipeline/m01_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 144 ; free virtual = 3191
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:37 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 161 ; free virtual = 1200
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_exit_v1_0_13_axilite_conv'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_exit_v1_0_13_axilite_conv'
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_11_decerr_slave'
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sc_transaction_regulator_v1_0_9_multithread'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                    W_RX |                              001 | 00000000000000000000000000000001
+                    W_TX |                              010 | 00000000000000000000000000000010
+              W_COMPLETE |                              011 | 00000000000000000000000000000100
+               W_RECOVER |                              100 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'w_state_reg' using encoding 'sequential' in module 'sc_exit_v1_0_13_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                               00 | 00000000000000000000000000000000
+                    R_RX |                               01 | 00000000000000000000000000000001
+                    R_TX |                               10 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'sc_exit_v1_0_13_axilite_conv'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -428,80 +561,119 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_r
             P_WRITE_RESP |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_11_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                              000 | 00000000000000000000000000000000
+                    IDLE |                              001 | 00000000000000000000000000000001
+                DEADLOCK |                              010 | 00000000000000000000000000000010
+                OVERFLOW |                              011 | 00000000000000000000000000000100
+                ALLOCATE |                              100 | 00000000000000000000000000000011
+                 REFRESH |                              101 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sc_transaction_regulator_v1_0_9_multithread'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 128 ; free virtual = 3171
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:43 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 168 ; free virtual = 1194
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    8 Bit       Adders := 8     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 18    
 	   2 Input    7 Bit       Adders := 4     
-	   2 Input    6 Bit       Adders := 31    
-	   3 Input    6 Bit       Adders := 2     
-	   2 Input    5 Bit       Adders := 5     
-	   3 Input    5 Bit       Adders := 2     
-	   4 Input    5 Bit       Adders := 2     
-	   2 Input    4 Bit       Adders := 18    
+	   3 Input    6 Bit       Adders := 5     
+	   2 Input    6 Bit       Adders := 181   
+	   2 Input    5 Bit       Adders := 16    
+	   3 Input    5 Bit       Adders := 5     
+	   4 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 38    
 	   3 Input    4 Bit       Adders := 2     
 	   2 Input    3 Bit       Adders := 1     
-	   2 Input    2 Bit       Adders := 3     
-	   3 Input    1 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 12    
+	   3 Input    1 Bit       Adders := 6     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 51    
+	   2 Input      1 Bit         XORs := 240   
 +---Registers : 
-	             2178 Bit    Registers := 8     
-	              156 Bit    Registers := 2     
+	             2178 Bit    Registers := 44    
+	              512 Bit    Registers := 1     
+	              161 Bit    Registers := 4     
+	              143 Bit    Registers := 6     
 	              104 Bit    Registers := 1     
-	               70 Bit    Registers := 1     
-	               69 Bit    Registers := 1     
-	               64 Bit    Registers := 1     
-	               47 Bit    Registers := 1     
-	               39 Bit    Registers := 2     
-	               33 Bit    Registers := 1     
-	               32 Bit    Registers := 2     
-	               23 Bit    Registers := 1     
-	               21 Bit    Registers := 1     
+	               71 Bit    Registers := 3     
+	               64 Bit    Registers := 5     
+	               53 Bit    Registers := 6     
+	               47 Bit    Registers := 2     
+	               42 Bit    Registers := 4     
+	               41 Bit    Registers := 5     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               25 Bit    Registers := 1     
+	               21 Bit    Registers := 4     
+	               19 Bit    Registers := 3     
+	               18 Bit    Registers := 4     
 	               16 Bit    Registers := 1     
 	               14 Bit    Registers := 1     
-	               12 Bit    Registers := 6     
-	                8 Bit    Registers := 8     
-	                6 Bit    Registers := 16    
-	                5 Bit    Registers := 7     
-	                4 Bit    Registers := 22    
-	                3 Bit    Registers := 27    
-	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 177   
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 16    
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 22    
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 91    
+	                5 Bit    Registers := 21    
+	                4 Bit    Registers := 59    
+	                3 Bit    Registers := 64    
+	                2 Bit    Registers := 39    
+	                1 Bit    Registers := 728   
 +---Muxes : 
-	   2 Input 2178 Bit        Muxes := 4     
-	   2 Input   47 Bit        Muxes := 1     
-	   2 Input   39 Bit        Muxes := 1     
-	   2 Input   33 Bit        Muxes := 1     
+	   2 Input 2178 Bit        Muxes := 21    
+	   2 Input  143 Bit        Muxes := 4     
+	   2 Input   53 Bit        Muxes := 3     
+	   2 Input   47 Bit        Muxes := 2     
+	   2 Input   42 Bit        Muxes := 4     
+	   2 Input   41 Bit        Muxes := 4     
+	   2 Input   33 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
 	   2 Input   32 Bit        Muxes := 15    
-	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 4     
 	   2 Input   16 Bit        Muxes := 1     
 	   2 Input   14 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 6     
-	   2 Input    8 Bit        Muxes := 36    
-	   2 Input    7 Bit        Muxes := 20    
-	   2 Input    6 Bit        Muxes := 6     
-	   2 Input    5 Bit        Muxes := 6     
-	   2 Input    4 Bit        Muxes := 30    
+	   3 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 21    
+	   5 Input   12 Bit        Muxes := 1     
+	   5 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 58    
+	   7 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 25    
+	   2 Input    6 Bit        Muxes := 31    
+	   2 Input    5 Bit        Muxes := 15    
+	   4 Input    5 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 62    
 	   3 Input    4 Bit        Muxes := 2     
-	   4 Input    3 Bit        Muxes := 11    
-	  11 Input    3 Bit        Muxes := 9     
-	   2 Input    3 Bit        Muxes := 6     
-	   2 Input    2 Bit        Muxes := 41    
+	   4 Input    3 Bit        Muxes := 18    
+	  11 Input    3 Bit        Muxes := 16    
+	   2 Input    3 Bit        Muxes := 22    
+	   5 Input    3 Bit        Muxes := 3     
+	   9 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 167   
+	   4 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
 	   5 Input    2 Bit        Muxes := 1     
-	   4 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 166   
-	   6 Input    1 Bit        Muxes := 61    
-	  12 Input    1 Bit        Muxes := 9     
-	   3 Input    1 Bit        Muxes := 10    
-	   4 Input    1 Bit        Muxes := 13    
-	  10 Input    1 Bit        Muxes := 12    
-	   7 Input    1 Bit        Muxes := 8     
+	   7 Input    2 Bit        Muxes := 7     
+	   6 Input    1 Bit        Muxes := 196   
+	   4 Input    1 Bit        Muxes := 47    
+	  10 Input    1 Bit        Muxes := 63    
+	   7 Input    1 Bit        Muxes := 42    
+	  12 Input    1 Bit        Muxes := 18    
+	   2 Input    1 Bit        Muxes := 477   
+	   5 Input    1 Bit        Muxes := 14    
+	   3 Input    1 Bit        Muxes := 25    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -518,35 +690,36 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_5375.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_5375.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 134 ; free virtual = 3167
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:01:48 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 132 ; free virtual = 1190
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping Report (see note below)
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
-|Module Name                                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives   | 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
-|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26  | 
-|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26  | 
-|inst/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M x 4   | 
-|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 69              | RAM32M x 12  | 
-|inst/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 70              | RAM32M x 12  | 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+|Module Name                                                                                                                                                                          | RTL Object                       | Inference      | Size (Depth x Width) | Primitives   | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M x 27  | 
+|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M x 27  | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 7               | RAM32M x 2   | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 53              | RAM32M x 9   | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 71              | RAM32M x 12  | 
+|inst/i_0/\m01_nodes/m01_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M x 27  | 
+|inst/i_0/\m01_nodes/m01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M x 27  | 
+|inst/i_0/\m01_nodes/m01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 7               | RAM32M x 2   | 
+|inst/i_0/\m01_nodes/m01_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 53              | RAM32M x 9   | 
+|inst/i_0/\m01_nodes/m01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 71              | RAM32M x 12  | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4   | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 143             | RAM32M x 24  | 
+|inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4   | 
+|inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 143             | RAM32M x 24  | 
+|inst/i_0/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 25              | RAM32M x 5   | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 71              | RAM32M x 12  | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4   | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 53              | RAM32M x 9   | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -556,28 +729,41 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 131 ; free virtual = 3168
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:01:54 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 125 ; free virtual = 1193
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 129 ; free virtual = 3167
+Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:04 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 124 ; free virtual = 1192
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping Report
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
-|Module Name                                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives   | 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
-|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26  | 
-|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 156             | RAM32M x 26  | 
-|inst/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M x 4   | 
-|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 69              | RAM32M x 12  | 
-|inst/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 70              | RAM32M x 12  | 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+|Module Name                                                                                                                                                                          | RTL Object                       | Inference      | Size (Depth x Width) | Primitives   | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M x 27  | 
+|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M x 27  | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 7               | RAM32M x 2   | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 53              | RAM32M x 9   | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 71              | RAM32M x 12  | 
+|inst/i_0/\m01_nodes/m01_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M x 27  | 
+|inst/i_0/\m01_nodes/m01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M x 27  | 
+|inst/i_0/\m01_nodes/m01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 7               | RAM32M x 2   | 
+|inst/i_0/\m01_nodes/m01_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 53              | RAM32M x 9   | 
+|inst/i_0/\m01_nodes/m01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 71              | RAM32M x 12  | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4   | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 143             | RAM32M x 24  | 
+|inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4   | 
+|inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst       | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 143             | RAM32M x 24  | 
+|inst/i_0/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 25              | RAM32M x 5   | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 71              | RAM32M x 12  | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M x 4   | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst        | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 53              | RAM32M x 9   | 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -586,7 +772,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 129 ; free virtual = 3166
+Finished Technology Mapping : Time (s): cpu = 00:02:11 ; elapsed = 00:02:09 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 123 ; free virtual = 1192
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -604,37 +790,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 127 ; free virtual = 3165
+Finished IO Insertion : Time (s): cpu = 00:02:15 ; elapsed = 00:02:13 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 138 ; free virtual = 1192
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 127 ; free virtual = 3165
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:15 ; elapsed = 00:02:13 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 138 ; free virtual = 1192
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 126 ; free virtual = 3165
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:16 ; elapsed = 00:02:14 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 137 ; free virtual = 1191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 126 ; free virtual = 3165
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:16 ; elapsed = 00:02:14 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 137 ; free virtual = 1191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 126 ; free virtual = 3165
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:16 ; elapsed = 00:02:15 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 136 ; free virtual = 1191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 126 ; free virtual = 3165
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:16 ; elapsed = 00:02:15 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 136 ; free virtual = 1191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -646,6 +832,7 @@ Dynamic Shift Register Report:
 +------------+---------------+--------+------------+--------+---------+--------+--------+--------+
 |dsrl        | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
 |dsrl__1     | shift_reg_reg | 32     | 1          | 0      | 1       | 0      | 0      | 0      | 
+|dsrl__2     | shift_reg_reg | 4      | 1          | 1      | 0       | 0      | 0      | 0      | 
 +------------+---------------+--------+------------+--------+---------+--------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -662,54 +849,57 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+--------+------+
-|      |Cell    |Count |
-+------+--------+------+
-|1     |CARRY4  |     4|
-|2     |LUT1    |    76|
-|3     |LUT2    |    98|
-|4     |LUT3    |   322|
-|5     |LUT4    |   270|
-|6     |LUT5    |   239|
-|7     |LUT6    |   422|
-|8     |RAM32M  |    34|
-|9     |SRL16   |     1|
-|10    |SRL16E  |    73|
-|11    |SRLC32E |    70|
-|12    |FDCE    |    42|
-|13    |FDR     |     4|
-|14    |FDRE    |  1120|
-|15    |FDSE    |    71|
-+------+--------+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    21|
+|2     |LUT1     |   224|
+|3     |LUT2     |   319|
+|4     |LUT3     |  1068|
+|5     |LUT4     |   747|
+|6     |LUT5     |   781|
+|7     |LUT6     |  1443|
+|8     |MUXF7    |     4|
+|9     |RAM32M   |   100|
+|10    |RAM32X1D |     2|
+|11    |SRL16    |     1|
+|12    |SRL16E   |   188|
+|13    |SRLC32E  |   182|
+|14    |FDCE     |   105|
+|15    |FDR      |     4|
+|16    |FDRE     |  4580|
+|17    |FDSE     |   254|
++------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 126 ; free virtual = 3165
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:16 ; elapsed = 00:02:15 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 136 ; free virtual = 1191
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 15903 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 3284.988 ; gain = 557.488 ; free physical = 126 ; free virtual = 3165
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3284.988 ; gain = 828.895 ; free physical = 126 ; free virtual = 3165
+Synthesis finished with 0 errors, 0 critical warnings and 4639 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:55 ; elapsed = 00:01:57 . Memory (MB): peak = 3591.414 ; gain = 608.520 ; free physical = 136 ; free virtual = 1191
+Synthesis Optimization Complete : Time (s): cpu = 00:02:16 ; elapsed = 00:02:15 . Memory (MB): peak = 3591.414 ; gain = 1130.324 ; free physical = 136 ; free virtual = 1191
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3284.988 ; gain = 0.000 ; free physical = 402 ; free virtual = 3441
-INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3591.414 ; gain = 0.000 ; free physical = 393 ; free virtual = 1459
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3284.988 ; gain = 0.000 ; free physical = 401 ; free virtual = 3440
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3591.414 ; gain = 0.000 ; free physical = 390 ; free virtual = 1460
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 39 instances were transformed.
+  A total of 107 instances were transformed.
   FDR => FDRE: 4 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 34 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 100 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete | Checksum: d4d5033d
+Synth Design complete | Checksum: af67bff8
 INFO: [Common 17-83] Releasing license: Synthesis
-113 Infos, 220 Warnings, 0 Critical Warnings and 0 Errors encountered.
+185 Infos, 208 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 3284.988 ; gain = 1178.363 ; free physical = 400 ; free virtual = 3440
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2837.915; main = 2526.347; forked = 365.408
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4219.281; main = 3284.992; forked = 966.305
+synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:02:22 . Memory (MB): peak = 3591.414 ; gain = 1478.793 ; free physical = 389 ; free virtual = 1460
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3168.431; main = 2844.750; forked = 392.654
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4525.707; main = 3591.418; forked = 966.305
 INFO: [Common 17-1381] The checkpoint '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/GB_UNIT_design_axi_smc_0_synth_1/GB_UNIT_design_axi_smc_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP GB_UNIT_design_axi_smc_0, cache-ID = ee28fcc07634cd6e
-INFO: [Coretcl 2-1174] Renamed 256 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP GB_UNIT_design_axi_smc_0, cache-ID = d90ae48c7a2f7f64
+INFO: [Coretcl 2-1174] Renamed 786 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/GB_UNIT_design_axi_smc_0_synth_1/GB_UNIT_design_axi_smc_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file GB_UNIT_design_axi_smc_0_utilization_synth.rpt -pb GB_UNIT_design_axi_smc_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov  3 11:37:28 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 14 18:18:03 2023...

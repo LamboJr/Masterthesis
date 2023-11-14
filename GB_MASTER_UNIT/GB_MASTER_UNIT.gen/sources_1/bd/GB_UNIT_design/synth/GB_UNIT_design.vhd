@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
---Date        : Fri Nov  3 11:34:57 2023
+--Date        : Tue Nov 14 18:14:14 2023
 --Host        : Acer running 64-bit Ubuntu 22.04.3 LTS
 --Command     : generate_target GB_UNIT_design.bd
 --Design      : GB_UNIT_design
@@ -41,10 +41,11 @@ entity GB_UNIT_design is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    PL_to_PS_BUFFER : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of GB_UNIT_design : entity is "GB_UNIT_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=GB_UNIT_design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=4,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of GB_UNIT_design : entity is "GB_UNIT_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=GB_UNIT_design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of GB_UNIT_design : entity is "GB_UNIT_design.hwdef";
 end GB_UNIT_design;
@@ -237,7 +238,26 @@ architecture STRUCTURE of GB_UNIT_design is
     M00_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M00_AXI_rlast : in STD_LOGIC;
     M00_AXI_rvalid : in STD_LOGIC;
-    M00_AXI_rready : out STD_LOGIC
+    M00_AXI_rready : out STD_LOGIC;
+    M01_AXI_awaddr : out STD_LOGIC_VECTOR ( 8 downto 0 );
+    M01_AXI_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M01_AXI_awvalid : out STD_LOGIC;
+    M01_AXI_awready : in STD_LOGIC;
+    M01_AXI_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M01_AXI_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M01_AXI_wvalid : out STD_LOGIC;
+    M01_AXI_wready : in STD_LOGIC;
+    M01_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M01_AXI_bvalid : in STD_LOGIC;
+    M01_AXI_bready : out STD_LOGIC;
+    M01_AXI_araddr : out STD_LOGIC_VECTOR ( 8 downto 0 );
+    M01_AXI_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M01_AXI_arvalid : out STD_LOGIC;
+    M01_AXI_arready : in STD_LOGIC;
+    M01_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    M01_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M01_AXI_rvalid : in STD_LOGIC;
+    M01_AXI_rready : out STD_LOGIC
   );
   end component GB_UNIT_design_axi_smc_0;
   component GB_UNIT_design_rst_ps7_0_50M_0 is
@@ -254,6 +274,30 @@ architecture STRUCTURE of GB_UNIT_design is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component GB_UNIT_design_rst_ps7_0_50M_0;
+  component GB_UNIT_design_axi_gpio_0_0 is
+  port (
+    s_axi_aclk : in STD_LOGIC;
+    s_axi_aresetn : in STD_LOGIC;
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    s_axi_awvalid : in STD_LOGIC;
+    s_axi_awready : out STD_LOGIC;
+    s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_wvalid : in STD_LOGIC;
+    s_axi_wready : out STD_LOGIC;
+    s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_bvalid : out STD_LOGIC;
+    s_axi_bready : in STD_LOGIC;
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    s_axi_arvalid : in STD_LOGIC;
+    s_axi_arready : out STD_LOGIC;
+    s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_rvalid : out STD_LOGIC;
+    s_axi_rready : in STD_LOGIC;
+    gpio_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component GB_UNIT_design_axi_gpio_0_0;
   signal axi_bram_ctrl_0_BRAM_PORTA_ADDR : STD_LOGIC_VECTOR ( 12 downto 0 );
   signal axi_bram_ctrl_0_BRAM_PORTA_CLK : STD_LOGIC;
   signal axi_bram_ctrl_0_BRAM_PORTA_DIN : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -292,6 +336,24 @@ architecture STRUCTURE of GB_UNIT_design is
   signal axi_smc_M00_AXI_WREADY : STD_LOGIC;
   signal axi_smc_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_smc_M00_AXI_WVALID : STD_LOGIC;
+  signal axi_smc_M01_AXI_ARADDR : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal axi_smc_M01_AXI_ARREADY : STD_LOGIC;
+  signal axi_smc_M01_AXI_ARVALID : STD_LOGIC;
+  signal axi_smc_M01_AXI_AWADDR : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal axi_smc_M01_AXI_AWREADY : STD_LOGIC;
+  signal axi_smc_M01_AXI_AWVALID : STD_LOGIC;
+  signal axi_smc_M01_AXI_BREADY : STD_LOGIC;
+  signal axi_smc_M01_AXI_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal axi_smc_M01_AXI_BVALID : STD_LOGIC;
+  signal axi_smc_M01_AXI_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_smc_M01_AXI_RREADY : STD_LOGIC;
+  signal axi_smc_M01_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal axi_smc_M01_AXI_RVALID : STD_LOGIC;
+  signal axi_smc_M01_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_smc_M01_AXI_WREADY : STD_LOGIC;
+  signal axi_smc_M01_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal axi_smc_M01_AXI_WVALID : STD_LOGIC;
+  signal gpio_io_i_0_1 : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -356,6 +418,8 @@ architecture STRUCTURE of GB_UNIT_design is
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_smc_M00_AXI_arqos_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_axi_smc_M00_AXI_awqos_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_axi_smc_M01_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_axi_smc_M01_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_50M_mb_reset_UNCONNECTED : STD_LOGIC;
@@ -403,6 +467,7 @@ begin
   BRAM_PORTA_0_rst <= axi_bram_ctrl_0_BRAM_PORTA_RST;
   BRAM_PORTA_0_we(3 downto 0) <= axi_bram_ctrl_0_BRAM_PORTA_WE(3 downto 0);
   axi_bram_ctrl_0_BRAM_PORTA_DOUT(31 downto 0) <= BRAM_PORTA_0_dout(31 downto 0);
+  gpio_io_i_0_1(31 downto 0) <= PL_to_PS_BUFFER(31 downto 0);
 axi_bram_ctrl_0: component GB_UNIT_design_axi_bram_ctrl_0_0
      port map (
       bram_addr_a(12 downto 0) => axi_bram_ctrl_0_BRAM_PORTA_ADDR(12 downto 0),
@@ -446,6 +511,29 @@ axi_bram_ctrl_0: component GB_UNIT_design_axi_bram_ctrl_0_0
       s_axi_wstrb(3 downto 0) => axi_smc_M00_AXI_WSTRB(3 downto 0),
       s_axi_wvalid => axi_smc_M00_AXI_WVALID
     );
+axi_gpio_0: component GB_UNIT_design_axi_gpio_0_0
+     port map (
+      gpio_io_i(31 downto 0) => gpio_io_i_0_1(31 downto 0),
+      s_axi_aclk => processing_system7_0_FCLK_CLK0,
+      s_axi_araddr(8 downto 0) => axi_smc_M01_AXI_ARADDR(8 downto 0),
+      s_axi_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),
+      s_axi_arready => axi_smc_M01_AXI_ARREADY,
+      s_axi_arvalid => axi_smc_M01_AXI_ARVALID,
+      s_axi_awaddr(8 downto 0) => axi_smc_M01_AXI_AWADDR(8 downto 0),
+      s_axi_awready => axi_smc_M01_AXI_AWREADY,
+      s_axi_awvalid => axi_smc_M01_AXI_AWVALID,
+      s_axi_bready => axi_smc_M01_AXI_BREADY,
+      s_axi_bresp(1 downto 0) => axi_smc_M01_AXI_BRESP(1 downto 0),
+      s_axi_bvalid => axi_smc_M01_AXI_BVALID,
+      s_axi_rdata(31 downto 0) => axi_smc_M01_AXI_RDATA(31 downto 0),
+      s_axi_rready => axi_smc_M01_AXI_RREADY,
+      s_axi_rresp(1 downto 0) => axi_smc_M01_AXI_RRESP(1 downto 0),
+      s_axi_rvalid => axi_smc_M01_AXI_RVALID,
+      s_axi_wdata(31 downto 0) => axi_smc_M01_AXI_WDATA(31 downto 0),
+      s_axi_wready => axi_smc_M01_AXI_WREADY,
+      s_axi_wstrb(3 downto 0) => axi_smc_M01_AXI_WSTRB(3 downto 0),
+      s_axi_wvalid => axi_smc_M01_AXI_WVALID
+    );
 axi_smc: component GB_UNIT_design_axi_smc_0
      port map (
       M00_AXI_araddr(12 downto 0) => axi_smc_M00_AXI_ARADDR(12 downto 0),
@@ -481,6 +569,25 @@ axi_smc: component GB_UNIT_design_axi_smc_0
       M00_AXI_wready => axi_smc_M00_AXI_WREADY,
       M00_AXI_wstrb(3 downto 0) => axi_smc_M00_AXI_WSTRB(3 downto 0),
       M00_AXI_wvalid => axi_smc_M00_AXI_WVALID,
+      M01_AXI_araddr(8 downto 0) => axi_smc_M01_AXI_ARADDR(8 downto 0),
+      M01_AXI_arprot(2 downto 0) => NLW_axi_smc_M01_AXI_arprot_UNCONNECTED(2 downto 0),
+      M01_AXI_arready => axi_smc_M01_AXI_ARREADY,
+      M01_AXI_arvalid => axi_smc_M01_AXI_ARVALID,
+      M01_AXI_awaddr(8 downto 0) => axi_smc_M01_AXI_AWADDR(8 downto 0),
+      M01_AXI_awprot(2 downto 0) => NLW_axi_smc_M01_AXI_awprot_UNCONNECTED(2 downto 0),
+      M01_AXI_awready => axi_smc_M01_AXI_AWREADY,
+      M01_AXI_awvalid => axi_smc_M01_AXI_AWVALID,
+      M01_AXI_bready => axi_smc_M01_AXI_BREADY,
+      M01_AXI_bresp(1 downto 0) => axi_smc_M01_AXI_BRESP(1 downto 0),
+      M01_AXI_bvalid => axi_smc_M01_AXI_BVALID,
+      M01_AXI_rdata(31 downto 0) => axi_smc_M01_AXI_RDATA(31 downto 0),
+      M01_AXI_rready => axi_smc_M01_AXI_RREADY,
+      M01_AXI_rresp(1 downto 0) => axi_smc_M01_AXI_RRESP(1 downto 0),
+      M01_AXI_rvalid => axi_smc_M01_AXI_RVALID,
+      M01_AXI_wdata(31 downto 0) => axi_smc_M01_AXI_WDATA(31 downto 0),
+      M01_AXI_wready => axi_smc_M01_AXI_WREADY,
+      M01_AXI_wstrb(3 downto 0) => axi_smc_M01_AXI_WSTRB(3 downto 0),
+      M01_AXI_wvalid => axi_smc_M01_AXI_WVALID,
       S00_AXI_araddr(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
       S00_AXI_arburst(1 downto 0) => processing_system7_0_M_AXI_GP0_ARBURST(1 downto 0),
       S00_AXI_arcache(3 downto 0) => processing_system7_0_M_AXI_GP0_ARCACHE(3 downto 0),

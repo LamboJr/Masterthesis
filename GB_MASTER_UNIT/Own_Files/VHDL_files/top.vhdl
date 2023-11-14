@@ -17,12 +17,13 @@ entity ModuleTop is
         i_MS_SLV : in std_logic;
         i_Enable : in std_logic;
         resetbutton : in std_logic;
-        --switch3  : in std_logic;
+        switch3  : in std_logic;
         LED : out std_logic);
 end ModuleTop;
 
 architecture behav of ModuleTop is
-
+--signal for transmitting signal from PL to PS
+signal PL_to_PS_buffer : std_logic_vector(31 downto 0) := (others => '0');
 --signals for connecting the BRAM to the RTL and the ZYNQ processor
 signal bram_porta_0_addr : std_logic_vector(12 downto 0);
 signal clk : std_logic;
@@ -114,7 +115,8 @@ zynq_ps_interface_inst: entity work.GB_UNIT_design_wrapper
         BRAM_PORTA_0_dout => bram_porta_0_dout,
         BRAM_PORTA_0_en => bram_porta_0_en,
         BRAM_PORTA_0_rst => rst,
-        BRAM_PORTA_0_we => bram_porta_0_we);
+        BRAM_PORTA_0_we => bram_porta_0_we,
+        PL_to_PS_buffer => PL_to_PS_buffer);
         
 
   
@@ -160,7 +162,8 @@ monitoring :  process (clk)
        end if;    
     end if;
  end process;
- 
+    --send switch state to SOftware
+    PL_to_PS_buffer(0) <= switch3;
     --conversion from the BRAM control signels to the ringbuffer control signals 
     temp(0) <= empty;
     --bram dout is set to rd_data only if data is requested at address 0 at Software level, else the empty flag is writen to dout 

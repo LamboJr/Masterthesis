@@ -34,3 +34,6 @@ platform generate -domains
 platform clean
 platform generate
 platform generate
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
