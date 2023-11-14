@@ -116,24 +116,7 @@ zynq_ps_interface_inst: entity work.GB_UNIT_design_wrapper
         BRAM_PORTA_0_rst => rst,
         BRAM_PORTA_0_we => bram_porta_0_we);
         
--- BRAM memory 2K by 32 bit
 
---blk_mem_gen0_inst: entity work.blk_mem_gen_0
---    port map (
---    --zynq Ps access through software
---    clka => clk,
---    ena => bram_porta_0_en,
---    wea => bram_porta_0_we( 0 downto 0),
---    addra => bram_porta_0_addr(12 downto 2),
---    dina => bram_porta_0_din,
---    douta => bram_porta_0_dout,
---    --PL fabric access
---    clkb => clk,
---    enb => '1',
---    web(0) => bram_portb_0_we,
---    addrb => bram_portb_0_addr,
---    dinb => bram_portb_0_din,
---    doutb => open);
   
 ringbuffer_inst : entity work.ringbuffer
 generic map (RAM_DEPTH => RAM_DEPTH,RAM_WIDTH => RAM_WIDTH)
@@ -153,44 +136,17 @@ fill_count => fill_count
 );
     
 
--- process (clk)
--- begin
---    if rising_edge(clk) then
---       if rst = '1' then
---            bram_portb_0_addr <= (others => '0');
---            bram_portb_0_din <= (others => '0');
---            bram_portb_0_we <= '0';
---       else
-
---            if w_RX_DV ='1' and i_enable = '0' then
---                --if i_MS_SLV = '0' then
---                        bram_portb_0_din(15 downto 0) <= w_RX_WORD;
---                        --bram_portb_0_din(31 downto 16) <= x"1111";
---                        bram_portb_0_we <= '1';
---                        if (bram_portb_0_addr /= x"7FF") then
---                            bram_portb_0_addr <= bram_portb_0_addr + 1;
---                        else
---                            bram_portb_0_addr <= (others => '0');
---                        end if;
---               -- else
---                        --bram_portb_0_din(31 downto 16) <= w_RX_HWORD;
---                        --bram_portb_0_we <= '0';
---                --end if;
---            else
---                    bram_portb_0_we <= '0';
---            end if;
-            
---       end if;    
---    end if;
--- end process;
-  process (clk)
+monitoring :  process (clk)
  begin
     if rising_edge(clk) then
        if rst = '1' then
            wr_data <= x"00000000";
            wr_en <= '0'; 
        else
+            --check if new data frame was received and the communication is enabled 
             if w_RX_DV ='1' and i_enable = '0'   then
+            --i_MS_SLV indicates if the GB Master or the GB Slave is sending data
+            -- This section of the code writes data to the ringbuffer if both the master and slave data frame are received
                 if i_MS_SLV = '0' then
                         wr_data(15 downto 0) <= w_RX_WORD;
                         wr_en <= '1';
@@ -204,12 +160,11 @@ fill_count => fill_count
        end if;    
     end if;
  end process;
+ 
+    --conversion from the BRAM control signels to the ringbuffer control signals 
     temp(0) <= empty;
+    --bram dout is set to rd_data only if data is requested at address 0 at Software level, else the empty flag is writen to dout 
     bram_porta_0_dout <= rd_Data when bram_porta_0_addr = x"00000000" else temp;
-    
-
-    --bram_porta_0_dout <= rd_Data when rd_valid = '1' else x"1234CDEF";
-    --bram_porta_0_dout(31) <= rd_valid;
     rd_en <= (not(bram_porta_0_we(0)) and bram_porta_0_en) when bram_porta_0_addr = x"00000000" else '0';
 
  r_RX_Serial <= io_Serial;

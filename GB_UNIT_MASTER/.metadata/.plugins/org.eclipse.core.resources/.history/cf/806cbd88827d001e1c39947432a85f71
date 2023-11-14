@@ -1,0 +1,132 @@
+
+struct PPBonus {
+  uint8_t move1:2;
+  uint8_t move2:2;
+  uint8_t move3:2;
+  uint8_t move4:2;
+};
+
+struct Growth {
+  uint16_t species;
+  uint16_t held_item;
+  uint32_t experience;
+  struct PPBonus pp_bonus;
+  uint8_t friendship;
+  uint16_t unknown;
+};
+
+struct Attacks {
+  uint16_t moves[4];
+  uint8_t pp[4];
+};
+
+struct Condition {
+  uint8_t hp_ev;
+  uint8_t attack_ev;
+  uint8_t defense_ev;
+  uint8_t speed_ev;
+  uint8_t special_attack_ev;
+  uint8_t special_defense_ev;
+  uint8_t coolness;
+  uint8_t beauty;
+  uint8_t cuteness;
+  uint8_t smartness;
+  uint8_t toughness;
+  uint8_t feel;
+};
+
+struct Origins {
+  uint16_t level_met:7;
+  uint16_t game_met:4;
+  uint16_t pokeball_type:4;
+  uint16_t trainer_gender:1;
+};
+
+
+struct Pokerus {
+  uint8_t days_remaining:4;
+  uint8_t strain:4;
+};
+
+struct IVs {
+  uint32_t hp:5;
+  uint32_t attack:5;
+  uint32_t defense:5;
+  uint32_t speed:5;
+  uint32_t special_attack:5;
+  uint32_t special_defense:5;
+  uint32_t egg:1;
+  uint32_t ability:1;
+};
+
+struct Ribbons {
+  uint32_t cool:3;
+  uint32_t beauty:3;
+  uint32_t cute:3;
+  uint32_t smart:3;
+  uint32_t tough:3;
+  uint32_t champion:1;
+  uint32_t winning:1;
+  uint32_t victory:1;
+  uint32_t artist:1;
+  uint32_t effort:1;
+  uint32_t special1:1;
+  uint32_t special2:1;
+  uint32_t special3:1;
+  uint32_t special4:1;
+  uint32_t special5:1;
+  uint32_t special6:1;
+  uint32_t padding:5;
+  uint32_t obedience:1;
+};
+
+struct Misc {
+  struct Pokerus pokerus;
+  uint8_t met_location;
+  struct Origins origins;
+  struct IVs ivs;
+  struct Ribbons ribbons;
+};
+
+struct Status {
+  uint32_t sleep:3;
+  uint32_t poisoned:1;
+  uint32_t burnt:1;
+  uint32_t frozen:1;
+  uint32_t paralyzed:1;
+  uint32_t bad_poisoned:1;
+  uint32_t zero_filler:24;
+};
+
+
+struct SpeciesInfo
+{
+    uint16_t baseHP;
+    uint16_t baseAttack;
+    uint16_t baseDefense;
+    uint16_t baseSpeed;
+    uint16_t baseSpAttack;
+    uint16_t baseSpDefense;
+};
+struct Pokemon {
+  uint32_t personality;
+  uint32_t trainer_id;
+  char nickname[NICKNAME_LENGTH];
+  uint16_t language;
+  char trainer_name[TRAINER_NAME_LENGTH];
+  uint8_t markings;
+  uint16_t checksum;
+  uint16_t unknown;
+  uint8_t data[DATA_LENGTH];
+  struct Status status;
+  //uint32_t status;
+  uint8_t level;
+  uint8_t pokerus;
+  uint16_t current_health;
+  uint16_t max_health;
+  uint16_t attack;
+  uint16_t defense;
+  uint16_t speed;
+  uint16_t special_attack;
+  uint16_t special_defense;
+};

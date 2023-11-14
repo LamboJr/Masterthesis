@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+#include "structs.h"
+#include "constant.h"
+#include "functions.h"
+
+#define FrameMask 0xFFFF0000
+
+char char_conv( u8 character,u16 language);
+
+
+void decode_Pokemon_data(u16 *Pokemonbuffer){
+	struct Pokemon Pokemonstruct;
+	Pokemonstruct.personality =Pokemonbuffer[1];
+	Pokemonstruct.personality = Pokemonstruct.personality << 16;
+	Pokemonstruct.personality = Pokemonstruct.personality + Pokemonbuffer[0];
+
+
+
+	Pokemonstruct.trainer_id = Pokemonbuffer[3];
+	Pokemonstruct.trainer_id = Pokemonstruct.trainer_id << 16;
+	Pokemonstruct.trainer_id = Pokemonstruct.trainer_id + Pokemonbuffer[2];
+
+	//Next is nickname Pokemonbuffer[4]-[8]
+	u8 TempNickname[NICKNAME_LENGTH];
+	char Nickname[NICKNAME_LENGTH];
+	int index = 0;
+	for(int u = 4;u<9;u++){
+		TempNickname[index++] = Pokemonbuffer[u] & 0x00FF;
+		TempNickname[index++] = (Pokemonbuffer[u] & 0xFF00) >> 8;
+	}
+	for(int i = 0;i<NICKNAME_LENGTH;i++){
+		Nickname[i] = char_conv(TempNickname[i],LANGUAGE_GERMAN);
+	}
+	//Pokemonstruct.nickname = Nickname;
+	xil_printf("Nickname = %s\n",Nickname);
+	//Language
+	Pokemonstruct.language = Pokemonbuffer[9];
+	//Trainer Name
+	char TrainerName[TRAINER_NAME_LENGTH];
+	u8 TempTrainerName[TRAINER_NAME_LENGTH];
+	index = 0;
+	TempTrainerName[index++] = Pokemonbuffer[10] & 0x00FF;
+	TempTrainerName[index++] =(Pokemonbuffer[10] & 0xFF00) >> 8;
+	TempTrainerName[index++] = Pokemonbuffer[11] & 0x00FF;
+	TempTrainerName[index++] =(Pokemonbuffer[11] & 0xFF00) >> 8;
+	TempTrainerName[index++] = Pokemonbuffer[12] & 0x00FF;
+	TempTrainerName[index++] =(Pokemonbuffer[12] & 0xFF00) >> 8;
+	TempTrainerName[index++] = Pokemonbuffer[13] & 0x00FF;
+
+	for(int i = 0;i<TRAINER_NAME_LENGTH;i++){
+			TrainerName[i] = char_conv(TempTrainerName[i],LANGUAGE_GERMAN);
+	}
+	//Pokemonstruct.trainer_name = TrainerName;
+	xil_printf("Trainername = %s\n",TrainerName);
+	//Markings
+	Pokemonstruct.markings = (Pokemonbuffer[13] & 0xFF00) >> 8;
+	//checksum
+	Pokemonstruct.checksum = Pokemonbuffer[14];
+	//unknown
+	Pokemonstruct.unknown = Pokemonbuffer[15]; // = 0x0000
+	//Data field 24 times u16 48 Bytes
+	for(int i = 0; i<DATA_LENGTH;i++){
+		//Pokemonstruct.data[i]
+	}
+
+}
+

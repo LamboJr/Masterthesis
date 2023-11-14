@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+#include "structs.h"
+#include "constant.h"
+
+#define FrameMask 0xFFFF0000
+void decode_Pokemon_data(u16 *Pokemonbuffer){
+
+
+}

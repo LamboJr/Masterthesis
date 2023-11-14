@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GB_UNIT_MASTER_app/src/decode_trainer_data.c&apos; to &apos;decode_trainer_data.h&apos;" description="Rename resource &apos;decode_trainer_data.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/decode_trainer_data.c" name="decode_trainer_data.h" stamp="1699365748408" updateReferences="true"/>
+</session>

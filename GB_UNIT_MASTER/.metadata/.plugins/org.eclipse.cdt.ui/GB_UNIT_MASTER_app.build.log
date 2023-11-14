@@ -1,4 +1,4 @@
-14:12:18 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
+17:21:28 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,12 +7,53 @@ make --no-print-directory main-build
 Building file: ../src/main.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/decode_Pokemon_structure.h:12,
+                 from ../src/main.c:53:
+../src/functions.h: In function 'decode_Pokemon_structure':
+../src/functions.h:310:9: warning: unused variable 'res' [-Wunused-variable]
+  310 |     u16 res = DecodeDataField(Pokemonstruct.checksum,Pokemonstruct.personality,Pokemonstruct.trainer_id,DataField);
+      |         ^~~
+../src/main.c: In function 'main':
+../src/main.c:138:9: warning: unused variable 'i' [-Wunused-variable]
+  138 |     u32 i = 0;
+      |         ^
+../src/main.c:120:13: warning: variable 'SlaveTrainerData' set but not used [-Wunused-but-set-variable]
+  120 |         u32 SlaveTrainerData[100]; // Storage buffer for Trainer pass info send from Slave
+      |             ^~~~~~~~~~~~~~~~
+../src/main.c:119:13: warning: variable 'MasterTrainerData' set but not used [-Wunused-but-set-variable]
+  119 |         u32 MasterTrainerData[100];     // Storage buffer for Trainer pass info send from master
+      |             ^~~~~~~~~~~~~~~~~
+../src/main.c:96:13: warning: variable 'PokemonSlaveSlot6' set but not used [-Wunused-but-set-variable]
+   96 |         u16 PokemonSlaveSlot6[50];
+      |             ^~~~~~~~~~~~~~~~~
+../src/main.c:95:13: warning: variable 'PokemonSlaveSlot5' set but not used [-Wunused-but-set-variable]
+   95 |         u16 PokemonSlaveSlot5[50];
+      |             ^~~~~~~~~~~~~~~~~
+../src/main.c:94:13: warning: variable 'PokemonSlaveSlot4' set but not used [-Wunused-but-set-variable]
+   94 |         u16 PokemonSlaveSlot4[50];
+      |             ^~~~~~~~~~~~~~~~~
+../src/main.c:93:13: warning: variable 'PokemonSlaveSlot3' set but not used [-Wunused-but-set-variable]
+   93 |         u16 PokemonSlaveSlot3[50];
+      |             ^~~~~~~~~~~~~~~~~
+../src/main.c:92:13: warning: variable 'PokemonSlaveSlot2' set but not used [-Wunused-but-set-variable]
+   92 |         u16 PokemonSlaveSlot2[50];
+      |             ^~~~~~~~~~~~~~~~~
+../src/main.c:91:13: warning: variable 'PokemonSlaveSlot1' set but not used [-Wunused-but-set-variable]
+   91 |         u16 PokemonSlaveSlot1[50];
+      |             ^~~~~~~~~~~~~~~~~
+../src/main.c:89:13: warning: variable 'PokemonMasterSlot6' set but not used [-Wunused-but-set-variable]
+   89 |         u16 PokemonMasterSlot6[50];
+      |             ^~~~~~~~~~~~~~~~~~
+../src/main.c:88:13: warning: variable 'PokemonMasterSlot5' set but not used [-Wunused-but-set-variable]
+   88 |         u16 PokemonMasterSlot5[50];
+      |             ^~~~~~~~~~~~~~~~~~
+../src/main.c:87:13: warning: variable 'PokemonMasterSlot4' set but not used [-Wunused-but-set-variable]
+   87 |         u16 PokemonMasterSlot4[50];
+      |             ^~~~~~~~~~~~~~~~~~
+../src/main.c:86:13: warning: variable 'PokemonMasterSlot3' set but not used [-Wunused-but-set-variable]
+   86 |         u16 PokemonMasterSlot3[50];
+      |             ^~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.c
- 
-Building file: ../src/platform.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
  
 Building target: GB_UNIT_MASTER_app.elf
 Invoking: ARM v7 gcc linker
@@ -22,9 +63,9 @@ Finished building target: GB_UNIT_MASTER_app.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size GB_UNIT_MASTER_app.elf  |tee "GB_UNIT_MASTER_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  22201	   1144	  22568	  45913	   b359	GB_UNIT_MASTER_app.elf
+  37081	  23992	  26568	  87641	  15659	GB_UNIT_MASTER_app.elf
 Finished building: GB_UNIT_MASTER_app.elf.size
  
 
-14:12:19 Build Finished (took 774ms)
+17:21:29 Build Finished (took 729ms)
 
