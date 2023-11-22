@@ -25,4 +25,5 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "*A9*#0"}
 dow /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf
 configparams force-mem-access 0
-bpadd -addr &main
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con

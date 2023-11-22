@@ -52,7 +52,6 @@ vcom -work proc_sys_reset_v5_0_13 -93  \
 
 vcom -work xil_defaultlib -93  \
 "../../../bd/GB_UNIT_design/ip/GB_UNIT_design_rst_ps7_0_50M_0/sim/GB_UNIT_design_rst_ps7_0_50M_0.vhd" \
-"../../../bd/GB_UNIT_design/sim/GB_UNIT_design.vhd" \
 
 vcom -work axi_lite_ipif_v3_0_4 -93  \
 "../../../../GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -65,6 +64,8 @@ vcom -work axi_gpio_v2_0_30 -93  \
 
 vcom -work xil_defaultlib -93  \
 "../../../bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_0_0/sim/GB_UNIT_design_axi_gpio_0_0.vhd" \
+"../../../bd/GB_UNIT_design/sim/GB_UNIT_design.vhd" \
+"../../../bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_1_0/sim/GB_UNIT_design_axi_gpio_1_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

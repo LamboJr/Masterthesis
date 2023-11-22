@@ -122,6 +122,12 @@ set_property used_in_implementation false [get_files -all /home/daniel/Masterthe
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_26/bd_5375_m01awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_27/bd_5375_m01wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_28/bd_5375_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_30/bd_5375_m02s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_31/bd_5375_m02arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_32/bd_5375_m02rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_33/bd_5375_m02awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_34/bd_5375_m02wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/bd_0/ip/ip_35/bd_5375_m02bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_rst_ps7_0_50M_0/GB_UNIT_design_rst_ps7_0_50M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_rst_ps7_0_50M_0/GB_UNIT_design_rst_ps7_0_50M_0.xdc]
@@ -129,6 +135,9 @@ set_property used_in_implementation false [get_files -all /home/daniel/Masterthe
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_0_0/GB_UNIT_design_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_0_0/GB_UNIT_design_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_0_0/GB_UNIT_design_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0.xdc]
 set_property used_in_implementation false [get_files -all /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/GB_UNIT_design_ooc.xdc]
 
 OPTRACE "Adding files" END { }

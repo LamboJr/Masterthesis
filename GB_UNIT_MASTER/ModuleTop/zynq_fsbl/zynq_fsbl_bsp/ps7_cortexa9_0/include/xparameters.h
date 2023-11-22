@@ -302,6 +302,44 @@
 
 /******************************************************************/
 
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 2
+
+/* Definitions for peripheral AXI_GPIO_PLTOPS */
+#define XPAR_AXI_GPIO_PLTOPS_BASEADDR 0x41200000
+#define XPAR_AXI_GPIO_PLTOPS_HIGHADDR 0x4120FFFF
+#define XPAR_AXI_GPIO_PLTOPS_DEVICE_ID 0
+#define XPAR_AXI_GPIO_PLTOPS_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_PLTOPS_IS_DUAL 0
+
+
+/* Definitions for peripheral AXI_GPIO_PSTOPL */
+#define XPAR_AXI_GPIO_PSTOPL_BASEADDR 0x41210000
+#define XPAR_AXI_GPIO_PSTOPL_HIGHADDR 0x4121FFFF
+#define XPAR_AXI_GPIO_PSTOPL_DEVICE_ID 1
+#define XPAR_AXI_GPIO_PSTOPL_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_PSTOPL_IS_DUAL 0
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_GPIO_PLTOPS */
+#define XPAR_GPIO_0_BASEADDR 0x41200000
+#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_PLTOPS_DEVICE_ID
+#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_0_IS_DUAL 0
+
+/* Canonical definitions for peripheral AXI_GPIO_PSTOPL */
+#define XPAR_GPIO_1_BASEADDR 0x41210000
+#define XPAR_GPIO_1_HIGHADDR 0x4121FFFF
+#define XPAR_GPIO_1_DEVICE_ID XPAR_AXI_GPIO_PSTOPL_DEVICE_ID
+#define XPAR_GPIO_1_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_1_IS_DUAL 0
+
+
+/******************************************************************/
+
 /* Definitions for driver GPIOPS */
 #define XPAR_XGPIOPS_NUM_INSTANCES 1
 

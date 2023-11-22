@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Tue Nov 14 18:20:54 2023
+| Date         : Wed Nov 15 15:37:00 2023
 | Host         : Acer running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_methodology -file ModuleTop_methodology_drc_routed.rpt -pb ModuleTop_methodology_drc_routed.pb -rpx ModuleTop_methodology_drc_routed.rpx
 | Design       : ModuleTop
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 4
+             Violations found: 7
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 4          |
+| TIMING-18 | Warning  | Missing input or output delay | 7          |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -48,6 +48,21 @@ An input delay is missing on io_Serial relative to the rising and/or falling clo
 Related violations: <none>
 
 TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on switch0 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on switch1 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on switch2 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#7 Warning
 Missing input or output delay  
 An input delay is missing on switch3 relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>

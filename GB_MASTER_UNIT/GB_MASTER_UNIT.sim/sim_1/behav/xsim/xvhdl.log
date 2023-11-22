@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Ringbuffer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ringbuffer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/Ringbuffer_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Ringbuffer_tb'

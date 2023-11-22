@@ -1,4 +1,8 @@
+/*
 #include "constant.h"
+#include "structs.h"
+*/
+
 
 u16 DecodeDataField(u16 checksum,u32 personality,u32 trainer_id,u32 *DataField);
 
@@ -263,73 +267,21 @@ u16 DecodeDataField(u16 checksum,u32 personality,u32 trainer_id,u32 *DataField){
 
 struct Pokemon decode_Pokemon_structure(u16 *Pokemonbuffer){
 	struct Pokemon Pokemonstruct;
-    u32 offset32 = 0;//offset for 32 bit structure
-
-    Pokemonstruct.personality = ((u32 *) Pokemonbuffer)[offset32++];
-
-    Pokemonstruct.trainer_id = ((u32 *) Pokemonbuffer)[offset32++];
-
-	//Next is nickname Pokemonbuffer[4]-[8]
-	char Nickname[NICKNAME_LENGTH];
-    u8 offset8 = offset32 * 4; //Offset in 8bit structure
+    u16* PokemonPtr = (u16* )&Pokemonstruct;
+    //printf("Starraddresse Struct : %p\n",PokemonPtr);
+    for (size_t i = 0;i <POKEMON_BUFFER_SIZE;i++){
+        *PokemonPtr = Pokemonbuffer[i];
+        //printf("Pokemonstruct addr : %p Value = %04x\n",PokemonPtr,*PokemonPtr);
+        PokemonPtr++;
+    }
     for(size_t i = 0; i < NICKNAME_LENGTH;i++){
-        Nickname[i] = ((u8 *)Pokemonbuffer)[i+offset8];
-        Nickname[i] = char_conv(Nickname[i],LANGUAGE_GERMAN);
+        Pokemonstruct.nickname[i] = char_conv(Pokemonstruct.nickname[i],LANGUAGE_GERMAN);
     }
-    memcpy(Pokemonstruct.nickname, Nickname, NICKNAME_LENGTH);
-
-
-	//Language
-	Pokemonstruct.language = Pokemonbuffer[9];
-	//Trainer Name
-	char TrainerName[TRAINER_NAME_LENGTH];
-    offset8 = 20;
     for(size_t i = 0;i<TRAINER_NAME_LENGTH;i++){
-        TrainerName[i] = ((u8 *) Pokemonbuffer)[i+offset8];
-        TrainerName[i] = char_conv(TrainerName[i],LANGUAGE_GERMAN);
+        Pokemonstruct.trainer_name[i] = char_conv(Pokemonstruct.trainer_name[i],LANGUAGE_GERMAN);
     }
-	memcpy(Pokemonstruct.trainer_name ,TrainerName,TRAINER_NAME_LENGTH);
-
-	//Markings
-    offset8 = 27;
-    Pokemonstruct.markings = ((u8 *) Pokemonbuffer)[offset8];
-	//checksum
-	Pokemonstruct.checksum = Pokemonbuffer[14];
-	//unknown
-	Pokemonstruct.unknown = Pokemonbuffer[15]; // = 0x0000
-	//Data field 24 times u16 48 Bytes also 12 times u32
-    u32 DataField[12];
-
-    //Convert Pokemonbuffer in Datafield with 32 bit width
-    //be careful with the storage. 0x4706, 0x4616 turn into 0x46164706 this way because of mem mangement
-    offset32 = 8;//offset for 32 bit structure
-    for(size_t i = 0; i < (DATA_LENGTH / sizeof(u32)); i++) {
-        DataField[i] = ((u32 *) Pokemonbuffer)[i+offset32];
-    }
-
-    u16 res = DecodeDataField(Pokemonstruct.checksum,Pokemonstruct.personality,Pokemonstruct.trainer_id,DataField);
-
-    for(size_t i = 0; i < (DATA_LENGTH / sizeof(u8));i++){
-        Pokemonstruct.data[i] = ((u8 *) DataField)[i];
-    }
-
-    offset32 = 20;
-
-    Pokemonstruct.status = ((u32 *) Pokemonbuffer)[offset32++];
-    offset8 = offset32 * 4;
-    u16 offset16 = offset32 * 2;
-    Pokemonstruct.level = ((u8 *) Pokemonbuffer)[offset8++];
-
-    Pokemonstruct.pokerus = ((u8 *) Pokemonbuffer)[offset8++];
-    offset16++;
-    Pokemonstruct.current_health = Pokemonbuffer[offset16++];
-    Pokemonstruct.max_health = Pokemonbuffer[offset16++];
-    Pokemonstruct.attack = Pokemonbuffer[offset16++];
-    Pokemonstruct.defense = Pokemonbuffer[offset16++];
-    Pokemonstruct.speed = Pokemonbuffer[offset16++];
-    Pokemonstruct.special_attack = Pokemonbuffer[offset16++];
-    Pokemonstruct.special_defense = Pokemonbuffer[offset16++];
-
+    u32* DataField = (u32* )Pokemonstruct.data;
+    DecodeDataField(Pokemonstruct.checksum,Pokemonstruct.personality,Pokemonstruct.trainer_id,DataField);
 
     return Pokemonstruct;
 }

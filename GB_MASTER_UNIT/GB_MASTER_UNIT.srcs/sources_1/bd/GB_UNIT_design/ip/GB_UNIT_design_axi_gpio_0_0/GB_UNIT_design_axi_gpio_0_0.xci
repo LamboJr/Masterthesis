@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "GB_UNIT_design_axi_gpio_0_0",
-    "cell_name": "axi_gpio_0",
+    "cell_name": "axi_gpio_PLtoPS",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
     "ip_revision": "30",
     "gen_directory": "../../../../../../GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_0_0",

@@ -106,6 +106,7 @@ wr_data <= x"00000002";
 wait until rising_edge(r_Clock);
 wr_data <= x"00000003";
 wait until rising_edge(r_Clock);
+RD_EN <= '1';
 wr_data <= x"00000004";
 wait until rising_edge(r_Clock);
 wr_data <= x"00000005";

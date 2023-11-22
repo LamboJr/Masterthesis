@@ -21,4 +21,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GB_UNIT_des
 # IP: bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_0_0/GB_UNIT_design_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GB_UNIT_design_axi_gpio_0_0 || ORIG_REF_NAME==GB_UNIT_design_axi_gpio_0_0} -quiet] -quiet
 
+# IP: bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==GB_UNIT_design_axi_gpio_1_0 || ORIG_REF_NAME==GB_UNIT_design_axi_gpio_1_0} -quiet] -quiet
+
 # XDC: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/GB_UNIT_design_ooc.xdc

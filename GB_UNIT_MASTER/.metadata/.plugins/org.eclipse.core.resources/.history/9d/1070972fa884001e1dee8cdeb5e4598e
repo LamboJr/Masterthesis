@@ -1,0 +1,198 @@
+#include <stdio.h>
+#include "xil_printf.h"
+#include "xtime_l.h"
+
+//#include "decode_trainer_data.h"
+//#include "decode_Pokemon_structure.h"
+
+
+//Debuging defines. Enables print of relevant information to UART
+#define DEBUG_STATES
+#define DEBUG_TIME_STAMPS
+
+
+typedef enum {
+	IdleState,  // State for Phase before both gAmeboys are ready to communicate
+	handshakeState,	//State for handshake between GBs. Phase if only one GB is Ready till the sny signal 8FFF is sen by master
+	TrainerDataExchangeState,	//first state for exchanging information. general and trainer card information
+	TradingRoomMovementState,	// State for Moving around in the trading room
+	PokemonDataExchangeState,	//State for exchanging Data about the Team Pokemon after taking Place in the chair
+	TradingState,
+
+} s_SystemState;
+
+typedef enum{
+	IdleDataExchangeState,
+	TrainerData,
+	EmptyState1,
+	SLOT1And2,
+	EmptyState2,
+	SLOT3And4,
+	EmptyState3,
+	SLOT5And6,
+	FinishedState,
+} s_DecodeState;
+
+
+u32 MasterMask = 0xFFFF0000;
+u32 SlaveMask = 0x0000FFFF;
+
+u16 PokemonMasterSlot1[50];
+u16 PokemonMasterSlot2[50];
+u16 PokemonMasterSlot3[50];
+u16 PokemonMasterSlot4[50];
+u16 PokemonMasterSlot5[50];
+u16 PokemonMasterSlot6[50];
+
+u16 PokemonSlaveSlot1[50];
+u16 PokemonSlaveSlot2[50];
+u16 PokemonSlaveSlot3[50];
+u16 PokemonSlaveSlot4[50];
+u16 PokemonSlaveSlot5[50];
+u16 PokemonSlaveSlot6[50];
+
+u16 PokemonMasterBufferIndex = 0;
+u16 PokemonSlaveBufferIndex = 0;
+
+u32 MasterDataframeCount = 0; //variable for counting the number of relevant  complete 9er frames !!!
+u32 SlaveDataframeCount = 0; //variable for counting the number of relevant  complete 9er frames !!!
+
+u32 frameCount = 0;		//count variable for formating the monitoring output and also used for interpreting data
+//u32 data;			//variable for storing red in data
+
+//u32 buffer_index = 0;
+u32 MasterBufferIndex = 0;			//Index variable for indexing the Storage buffers for the Master data frames
+u32 SlaveBufferIndex = 0;			//Index variable for indexing the Storage buffers for the Slave data frames
+
+//u8 record_data = 0;
+u8 RecordMasterData = 0;	// bool variable. Set to 1 if 8888 is received from the Master so the next 7 data frames are relevant game data
+u8 RecordSlaveData = 0;		// Same for Slave data
+
+u32 MasterTrainerData[100];	// Storage buffer for Trainer pass info send from master
+u32 SlaveTrainerData[100]; // Storage buffer for Trainer pass info send from Slave
+/*
+u32 MasterPokemonData[1000];	// Storage buffer for Pokemon Data structures
+u32 SlavePokemonData[1000];		//Storage buffer for Pokemon Data structures
+*/
+s_SystemState s_NextState = IdleState;	//FSM state vaiable
+
+s_DecodeState s_NextMasterDecodeState = IdleDataExchangeState;
+s_DecodeState s_NextSlaveDecodeState = IdleDataExchangeState;
+
+XTime tExecution,tStart= 0;
+double frameDuration;
+
+void N_updateFSM(u32 data,u32 dump){
+
+	if(frameDuration <= 0.01){
+		s_NextState = IdleState;
+		return;
+		//Gameboys are turned off. Reset the system for new transaction
+	}
+
+	switch(s_NextState){
+		case IdleState:{
+			if((data >> 16) == 0xB9A0){
+				s_NextState = handshakeState;
+				frameCount = 8;
+#ifdef DEBUG_STATES
+				xil_printf("\nEntering Handshake State\n");
+#endif
+			}
+
+		}break;
+
+		case handshakeState:{
+			if((data >> 16) == 0x8FFF){
+				frameCount = 8;
+				s_NextState = TradingState;
+#ifdef DEBUG_STATES
+				xil_printf("\nEntering TradeInformationExchange State\n");
+#endif
+			}
+			frameCount = 8;
+		}break;
+		case TradingState:{
+			if (frameCount == 0){}
+			else if(frameCount == 1){
+				//-----------------
+				//Check control frames which are sent. F.E 2222,BBBB,CCCC,5FFF,2FFE
+			}else{
+
+			}
+		}break;
+		default:break;
+	}//end switch statement
+
+
+
+
+
+
+
+	if (frameCount == 0){
+		//Checksum checking. If no matching checksum gameboy show error and stop interacting if the problem lies in the GB GB communication
+		if ( (data & MasterMask) != (data >> 16)   ){
+#ifdef DEBUG_STATES
+					xil_printf("No matching Checksum\n");
+#endif
+		}
+	}
+
+	if ( (dump & 0x1) == 1){
+		//xil_printf("0x%08x    ",data);
+		xil_printf("%04x %04x    ",(data >> 16),(data & SlaveMask));
+	}
+	if ((frameCount % 8 == 0) && (frameCount != 0)){
+		if ( (dump & 0x1) == 1){
+
+#ifdef DEBUG_TIME_STAMPS
+			XTime_GetTime(&tExecution);
+			frameDuration = ((double)(tExecution -tStart) /(double)COUNTS_PER_SECOND);
+			tStart = tExecution;
+			printf("Frame duration : %f seconds\n",frameDuration);
+#else
+			xil_printf("\n");
+#endif
+		}
+		frameCount = 0;
+	}
+	else{frameCount++;}
+
+	return;
+}
+
+
+
+
+
+/*	switch(s_NextState){
+		case IdleState:{
+			if(data == 0xB9A0B9A0){
+				s_NextState = handshakeState;
+				//frameCount = 0;
+				#ifdef DEBUG_STATES
+				xil_printf("\nEntering Handshake State\n");
+				#endif
+			}
+		}break;
+		case handshakeState:{
+			if(data == 0x8FFFB9A0){frameCount = 8;
+			s_NextState = TradingState;
+			#ifdef DEBUG_STATES
+			xil_printf("\nEntering Trading State\n");
+			#endif
+			}
+		}break;
+		case TradingState:{
+			if(data == 0xB9A0B9A0){
+				s_NextState =IdleState;
+				//frameCount = 0;
+				#ifdef DEBUG_STATES
+				xil_printf("\nEntering Idle State\n");
+				#endif
+			}
+
+		}break;
+		default:break;
+//	}//end switch*/

@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
---Date        : Tue Nov 14 18:14:14 2023
+--Date        : Wed Nov 15 15:15:39 2023
 --Host        : Acer running 64-bit Ubuntu 22.04.3 LTS
 --Command     : generate_target GB_UNIT_design_wrapper.bd
 --Design      : GB_UNIT_design_wrapper
@@ -42,7 +42,8 @@ entity GB_UNIT_design_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    PL_to_PS_BUFFER : in STD_LOGIC_VECTOR ( 31 downto 0 )
+    PL_to_PS_BUFFER : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    PS_to_PL_BUFFER : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
 end GB_UNIT_design_wrapper;
 
@@ -77,7 +78,8 @@ architecture STRUCTURE of GB_UNIT_design_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    PL_to_PS_BUFFER : in STD_LOGIC_VECTOR ( 31 downto 0 )
+    PL_to_PS_BUFFER : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    PS_to_PL_BUFFER : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component GB_UNIT_design;
 begin
@@ -111,6 +113,7 @@ GB_UNIT_design_i: component GB_UNIT_design
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      PL_to_PS_BUFFER(31 downto 0) => PL_to_PS_BUFFER(31 downto 0)
+      PL_to_PS_BUFFER(31 downto 0) => PL_to_PS_BUFFER(31 downto 0),
+      PS_to_PL_BUFFER(31 downto 0) => PS_to_PL_BUFFER(31 downto 0)
     );
 end STRUCTURE;
