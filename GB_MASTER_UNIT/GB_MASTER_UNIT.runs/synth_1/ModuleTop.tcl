@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -89,7 +90,9 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/imports/hdl/GB_UNIT_design_wrapper.vhd
+  /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Includes.vhd
   /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Ringbuffer.vhd
+  /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/new/TradeHandler.vhd
   /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/UART_RX.vhd
   /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/UART_TX.vhd
   /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl

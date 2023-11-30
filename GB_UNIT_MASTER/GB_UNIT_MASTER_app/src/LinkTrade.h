@@ -12,7 +12,7 @@
 //Debuging defines. Enables print of relevant information to UART
 //#define DEBUG_STATES
 //#define DEBUG_TIME_STAMPS
-#define USE_TEST_DATA
+//#define USE_TEST_DATA
 
 #define GET_MASTERDATA(data) ((data)>>16)
 #define GET_SLAVEDATA(data) ((data)& 0x0000FFFF)
@@ -20,7 +20,8 @@
 #define MASTER 0
 #define SLAVE 1
 
-
+#define CASEPRINT(LinkCMD) case (LinkCMD):{ xil_printf("Command :"#LinkCMD"\n");}break;
+#define PRINTMS(MSC) if((MSC) == MASTER){xil_printf("Master ");}else{xil_printf("SLAVE ");}
 
 typedef enum {
 	IdleState,  // State for Phase before both gAmeboys are ready to communicate
@@ -257,83 +258,124 @@ void N_updateFSM(u32 data,u32 dump){
 
 void updateBuffer(u8 MSC,u32 data){
 	//xil_printf("InitBlock : %d,BlockRequest : %d, TeamIndex : %d,BlockRequestSize :%04x",sTradeHandler[MSC].InitBlock,sTradeHandler[MSC].BlockRequest,sTradeHandler[MSC].TeamIndex,sTradeHandler[MSC].BlockRequestSize);
+	if(sTradeHandler[MSC].InitBlock == 1 ){ //Checks if Block was initializes with BBBB
+		if(sTradeHandler[MSC].BlockRequest == 1){ //Checks if Block was Requested from master with CCCC
+			if(sTradeHandler[MSC].TeamIndex <6 && sTradeHandler[MSC].BlockRequestSize == 1){ //Checks if Pokemon structure was Requested
 
-	//Check the necessary flags for updating the buffer
-	if (sTradeHandler[MSC].InitBlock == 1 && sTradeHandler[MSC].BlockRequest == 1 && sTradeHandler[MSC].TeamIndex <6 && sTradeHandler[MSC].BlockRequestSize == 1){
-		//Checks if buffer is full or not
-		if(sTradeHandler[MSC].DataIndex < (sTradeHandler[MSC].InitBlockSize/2)){
-			//Cehcks if Master or Slave Buffer has to be updated
-			if(MSC == MASTER){
-				sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_MASTERDATA(data);
-			}
-			else{
-				sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_SLAVEDATA(data);
-			}
-			//xil_printf("Debug:%d ",sTradeHandler[MSC].DataIndex);
-			sTradeHandler[MSC].DataIndex++;  //Increase buffer index after succesfully storing data in it
-		}else{
-			//If Buffer is full
-			sTradeHandler[MSC].InitBlock  = 0;
-			xil_printf("\n");
-			//Copy temporary buffer in the coresponding Teambuffer in the struct field
-			for(size_t i =0;i<POKEMON_BUFFER_LENGTH;i++){
-				sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i] = sTradeHandler[MSC].TempBuffer[i];
-				//xil_printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
-			}
-			if(MSC == MASTER){xil_printf("Master Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);}
-			else{xil_printf("Slave Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);}
-			decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
-			sTradeHandler[MSC].TeamIndex++; //update TeamIndex
-			for(size_t i = 0;i<POKEMON_BUFFER_LENGTH;i++){
-				sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i] = sTradeHandler[MSC].TempBuffer[i+50];
-				//xil_printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
-			}
-			if(MSC == MASTER){xil_printf("Master Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);}
-			else{xil_printf("Slave Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);}
-			decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
-			sTradeHandler[MSC].TeamIndex++;
-
-			//There are always send two Pokemon at once
-			printBlankspace("");
-			if( sTradeHandler[MSC].TeamIndex >= 6){
-				//Reset the control signals
-				sTradeHandler[MSC].TeamIndex = 0;
-				sTradeHandler[MSC].BlockRequest= 0;
-			}
-		}
-	}
-	else if(sTradeHandler[MSC].InitBlock == 1 && sTradeHandler[MSC].BlockRequest == 1 && sTradeHandler[MSC].BlockRequestSize == 2){
-		if(sTradeHandler[MSC].DataIndex < (sTradeHandler[MSC].InitBlockSize/2)){
+				if(sTradeHandler[MSC].DataIndex < (sTradeHandler[MSC].InitBlockSize/2)){
 					//Cehcks if Master or Slave Buffer has to be updated
-					if(MSC == MASTER){
-						sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_MASTERDATA(data);
-					}
-					else{
-						sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_SLAVEDATA(data);
-					}
+					if(MSC == MASTER){	sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_MASTERDATA(data);}
+					else{	sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_SLAVEDATA(data);}
 					//xil_printf("Debug:%d ",sTradeHandler[MSC].DataIndex);
 					sTradeHandler[MSC].DataIndex++;  //Increase buffer index after succesfully storing data in it
-		}else{
-			sTradeHandler[MSC].InitBlock  = 0;
-			xil_printf("\n");
-			//Copy temporary buffer in the coresponding Teambuffer in the struct field
-			for(size_t i =0;i<TRAINER_BUFFER_SIZE;i++){
-				sTradeHandler[MSC].TrainerCard[i] = sTradeHandler[MSC].TempBuffer[i];
-				//xil_printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
+				}else{
+					//If Buffer is full
+					sTradeHandler[MSC].InitBlock  = 0;
+					xil_printf("\n");
+					//Copy temporary buffer in the coresponding Teambuffer in the struct field
+					for(size_t i =0;i<POKEMON_BUFFER_LENGTH;i++){
+						sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i] = sTradeHandler[MSC].TempBuffer[i];
+						//xil_printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
+					}
+					PRINTMS(MSC)
+					xil_printf("Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);
+/*					if(MSC == MASTER){xil_printf("Master Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);}
+					else{xil_printf("Slave Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);}*/
+					decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
+					sTradeHandler[MSC].TeamIndex++; //update TeamIndex
+					for(size_t i = 0;i<POKEMON_BUFFER_LENGTH;i++){
+						sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i] = sTradeHandler[MSC].TempBuffer[i+50];
+						//xil_printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
+					}
+					PRINTMS(MSC)
+					xil_printf("Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);
+					decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
+					sTradeHandler[MSC].TeamIndex++;
+
+					//There are always send two Pokemon at once
+					printBlankspace("");
+					if( sTradeHandler[MSC].TeamIndex >= 6){
+						//Reset the control signals
+						sTradeHandler[MSC].TeamIndex = 0;
+						sTradeHandler[MSC].BlockRequest= 0;
+					}
+				}
+			}//Teamindex <6 && BlockRequestsize == 1
+			else if (sTradeHandler[MSC].BlockRequestSize == 2){
+				if(sTradeHandler[MSC].DataIndex < (sTradeHandler[MSC].InitBlockSize/2)){
+							//Cehcks if Master or Slave Buffer has to be updated
+							if(MSC == MASTER){
+								sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_MASTERDATA(data);
+							}
+							else{
+								sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_SLAVEDATA(data);
+							}
+							//xil_printf("Debug:%d ",sTradeHandler[MSC].DataIndex);
+							sTradeHandler[MSC].DataIndex++;  //Increase buffer index after succesfully storing data in it
+				}else{
+					sTradeHandler[MSC].InitBlock  = 0;
+					xil_printf("\n");
+					//Copy temporary buffer in the coresponding Teambuffer in the struct field
+					for(size_t i =0;i<TRAINER_BUFFER_SIZE;i++){
+						sTradeHandler[MSC].TrainerCard[i] = sTradeHandler[MSC].TempBuffer[i];
+						//xil_printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
+					}
+					if(MSC == MASTER){xil_printf("Master TrainerCard\n");}
+					else{xil_printf("Slave TrainerCard\n");}
+					decodeTrainerCard(sTradeHandler[MSC].TrainerCard);
+
+
+					//There are always send two Pokemon at once
+					printBlankspace("");
+						//Reset the control signals
+					sTradeHandler[MSC].BlockRequest= 0;
+
+				}// end If data index small enough
+			}//Block REquestSize == 2
+			else if(sTradeHandler[MSC].BlockRequestSize == 3){
+				sTradeHandler[MSC].BlockRequest= 0;
+			}//end Block Request Size == 3
+			else if (sTradeHandler[MSC].BlockRequestSize == 4){
+				sTradeHandler[MSC].BlockRequest= 0;
+			}//end  Block Request Size = 4
+
+		}//end BlockRequest == 1
+		else{
+			//Case for Trading sync data
+			if(sTradeHandler[MSC].InitBlockSize == 20){
+				if(sTradeHandler[MSC].DataIndex < (sTradeHandler[MSC].InitBlockSize/2)){
+					if ( MSC == MASTER){sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_MASTERDATA(data);}
+					else{sTradeHandler[MSC].TempBuffer[sTradeHandler[MSC].DataIndex] = GET_SLAVEDATA(data);}
+					sTradeHandler[MSC].DataIndex++;
+				}else{
+					sTradeHandler[MSC].InitBlock  = 0;
+					xil_printf("\n");
+					sTradeHandler[MSC].LinkCMD = sTradeHandler[MSC].TempBuffer[0];
+					PRINTMS(MSC)
+					xil_printf("Command : %04x\n",sTradeHandler[MSC].LinkCMD);
+
+					switch (sTradeHandler[MSC].LinkCMD){
+						CASEPRINT(LINKCMD_READY_TO_TRADE)
+						CASEPRINT(LINKCMD_READY_FINISH_TRADE)
+						CASEPRINT(LINKCMD_READY_CANCEL_TRADE)
+						CASEPRINT(LINKCMD_START_TRADE)
+						CASEPRINT(LINKCMD_CONFIRM_FINISH_TRADE)
+						CASEPRINT(LINKCMD_SET_MONS_TO_TRADE)
+						CASEPRINT(LINKCMD_PLAYER_CANCEL_TRADE)
+						CASEPRINT(LINKCMD_REQUEST_CANCEL)
+						CASEPRINT(LINKCMD_BOTH_CANCEL_TRADE)
+						CASEPRINT(LINKCMD_PARTNER_CANCEL_TRADE)
+						CASEPRINT(LINKCMD_NONE)
+
+						default:break;
+					}//end switch Link CMD
+					printBlankspace("");
+				}
 			}
-			if(MSC == MASTER){xil_printf("Master TrainerCard\n");}
-			else{xil_printf("Slave TrainerCard\n");}
-			decodeTrainerCard(sTradeHandler[MSC].TrainerCard);
 
-
-			//There are always send two Pokemon at once
-			printBlankspace("");
-				//Reset the control signals
-			sTradeHandler[MSC].BlockRequest= 0;
-
-		}
-	}
-return;
+		}//end No Block Request
+	}//InitBlock ==1
+	return;
 }
 
 

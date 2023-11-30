@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Own_Files/VHDL_files/Includes.vhd" \
+"../../../../GB_MASTER_UNIT.srcs/sources_1/new/TradeHandler.vhd" \
+"../../../../GB_MASTER_UNIT.srcs/sim_1/new/TradeHandler_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -52,3 +52,93 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform clean
+platform generate
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains standalone_ps7_cortexa9_0 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains standalone_ps7_cortexa9_0 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains standalone_ps7_cortexa9_0 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 

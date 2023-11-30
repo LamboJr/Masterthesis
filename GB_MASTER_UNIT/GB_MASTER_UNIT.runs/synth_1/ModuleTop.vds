@@ -3,16 +3,16 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Nov 15 15:34:30 2023
-# Process ID: 13549
+# Start of session at: Thu Nov 30 15:36:20 2023
+# Process ID: 30048
 # Current directory: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1
 # Command line: vivado -log ModuleTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ModuleTop.tcl
 # Log file: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/ModuleTop.vds
 # Journal file: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/vivado.jou
-# Running On: Acer, OS: Linux, CPU Frequency: 3316.735 MHz, CPU Physical cores: 4, Host memory: 8236 MB
+# Running On: Acer, OS: Linux, CPU Frequency: 3454.158 MHz, CPU Physical cores: 4, Host memory: 8236 MB
 #-----------------------------------------------------------
 source ModuleTop.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2062.602 ; gain = 124.992 ; free physical = 1409 ; free virtual = 3672
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2062.723 ; gain = 124.023 ; free physical = 137 ; free virtual = 3522
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
@@ -28,11 +28,11 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13579
+INFO: [Synth 8-7075] Helper process launched with PID 30575
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2847.371 ; gain = 376.770 ; free physical = 369 ; free virtual = 2646
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:26 . Memory (MB): peak = 2849.461 ; gain = 380.707 ; free physical = 177 ; free virtual = 2080
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ModuleTop' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:27]
+INFO: [Synth 8-638] synthesizing module 'ModuleTop' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:29]
 INFO: [Synth 8-638] synthesizing module 'UART_RX' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/UART_RX.vhd:24]
 	Parameter g_CLKS_PER_BIT bound to: 1085 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'UART_RX' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/UART_RX.vhd:24]
@@ -42,41 +42,45 @@ INFO: [Synth 8-256] done synthesizing module 'UART_TX' (0#1) [/home/daniel/Maste
 INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_wrapper' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/imports/hdl/GB_UNIT_design_wrapper.vhd:50]
 INFO: [Synth 8-3491] module 'GB_UNIT_design' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:15' bound to instance 'GB_UNIT_design_i' of component 'GB_UNIT_design' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/imports/hdl/GB_UNIT_design_wrapper.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:54]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_bram_ctrl_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_axi_bram_ctrl_0_0_stub.vhdl:6' bound to instance 'axi_bram_ctrl_0' of component 'GB_UNIT_design_axi_bram_ctrl_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:536]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_bram_ctrl_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_axi_bram_ctrl_0_0_stub.vhdl:52]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_gpio_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_PLtoPS' of component 'GB_UNIT_design_axi_gpio_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:579]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_gpio_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_gpio_1_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_axi_gpio_1_0_stub.vhdl:6' bound to instance 'axi_gpio_PStoPL' of component 'GB_UNIT_design_axi_gpio_1_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:602]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_gpio_1_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_axi_gpio_1_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_smc_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:625]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_axi_smc_0_stub.vhdl:123]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_processing_system7_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'GB_UNIT_design_processing_system7_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:739]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_processing_system7_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_processing_system7_0_0_stub.vhdl:77]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_rst_ps7_0_50M_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_rst_ps7_0_50M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_50M' of component 'GB_UNIT_design_rst_ps7_0_50M_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:807]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_rst_ps7_0_50M_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-13549-Acer/realtime/GB_UNIT_design_rst_ps7_0_50M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_bram_ctrl_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_axi_bram_ctrl_0_0_stub.vhdl:6' bound to instance 'axi_bram_ctrl_0' of component 'GB_UNIT_design_axi_bram_ctrl_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:536]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_bram_ctrl_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_axi_bram_ctrl_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_gpio_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_PLtoPS' of component 'GB_UNIT_design_axi_gpio_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:579]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_gpio_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_gpio_1_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_axi_gpio_1_0_stub.vhdl:6' bound to instance 'axi_gpio_PStoPL' of component 'GB_UNIT_design_axi_gpio_1_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:602]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_gpio_1_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_smc_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:625]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_axi_smc_0_stub.vhdl:123]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_processing_system7_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'GB_UNIT_design_processing_system7_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:739]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_processing_system7_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_processing_system7_0_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_rst_ps7_0_50M_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_rst_ps7_0_50M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_50M' of component 'GB_UNIT_design_rst_ps7_0_50M_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:807]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_rst_ps7_0_50M_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-30048-Acer/realtime/GB_UNIT_design_rst_ps7_0_50M_0_stub.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'GB_UNIT_design' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'GB_UNIT_design_wrapper' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/imports/hdl/GB_UNIT_design_wrapper.vhd:50]
 INFO: [Synth 8-638] synthesizing module 'ringbuffer' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Ringbuffer.vhd:33]
 	Parameter RAM_WIDTH bound to: 32 - type: integer 
 	Parameter RAM_DEPTH bound to: 2048 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ringbuffer' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Ringbuffer.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'ModuleTop' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:27]
-WARNING: [Synth 8-3848] Net LED in module/entity ModuleTop does not have driver. [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:24]
+INFO: [Synth 8-638] synthesizing module 'TradeHandler' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/new/TradeHandler.vhd:56]
+INFO: [Synth 8-226] default block is never used [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/new/TradeHandler.vhd:128]
+INFO: [Synth 8-256] done synthesizing module 'TradeHandler' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/new/TradeHandler.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'ModuleTop' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:29]
+WARNING: [Synth 8-6014] Unused sequential element team_index_reg was removed.  [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/new/TradeHandler.vhd:121]
+WARNING: [Synth 8-3848] Net LED in module/entity ModuleTop does not have driver. [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:26]
+WARNING: [Synth 8-7129] Port tradebutton in module TradeHandler is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED in module ModuleTop is either unconnected or has no load
-WARNING: [Synth 8-7129] Port resetbutton in module ModuleTop is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2922.277 ; gain = 451.676 ; free physical = 273 ; free virtual = 2551
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 2987.367 ; gain = 518.613 ; free physical = 128 ; free virtual = 1935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2937.121 ; gain = 466.520 ; free physical = 271 ; free virtual = 2549
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 3002.211 ; gain = 533.457 ; free physical = 122 ; free virtual = 1931
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2937.121 ; gain = 466.520 ; free physical = 271 ; free virtual = 2549
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 3002.211 ; gain = 533.457 ; free physical = 122 ; free virtual = 1931
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2937.121 ; gain = 0.000 ; free physical = 271 ; free virtual = 2549
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3002.211 ; gain = 0.000 ; free physical = 122 ; free virtual = 1920
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -94,9 +98,8 @@ Finished Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UN
 Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0_in_context.xdc] for cell 'zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PStoPL'
 Finished Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0_in_context.xdc] for cell 'zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PStoPL'
 Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/constraints/Zybo-Z7-Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sysclk'. [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/constraints/Zybo-Z7-Master.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/constraints/Zybo-Z7-Master.xdc:8]
 WARNING: [Vivado 12-584] No ports matched 'sysclk'. [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/constraints/Zybo-Z7-Master.xdc:9]
-WARNING: [Vivado 12-584] No ports matched 'tradebutton'. [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/constraints/Zybo-Z7-Master.xdc:21]
 Finished Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/constraints/Zybo-Z7-Master.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/constraints/Zybo-Z7-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ModuleTop_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/constraints/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ModuleTop_propImpl.xdc].
@@ -105,24 +108,24 @@ Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/s
 Finished Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3078.871 ; gain = 0.000 ; free physical = 265 ; free virtual = 2542
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3132.961 ; gain = 0.000 ; free physical = 131 ; free virtual = 1902
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3078.871 ; gain = 0.000 ; free physical = 265 ; free virtual = 2542
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3132.961 ; gain = 0.000 ; free physical = 128 ; free virtual = 1901
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PLtoPS' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PStoPL' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 257 ; free virtual = 2535
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:45 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 168 ; free virtual = 1856
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 257 ; free virtual = 2535
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:45 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 166 ; free virtual = 1856
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -135,9 +138,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/GB_UNIT_de
 Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PLtoPS. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PStoPL. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 257 ; free virtual = 2535
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:45 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 152 ; free virtual = 1861
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 's_SM_Main_reg' in module 'TradeHandler'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -148,41 +152,172 @@ INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'U
                s_cleanup |                              100 |                              100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                             0001 |                               00
+               s_framing |                             0010 |                               01
+                s_active |                             0100 |                               10
+            s_validation |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_SM_Main_reg' using encoding 'one-hot' in module 'TradeHandler'
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][0]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][0]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][0]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][0]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][0]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][0]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][1]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][1]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][1]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][1]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][1]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][1]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][2]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][2]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][2]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][2]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][2]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][2]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][3]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][3]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][3]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][3]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][3]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][3]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][4]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][4]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][4]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][4]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][4]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][4]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][5]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][5]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][5]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][5]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][5]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][5]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][6]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][6]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][6]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][6]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][6]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][6]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][7]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][7]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][7]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][7]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][7]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][7]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][8]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][8]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][8]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][8]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][8]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][8]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][9]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][9]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][9]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][9]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][9]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][9]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][10]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][10]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][10]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][10]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][10]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][10]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][11]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][11]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][11]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][11]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][11]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][11]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][12]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][12]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][12]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][12]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][12]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][12]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][13]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][13]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][13]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][13]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][13]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][13]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][14]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][14]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][14]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][14]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][14]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][14]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][15]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][15]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][15]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][15]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[4][15]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[5][15]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[0][16]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[1][16]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[2][16]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+WARNING: [Synth 8-327] inferring latch for variable 'Team_reg[3][16]' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:224]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 248 ; free virtual = 2534
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:50 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 181 ; free virtual = 1832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   32 Bit       Adders := 1     
 	   2 Input   11 Bit       Adders := 4     
 	   3 Input   11 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 2     
-	               16 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 415   
 	               11 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
 +---RAMs : 
 	              64K Bit	(2048 X 32 bit)          RAMs := 1     
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 3     
-	   6 Input   16 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 7     
+	   5 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	  52 Input   16 Bit        Muxes := 1     
 	   2 Input   11 Bit        Muxes := 4     
 	   6 Input   11 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 2     
-	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    7 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 9     
 	   5 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
 	   3 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
 	   6 Input    1 Bit        Muxes := 2     
-	   5 Input    1 Bit        Muxes := 10    
-	   2 Input    1 Bit        Muxes := 3     
-	   3 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 23    
+	   2 Input    1 Bit        Muxes := 485   
+	   7 Input    1 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 117   
+	   4 Input    1 Bit        Muxes := 12    
+	   8 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -199,24 +334,21 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port tradebutton in module TradeHandler is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED in module ModuleTop is either unconnected or has no load
-WARNING: [Synth 8-7129] Port resetbutton in module ModuleTop is either unconnected or has no load
-WARNING: [Synth 8-3332] Sequential element (UART_TX_INST/FSM_sequential_r_SM_Main_reg[2]) is unused and will be removed from module ModuleTop.
-WARNING: [Synth 8-3332] Sequential element (UART_TX_INST/FSM_sequential_r_SM_Main_reg[1]) is unused and will be removed from module ModuleTop.
-WARNING: [Synth 8-3332] Sequential element (UART_TX_INST/FSM_sequential_r_SM_Main_reg[0]) is unused and will be removed from module ModuleTop.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 238 ; free virtual = 2525
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:08 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 155 ; free virtual = 1816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Block RAM: Preliminary Mapping Report (see note below)
-+------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|ModuleTop   | ringbuffer_inst/ram_reg | 2 K x 32(READ_FIRST)   | W |   | 2 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
-+------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ringbuffer_inst | ram_reg    | 2 K x 32(READ_FIRST)   | W |   | 2 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 ---------------------------------------------------------------------------------
@@ -226,24 +358,24 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 236 ; free virtual = 2518
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 144 ; free virtual = 1831
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2511
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:23 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 132 ; free virtual = 1790
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Block RAM: Final Mapping Report
-+------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|ModuleTop   | ringbuffer_inst/ram_reg | 2 K x 32(READ_FIRST)   | W |   | 2 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
-+------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ringbuffer_inst | ram_reg    | 2 K x 32(READ_FIRST)   | W |   | 2 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -254,7 +386,7 @@ Start Technology Mapping
 INFO: [Synth 8-7052] The timing for the instance ringbuffer_inst/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance ringbuffer_inst/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2511
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:28 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 128 ; free virtual = 1788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -272,37 +404,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2510
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:34 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 125 ; free virtual = 1784
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2510
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:34 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 140 ; free virtual = 1788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2510
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 125 ; free virtual = 1779
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2510
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 125 ; free virtual = 1777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2510
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 125 ; free virtual = 1777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2510
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 125 ; free virtual = 1775
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -330,41 +462,50 @@ Report Cell Usage:
 |4     |GB_UNIT_design_axi_smc_0_bbox              |     1|
 |5     |GB_UNIT_design_processing_system7_0_0_bbox |     1|
 |6     |GB_UNIT_design_rst_ps7_0_50M_0_bbox        |     1|
-|7     |CARRY4                                     |     3|
-|8     |LUT1                                       |     2|
-|9     |LUT2                                       |    54|
-|10    |LUT3                                       |    13|
-|11    |LUT4                                       |    25|
-|12    |LUT5                                       |    11|
-|13    |LUT6                                       |    40|
-|14    |RAMB36E1                                   |     2|
-|15    |FDRE                                       |   103|
-|16    |IBUF                                       |     7|
-|17    |OBUFT                                      |     1|
+|7     |BUFG                                       |     1|
+|8     |CARRY4                                     |    27|
+|9     |LUT1                                       |    13|
+|10    |LUT2                                       |   212|
+|11    |LUT3                                       |   103|
+|12    |LUT4                                       |   165|
+|13    |LUT5                                       |   979|
+|14    |LUT6                                       |  2186|
+|15    |MUXF7                                      |   706|
+|16    |MUXF8                                      |    99|
+|17    |RAMB36E1                                   |     2|
+|18    |FDRE                                       |  6853|
+|19    |FDSE                                       |     1|
+|20    |LD                                         |  4800|
+|21    |IBUF                                       |     7|
+|22    |IOBUF                                      |     1|
+|23    |OBUF                                       |     1|
+|24    |OBUFT                                      |     1|
 +------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2510
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:36 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 125 ; free virtual = 1775
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3078.871 ; gain = 466.520 ; free physical = 228 ; free virtual = 2510
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3078.871 ; gain = 608.270 ; free physical = 228 ; free virtual = 2510
+Synthesis finished with 0 errors, 0 critical warnings and 303 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:31 . Memory (MB): peak = 3132.961 ; gain = 533.457 ; free physical = 125 ; free virtual = 1775
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:36 . Memory (MB): peak = 3132.961 ; gain = 664.207 ; free physical = 125 ; free virtual = 1775
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3078.871 ; gain = 0.000 ; free physical = 266 ; free virtual = 2549
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3132.961 ; gain = 0.000 ; free physical = 389 ; free virtual = 2048
+INFO: [Netlist 29-17] Analyzing 5635 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3078.871 ; gain = 0.000 ; free physical = 497 ; free virtual = 2780
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3145.961 ; gain = 0.000 ; free physical = 399 ; free virtual = 2060
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 4801 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  LD => LDCE: 4800 instances
 
-Synth Design complete | Checksum: 427fcd2b
+Synth Design complete | Checksum: 371c7937
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+59 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 3078.871 ; gain = 957.738 ; free physical = 497 ; free virtual = 2780
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2681.777; main = 2385.834; forked = 380.898
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4013.164; main = 3078.875; forked = 966.305
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:47 . Memory (MB): peak = 3145.961 ; gain = 1024.707 ; free physical = 386 ; free virtual = 2060
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2632.090; main = 2330.165; forked = 399.188
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4072.445; main = 3145.965; forked = 958.496
 INFO: [Common 17-1381] The checkpoint '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/ModuleTop.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ModuleTop_utilization_synth.rpt -pb ModuleTop_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 15 15:35:11 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 15:38:28 2023...
