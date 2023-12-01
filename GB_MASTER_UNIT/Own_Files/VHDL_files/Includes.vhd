@@ -15,6 +15,8 @@ package Constants_and_Declarations is
     type frame_buffer_type is array (0 to FRAME_LENGTH-1) of std_logic_vector(15 downto 0);
     subtype frame_buffer_index_type is natural range frame_buffer_type'range;
     
+    type TradeBuffertype is array ( 0 to 2) of frame_buffer_type;
+    
     type Pokemon_structure_buffer_type is array (0 to PKMN_BUFFER_DEPTH-1) of std_logic_vector(15 downto 0);
     subtype PKMN_structure_buffer_index_type is integer range Pokemon_structure_buffer_type'range;
     
@@ -30,7 +32,13 @@ package Constants_and_Declarations is
     type t_BlockRequestType is (BLOCK_REQ_SIZE_200,BLOCK_REQ_SIZE_220,BLOCK_REQ_SIZE_100,BLOCK_REQ_SIZE_40);
     --constant Pokemon_to_trade : std_logic_vector(15 downto 0) := x"0001";
     
-    constant ReadyToTradeBuffer : t_BufferSize10 := (x"AABB",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000");
+    
+    constant frame_buffer_1 : frame_buffer_type := (x"0000",x"BBBB",x"0014",x"0081",x"0000",x"0000",x"0000",x"0000",x"0000");
+    constant frame_buffer_2 : frame_buffer_type := (x"0000",x"8888",x"AABB",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000");
+    constant frame_buffer_3 : frame_buffer_type := (x"0000",x"8888",x"0000",x"0000",x"0000",x"FFFF",x"FFFF",x"FFFF",x"0000");
+    
+    
+    constant ReadyToTradeBuffer : Tradebuffertype := (frame_buffer_1,frame_buffer_2,frame_buffer_3);
     
     constant EmptyBuffer110 : t_BufferSize110 := (others => x"0000");
     

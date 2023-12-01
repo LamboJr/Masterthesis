@@ -26,7 +26,7 @@ entity ModuleTop is
         LED : out std_logic);
 end ModuleTop;
 
-architecture behav of ModuleTop is
+ architecture behav of ModuleTop is
 --signal for transmitting signal from PL to PS
 signal PL_to_PS_buffer : std_logic_vector(31 downto 0) := (others => '0');
 --signal for transmitting control signal from PS to PL
@@ -137,6 +137,8 @@ signal TrainerDataSize110 : t_BufferSize110 := (others => x"0000");
 
 signal BlockRequestPokemonIndex : natural range 0 to 2;
 
+signal TradeSpotNumber : std_logic_vector(2 downto 0);
+
 begin
 
 --UART Receiver
@@ -215,7 +217,8 @@ port map(
     BlockrequestActive => BlockRequestActive,
     BlockInitActive => BlockInitActive,
     DataInputBuffer => DataInputbuffer,
-    BlockRequestPokemonIndex => BlockRequestPokemonIndex
+    BlockRequestPokemonIndex => BlockRequestPokemonIndex,
+    TradeSpotNumber => TradespotNumber
 );
 
 UpdateBuffer : process(clk)
@@ -401,7 +404,7 @@ end process;
     PL_to_PS_buffer(2) <= switch2;
     PL_to_PS_buffer(3) <= switch3;
     
-    
+    TradespotNumber <= switch2 & switch1 & switch0;
     
     --conversion from the BRAM control signels to the ringbuffer control signals 
     temp(0) <= empty;

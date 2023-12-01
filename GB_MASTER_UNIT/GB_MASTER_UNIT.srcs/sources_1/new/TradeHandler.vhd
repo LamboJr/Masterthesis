@@ -47,6 +47,8 @@ entity TradeHandler is
            BlockDatalength : out integer;
            Blockrequesttype : out t_BlockRequestType;
            BlockRequestPokemonIndex : out natural range 0 to 2;
+           
+           TradeSpotNumber : in std_logic_vector(2 downto 0);
            reset : in std_logic;
            tradebutton : in std_logic
            --o_TX8_serial : out std_logic
@@ -58,7 +60,7 @@ architecture Behavioral of TradeHandler is
 
 
 
-type t_SM_Main is (s_Idle,s_Framing,s_Active,s_Validation);
+type t_SM_Main is (s_Idle,s_Framing,s_Active,s_InitTrade,s_Validation);
 
 type t_SM_Sync is (s_Sync,s_handling);
 signal SyncState : t_SM_Sync := s_Sync;
@@ -74,6 +76,12 @@ signal s_SM_Main : t_SM_Main := s_Idle;
 
 type LinkCommands is (LinkCMD_IDLE,LinkCMD_INIT_BLOCK,LinkCMD_REQUEST_BLOCK,LinkCMD_CONT_BLOCK,LinkCMD_SEND_LINK_TYPE);
 signal LinkCMD : LinkCommands := LinkCMD_IDLE;
+-----------------Own Blocks---------------------------------
+signal InitTradecounter : natural := 0;
+
+
+signal STartInitTrade : std_logic := '0';
+signal EndInitTrade : std_logic := '0';
 
 ------------------LinkCMD CONT Block-------------------------
 
@@ -149,7 +157,11 @@ if rising_edge(clk) then
                     w_framecounter <= w_framecounter +1; 
                 end if;
             end if;
-            s_SM_Main <= s_Active;
+            if StartInitTrade = '0' then
+                s_SM_Main <= s_Active;
+            else
+                s_SM_Main <= s_InitTrade;
+            end if;
             o_response_valid <= '0';
         when s_Active =>
         
@@ -291,6 +303,36 @@ if rising_edge(clk) then
             s_SM_Main <= s_validation;
             
             --w_data_output <= i_data_input;
+            
+        when s_initTrade =>
+            case w_FrameCounter is 
+            when 1 =>
+                w_data_output <= i_data_input;
+            when 4 =>
+                if InitTradeCounter = 1 then
+                    w_data_output <= x"000" & '0' & TradeSpotNumber;
+                else
+                    w_data_output <= ReadyToTradeBuffer(InitTradeCounter)(w_FrameCounter-1);
+                end if;
+            when 9 =>
+                w_data_output <= ReadyToTradeBuffer(InitTradeCounter)(w_FrameCounter-1);
+                if InitTradeCounter = 2 then
+                    InitTradeCounter <= 0;
+                    EndInitTrade <= '1';
+                else
+                    InitTradeCounter <= InitTradeCounter +1;
+                    EndInitTrade <= '0';
+                end if;
+            when others =>
+                w_data_output <= ReadyToTradeBuffer(InitTradeCounter)(w_FrameCounter-1);
+                
+            end case;   
+            
+            
+            
+             o_response_valid <= '0';
+            s_SM_Main <= s_validation;
+            
         when s_validation =>
             s_SM_Main <= s_Idle;
             o_response_valid <= '1';
@@ -302,6 +344,28 @@ if rising_edge(clk) then
            
         end case;
     
+    
+    end if;
+end if;
+end process;
+
+
+tradeing : process(clk)
+begin
+if rising_edge(clk) then
+    if StartInitTrade = '0' then
+        if Tradebutton = '1' then
+            StartInitTrade <= '1' ;
+        else
+            StartInitTrade <= '0';
+        end if;
+    
+    else
+        if EndInitTrade = '0' then
+            StartInitTrade <= '1';
+        else
+            StartInitTrade <= '0';
+        end if;
     
     end if;
 end if;
