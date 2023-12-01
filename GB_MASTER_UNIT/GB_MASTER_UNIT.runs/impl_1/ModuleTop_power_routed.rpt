@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date             : Thu Nov 30 15:46:06 2023
+| Date             : Thu Nov 30 18:43:18 2023
 | Host             : Acer running 64-bit Ubuntu 22.04.3 LTS
 | Command          : report_power -file ModuleTop_power_routed.rpt -pb ModuleTop_power_summary_routed.pb -rpx ModuleTop_power_routed.rpx
 | Design           : ModuleTop
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.690        |
+| Total On-Chip Power (W)  | 1.695        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.545        |
-| Device Static (W)        | 0.144        |
+| Dynamic (W)              | 1.550        |
+| Device Static (W)        | 0.145        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.5         |
 | Junction Temperature (C) | 44.5         |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.045 |        3 |       --- |             --- |
-| Slice Logic              |     0.023 |    29079 |       --- |             --- |
-|   LUT as Logic           |     0.020 |     7755 |     53200 |           14.58 |
+| Clocks                   |     0.054 |        3 |       --- |             --- |
+| Slice Logic              |     0.023 |    41364 |       --- |             --- |
+|   LUT as Logic           |     0.021 |    11985 |     53200 |           22.53 |
+|   Register               |     0.001 |    24133 |    106400 |           22.68 |
 |   LUT as Distributed RAM |     0.001 |      422 |     17400 |            2.43 |
-|   Register               |    <0.001 |    17280 |    106400 |           16.24 |
 |   LUT as Shift Register  |    <0.001 |      321 |     17400 |            1.84 |
-|   F7/F8 Muxes            |    <0.001 |      810 |     53200 |            1.52 |
-|   CARRY4                 |    <0.001 |       49 |     13300 |            0.37 |
+|   F7/F8 Muxes            |    <0.001 |     1064 |     53200 |            2.00 |
+|   CARRY4                 |    <0.001 |       47 |     13300 |            0.35 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |      618 |       --- |             --- |
-| Signals                  |     0.064 |    22779 |       --- |             --- |
+| Signals                  |     0.060 |    30587 |       --- |             --- |
 | Block RAM                |     0.012 |        2 |       140 |            1.43 |
 | I/O                      |    <0.001 |       10 |       125 |            8.00 |
 | PS7                      |     1.400 |        1 |       --- |             --- |
-| Static Power             |     0.144 |          |           |                 |
-| Total                    |     1.690 |          |           |                 |
+| Static Power             |     0.145 |          |           |                 |
+| Total                    |     1.695 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.159 |       0.144 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.164 |       0.149 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -107,7 +107,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -153,14 +153,14 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| ModuleTop                  |     1.545 |
-|   TradeHandler_inst        |     0.009 |
-|   ringbuffer_inst          |     0.047 |
-|   zynq_ps_interface_inst   |     1.461 |
-|     GB_UNIT_design_i       |     1.461 |
-|       axi_bram_ctrl_0      |     0.002 |
+| ModuleTop                  |     1.550 |
+|   TradeHandler_inst        |     0.003 |
+|   ringbuffer_inst          |     0.046 |
+|   zynq_ps_interface_inst   |     1.457 |
+|     GB_UNIT_design_i       |     1.456 |
+|       axi_bram_ctrl_0      |     0.001 |
 |       axi_gpio_PLtoPS      |     0.001 |
-|       axi_smc              |     0.056 |
+|       axi_smc              |     0.052 |
 |       processing_system7_0 |     1.401 |
 +----------------------------+-----------+
 

@@ -1,4 +1,4 @@
 Time resolution is 1 ps
 Failure: Tests Complete
-Time: 24688 ns  Iteration: 0  Process: /TradeHandler_tb/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TradeHandler_tb.vhd
-$finish called at time : 24688 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TradeHandler_tb.vhd" Line 315
+Time: 25168 ns  Iteration: 0  Process: /TradeHandler_tb/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TradeHandler_tb.vhd
+$finish called at time : 25168 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TradeHandler_tb.vhd" Line 343

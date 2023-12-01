@@ -46,7 +46,7 @@ entity TradeHandler is
            BlockInitActive : out std_logic;
            BlockDatalength : out integer;
            Blockrequesttype : out t_BlockRequestType;
-           
+           BlockRequestPokemonIndex : out natural range 0 to 2;
            reset : in std_logic;
            tradebutton : in std_logic
            --o_TX8_serial : out std_logic
@@ -109,8 +109,10 @@ signal w_BlockInitActive : std_logic := '0';
 
 signal w_BlockRequestType : t_BlockRequestType;
 signal w_BlockrequestActive : std_logic := '0';
+signal w_BlockRequestPokemonIndex : natural range 0 to 2 := 2;
 
 begin
+
 main : process(clk)
 begin
 if rising_edge(clk) then
@@ -122,6 +124,7 @@ if rising_edge(clk) then
         buffer_index <= 0;
         w_BlockInitActive <= '0';
         w_BlockRequestActive <= '0';
+        w_BlockRequestPokemonIndex <= 2;
         
     else
         
@@ -138,6 +141,7 @@ if rising_edge(clk) then
                 w_FrameCounter <= 2;
                 w_BlockRequestActive <= '0';
                 w_BlockInitActive <= '0';
+                w_BlockRequestPokemonIndex <= 2;
             else
                 if w_frameCounter = FRAME_LENGTH then
                     w_framecounter <= 1;
@@ -158,6 +162,11 @@ if rising_edge(clk) then
                     w_data_output <= x"0000";
                     w_BlockRequestActive <= '1';
                     w_BlockContActive <= '0';
+                    if w_BlockRequestPokemonIndex = 2 then
+                        w_BlockRequestPokemonIndex <= 0;
+                    else
+                        w_BlockRequestPokemonIndex <= w_BlockRequestPokemonIndex +1;
+                    end if;
                 when x"BBBB" => LinkCMD <= LinkCMD_INIT_BLOCK;
                     w_data_output <= i_data_input;
                     w_BlockInitActive <= '1';
@@ -242,6 +251,7 @@ if rising_edge(clk) then
                             w_BlockRequestActive <= '0';
                             w_BlockInitActive <= '0';
                             w_data_output <= x"0000";
+                            
                         end if;
                 else
                     w_data_output <= i_data_input;
@@ -302,7 +312,7 @@ BlockRequesttype <= w_BlockRequesttype;
 BlockRequestActive <= w_BlockRequestActive;
 BlockDataLength <= w_BlockDataLength;
 BlockInitActive <= w_BlockInitActive;
-
+BlockRequestPokemonIndex <= w_BlockRequestPokemonIndex;
 
 o_data_output <= w_data_output;
 o_debug <= w_debug;

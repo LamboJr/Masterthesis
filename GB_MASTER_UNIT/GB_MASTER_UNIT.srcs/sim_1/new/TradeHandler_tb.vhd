@@ -54,19 +54,31 @@ architecture Behavioral of TradeHandler_tb is
     signal reset : std_logic;
     signal tradebutton : std_logic;
     
-    signal DataInputBuffer : t_BufferSize110 := (others => x"0003");
+    signal PS_to_PL_buffer : std_logic_vector(31 downto 0) := (others => '0');
     
-    signal BlockRequestActive : std_logic;
-    signal BlockInitActive : std_logic;
-    signal BlockDatalength : integer;
-    signal Blockrequesttype : t_BlockRequestType;
-    
+signal BlockRequestActive : std_logic;
+signal BlockInitActive : std_logic;
+signal BlockDatalength : integer;
+signal Blockrequesttype : t_BlockRequestType;
 
-signal team_index : natural range 0 to TEAM_SIZE := 0;
+signal DataInputBuffer : t_BufferSize110 := (others => x"0003");
+
+signal team_spot : natural range 0 to TEAM_SIZE := 0;
+signal team_buffer_index : natural range 0 to (PKMN_BUFFER_DEPTH ) := 0;
+
 --buffer counter for indexing position of buffer
 signal buffer_index : natural range 0 to 110 := 0;
 
-signal Team : Team_structure := (Zapdos_buffer,Milotic_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer);
+signal Team : Team_structure := (Zapdos_buffer,Milotic_buffer,Milotic_buffer,No_Pokemon_buffer,Milotic_buffer,Zapdos_buffer);
+signal team_index : natural range 0 to TEAM_SIZE -1 := 0;
+
+signal Team_new : Team_structure := (Zapdos_buffer,Milotic_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer);
+signal Team_valid : std_logic;
+
+signal Team2PokemonBuffer : t_TwoPokemonbuffer := (EmptyBuffer110,EmptyBuffer110,EmptyBuffer110);
+signal TrainerDataSize110 : t_BufferSize110 := (others => x"0000");
+
+signal BlockRequestPokemonIndex : natural range 0 to 2;
     
     
     procedure Generate_Input (
@@ -89,7 +101,7 @@ begin
 
 
 
-DUT : entity work.TradeHandler
+TradeHandler_inst : entity work.TradeHandler
 port map(
     clk => clk,
     o_data_output => o_data_output,
@@ -97,15 +109,56 @@ port map(
     o_response_valid => o_response_valid,
     i_generate_response => i_generate_response,
     reset => reset,
-    frameCounter => frameCounter,
     tradebutton => tradebutton,
     o_debug => o_debug,
-    DataInputBuffer => DataInputBuffer,
+    frameCounter => frameCounter,
     BlockrequestType => Blockrequesttype,
     BlockDataLength => BlockDataLength,
     BlockrequestActive => BlockRequestActive,
-    BlockInitActive => BlockInitActive
+    BlockInitActive => BlockInitActive,
+    DataInputBuffer => DataInputbuffer,
+    BlockRequestPokemonIndex => BlockRequestPokemonIndex
 );
+
+UpdateBuffer : process(clk)
+begin
+    if rising_edge(clk) then
+        if BlockRequestActive = '1'  and BlockInitActive = '1' then
+            case BlockRequestType is
+                when BLOCK_REQ_SIZE_200 =>
+                    DataInputBuffer <= Team2Pokemonbuffer(BlockRequestPokemonIndex);
+                        
+                when BLOCK_REQ_SIZE_100 =>
+                    DataInputBuffer <= TrainerDataSize110;
+
+                when others=>
+                     
+                end case;
+        end if;
+    end if;
+end process;
+
+
+    
+    Fill_Team2PokemonBuffer : process(clk)
+    begin
+    if rising_edge(clk) then
+        if (PS_to_PL_buffer(7 downto 4) = 8) then
+            if buffer_index < 50 then
+                Team2Pokemonbuffer(0)(buffer_index) <= Team(0)(buffer_index);
+                Team2Pokemonbuffer(0)(buffer_index+50) <= Team(1)(buffer_index);
+                Team2Pokemonbuffer(1)(buffer_index) <= Team(2)(buffer_index);
+                Team2Pokemonbuffer(1)(buffer_index+50) <= Team(3)(buffer_index);
+                Team2Pokemonbuffer(2)(buffer_index) <= Team(4)(buffer_index);
+                Team2Pokemonbuffer(2)(buffer_index+50) <= Team(5)(buffer_index);
+                TrainerDataSize110(buffer_index) <= Trainer_buffer(buffer_index);
+                buffer_index <= buffer_index +1;
+            end if;
+        else    
+            buffer_index <= 0;
+        end if;
+    end if;
+    end process;
 
 
 clk_gen: process 
@@ -114,36 +167,8 @@ clk<= not clk;
 wait for CLK_PERIOD/2;
 end process clk_gen;
 
-UpdateBuffer : process(clk)
-begin
-    if rising_edge(clk) then
-        if BlockRequestActive = '1'  and BlockInitActive = '1' then
-            case BlockRequestType is
-                when BLOCK_REQ_SIZE_200 =>
-                    if buffer_index < BlockDatalength then
-                        if buffer_index < 50 then
-                            
-                            DataInputBuffer(buffer_index) <= Team(0)(buffer_index);
-                        else
-                            DataInputBuffer(buffer_index) <= Team(1)(buffer_index-50);
-                        end if;
 
-                        buffer_index <= buffer_index +1; 
-                    end if;
-                when BLOCK_REQ_SIZE_100 =>
-                    if buffer_index < BlockDataLength then
-                    DataInputBuffer(buffer_index) <= Trainer_buffer(buffer_index);
-                    buffer_index <= buffer_index +1; 
-                    end if;
-                
-                when others=>     
-                end case;
-        else
-            buffer_index <= 0;
-       
-        end if;
-    end if;
-end process;
+
 
 stimuli : process
 begin
@@ -152,6 +177,9 @@ reset <= '1';
 wait until rising_edge(clk);
 reset <= '0';
 wait for 3 * CLK_PERIOD;
+PS_to_PL_buffer(7 downto 4) <= x"8";
+wait for 60 * CLK_PERIOD;
+
 
 --sync 
 Generate_Input (x"B9A0",i_data_input,i_generate_response);

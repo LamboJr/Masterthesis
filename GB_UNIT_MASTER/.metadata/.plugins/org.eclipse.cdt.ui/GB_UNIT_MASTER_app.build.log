@@ -1,4 +1,4 @@
-15:15:10 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
+18:45:27 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,11 +8,11 @@ Building file: ../src/main.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:133:13: warning: unused variable 'dump' [-Wunused-variable]
-  133 |         u32 dump;
+../src/main.c:134:13: warning: unused variable 'dump' [-Wunused-variable]
+  134 |         u32 dump;
       |             ^~~~
-../src/main.c:132:13: warning: unused variable 'data' [-Wunused-variable]
-  132 |         u32 data;                       //variable for storing red in data
+../src/main.c:133:13: warning: unused variable 'data' [-Wunused-variable]
+  133 |         u32 data;                       //variable for storing red in data
       |             ^~~~
 Finished building: ../src/main.c
  
@@ -29,9 +29,9 @@ Finished building target: GB_UNIT_MASTER_app.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size GB_UNIT_MASTER_app.elf  |tee "GB_UNIT_MASTER_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  42605	 229224	  24504	 296333	  4858d	GB_UNIT_MASTER_app.elf
+  42669	 229224	  24504	 296397	  485cd	GB_UNIT_MASTER_app.elf
 Finished building: GB_UNIT_MASTER_app.elf.size
  
 
-15:15:11 Build Finished (took 972ms)
+18:45:27 Build Finished (took 924ms)
 

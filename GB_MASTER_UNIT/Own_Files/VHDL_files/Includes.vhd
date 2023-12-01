@@ -25,11 +25,14 @@ package Constants_and_Declarations is
     type t_BufferSize110 is array (0 to 109) of std_logic_vector(15 downto 0);
     type t_BufferSize10 is array ( 0 to 9) of std_logic_vector(15 downto 0);
     
+    type t_TwoPokemonBuffer is array ( 0 to 2) of t_bufferSize110;
+    
     type t_BlockRequestType is (BLOCK_REQ_SIZE_200,BLOCK_REQ_SIZE_220,BLOCK_REQ_SIZE_100,BLOCK_REQ_SIZE_40);
     --constant Pokemon_to_trade : std_logic_vector(15 downto 0) := x"0001";
     
     constant ReadyToTradeBuffer : t_BufferSize10 := (x"AABB",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000");
     
+    constant EmptyBuffer110 : t_BufferSize110 := (others => x"0000");
     
     constant No_pokemon_buffer : Pokemon_structure_buffer_type := (others => x"0000");
     

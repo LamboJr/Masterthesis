@@ -132,6 +132,10 @@ signal team_index : natural range 0 to TEAM_SIZE -1 := 0;
 signal Team_new : Team_structure := (Zapdos_buffer,Milotic_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer);
 signal Team_valid : std_logic;
 
+signal Team2PokemonBuffer : t_TwoPokemonbuffer := (EmptyBuffer110,EmptyBuffer110,EmptyBuffer110);
+signal TrainerDataSize110 : t_BufferSize110 := (others => x"0000");
+
+signal BlockRequestPokemonIndex : natural range 0 to 2;
 
 begin
 
@@ -210,7 +214,8 @@ port map(
     BlockDataLength => BlockDataLength,
     BlockrequestActive => BlockRequestActive,
     BlockInitActive => BlockInitActive,
-    DataInputBuffer => DataInputbuffer
+    DataInputBuffer => DataInputbuffer,
+    BlockRequestPokemonIndex => BlockRequestPokemonIndex
 );
 
 UpdateBuffer : process(clk)
@@ -219,39 +224,14 @@ begin
         if BlockRequestActive = '1'  and BlockInitActive = '1' then
             case BlockRequestType is
                 when BLOCK_REQ_SIZE_200 =>
-                    if buffer_index < BlockDatalength then
-                        if buffer_index < 50 then
-                            DataInputBuffer(buffer_index) <= Team(team_index)(buffer_index);
-                            if buffer_index = 49 then
-                                team_index <= team_index +1;
-                            end if;
-                        else
-                            DataInputBuffer(buffer_index) <= Team(team_index)(buffer_index-50);
-                            if buffer_index = 99 then
-                                if team_index = 5 then
-                                    team_index <= 0;
-                                else
-                                    team_index <= team_index +1;
-                                    
-                                end if;
-                            end if;
-                        end if;
-
-                        buffer_index <= buffer_index +1; 
-                    end if;
+                    DataInputBuffer <= Team2Pokemonbuffer(BlockRequestPokemonIndex);
+                        
                 when BLOCK_REQ_SIZE_100 =>
-                    if buffer_index < BlockDataLength then
-                    DataInputBuffer(buffer_index) <= Trainer_buffer(buffer_index);
-                    buffer_index <= buffer_index +1; 
-                    end if;
-                
+                    DataInputBuffer <= TrainerDataSize110;
+
                 when others=>
                      
                 end case;
-        
-        else
-            buffer_index <= 0;
-       
         end if;
     end if;
 end process;
@@ -275,18 +255,40 @@ begin
             when x"7" =>
                 --Reset Counter for new Pokemon
                 --Team_valid <= '1';
+            when x"8" =>
+                --Finished configuring the important data
+                --indicates transfer of the buffer
             when others =>
             end case;
         
     end if;
     end process;
     
-    Prep_Buffer :process(clk)
+    Fill_Team2PokemonBuffer : process(clk)
+    begin
+    if rising_edge(clk) then
+        if (PS_to_PL_buffer(7 downto 4) = 8) and Team_valid = '1' then
+            if buffer_index < 50 then
+                Team2Pokemonbuffer(0)(buffer_index) <= Team(0)(buffer_index);
+                Team2Pokemonbuffer(0)(buffer_index+50) <= Team(1)(buffer_index);
+                Team2Pokemonbuffer(1)(buffer_index) <= Team(2)(buffer_index);
+                Team2Pokemonbuffer(1)(buffer_index+50) <= Team(3)(buffer_index);
+                Team2Pokemonbuffer(2)(buffer_index) <= Team(4)(buffer_index);
+                Team2Pokemonbuffer(2)(buffer_index+50) <= Team(5)(buffer_index);
+                TrainerDataSize110(buffer_index) <= Trainer_buffer(buffer_index);
+                buffer_index <= buffer_index +1;
+            end if;
+        else    
+            buffer_index <= 0;
+        end if;
+    end if;
+    end process;
+    
+    
+    ReceiveTeam :process(clk)
     begin
     if rising_edge(clk) then
         if resetbutton = '1' then
-            --Pokemon_buffer_1 <= NO_Pokemon_buffer;
-            --Pokemon_buffer_1_valid <= '0';
             Team_new <= (others => No_pokemon_buffer);
             Team_valid <= '0';
             team_buffer_index <= 0;

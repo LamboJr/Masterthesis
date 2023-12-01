@@ -12,126 +12,120 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="15,222.867 ns"></ZoomStartTime>
-      <ZoomEndTime time="16,451.868 ns"></ZoomEndTime>
-      <Cursor1Time time="24,688.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="866.949 ns"></ZoomEndTime>
+      <Cursor1Time time="12.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="274"></NameColumnWidth>
+      <NameColumnWidth column_width="266"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="26" />
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/reset">
-      <obj_property name="ElementShortName">reset</obj_property>
-      <obj_property name="ObjectShortName">reset</obj_property>
+   <WVObjectSize size="21" />
+   <wvobject type="array" fp_name="/TradeHandler_tb/DataInputBuffer">
+      <obj_property name="ElementShortName">DataInputBuffer[0:109][15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataInputBuffer[0:109][15:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/tradebutton">
-      <obj_property name="ElementShortName">tradebutton</obj_property>
-      <obj_property name="ObjectShortName">tradebutton</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/clk">
+   <wvobject type="logic" fp_name="/TradeHandler_tb/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/o_debug">
-      <obj_property name="ElementShortName">o_debug</obj_property>
-      <obj_property name="ObjectShortName">o_debug</obj_property>
+   <wvobject type="array" fp_name="/TradeHandler_tb/o_data_output">
+      <obj_property name="ElementShortName">o_data_output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data_output[15:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/TradeHandler_tb/DUT/w_data_output">
-      <obj_property name="ElementShortName">w_data_output[15:0]</obj_property>
-      <obj_property name="ObjectShortName">w_data_output[15:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/TradeHandler_tb/DUT/i_data_input">
+   <wvobject type="array" fp_name="/TradeHandler_tb/i_data_input">
       <obj_property name="ElementShortName">i_data_input[15:0]</obj_property>
       <obj_property name="ObjectShortName">i_data_input[15:0]</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/o_response_valid">
+   <wvobject type="logic" fp_name="/TradeHandler_tb/o_response_valid">
       <obj_property name="ElementShortName">o_response_valid</obj_property>
       <obj_property name="ObjectShortName">o_response_valid</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/i_generate_response">
+   <wvobject type="logic" fp_name="/TradeHandler_tb/i_generate_response">
       <obj_property name="ElementShortName">i_generate_response</obj_property>
       <obj_property name="ObjectShortName">i_generate_response</obj_property>
    </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/frameCounter">
+   <wvobject type="other" fp_name="/TradeHandler_tb/frameCounter">
       <obj_property name="ElementShortName">frameCounter</obj_property>
       <obj_property name="ObjectShortName">frameCounter</obj_property>
    </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/s_SM_Main">
-      <obj_property name="ElementShortName">s_SM_Main</obj_property>
-      <obj_property name="ObjectShortName">s_SM_Main</obj_property>
+   <wvobject type="array" fp_name="/TradeHandler_tb/PS_to_PL_buffer">
+      <obj_property name="ElementShortName">PS_to_PL_buffer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PS_to_PL_buffer[31:0]</obj_property>
    </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/LinkCMD">
-      <obj_property name="ElementShortName">LinkCMD</obj_property>
-      <obj_property name="ObjectShortName">LinkCMD</obj_property>
-      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
+   <wvobject type="logic" fp_name="/TradeHandler_tb/BlockRequestActive">
+      <obj_property name="ElementShortName">BlockRequestActive</obj_property>
+      <obj_property name="ObjectShortName">BlockRequestActive</obj_property>
    </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/SyncState">
-      <obj_property name="ElementShortName">SyncState</obj_property>
-      <obj_property name="ObjectShortName">SyncState</obj_property>
-   </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/w_frameCounter">
-      <obj_property name="ElementShortName">w_frameCounter</obj_property>
-      <obj_property name="ObjectShortName">w_frameCounter</obj_property>
-      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/TradeHandler_tb/DUT/w_data_output">
-      <obj_property name="ElementShortName">w_data_output[15:0]</obj_property>
-      <obj_property name="ObjectShortName">w_data_output[15:0]</obj_property>
-   </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/LinkCMD">
-      <obj_property name="ElementShortName">LinkCMD</obj_property>
-      <obj_property name="ObjectShortName">LinkCMD</obj_property>
-   </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/buffer_index">
-      <obj_property name="ElementShortName">buffer_index</obj_property>
-      <obj_property name="ObjectShortName">buffer_index</obj_property>
-   </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/BlockDatalength">
-      <obj_property name="ElementShortName">BlockDatalength</obj_property>
-      <obj_property name="ObjectShortName">BlockDatalength</obj_property>
-      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/BlockInitActive">
+   <wvobject type="logic" fp_name="/TradeHandler_tb/BlockInitActive">
       <obj_property name="ElementShortName">BlockInitActive</obj_property>
       <obj_property name="ObjectShortName">BlockInitActive</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/BlockRequestActive">
-      <obj_property name="ElementShortName">BlockRequestActive</obj_property>
-      <obj_property name="ObjectShortName">BlockRequestActive</obj_property>
-      <obj_property name="CustomSignalColor">#FFA500</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
+   <wvobject type="other" fp_name="/TradeHandler_tb/BlockDatalength">
+      <obj_property name="ElementShortName">BlockDatalength</obj_property>
+      <obj_property name="ObjectShortName">BlockDatalength</obj_property>
    </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/Blockrequesttype">
+   <wvobject type="other" fp_name="/TradeHandler_tb/Blockrequesttype">
       <obj_property name="ElementShortName">Blockrequesttype</obj_property>
       <obj_property name="ObjectShortName">Blockrequesttype</obj_property>
-   </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/team_index">
-      <obj_property name="ElementShortName">team_index</obj_property>
-      <obj_property name="ObjectShortName">team_index</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/TradeHandler_tb/DataInputBuffer">
       <obj_property name="ElementShortName">DataInputBuffer[0:109][15:0]</obj_property>
       <obj_property name="ObjectShortName">DataInputBuffer[0:109][15:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/w_BlockDataLength">
-      <obj_property name="ElementShortName">w_BlockDataLength</obj_property>
-      <obj_property name="ObjectShortName">w_BlockDataLength</obj_property>
+   <wvobject type="other" fp_name="/TradeHandler_tb/buffer_index">
+      <obj_property name="ElementShortName">buffer_index</obj_property>
+      <obj_property name="ObjectShortName">buffer_index</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/w_BlockInitActive">
-      <obj_property name="ElementShortName">w_BlockInitActive</obj_property>
-      <obj_property name="ObjectShortName">w_BlockInitActive</obj_property>
+   <wvobject type="array" fp_name="/TradeHandler_tb/Team">
+      <obj_property name="ElementShortName">Team[0:5][0:49][15:0]</obj_property>
+      <obj_property name="ObjectShortName">Team[0:5][0:49][15:0]</obj_property>
    </wvobject>
-   <wvobject type="other" fp_name="/TradeHandler_tb/DUT/w_BlockRequestType">
-      <obj_property name="ElementShortName">w_BlockRequestType</obj_property>
-      <obj_property name="ObjectShortName">w_BlockRequestType</obj_property>
+   <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer">
+      <obj_property name="ElementShortName">Team2PokemonBuffer[0:2][0:109][15:0]</obj_property>
+      <obj_property name="ObjectShortName">Team2PokemonBuffer[0:2][0:109][15:0]</obj_property>
+      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[0]">
+         <obj_property name="ElementShortName">[0][0:109][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:109][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[1]">
+         <obj_property name="ElementShortName">[1][0:109][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:109][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[2]">
+         <obj_property name="ElementShortName">[2][0:109][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:109][15:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[0]">
+         <obj_property name="ElementShortName">[0][0:109][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:109][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[1]">
+         <obj_property name="ElementShortName">[1][0:109][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:109][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[2]">
+         <obj_property name="ElementShortName">[2][0:109][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:109][15:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject type="logic" fp_name="/TradeHandler_tb/DUT/w_BlockrequestActive">
-      <obj_property name="ElementShortName">w_BlockrequestActive</obj_property>
-      <obj_property name="ObjectShortName">w_BlockrequestActive</obj_property>
+   <wvobject type="other" fp_name="/TradeHandler_tb/BlockRequestPokemonIndex">
+      <obj_property name="ElementShortName">BlockRequestPokemonIndex</obj_property>
+      <obj_property name="ObjectShortName">BlockRequestPokemonIndex</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider153" type="divider">
+   </wvobject>
+   <wvobject type="other" fp_name="/TradeHandler_tb/TradeHandler_inst/s_SM_Main">
+      <obj_property name="ElementShortName">s_SM_Main</obj_property>
+      <obj_property name="ObjectShortName">s_SM_Main</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/TradeHandler_tb/TradeHandler_inst/LinkCMD">
+      <obj_property name="ElementShortName">LinkCMD</obj_property>
+      <obj_property name="ObjectShortName">LinkCMD</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/TradeHandler_tb/TradeHandler_inst/buffer_index">
+      <obj_property name="ElementShortName">buffer_index</obj_property>
+      <obj_property name="ObjectShortName">buffer_index</obj_property>
    </wvobject>
 </wave_config>
