@@ -16291,3 +16291,113 @@ con
 ----------------End of Script----------------
 
 18:26:42 INFO  : Launch script is exported to file '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app_system/_ide/scripts/systemdebugger_gb_unit_master_app_system_standalone.tcl'
+18:32:53 INFO  : Disconnected from the channel tcfchan#3.
+18:49:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:49:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351B105D5A' is selected.
+18:49:45 INFO  : 'jtag frequency' command is executed.
+18:49:45 INFO  : Context for 'APU' is selected.
+18:49:45 INFO  : System reset is completed.
+18:49:48 INFO  : 'after 3000' command is executed.
+18:49:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B105D5A-23727093-0"}' command is executed.
+18:49:50 INFO  : Device configured successfully with "/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit"
+18:49:50 INFO  : Context for 'APU' is selected.
+18:49:50 INFO  : Hardware design and registers information is loaded from '/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa'.
+18:49:50 INFO  : 'configparams force-mem-access 1' command is executed.
+18:49:50 INFO  : Context for 'APU' is selected.
+18:49:50 INFO  : Sourcing of '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl' is done.
+18:49:51 INFO  : 'ps7_init' command is executed.
+18:49:51 INFO  : 'ps7_post_config' command is executed.
+18:49:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:49:51 INFO  : The application '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:49:51 INFO  : 'configparams force-mem-access 0' command is executed.
+18:49:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B105D5A-23727093-0"}
+fpga -file /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:49:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:49:51 INFO  : 'con' command is executed.
+18:49:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:49:51 INFO  : Launch script is exported to file '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app_system/_ide/scripts/systemdebugger_gb_unit_master_app_system_standalone.tcl'
+18:51:16 INFO  : Disconnected from the channel tcfchan#4.
+11:40:02 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/GB_UNIT_MASTER/IDE.log'.
+11:40:03 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/GB_UNIT_MASTER/temp_xsdb_launch_script.tcl
+11:40:06 INFO  : XSCT server has started successfully.
+11:40:06 INFO  : Successfully done setting XSCT server connection channel  
+11:40:06 INFO  : plnx-install-location is set to ''
+11:40:06 INFO  : Successfully done setting workspace for the tool. 
+11:40:08 INFO  : Registering command handlers for Vitis TCF services
+11:40:08 INFO  : Successfully done query RDI_DATADIR 
+11:40:09 INFO  : Platform repository initialization has completed.
+12:25:19 INFO  : Hardware specification for platform project 'ModuleTop' is updated.
+12:27:45 INFO  : Result from executing command 'getProjects': ModuleTop
+12:27:45 INFO  : Result from executing command 'getPlatforms': ModuleTop|/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/ModuleTop.xpfm;xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+12:27:49 INFO  : Checking for BSP changes to sync application flags for project 'GB_UNIT_MASTER_app'...
+12:27:53 INFO  : The hardware specification used by project 'GB_UNIT_MASTER_app' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+12:27:53 INFO  : The file '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit' stored in project is removed.
+12:27:53 INFO  : The updated bitstream files are copied from platform to folder '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream' in project 'GB_UNIT_MASTER_app'.
+12:27:53 INFO  : The file '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl' stored in project is removed.
+12:27:59 INFO  : The updated ps init files are copied from platform to folder '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit' in project 'GB_UNIT_MASTER_app'.
+12:29:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:29:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351B105D5A' is selected.
+12:29:13 INFO  : 'jtag frequency' command is executed.
+12:29:13 INFO  : Context for 'APU' is selected.
+12:29:13 INFO  : System reset is completed.
+12:29:16 INFO  : 'after 3000' command is executed.
+12:29:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B105D5A-23727093-0"}' command is executed.
+12:29:19 INFO  : Device configured successfully with "/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit"
+12:29:19 INFO  : Context for 'APU' is selected.
+12:29:19 INFO  : Hardware design and registers information is loaded from '/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa'.
+12:29:19 INFO  : 'configparams force-mem-access 1' command is executed.
+12:29:19 INFO  : Context for 'APU' is selected.
+12:29:19 INFO  : Sourcing of '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl' is done.
+12:29:19 INFO  : 'ps7_init' command is executed.
+12:29:19 INFO  : 'ps7_post_config' command is executed.
+12:29:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:29:20 INFO  : The application '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:29:20 INFO  : 'configparams force-mem-access 0' command is executed.
+12:29:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B105D5A-23727093-0"}
+fpga -file /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:29:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:29:20 INFO  : 'con' command is executed.
+12:29:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:29:20 INFO  : Launch script is exported to file '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app_system/_ide/scripts/systemdebugger_gb_unit_master_app_system_standalone.tcl'

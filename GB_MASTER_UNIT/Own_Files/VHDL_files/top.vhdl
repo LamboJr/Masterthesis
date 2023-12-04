@@ -121,7 +121,7 @@ signal Blockrequesttype : t_BlockRequestType;
 signal DataInputBuffer : t_BufferSize110 := (others => x"0003");
 
 signal team_spot : natural range 0 to TEAM_SIZE := 0;
-signal team_buffer_index : natural range 0 to (PKMN_BUFFER_DEPTH ) := 0;
+signal team_buffer_index : natural range 0 to (PKMN_BUFFER_DEPTH ) := 50;
 
 --buffer counter for indexing position of buffer
 signal buffer_index : natural range 0 to 110 := 0;
@@ -294,7 +294,7 @@ begin
         if resetbutton = '1' then
             Team_new <= (others => No_pokemon_buffer);
             Team_valid <= '0';
-            team_buffer_index <= 0;
+            team_buffer_index <= 50;
         else 
            
             if team_buffer_index < 50 then

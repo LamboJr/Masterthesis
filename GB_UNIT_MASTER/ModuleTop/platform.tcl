@@ -152,3 +152,6 @@ platform generate -domains
 platform active {ModuleTop}
 platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
 platform generate -domains 
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 

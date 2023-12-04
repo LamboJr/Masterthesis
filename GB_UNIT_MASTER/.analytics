@@ -992,3 +992,9 @@ timestamp=[2023-12-01 18:23:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01
 timestamp=[2023-12-01 18:25:32], mode=PLATFORM_GENERATION, duration=0:00:10.189, duration_ms=10189, data={name=ModuleTop}
 timestamp=[2023-12-01 18:25:36], mode=BUILD, duration=0:00:00.942, duration_ms=942, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
 timestamp=[2023-12-01 18:25:50], mode=BUILD, duration=0:00:07.394, duration_ms=7394, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 11:40:06], mode=WORKBENCH_START, duration=0:00:10.210, duration_ms=10210, data={}
+timestamp=[2023-12-04 11:40:08], mode=WORKBENCH_UI_INIT, duration=0:00:01.515, duration_ms=1515, data={editors_count=13, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2023-12-04 11:40:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.020, duration_ms=2020, data={}
+timestamp=[2023-12-04 12:27:49], mode=PLATFORM_GENERATION, duration=0:00:10.873, duration_ms=10873, data={name=ModuleTop}
+timestamp=[2023-12-04 12:27:52], mode=BUILD, duration=0:00:00.945, duration_ms=945, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 12:28:07], mode=BUILD, duration=0:00:07.195, duration_ms=7195, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}

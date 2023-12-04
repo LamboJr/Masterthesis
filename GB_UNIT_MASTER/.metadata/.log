@@ -2030,3 +2030,2653 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: 
 
 !ENTRY com.xilinx.sdk.utils 1 0 2023-12-01 18:26:42.474
 !MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:32:53.627
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-135
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:32:53.636
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-135
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.224
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-01 18:49:44.872
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-01 18:49:44.872
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.877
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.878
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.971
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.971
+!MESSAGE XSCT Command: [version -server], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.974
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.974
+!MESSAGE XSCT Command: [version], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.975
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.1.0
+SW Build 0 on 2023-05-03-16:48:11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.976
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.982
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:44.982
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.000
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.000
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.006
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.007
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.022
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.023
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.029
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.029
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.044
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.045
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.051
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.052
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.067
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.067
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.074
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.074
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.093
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.093
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.101
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.102
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.117
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.118
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B105D5A" && level == 0}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.134
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B105D5A" && level == 0}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.135
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.136
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.136
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.159
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.159
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.217
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:45.218
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:48.222
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:48.247
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:48.253
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:48.254
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:48.268
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:48.269
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B105D5A-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:48.323
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B105D5A-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:48.324
+!MESSAGE XSCT Command: [fpga -file /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.661
+!MESSAGE XSCT command with result: [fpga -file /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.680
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.688
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.689
+!MESSAGE XSCT Command: [loadhw -hw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.699
+!MESSAGE XSCT command with result: [loadhw -hw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, ModuleTop_2]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.699
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.701
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.701
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.708
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.708
+!MESSAGE XSCT Command: [source /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.709
+!MESSAGE XSCT command with result: [source /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:50.710
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.029
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.030
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.036
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.037
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.059
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.060
+!MESSAGE XSCT Command: [dow /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.731
+!MESSAGE XSCT command with result: [dow /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.732
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.753
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.768
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.776
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.776
+!MESSAGE XSCT Command: [con], Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:49:51.798
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-01 18:49:51.799
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-01 18:49:51.800
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:51:16.537
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-184
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-01 18:51:16.541
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-184
+!SESSION 2023-12-04 11:39:38.961 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-12-04 11:39:39.751
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-12-04 11:39:39.781
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-12-04 11:39:59.950
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-04 11:40:06.162
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-04 11:40:06.163
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-12-04 11:40:06.164
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:06.670
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:06.671
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:06.674
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:06.677
+!MESSAGE XSCT Command: [setws /home/daniel/Masterthesis/GB_UNIT_MASTER], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:06.678
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:06.682
+!MESSAGE XSCT command with result: [setws /home/daniel/Masterthesis/GB_UNIT_MASTER], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:07.296
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:08.186
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:08.187
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 11:40:08.189
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/SharedData/2023.1/data:/tools/Xilinx/Vitis/2023.1/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:20:49.058
+!MESSAGE XSCT Command: [platform read {/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/platform.spr}], Thread: Worker-11: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:20:51.252
+!MESSAGE XSCT command with result: [platform read {/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/platform.spr}], Result: [null, ]. Thread: Worker-11: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:20:51.288
+!MESSAGE XSCT Command: [platform active {ModuleTop}], Thread: Worker-11: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:20:51.288
+!MESSAGE XSCT command with result: [platform active {ModuleTop}], Result: [null, ]. Thread: Worker-11: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:25:15.956
+!MESSAGE XSCT Command: [platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}], Thread: Worker-13: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:25:19.908
+!MESSAGE XSCT command with result: [platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}], Result: [null, ]. Thread: Worker-13: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:49.298
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:51.394
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:51.404
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:51.408
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:51.409
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:51.412
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-04 12:27:51.414
+!MESSAGE Generating MD5 hash for file: /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:51.424
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:51.425
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:53.635
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:53.636
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:53.639
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream}], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:53.665
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream}], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:53.667
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:53.669
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Nov 15 15:15:42 2023",
+"vivado_version": "2023.1",
+"part": "xc7z020clg400-1",
+}]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:53.671
+!MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit} -quiet], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:59.977
+!MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit} -quiet], Result: [null, ]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:27:59.988
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:28:00.000
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Result: [null, {"axi_bram_ctrl_0": {"hier_name": "axi_bram_ctrl_0",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_gpio_PLtoPS": {"hier_name": "axi_gpio_PLtoPS",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_PStoPL": {"hier_name": "axi_gpio_PStoPL",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-7: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-04 12:28:07.219
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.415
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.420
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666666",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "125",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.420
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.441
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0], Result: [null, {"axi_bram_ctrl_0": {},
+"axi_gpio_PLtoPS": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616476,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616488,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616480,
+},
+},
+"axi_gpio_PStoPL": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681728,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681732,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681736,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681740,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682012,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682024,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682016,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.444
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.459
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0], Result: [null, {"axi_gpio_PLtoPS_S_AXI": {"name": "axi_gpio_PLtoPS",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_PStoPL_S_AXI": {"name": "axi_gpio_PStoPL",
+"base": "0x41210000",
+"high": "0x4121FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_0_S_AXI_Mem0": {"name": "axi_bram_ctrl_0",
+"base": "0x40000000",
+"high": "0x40001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.461
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.463
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.464
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.465
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.466
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.467
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.467
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.468
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.469
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.470
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.471
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.472
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.472
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.475
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.476
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.496
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1], Result: [null, {"axi_bram_ctrl_0": {},
+"axi_gpio_PLtoPS": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616476,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616488,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616480,
+},
+},
+"axi_gpio_PStoPL": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681728,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681732,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681736,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681740,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682012,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682024,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682016,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.498
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.512
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1], Result: [null, {"axi_gpio_PLtoPS_S_AXI": {"name": "axi_gpio_PLtoPS",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_PStoPL_S_AXI": {"name": "axi_gpio_PStoPL",
+"base": "0x41210000",
+"high": "0x4121FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_0_S_AXI_Mem0": {"name": "axi_bram_ctrl_0",
+"base": "0x40000000",
+"high": "0x40001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.513
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.515
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.515
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.517
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.517
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.518
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.518
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.520
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.520
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.521
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.521
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.522
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.524
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.525
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa ps7_cortexa9_0], Result: [null, axi_bram_ctrl_0 axi_gpio_PLtoPS axi_gpio_PStoPL ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.526
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa bit], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.528
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa bit], Result: [null, ModuleTop.bit]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:12.531
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-04 12:29:13.166
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-04 12:29:13.167
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.170
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.171
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.300
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B105D5A]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.302
+!MESSAGE XSCT Command: [version -server], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.305
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2023.1]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.305
+!MESSAGE XSCT Command: [version], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.306
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2023.1.0
+SW Build 0 on 2023-05-03-16:48:11
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.309
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.315
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B105D5A]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.316
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.331
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.335
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.341
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B105D5A]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.342
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.360
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.363
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.369
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B105D5A]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.370
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.388
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.391
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.398
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B105D5A]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.399
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.425
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.426
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.435
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B105D5A]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.436
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.463
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.465
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.472
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B105D5A]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.473
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.490
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.491
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B105D5A" && level == 0}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.518
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B105D5A" && level == 0}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.519
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.520
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.521
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.530
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.530
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.590
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:13.590
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:16.594
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:16.631
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:16.639
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B105D5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:16.639
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:16.659
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:16.665
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B105D5A-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:16.710
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B105D5A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B105D5A-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:16.711
+!MESSAGE XSCT Command: [fpga -file /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.045
+!MESSAGE XSCT command with result: [fpga -file /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/bitstream/ModuleTop.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.064
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.072
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.073
+!MESSAGE XSCT Command: [loadhw -hw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.163
+!MESSAGE XSCT command with result: [loadhw -hw /home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/hw/ModuleTop.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, ModuleTop_2]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.164
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.165
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.166
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.174
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.174
+!MESSAGE XSCT Command: [source /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.175
+!MESSAGE XSCT command with result: [source /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.176
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.468
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.469
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.486
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.487
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.494
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:19.494
+!MESSAGE XSCT Command: [dow /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:20.215
+!MESSAGE XSCT command with result: [dow /home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/Debug/GB_UNIT_MASTER_app.elf], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:20.216
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:20.240
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:20.295
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:20.320
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:20.320
+!MESSAGE XSCT Command: [con], Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-04 12:29:20.343
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-17: Launching SystemDebugger_GB_UNIT_MASTER_app_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-04 12:29:20.346
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-12-04 12:29:20.347
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '1'

@@ -155,6 +155,9 @@ int main(){
 	   for(u32 i = 0; i < 50; i++){
 		*(address) = Totodile_pokemonbuffer[i];
 	   }
+	   control = (UPDATE_TEAM);
+	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
+
 	   control = (TEAM_SPOT_2);;
 	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
 
