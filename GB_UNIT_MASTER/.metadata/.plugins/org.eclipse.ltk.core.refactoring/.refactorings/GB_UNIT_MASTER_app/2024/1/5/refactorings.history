@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GB_UNIT_MASTER_app/src/TradeHandler.c&apos; to &apos;TradeHandler.h&apos;" description="Rename resource &apos;TradeHandler.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/TradeHandler.c" name="TradeHandler.h" stamp="1706621512199" updateReferences="true"/>
+</session>

@@ -1,3 +1,6 @@
+#ifndef LINK_CMD_HEADER
+#define LINK_CMD_HEADER
+
 #define LINKCMD_BLENDER_STOP            0x1111
 #define LINKCMD_SEND_LINK_TYPE          0x2222
 #define LINKCMD_BLENDER_SCORE_MISS      0x2345
@@ -58,11 +61,13 @@
 #define MASTER_HANDSHAKE  0x8FFF
 #define SLAVE_HANDSHAKE   0xB9A0
 #define EREADER_HANDSHAKE 0xCCD0
-
+/*
 enum {
     BLOCK_REQ_SIZE_NONE, // Identical to 200
     BLOCK_REQ_SIZE_200, //xC8
     BLOCK_REQ_SIZE_100, //64
     BLOCK_REQ_SIZE_220, //DC
     BLOCK_REQ_SIZE_40, //28
-};
+};*/
+
+#endif

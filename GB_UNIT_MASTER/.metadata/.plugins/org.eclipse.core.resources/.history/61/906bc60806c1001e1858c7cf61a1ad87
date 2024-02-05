@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+/7#include "xil_types.h"
+
+#include "linkcommand.h"
+#include "constant.h"
+#include "Link.h"
+#define FRAME_LENGTH 9
+
+typedef enum {
+	handshakeState,
+	ExitState,
+	DataState,
+}Syncstate;
+
+typedef enum {
+	//CCCC
+	BlockRequest_State,
+	//BBBB
+	BlockInit_State,
+	//8888
+	BlockData_State,
+	//CAFE
+	Buttons_Hold_State,
+}DataBlockType;
+
+u8 Switches_State,Resetbutton_State,Tradebutton_State;
+
+
+void UpdateFrameCounter(u32* FrameCounterPtr);
+
+u32 TradeHandler_func(u32 data);

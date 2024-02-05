@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="866.949 ns"></ZoomEndTime>
-      <Cursor1Time time="12.000 ns"></Cursor1Time>
+      <ZoomStartTime time="24,961.166 ns"></ZoomStartTime>
+      <ZoomEndTime time="25,209.367 ns"></ZoomEndTime>
+      <Cursor1Time time="25,168.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="266"></NameColumnWidth>
+      <NameColumnWidth column_width="262"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="21" />
+   <WVObjectSize size="26" />
    <wvobject type="array" fp_name="/TradeHandler_tb/DataInputBuffer">
       <obj_property name="ElementShortName">DataInputBuffer[0:109][15:0]</obj_property>
       <obj_property name="ObjectShortName">DataInputBuffer[0:109][15:0]</obj_property>
@@ -84,31 +84,6 @@
    <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer">
       <obj_property name="ElementShortName">Team2PokemonBuffer[0:2][0:109][15:0]</obj_property>
       <obj_property name="ObjectShortName">Team2PokemonBuffer[0:2][0:109][15:0]</obj_property>
-      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[0]">
-         <obj_property name="ElementShortName">[0][0:109][15:0]</obj_property>
-         <obj_property name="ObjectShortName">[0][0:109][15:0]</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[1]">
-         <obj_property name="ElementShortName">[1][0:109][15:0]</obj_property>
-         <obj_property name="ObjectShortName">[1][0:109][15:0]</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[2]">
-         <obj_property name="ElementShortName">[2][0:109][15:0]</obj_property>
-         <obj_property name="ObjectShortName">[2][0:109][15:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[0]">
-         <obj_property name="ElementShortName">[0][0:109][15:0]</obj_property>
-         <obj_property name="ObjectShortName">[0][0:109][15:0]</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[1]">
-         <obj_property name="ElementShortName">[1][0:109][15:0]</obj_property>
-         <obj_property name="ObjectShortName">[1][0:109][15:0]</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/TradeHandler_tb/Team2PokemonBuffer[2]">
-         <obj_property name="ElementShortName">[2][0:109][15:0]</obj_property>
-         <obj_property name="ObjectShortName">[2][0:109][15:0]</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject type="other" fp_name="/TradeHandler_tb/BlockRequestPokemonIndex">
       <obj_property name="ElementShortName">BlockRequestPokemonIndex</obj_property>
@@ -127,5 +102,25 @@
    <wvobject type="other" fp_name="/TradeHandler_tb/TradeHandler_inst/buffer_index">
       <obj_property name="ElementShortName">buffer_index</obj_property>
       <obj_property name="ObjectShortName">buffer_index</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TradeHandler_tb/TradeHandler_inst/CustomBlockInit">
+      <obj_property name="ElementShortName">CustomBlockInit</obj_property>
+      <obj_property name="ObjectShortName">CustomBlockInit</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/TradeHandler_tb/TradeHandler_inst/CustomBlockInit_counter">
+      <obj_property name="ElementShortName">CustomBlockInit_counter</obj_property>
+      <obj_property name="ObjectShortName">CustomBlockInit_counter</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/TradeHandler_tb/TradeHandler_inst/InitTradecounter">
+      <obj_property name="ElementShortName">InitTradecounter</obj_property>
+      <obj_property name="ObjectShortName">InitTradecounter</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TradeHandler_tb/TradeHandler_inst/STartInitTrade">
+      <obj_property name="ElementShortName">STartInitTrade</obj_property>
+      <obj_property name="ObjectShortName">STartInitTrade</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TradeHandler_tb/TradeHandler_inst/EndInitTrade">
+      <obj_property name="ElementShortName">EndInitTrade</obj_property>
+      <obj_property name="ObjectShortName">EndInitTrade</obj_property>
    </wvobject>
 </wave_config>

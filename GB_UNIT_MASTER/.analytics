@@ -998,3 +998,461 @@ timestamp=[2023-12-04 11:40:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02
 timestamp=[2023-12-04 12:27:49], mode=PLATFORM_GENERATION, duration=0:00:10.873, duration_ms=10873, data={name=ModuleTop}
 timestamp=[2023-12-04 12:27:52], mode=BUILD, duration=0:00:00.945, duration_ms=945, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
 timestamp=[2023-12-04 12:28:07], mode=BUILD, duration=0:00:07.195, duration_ms=7195, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 14:55:49], mode=PLATFORM_GENERATION, duration=0:00:11.435, duration_ms=11435, data={name=ModuleTop}
+timestamp=[2023-12-04 14:55:52], mode=BUILD, duration=0:00:00.933, duration_ms=933, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 14:56:07], mode=BUILD, duration=0:00:07.341, duration_ms=7341, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 15:03:47], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 15:03:55], mode=BUILD, duration=0:00:07.295, duration_ms=7295, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 16:13:40], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 16:13:56], mode=BUILD, duration=0:00:00.879, duration_ms=879, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 16:14:04], mode=BUILD, duration=0:00:07.349, duration_ms=7349, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 16:15:34], mode=BUILD, duration=0:00:00.831, duration_ms=831, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 16:15:42], mode=BUILD, duration=0:00:07.465, duration_ms=7465, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 16:27:51], mode=PLATFORM_GENERATION, duration=0:00:12.275, duration_ms=12275, data={name=ModuleTop}
+timestamp=[2023-12-04 16:27:54], mode=BUILD, duration=0:00:00.933, duration_ms=933, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-04 16:28:09], mode=BUILD, duration=0:00:07.542, duration_ms=7542, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-05 14:15:51], mode=WORKBENCH_START, duration=0:00:09.006, duration_ms=9006, data={}
+timestamp=[2023-12-05 14:15:52], mode=WORKBENCH_UI_INIT, duration=0:00:01.099, duration_ms=1099, data={editors_count=13, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2023-12-05 14:15:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.468, duration_ms=1468, data={}
+timestamp=[2023-12-06 11:55:39], mode=WORKBENCH_START, duration=0:00:12.326, duration_ms=12326, data={}
+timestamp=[2023-12-06 11:55:41], mode=WORKBENCH_UI_INIT, duration=0:00:01.838, duration_ms=1838, data={editors_count=13, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2023-12-06 11:55:42], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.172, duration_ms=2172, data={}
+timestamp=[2023-12-06 12:11:22], mode=PLATFORM_GENERATION, duration=0:00:22.595, duration_ms=22595, data={name=ModuleTop}
+timestamp=[2023-12-06 12:11:34], mode=BUILD, duration=0:00:00.892, duration_ms=892, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 12:11:48], mode=BUILD, duration=0:00:07.443, duration_ms=7443, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 12:24:39], mode=PLATFORM_GENERATION, duration=0:00:11.199, duration_ms=11199, data={name=ModuleTop}
+timestamp=[2023-12-06 12:24:53], mode=BUILD, duration=0:00:01.560, duration_ms=1560, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 12:25:08], mode=BUILD, duration=0:00:07.745, duration_ms=7745, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 12:41:35], mode=PLATFORM_GENERATION, duration=0:00:11.327, duration_ms=11327, data={name=ModuleTop}
+timestamp=[2023-12-06 12:41:44], mode=BUILD, duration=0:00:00.982, duration_ms=982, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 12:42:01], mode=BUILD, duration=0:00:07.440, duration_ms=7440, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 14:07:55], mode=PLATFORM_GENERATION, duration=0:00:11.731, duration_ms=11731, data={name=ModuleTop}
+timestamp=[2023-12-06 14:08:28], mode=BUILD, duration=0:00:00.988, duration_ms=988, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 14:08:44], mode=BUILD, duration=0:00:07.402, duration_ms=7402, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 14:09:06], mode=BUILD, duration=0:00:00.534, duration_ms=534, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 14:09:14], mode=BUILD, duration=0:00:07.401, duration_ms=7401, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 14:20:23], mode=BUILD, duration=0:00:00.843, duration_ms=843, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 14:20:31], mode=BUILD, duration=0:00:07.500, duration_ms=7500, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 14:48:05], mode=WORKBENCH_START, duration=0:00:08.902, duration_ms=8902, data={}
+timestamp=[2023-12-06 14:48:06], mode=WORKBENCH_UI_INIT, duration=0:00:01.047, duration_ms=1047, data={editors_count=13, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2023-12-06 14:48:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.573, duration_ms=1573, data={}
+timestamp=[2023-12-06 14:49:00], mode=PLATFORM_GENERATION, duration=0:00:20.943, duration_ms=20943, data={name=ModuleTop}
+timestamp=[2023-12-06 14:49:08], mode=BUILD, duration=0:00:00.887, duration_ms=887, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 14:49:22], mode=BUILD, duration=0:00:07.443, duration_ms=7443, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 15:00:47], mode=PLATFORM_GENERATION, duration=0:00:10.877, duration_ms=10877, data={name=ModuleTop}
+timestamp=[2023-12-06 15:01:10], mode=BUILD, duration=0:00:00.930, duration_ms=930, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 15:01:25], mode=BUILD, duration=0:00:07.387, duration_ms=7387, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-12-06 16:18:13], mode=WORKBENCH_START, duration=0:00:09.802, duration_ms=9802, data={}
+timestamp=[2023-12-06 16:18:14], mode=WORKBENCH_UI_INIT, duration=0:00:01.382, duration_ms=1382, data={editors_count=13, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2023-12-06 16:18:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.609, duration_ms=1609, data={}
+timestamp=[2024-01-30 13:23:39], mode=WORKBENCH_START, duration=0:00:10.540, duration_ms=10540, data={}
+timestamp=[2024-01-30 13:23:40], mode=WORKBENCH_UI_INIT, duration=0:00:01.536, duration_ms=1536, data={editors_count=13, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-01-30 13:23:42], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.420, duration_ms=2420, data={}
+timestamp=[2024-01-30 13:32:24], mode=PLATFORM_GENERATION, duration=0:00:21.790, duration_ms=21790, data={name=ModuleTop}
+timestamp=[2024-01-30 13:32:33], mode=BUILD, duration=0:00:00.890, duration_ms=890, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 13:32:47], mode=BUILD, duration=0:00:07.400, duration_ms=7400, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 13:32:50], mode=BUILD, duration=0:00:00.501, duration_ms=501, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 13:32:54], mode=BUILD, duration=0:00:00.527, duration_ms=527, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 13:32:59], mode=BUILD, duration=0:00:00.512, duration_ms=512, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 13:33:07], mode=BUILD, duration=0:00:07.389, duration_ms=7389, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 13:49:20], mode=BUILD, duration=0:00:00.982, duration_ms=982, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 13:49:29], mode=BUILD, duration=0:00:07.989, duration_ms=7989, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 14:43:05], mode=WORKBENCH_START, duration=0:00:09.717, duration_ms=9717, data={}
+timestamp=[2024-01-30 14:43:06], mode=WORKBENCH_UI_INIT, duration=0:00:01.177, duration_ms=1177, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-01-30 14:43:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.149, duration_ms=2149, data={}
+timestamp=[2024-01-30 15:56:33], mode=PLATFORM_GENERATION, duration=0:00:21.087, duration_ms=21087, data={name=ModuleTop}
+timestamp=[2024-01-30 15:56:36], mode=BUILD, duration=0:00:00.783, duration_ms=783, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 15:57:16], mode=BUILD, duration=0:00:00.632, duration_ms=632, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 15:57:47], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 15:59:25], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:02:10], mode=BUILD, duration=0:00:01.131, duration_ms=1131, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:03:55], mode=BUILD, duration=0:00:00.834, duration_ms=834, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:04:29], mode=BUILD, duration=0:00:01.030, duration_ms=1030, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:09:34], mode=BUILD, duration=0:00:00.577, duration_ms=577, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:10:07], mode=BUILD, duration=0:00:00.629, duration_ms=629, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:10:15], mode=BUILD, duration=0:00:07.517, duration_ms=7517, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:14:27], mode=BUILD, duration=0:00:00.880, duration_ms=880, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:14:36], mode=BUILD, duration=0:00:07.439, duration_ms=7439, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:15:46], mode=BUILD, duration=0:00:00.828, duration_ms=828, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:15:54], mode=BUILD, duration=0:00:07.441, duration_ms=7441, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:31:20], mode=PLATFORM_GENERATION, duration=0:00:10.636, duration_ms=10636, data={name=ModuleTop}
+timestamp=[2024-01-30 16:31:23], mode=BUILD, duration=0:00:00.931, duration_ms=931, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:31:39], mode=BUILD, duration=0:00:07.445, duration_ms=7445, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:31:47], mode=BUILD, duration=0:00:00.529, duration_ms=529, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:31:56], mode=BUILD, duration=0:00:07.390, duration_ms=7390, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:39:07], mode=BUILD, duration=0:00:00.838, duration_ms=838, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:39:16], mode=BUILD, duration=0:00:07.439, duration_ms=7439, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:51:49], mode=BUILD, duration=0:00:00.832, duration_ms=832, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-30 16:51:58], mode=BUILD, duration=0:00:07.448, duration_ms=7448, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 13:31:31], mode=WORKBENCH_START, duration=0:00:08.293, duration_ms=8293, data={}
+timestamp=[2024-01-31 13:31:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.993, duration_ms=993, data={editors_count=8, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-01-31 13:31:33], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.681, duration_ms=1681, data={}
+timestamp=[2024-01-31 15:20:56], mode=BUILD, duration=0:00:01.134, duration_ms=1134, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 15:21:05], mode=BUILD, duration=0:00:07.745, duration_ms=7745, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 15:37:53], mode=BUILD, duration=0:00:00.830, duration_ms=830, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 15:38:01], mode=BUILD, duration=0:00:07.282, duration_ms=7282, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 16:02:11], mode=BUILD, duration=0:00:00.634, duration_ms=634, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 16:02:31], mode=BUILD, duration=0:00:00.824, duration_ms=824, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 16:02:40], mode=BUILD, duration=0:00:07.286, duration_ms=7286, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 16:55:04], mode=PLATFORM_GENERATION, duration=0:00:11.053, duration_ms=11053, data={name=ModuleTop}
+timestamp=[2024-01-31 16:55:06], mode=BUILD, duration=0:00:00.628, duration_ms=628, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 16:55:26], mode=BUILD, duration=0:00:00.932, duration_ms=932, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 16:55:35], mode=BUILD, duration=0:00:07.490, duration_ms=7490, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:03:32], mode=BUILD, duration=0:00:00.828, duration_ms=828, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:03:40], mode=BUILD, duration=0:00:07.289, duration_ms=7289, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:03:50], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:06:59], mode=BUILD, duration=0:00:00.828, duration_ms=828, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:07:11], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:07:57], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:08:06], mode=BUILD, duration=0:00:07.588, duration_ms=7588, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:38:26], mode=BUILD, duration=0:00:00.878, duration_ms=878, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:38:34], mode=BUILD, duration=0:00:07.486, duration_ms=7486, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:55:40], mode=BUILD, duration=0:00:00.878, duration_ms=878, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:55:49], mode=BUILD, duration=0:00:07.437, duration_ms=7437, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:58:33], mode=BUILD, duration=0:00:01.327, duration_ms=1327, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 17:58:44], mode=BUILD, duration=0:00:09.717, duration_ms=9717, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:01:34], mode=BUILD, duration=0:00:00.880, duration_ms=880, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:01:43], mode=BUILD, duration=0:00:07.488, duration_ms=7488, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:08:21], mode=BUILD, duration=0:00:00.929, duration_ms=929, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:08:29], mode=BUILD, duration=0:00:07.438, duration_ms=7438, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:12:26], mode=BUILD, duration=0:00:00.678, duration_ms=678, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:12:53], mode=BUILD, duration=0:00:00.880, duration_ms=880, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:13:02], mode=BUILD, duration=0:00:07.444, duration_ms=7444, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:13:17], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-01-31 18:13:26], mode=BUILD, duration=0:00:07.446, duration_ms=7446, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 10:56:14], mode=WORKBENCH_START, duration=0:00:08.437, duration_ms=8437, data={}
+timestamp=[2024-02-01 10:56:15], mode=WORKBENCH_UI_INIT, duration=0:00:01.053, duration_ms=1053, data={editors_count=6, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-02-01 10:56:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.717, duration_ms=1717, data={}
+timestamp=[2024-02-01 11:36:48], mode=BUILD, duration=0:00:00.970, duration_ms=970, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 11:37:25], mode=BUILD, duration=0:00:00.875, duration_ms=875, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 11:37:33], mode=BUILD, duration=0:00:07.293, duration_ms=7293, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 11:38:46], mode=BUILD, duration=0:00:00.772, duration_ms=772, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 11:38:54], mode=BUILD, duration=0:00:07.296, duration_ms=7296, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 11:54:33], mode=BUILD, duration=0:00:00.629, duration_ms=629, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 11:56:16], mode=BUILD, duration=0:00:00.576, duration_ms=576, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 12:26:26], mode=BUILD, duration=0:00:00.639, duration_ms=639, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 12:26:34], mode=BUILD, duration=0:00:00.595, duration_ms=595, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 12:27:26], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 12:42:25], mode=BUILD, duration=0:00:00.580, duration_ms=580, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 12:57:03], mode=BUILD, duration=0:00:00.923, duration_ms=923, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:40:32], mode=BUILD, duration=0:00:00.937, duration_ms=937, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:41:54], mode=BUILD, duration=0:00:00.879, duration_ms=879, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:42:53], mode=BUILD, duration=0:00:00.868, duration_ms=868, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:46:06], mode=BUILD, duration=0:00:01.336, duration_ms=1336, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:46:40], mode=BUILD, duration=0:00:01.220, duration_ms=1220, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:51:45], mode=BUILD, duration=0:00:01.299, duration_ms=1299, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:51:59], mode=BUILD, duration=0:00:01.564, duration_ms=1564, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:52:11], mode=BUILD, duration=0:00:09.691, duration_ms=9691, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:54:59], mode=BUILD, duration=0:00:01.256, duration_ms=1256, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 13:55:11], mode=BUILD, duration=0:00:09.824, duration_ms=9824, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:08:49], mode=BUILD, duration=0:00:00.910, duration_ms=910, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:09:15], mode=BUILD, duration=0:00:00.805, duration_ms=805, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:09:40], mode=BUILD, duration=0:00:00.904, duration_ms=904, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:19:48], mode=BUILD, duration=0:00:01.004, duration_ms=1004, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:24:03], mode=BUILD, duration=0:00:01.158, duration_ms=1158, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:25:04], mode=BUILD, duration=0:00:01.358, duration_ms=1358, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:25:45], mode=BUILD, duration=0:00:01.478, duration_ms=1478, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:29:12], mode=BUILD, duration=0:00:01.207, duration_ms=1207, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:30:19], mode=BUILD, duration=0:00:00.867, duration_ms=867, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:30:32], mode=BUILD, duration=0:00:00.809, duration_ms=809, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:31:22], mode=BUILD, duration=0:00:01.837, duration_ms=1837, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:31:45], mode=BUILD, duration=0:00:00.860, duration_ms=860, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:31:50], mode=BUILD, duration=0:00:00.814, duration_ms=814, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:32:29], mode=BUILD, duration=0:00:01.571, duration_ms=1571, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:32:36], mode=BUILD, duration=0:00:00.863, duration_ms=863, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:38:22], mode=BUILD, duration=0:00:01.689, duration_ms=1689, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:38:25], mode=BUILD, duration=0:00:00.884, duration_ms=884, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:45:04], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=true}
+timestamp=[2024-02-01 14:45:06], mode=BUILD, duration=0:00:01.862, duration_ms=1862, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:45:16], mode=BUILD, duration=0:00:00.814, duration_ms=814, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:47:02], mode=BUILD, duration=0:00:01.173, duration_ms=1173, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:50:26], mode=BUILD, duration=0:00:01.771, duration_ms=1771, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:51:06], mode=BUILD, duration=0:00:01.630, duration_ms=1630, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:51:12], mode=BUILD, duration=0:00:00.816, duration_ms=816, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:51:30], mode=PLATFORM_GENERATION, duration=0:00:12.127, duration_ms=12127, data={name=ModuleTop}
+timestamp=[2024-02-01 14:51:31], mode=BUILD, duration=0:00:00.665, duration_ms=665, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=true}
+timestamp=[2024-02-01 14:51:42], mode=PLATFORM_GENERATION, duration=0:00:06.333, duration_ms=6333, data={name=ModuleTop}
+timestamp=[2024-02-01 14:51:42], mode=BUILD, duration=0:00:00.701, duration_ms=701, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=true}
+timestamp=[2024-02-01 14:51:43], mode=BUILD, duration=0:00:00.662, duration_ms=662, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=true}
+timestamp=[2024-02-01 14:52:33], mode=PLATFORM_GENERATION, duration=0:00:36.603, duration_ms=36603, data={name=ModuleTop}
+timestamp=[2024-02-01 14:52:40], mode=BUILD, duration=0:00:01.925, duration_ms=1925, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:52:45], mode=BUILD, duration=0:00:00.816, duration_ms=816, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:57:07], mode=BUILD, duration=0:00:00.878, duration_ms=878, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 14:57:39], mode=BUILD, duration=0:00:00.918, duration_ms=918, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:00:07], mode=BUILD, duration=0:00:01.535, duration_ms=1535, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:02:26], mode=BUILD, duration=0:00:01.375, duration_ms=1375, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:02:41], mode=BUILD, duration=0:00:00.828, duration_ms=828, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:35:45], mode=BUILD, duration=0:00:00.718, duration_ms=718, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=true}
+timestamp=[2024-02-01 15:35:46], mode=BUILD, duration=0:00:01.369, duration_ms=1369, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:36:14], mode=BUILD, duration=0:00:00.816, duration_ms=816, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:37:54], mode=BUILD, duration=0:00:01.015, duration_ms=1015, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:38:45], mode=BUILD, duration=0:00:00.969, duration_ms=969, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:40:03], mode=BUILD, duration=0:00:01.264, duration_ms=1264, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:40:08], mode=BUILD, duration=0:00:00.813, duration_ms=813, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:42:19], mode=BUILD, duration=0:00:01.124, duration_ms=1124, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:42:42], mode=BUILD, duration=0:00:01.075, duration_ms=1075, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:44:52], mode=BUILD, duration=0:00:01.472, duration_ms=1472, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:45:14], mode=BUILD, duration=0:00:01.524, duration_ms=1524, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:45:55], mode=BUILD, duration=0:00:02.123, duration_ms=2123, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:46:03], mode=BUILD, duration=0:00:00.913, duration_ms=913, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:51:42], mode=BUILD, duration=0:00:01.570, duration_ms=1570, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:52:28], mode=BUILD, duration=0:00:00.868, duration_ms=868, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 15:57:44], mode=BUILD, duration=0:00:00.631, duration_ms=631, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:02:43], mode=BUILD, duration=0:00:00.633, duration_ms=633, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:03:10], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:03:27], mode=BUILD, duration=0:00:00.631, duration_ms=631, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:03:56], mode=BUILD, duration=0:00:00.583, duration_ms=583, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:04:18], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:05:22], mode=BUILD, duration=0:00:00.634, duration_ms=634, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:05:45], mode=BUILD, duration=0:00:00.681, duration_ms=681, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:06:08], mode=BUILD, duration=0:00:00.684, duration_ms=684, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:07:43], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:08:18], mode=BUILD, duration=0:00:00.634, duration_ms=634, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:08:44], mode=BUILD, duration=0:00:00.586, duration_ms=586, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:09:06], mode=BUILD, duration=0:00:00.586, duration_ms=586, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:09:26], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:10:14], mode=BUILD, duration=0:00:00.739, duration_ms=739, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:10:49], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:11:13], mode=BUILD, duration=0:00:00.750, duration_ms=750, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:11:46], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:11:51], mode=BUILD, duration=0:00:00.580, duration_ms=580, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:12:10], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:12:14], mode=BUILD, duration=0:00:00.580, duration_ms=580, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:13:03], mode=BUILD, duration=0:00:00.780, duration_ms=780, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:14:58], mode=PLATFORM_GENERATION, duration=0:00:06.572, duration_ms=6572, data={name=ModuleTop}
+timestamp=[2024-02-01 16:14:59], mode=BUILD, duration=0:00:00.529, duration_ms=529, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=true}
+timestamp=[2024-02-01 16:14:59], mode=BUILD, duration=0:00:00.530, duration_ms=530, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=true}
+timestamp=[2024-02-01 16:15:18], mode=PLATFORM_GENERATION, duration=0:00:13.531, duration_ms=13531, data={name=ModuleTop}
+timestamp=[2024-02-01 16:15:21], mode=BUILD, duration=0:00:00.982, duration_ms=982, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:15:50], mode=BUILD, duration=0:00:01.134, duration_ms=1134, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:15:54], mode=BUILD, duration=0:00:00.579, duration_ms=579, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:15:57], mode=BUILD, duration=0:00:00.631, duration_ms=631, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:16:32], mode=BUILD, duration=0:00:00.785, duration_ms=785, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:17:05], mode=BUILD, duration=0:00:00.582, duration_ms=582, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:17:13], mode=PLATFORM_GENERATION, duration=0:00:06.724, duration_ms=6724, data={name=ModuleTop}
+timestamp=[2024-02-01 16:17:14], mode=BUILD, duration=0:00:00.533, duration_ms=533, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=true}
+timestamp=[2024-02-01 16:19:43], mode=PLATFORM_GENERATION, duration=0:00:13.734, duration_ms=13734, data={name=ModuleTop}
+timestamp=[2024-02-01 16:19:46], mode=BUILD, duration=0:00:01.335, duration_ms=1335, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:28:51], mode=BUILD, duration=0:00:00.933, duration_ms=933, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:29:43], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:30:08], mode=BUILD, duration=0:00:00.831, duration_ms=831, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:30:21], mode=BUILD, duration=0:00:00.833, duration_ms=833, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:31:59], mode=BUILD, duration=0:00:00.732, duration_ms=732, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:33:09], mode=BUILD, duration=0:00:00.582, duration_ms=582, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:33:15], mode=BUILD, duration=0:00:00.583, duration_ms=583, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:34:08], mode=BUILD, duration=0:00:00.832, duration_ms=832, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 16:35:33], mode=BUILD, duration=0:00:00.785, duration_ms=785, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:12:36], mode=BUILD, duration=0:00:00.733, duration_ms=733, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:17:06], mode=BUILD, duration=0:00:00.584, duration_ms=584, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:31:47], mode=BUILD, duration=0:00:00.837, duration_ms=837, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:35:04], mode=BUILD, duration=0:00:00.685, duration_ms=685, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:42:39], mode=BUILD, duration=0:00:00.737, duration_ms=737, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:44:42], mode=BUILD, duration=0:00:00.784, duration_ms=784, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:44:50], mode=BUILD, duration=0:00:07.394, duration_ms=7394, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:45:55], mode=BUILD, duration=0:00:00.782, duration_ms=782, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:46:03], mode=BUILD, duration=0:00:07.295, duration_ms=7295, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:47:10], mode=BUILD, duration=0:00:00.584, duration_ms=584, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:47:50], mode=BUILD, duration=0:00:00.832, duration_ms=832, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-01 18:47:58], mode=BUILD, duration=0:00:07.294, duration_ms=7294, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 10:48:51], mode=WORKBENCH_START, duration=0:00:08.995, duration_ms=8995, data={}
+timestamp=[2024-02-02 10:48:52], mode=WORKBENCH_UI_INIT, duration=0:00:01.376, duration_ms=1376, data={editors_count=6, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-02-02 10:48:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.833, duration_ms=1833, data={}
+timestamp=[2024-02-02 10:49:10], mode=PLATFORM_GENERATION, duration=0:00:09.243, duration_ms=9243, data={name=ModuleTop}
+timestamp=[2024-02-02 10:49:11], mode=BUILD, duration=0:00:00.534, duration_ms=534, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=true}
+timestamp=[2024-02-02 10:49:15], mode=BUILD, duration=0:00:01.432, duration_ms=1432, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 10:49:23], mode=BUILD, duration=0:00:07.599, duration_ms=7599, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 10:52:29], mode=BUILD, duration=0:00:00.831, duration_ms=831, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 10:53:59], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 11:04:18], mode=BUILD, duration=0:00:00.827, duration_ms=827, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 11:04:43], mode=BUILD, duration=0:00:00.825, duration_ms=825, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 11:04:51], mode=BUILD, duration=0:00:07.295, duration_ms=7295, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 11:06:16], mode=BUILD, duration=0:00:00.681, duration_ms=681, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 11:06:24], mode=BUILD, duration=0:00:07.235, duration_ms=7235, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:44:43], mode=BUILD, duration=0:00:00.580, duration_ms=580, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:45:44], mode=BUILD, duration=0:00:00.876, duration_ms=876, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:45:52], mode=BUILD, duration=0:00:07.289, duration_ms=7289, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:47:20], mode=BUILD, duration=0:00:00.829, duration_ms=829, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:47:28], mode=BUILD, duration=0:00:07.239, duration_ms=7239, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:47:50], mode=BUILD, duration=0:00:00.877, duration_ms=877, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:47:58], mode=BUILD, duration=0:00:07.297, duration_ms=7297, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:48:48], mode=BUILD, duration=0:00:00.679, duration_ms=679, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:48:56], mode=BUILD, duration=0:00:07.196, duration_ms=7196, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:49:49], mode=BUILD, duration=0:00:00.581, duration_ms=581, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:49:58], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:50:06], mode=BUILD, duration=0:00:07.195, duration_ms=7195, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:54:31], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:54:40], mode=BUILD, duration=0:00:07.489, duration_ms=7489, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:59:33], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 12:59:42], mode=BUILD, duration=0:00:07.390, duration_ms=7390, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 14:49:57], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 14:50:05], mode=BUILD, duration=0:00:07.389, duration_ms=7389, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 14:52:07], mode=BUILD, duration=0:00:00.692, duration_ms=692, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 14:52:15], mode=BUILD, duration=0:00:07.389, duration_ms=7389, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:28:10], mode=BUILD, duration=0:00:00.581, duration_ms=581, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:28:46], mode=BUILD, duration=0:00:00.883, duration_ms=883, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:28:55], mode=BUILD, duration=0:00:07.392, duration_ms=7392, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:29:51], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:30:00], mode=BUILD, duration=0:00:07.396, duration_ms=7396, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:35:11], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:35:20], mode=BUILD, duration=0:00:07.398, duration_ms=7398, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:42:11], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:42:20], mode=BUILD, duration=0:00:07.391, duration_ms=7391, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:45:18], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 15:45:26], mode=BUILD, duration=0:00:07.390, duration_ms=7390, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:02:05], mode=BUILD, duration=0:00:00.678, duration_ms=678, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:02:14], mode=BUILD, duration=0:00:07.392, duration_ms=7392, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:28:35], mode=BUILD, duration=0:00:00.636, duration_ms=636, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:28:50], mode=BUILD, duration=0:00:00.580, duration_ms=580, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:29:15], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:29:31], mode=BUILD, duration=0:00:00.584, duration_ms=584, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:29:56], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:30:05], mode=BUILD, duration=0:00:07.590, duration_ms=7590, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:30:47], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:30:55], mode=BUILD, duration=0:00:07.495, duration_ms=7495, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:40:24], mode=BUILD, duration=0:00:00.630, duration_ms=630, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:40:39], mode=BUILD, duration=0:00:00.882, duration_ms=882, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:41:05], mode=BUILD, duration=0:00:00.932, duration_ms=932, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:41:13], mode=BUILD, duration=0:00:07.438, duration_ms=7438, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:45:22], mode=BUILD, duration=0:00:00.730, duration_ms=730, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:45:31], mode=BUILD, duration=0:00:07.441, duration_ms=7441, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:49:00], mode=BUILD, duration=0:00:00.728, duration_ms=728, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:49:09], mode=BUILD, duration=0:00:07.390, duration_ms=7390, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:56:35], mode=BUILD, duration=0:00:00.679, duration_ms=679, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:56:43], mode=BUILD, duration=0:00:07.445, duration_ms=7445, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:56:44], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:56:53], mode=BUILD, duration=0:00:07.439, duration_ms=7439, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:56:55], mode=BUILD, duration=0:00:00.579, duration_ms=579, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 16:57:04], mode=BUILD, duration=0:00:07.390, duration_ms=7390, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:01:55], mode=BUILD, duration=0:00:00.732, duration_ms=732, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:02:04], mode=BUILD, duration=0:00:07.491, duration_ms=7491, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:12:54], mode=BUILD, duration=0:00:00.730, duration_ms=730, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:13:02], mode=BUILD, duration=0:00:07.440, duration_ms=7440, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:14:19], mode=BUILD, duration=0:00:00.733, duration_ms=733, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:14:28], mode=BUILD, duration=0:00:07.444, duration_ms=7444, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:21:23], mode=BUILD, duration=0:00:00.679, duration_ms=679, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:21:31], mode=BUILD, duration=0:00:07.490, duration_ms=7490, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:26:12], mode=WORKBENCH_START, duration=0:00:07.520, duration_ms=7520, data={}
+timestamp=[2024-02-02 17:26:13], mode=WORKBENCH_UI_INIT, duration=0:00:00.909, duration_ms=909, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-02-02 17:26:15], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.089, duration_ms=2089, data={}
+timestamp=[2024-02-02 17:28:10], mode=BUILD, duration=0:00:00.778, duration_ms=778, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:28:19], mode=BUILD, duration=0:00:07.555, duration_ms=7555, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:29:24], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:29:33], mode=BUILD, duration=0:00:07.645, duration_ms=7645, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:32:50], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:32:58], mode=BUILD, duration=0:00:07.500, duration_ms=7500, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:38:14], mode=BUILD, duration=0:00:00.732, duration_ms=732, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:38:22], mode=BUILD, duration=0:00:07.448, duration_ms=7448, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:42:34], mode=BUILD, duration=0:00:00.579, duration_ms=579, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:42:42], mode=BUILD, duration=0:00:07.593, duration_ms=7593, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:50:29], mode=BUILD, duration=0:00:00.633, duration_ms=633, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:50:47], mode=BUILD, duration=0:00:00.733, duration_ms=733, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:50:56], mode=BUILD, duration=0:00:07.495, duration_ms=7495, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:57:42], mode=BUILD, duration=0:00:00.733, duration_ms=733, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:57:51], mode=BUILD, duration=0:00:07.450, duration_ms=7450, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:58:21], mode=BUILD, duration=0:00:00.730, duration_ms=730, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 17:58:29], mode=BUILD, duration=0:00:07.491, duration_ms=7491, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:00:48], mode=BUILD, duration=0:00:00.812, duration_ms=812, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:01:00], mode=BUILD, duration=0:00:09.884, duration_ms=9884, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:04:06], mode=BUILD, duration=0:00:00.583, duration_ms=583, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:04:14], mode=BUILD, duration=0:00:07.391, duration_ms=7391, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:08:29], mode=BUILD, duration=0:00:00.583, duration_ms=583, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:08:52], mode=BUILD, duration=0:00:00.634, duration_ms=634, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:10:17], mode=BUILD, duration=0:00:00.581, duration_ms=581, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:10:30], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:10:38], mode=BUILD, duration=0:00:07.450, duration_ms=7450, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:11:05], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:11:13], mode=BUILD, duration=0:00:07.493, duration_ms=7493, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:13:42], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:13:51], mode=BUILD, duration=0:00:07.343, duration_ms=7343, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:16:12], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:16:20], mode=BUILD, duration=0:00:07.391, duration_ms=7391, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:22:59], mode=BUILD, duration=0:00:00.731, duration_ms=731, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:23:08], mode=BUILD, duration=0:00:07.395, duration_ms=7395, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:28:45], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:28:53], mode=BUILD, duration=0:00:07.492, duration_ms=7492, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:41:20], mode=WORKBENCH_START, duration=0:00:09.365, duration_ms=9365, data={}
+timestamp=[2024-02-02 18:41:21], mode=WORKBENCH_UI_INIT, duration=0:00:01.058, duration_ms=1058, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-02-02 18:41:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.639, duration_ms=1639, data={}
+timestamp=[2024-02-02 18:43:05], mode=PLATFORM_GENERATION, duration=0:00:10.386, duration_ms=10386, data={name=ModuleTop}
+timestamp=[2024-02-02 18:43:09], mode=BUILD, duration=0:00:01.396, duration_ms=1396, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:43:24], mode=BUILD, duration=0:00:07.542, duration_ms=7542, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:46:24], mode=BUILD, duration=0:00:00.727, duration_ms=727, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:46:33], mode=BUILD, duration=0:00:07.537, duration_ms=7537, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:47:09], mode=BUILD, duration=0:00:00.537, duration_ms=537, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:47:18], mode=BUILD, duration=0:00:07.536, duration_ms=7536, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:56:51], mode=BUILD, duration=0:00:00.772, duration_ms=772, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 18:56:59], mode=BUILD, duration=0:00:07.484, duration_ms=7484, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 19:01:36], mode=BUILD, duration=0:00:00.726, duration_ms=726, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 19:01:45], mode=BUILD, duration=0:00:08.163, duration_ms=8163, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 19:04:42], mode=BUILD, duration=0:00:00.726, duration_ms=726, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 19:04:51], mode=BUILD, duration=0:00:07.686, duration_ms=7686, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-02 19:07:43], mode=WORKBENCH_START, duration=0:00:07.655, duration_ms=7655, data={}
+timestamp=[2024-02-02 19:07:44], mode=WORKBENCH_UI_INIT, duration=0:00:01.095, duration_ms=1095, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-02-02 19:07:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.440, duration_ms=1440, data={}
+timestamp=[2024-02-05 11:04:53], mode=WORKBENCH_START, duration=0:00:08.784, duration_ms=8784, data={}
+timestamp=[2024-02-05 11:04:54], mode=WORKBENCH_UI_INIT, duration=0:00:01.093, duration_ms=1093, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GB_UNIT_MASTER_app,GB_UNIT_MASTER_app_system,ModuleTop,RemoteSystemsTempFiles}
+timestamp=[2024-02-05 11:04:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.815, duration_ms=1815, data={}
+timestamp=[2024-02-05 11:10:04], mode=PLATFORM_GENERATION, duration=0:00:22.530, duration_ms=22530, data={name=ModuleTop}
+timestamp=[2024-02-05 11:10:07], mode=BUILD, duration=0:00:01.297, duration_ms=1297, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:10:15], mode=BUILD, duration=0:00:07.295, duration_ms=7295, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:11:24], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:11:29], mode=BUILD, duration=0:00:00.523, duration_ms=523, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:11:38], mode=BUILD, duration=0:00:07.389, duration_ms=7389, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:18:05], mode=BUILD, duration=0:00:00.674, duration_ms=674, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:18:14], mode=BUILD, duration=0:00:07.436, duration_ms=7436, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:35:43], mode=PLATFORM_GENERATION, duration=0:00:11.729, duration_ms=11729, data={name=ModuleTop}
+timestamp=[2024-02-05 11:35:47], mode=BUILD, duration=0:00:01.411, duration_ms=1411, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:36:02], mode=BUILD, duration=0:00:07.466, duration_ms=7466, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:42:32], mode=PLATFORM_GENERATION, duration=0:00:11.234, duration_ms=11234, data={name=ModuleTop}
+timestamp=[2024-02-05 11:42:36], mode=BUILD, duration=0:00:01.443, duration_ms=1443, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:42:53], mode=BUILD, duration=0:00:07.989, duration_ms=7989, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:50:14], mode=BUILD, duration=0:00:00.730, duration_ms=730, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:50:22], mode=BUILD, duration=0:00:07.535, duration_ms=7535, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:50:25], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:50:34], mode=BUILD, duration=0:00:07.392, duration_ms=7392, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:57:37], mode=BUILD, duration=0:00:00.679, duration_ms=679, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:57:46], mode=BUILD, duration=0:00:07.438, duration_ms=7438, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 11:57:51], mode=BUILD, duration=0:00:00.528, duration_ms=528, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:05:15], mode=BUILD, duration=0:00:00.730, duration_ms=730, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:05:24], mode=BUILD, duration=0:00:07.590, duration_ms=7590, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:15:14], mode=BUILD, duration=0:00:01.767, duration_ms=1767, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:15:30], mode=BUILD, duration=0:00:12.926, duration_ms=12926, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:19:04], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:19:13], mode=BUILD, duration=0:00:07.495, duration_ms=7495, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:24:27], mode=BUILD, duration=0:00:00.834, duration_ms=834, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:24:36], mode=BUILD, duration=0:00:07.442, duration_ms=7442, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:29:13], mode=BUILD, duration=0:00:00.836, duration_ms=836, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:29:22], mode=BUILD, duration=0:00:07.444, duration_ms=7444, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:32:10], mode=BUILD, duration=0:00:00.785, duration_ms=785, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:32:18], mode=BUILD, duration=0:00:07.592, duration_ms=7592, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:32:41], mode=BUILD, duration=0:00:00.785, duration_ms=785, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:32:50], mode=BUILD, duration=0:00:07.393, duration_ms=7393, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:36:16], mode=BUILD, duration=0:00:00.787, duration_ms=787, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:36:24], mode=BUILD, duration=0:00:07.493, duration_ms=7493, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:36:27], mode=BUILD, duration=0:00:00.533, duration_ms=533, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:36:36], mode=BUILD, duration=0:00:07.593, duration_ms=7593, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:38:33], mode=BUILD, duration=0:00:00.786, duration_ms=786, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:38:42], mode=BUILD, duration=0:00:07.445, duration_ms=7445, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:39:39], mode=BUILD, duration=0:00:00.939, duration_ms=939, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:39:47], mode=BUILD, duration=0:00:07.493, duration_ms=7493, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:41:54], mode=BUILD, duration=0:00:00.838, duration_ms=838, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:42:03], mode=BUILD, duration=0:00:07.494, duration_ms=7494, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:49:52], mode=BUILD, duration=0:00:00.734, duration_ms=734, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:50:00], mode=BUILD, duration=0:00:07.412, duration_ms=7412, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:54:28], mode=BUILD, duration=0:00:00.742, duration_ms=742, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:54:36], mode=BUILD, duration=0:00:07.496, duration_ms=7496, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:59:23], mode=BUILD, duration=0:00:00.745, duration_ms=745, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 12:59:32], mode=BUILD, duration=0:00:07.450, duration_ms=7450, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:00:45], mode=BUILD, duration=0:00:00.842, duration_ms=842, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:00:54], mode=BUILD, duration=0:00:07.499, duration_ms=7499, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:05:48], mode=BUILD, duration=0:00:00.741, duration_ms=741, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:05:57], mode=BUILD, duration=0:00:07.499, duration_ms=7499, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:07:56], mode=BUILD, duration=0:00:00.840, duration_ms=840, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:08:05], mode=BUILD, duration=0:00:07.599, duration_ms=7599, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:08:30], mode=BUILD, duration=0:00:00.743, duration_ms=743, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:08:39], mode=BUILD, duration=0:00:07.450, duration_ms=7450, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:27:03], mode=BUILD, duration=0:00:00.793, duration_ms=793, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 13:27:11], mode=BUILD, duration=0:00:07.401, duration_ms=7401, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 14:03:01], mode=BUILD, duration=0:00:00.694, duration_ms=694, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 14:03:30], mode=BUILD, duration=0:00:00.746, duration_ms=746, data={name=GB_UNIT_MASTER_app, configuration=Debug, clean_build=false}
+timestamp=[2024-02-05 14:03:40], mode=BUILD, duration=0:00:08.403, duration_ms=8403, data={name=GB_UNIT_MASTER_app_system, configuration=Debug, clean_build=false}

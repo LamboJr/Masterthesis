@@ -59,43 +59,44 @@ architecture Behavioral of TradeHandler is
 
 
 
+--Main FSM for the different states of receiving, processing and generating output.
+type t_SM_Main is (s_Idle,s_Framing,s_Active,s_InitTrade,s_RequestHandler,s_Validation);
+signal s_SM_Main : t_SM_Main := s_Idle;
 
-type t_SM_Main is (s_Idle,s_Framing,s_Active,s_InitTrade,s_Validation);
-
+--States for different state of handshaking. Sync bevor handshake and handling for after successful handshake
 type t_SM_Sync is (s_Sync,s_handling);
 signal SyncState : t_SM_Sync := s_Sync;
 
+--important counter for safing the frame number of the curretn received package
 signal w_frameCounter : integer := 1;
 constant FRAME_LENGTH : integer := 9;
 
 signal w_debug : std_logic := '1';
 
---
+--output value based on the state of the communictaion and the curretn input
 signal w_data_output : std_logic_vector(15 downto 0) := x"FFF8";
-signal s_SM_Main : t_SM_Main := s_Idle;
 
+--Signal for different types of Link commands which can be received from master during the communication
 type LinkCommands is (LinkCMD_IDLE,LinkCMD_INIT_BLOCK,LinkCMD_REQUEST_BLOCK,LinkCMD_CONT_BLOCK,LinkCMD_SEND_LINK_TYPE);
 signal LinkCMD : LinkCommands := LinkCMD_IDLE;
+
+-----------------out of sync trade block
+signal RequestHandlerInit : std_logic := '0';
+signal RequestHandler_counter : natural := 0;
+signal Requestdelay : natural := 10;
 -----------------Own Blocks---------------------------------
+----signals for send own, complete block of data in the scope of the frame structure with help of the framecounter
 signal InitTradecounter : natural := 0;
-
-
 signal STartInitTrade : std_logic := '0';
 signal EndInitTrade : std_logic := '0';
 
 ------------------LinkCMD CONT Block-------------------------
-
---buffers
-signal Pokemonbuffer1 : Pokemon_structure_buffer_type := Zapdos_buffer;
-signal Pokemonbuffer2 : Pokemon_structure_buffer_type := Milotic_Buffer;
-signal Pokemonbuffer3 : Pokemon_structure_buffer_type := No_pokemon_buffer;
-signal Pokemonbuffer4 : Pokemon_structure_buffer_type := No_pokemon_buffer;
-signal Pokemonbuffer5 : Pokemon_structure_buffer_type := No_pokemon_buffer;
-signal Pokemonbuffer6 : Pokemon_structure_buffer_type := No_pokemon_buffer;
+----signals for dealing with different data and data structures received ans sent in the CONT Block LinkCOmmand phase
+--buffers for Pokemon structure
 
 signal Team : Team_structure := (Zapdos_buffer,Milotic_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer);
 
--- Index counter Team structure
+-- Index counter Team structure. indexes which of th epossible 6 pokemon is processed curently
 signal team_index : natural range 0 to TEAM_SIZE := 0;
 --buffer counter for indexing position of buffer
 signal buffer_index : natural range 0 to 110 := 0;
@@ -104,7 +105,7 @@ signal buffer_index : natural range 0 to 110 := 0;
 signal BufferSize100 : t_BufferSize100 := (others => x"0000");
 signal BufferSize50 : t_BufferSize50 := (others => x"0000");
 signal BufferSize110 : t_BufferSize110 := (others => x"0000");
-
+--indicates ongoing Cont Block phase
 signal w_BlockContActive : std_logic := '0';
 
 
@@ -133,7 +134,8 @@ if rising_edge(clk) then
         w_BlockInitActive <= '0';
         w_BlockRequestActive <= '0';
         w_BlockRequestPokemonIndex <= 2;
-        
+        RequestHandlerInit <= '0';
+        Requesthandler_counter <= 0;
     else
         
         case S_SM_Main is
@@ -144,6 +146,7 @@ if rising_edge(clk) then
                 s_SM_Main <= s_idle;
             end if;
             o_response_valid <= '0';
+            
         when s_framing =>
             if SyncState = s_Sync then
                 w_FrameCounter <= 2;
@@ -158,11 +161,16 @@ if rising_edge(clk) then
                 end if;
             end if;
             if StartInitTrade = '0' then
-                s_SM_Main <= s_Active;
+                if RequestHandlerInit = '1' then
+                    s_SM_Main <= s_Requesthandler;
+                else
+                    s_SM_Main <= s_Active;
+                end if;
             else
                 s_SM_Main <= s_InitTrade;
             end if;
             o_response_valid <= '0';
+            
         when s_Active =>
         
             case w_FrameCounter is
@@ -212,6 +220,8 @@ if rising_edge(clk) then
                     case i_data_input is
                     when x"0001" => --Pokemon Data
                         w_BlockrequestType <= BLOCK_REQ_SIZE_200;
+                        RequestHandlerInit <= '1'; Requesthandler_counter<= 0;
+                        buffer_index <= 0;
                     when x"0002" => --Trainder Data
                         w_BlockrequestType <= BLOCK_REQ_SIZE_100;
                     when x"0003" => --Mail
@@ -327,10 +337,53 @@ if rising_edge(clk) then
                 w_data_output <= ReadyToTradeBuffer(InitTradeCounter)(w_FrameCounter-1);
                 
             end case;   
+            o_response_valid <= '0';
+            s_SM_Main <= s_validation;
             
             
             
-             o_response_valid <= '0';
+       when s_Requesthandler =>     
+            
+            
+            case w_FrameCounter is
+            
+            when 1 =>
+                w_data_output <= i_data_input;
+            
+            when 2 =>
+                if Requesthandler_counter < RequestDelay then
+                    w_data_output <= x"0000";
+                elsif Requesthandler_counter = RequestDelay then
+                    w_data_output <= BlockInitPokemon_buffer(w_FrameCounter-1);
+                    w_BlockInitActive <= '1';
+                else
+                    w_data_output <= x"8888";
+                end if;
+            
+            when others =>
+                if Requesthandler_counter < RequestDelay then
+                    w_data_output <= x"0000";
+                elsif Requesthandler_counter = RequestDelay then
+                    w_data_output <= BlockInitPokemon_buffer(w_FrameCounter-1);
+                else
+                    if buffer_index < 100 then
+                        w_data_output <= Datainputbuffer(buffer_index);
+                        buffer_index <= buffer_index +1;
+                    else
+                        w_data_output <= x"0000";
+                        RequesthandlerInit <= '0';
+                        w_BlockRequestActive <= '0';
+                        w_BlockInitActive <= '0';
+                    end if;
+                end if;
+                if w_FrameCounter = 9 then
+                    Requesthandler_counter <= Requesthandler_counter +1;
+                end if;
+            end case;
+            
+            
+            
+            o_response_valid <= '0';
             s_SM_Main <= s_validation;
             
         when s_validation =>

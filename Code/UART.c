@@ -69,14 +69,14 @@ void set_blocking (int fd, int should_block)
 
 int main(void){
     
-char *portname = "/dev/ttyUSB2";
+char *portname = "/dev/ttyUSB1";
 
 int fd = open (portname, O_RDWR | O_NOCTTY | O_SYNC);
 if (fd < 0)
 {
         
         printf("error %d opening %s: %s", errno, portname, strerror (errno));
-        return;
+        return 0;
 }
 
 set_interface_attribs (fd, B115200, 0);  // set speed to 115,200 bps, 8n1 (no parity)

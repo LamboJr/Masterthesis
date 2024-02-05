@@ -79,7 +79,7 @@ signal Team2PokemonBuffer : t_TwoPokemonbuffer := (EmptyBuffer110,EmptyBuffer110
 signal TrainerDataSize110 : t_BufferSize110 := (others => x"0000");
 
 signal BlockRequestPokemonIndex : natural range 0 to 2;
-    
+signal TradeSpotNumber : std_logic_vector(2 downto 0) := "001";
     
     procedure Generate_Input (
         i_data_in : in  std_logic_vector(15 downto 0);
@@ -117,7 +117,8 @@ port map(
     BlockrequestActive => BlockRequestActive,
     BlockInitActive => BlockInitActive,
     DataInputBuffer => DataInputbuffer,
-    BlockRequestPokemonIndex => BlockRequestPokemonIndex
+    BlockRequestPokemonIndex => BlockRequestPokemonIndex,
+    tradespotnumber => tradespotnumber
 );
 
 UpdateBuffer : process(clk)

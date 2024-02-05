@@ -1,3 +1,7 @@
+#ifndef STRUCT_HEADER
+#define STRUCT_HEADER
+
+
 #include "constant.h"
 struct PPBonus {
   u8 move1:2;
@@ -175,3 +179,4 @@ struct TrainerCard
     /*0x60*/ uint16_t hasAllFrontierSymbols;
     /*0x62*/ uint16_t frontierBP;
 };
+#endif

@@ -43,3 +43,15 @@ xil_printf("\nTradindRoomMovement\n");
 
 
 */
+#include <stdint.h>
+#include <stdio.h>
+
+void UpdateFunc()
+
+
+int main(void){
+
+
+
+return 0;
+}

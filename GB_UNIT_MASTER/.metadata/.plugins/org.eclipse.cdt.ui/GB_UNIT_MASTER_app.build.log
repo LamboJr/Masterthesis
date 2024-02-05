@@ -1,37 +1,25 @@
-12:27:51 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
+14:03:29 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
-Building file: ../src/main.c
+Building file: ../src/TradeHandler.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:134:13: warning: unused variable 'dump' [-Wunused-variable]
-  134 |         u32 dump;
-      |             ^~~~
-../src/main.c:133:13: warning: unused variable 'data' [-Wunused-variable]
-  133 |         u32 data;                       //variable for storing red in data
-      |             ^~~~
-Finished building: ../src/main.c
- 
-Building file: ../src/platform.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TradeHandler.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TradeHandler.d" -MT"src/TradeHandler.o" -o "src/TradeHandler.o" "../src/TradeHandler.c"
+Finished building: ../src/TradeHandler.c
  
 Building target: GB_UNIT_MASTER_app.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bsplib/lib -o "GB_UNIT_MASTER_app.elf" ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bsplib/lib -o "GB_UNIT_MASTER_app.elf" ./src/outdated/main_HW_Trade.o  ./src/MonitorTrade.o ./src/TradeHandler.o ./src/decodeTrainderCard.o ./src/decode_Pokemon_structure.o ./src/functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: GB_UNIT_MASTER_app.elf
  
 Invoking: ARM v7 Print Size
 arm-none-eabi-size GB_UNIT_MASTER_app.elf  |tee "GB_UNIT_MASTER_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  42669	 229224	  24504	 296397	  485cd	GB_UNIT_MASTER_app.elf
+  46109	 230136	  26392	 302637	  49e2d	GB_UNIT_MASTER_app.elf
 Finished building: GB_UNIT_MASTER_app.elf.size
  
 
-12:27:52 Build Finished (took 920ms)
+14:03:30 Build Finished (took 739ms)
 

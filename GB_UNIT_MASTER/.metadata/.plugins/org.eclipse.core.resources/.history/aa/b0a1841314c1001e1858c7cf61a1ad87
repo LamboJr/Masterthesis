@@ -1,0 +1,8 @@
+#ifndef DECODETRAINDERCARD_HEADER
+#define DECODETRAINERCARD_HEADER
+
+#include "Link.h"
+#include "structs.h"
+void decodeTrainerCard(uint16_t* TrainerBuffer);
+
+#endif

@@ -1,0 +1,7 @@
+1706784610083	Rename resource 'TradeHandler.h'
+1706784776292	Rename resource 'TradeHandler2.h'
+1706794986517	Rename resource 'LinkTrade.c'
+1706794997878	Rename resource 'LinkTrade.h'
+1706797897527	Move 'backupfile.h' to 'outdated'
+1706797913630	Move 'main_HW_Trade.c' to 'outdated'
+1706797931118	Move 'reducedFSM.h' to 'outdated'

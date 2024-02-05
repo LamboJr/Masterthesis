@@ -1,4 +1,5 @@
-
+#ifndef MOVES_HEADER
+#define MOVES_HEADER
 char move_string_file[][20] = {
 "None",
 "Pound",
@@ -356,3 +357,4 @@ char move_string_file[][20] = {
 "Doom Desire",
 "Psycho Boost"
 };
+#endif

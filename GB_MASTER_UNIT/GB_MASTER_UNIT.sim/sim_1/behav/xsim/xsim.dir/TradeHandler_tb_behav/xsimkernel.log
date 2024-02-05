@@ -1,7 +1,4 @@
-Running: xsim.dir/TradeHandler_tb_behav/xsimk -simmode gui -wdb TradeHandler_tb_behav.wdb -simrunnum 0 -socket 60289
+Running: xsim.dir/TradeHandler_tb_behav/xsimk -simmode gui -wdb TradeHandler_tb_behav.wdb -simrunnum 0 -socket 38171
 Design successfully loaded
 Design Loading Memory Usage: 23588 KB (Peak: 24100 KB)
-Design Loading CPU Usage: 30 ms
-Simulation completed
-Simulation Memory Usage: 113524 KB (Peak: 162856 KB)
-Simulation CPU Usage: 50 ms
+Design Loading CPU Usage: 40 ms

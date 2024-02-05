@@ -1,4 +1,5 @@
-
+#ifndef ITEM_HEADER
+#define ITEM_HEADER
 char item_string_file[][20] = {
 "None",
 "Master Ball",
@@ -375,3 +376,4 @@ char item_string_file[][20] = {
 "Powder Jar",
 "Ruby",
 };
+#endif

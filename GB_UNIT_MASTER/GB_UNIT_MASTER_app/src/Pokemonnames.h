@@ -1,4 +1,5 @@
-
+#ifndef POKEMONNAMES_HEADER
+#define POKEMONNAMES_HEADER
 char species_string[][20] = {
 "None",
 "Bulbasaur",
@@ -414,3 +415,4 @@ char species_string[][20] = {
 "Chimecho",
 "Egg"
 };
+#endif

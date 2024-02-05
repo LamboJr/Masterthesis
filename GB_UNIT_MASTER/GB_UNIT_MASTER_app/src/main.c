@@ -46,31 +46,24 @@
  */
 
 #include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+
 #include "platform.h"
 #include "xil_printf.h"
 #include "xgpio.h"
 #include "xil_types.h"
 #include "xparameters.h"
-#include <stdint.h>
 
-//#include "decode_trainer_data.h"
-#include "decode_Pokemon_structure.h"
-#include "constant.h"
-#include "decodeTrainderCard.h"
-//#include "FSM.h"
-//#include "reducedFSM.h"
-#include "LinkTrade.h"
-//#include "structs.h"
+#include "MonitorTrade.h"
+#include "TradeHandler.h"
 
-//#include "testdata.h"
 #include "TestDataTrade.h"
 
-#include "Pokemonbuffer.h"
 
-//#define USE_TEST_DATA
 
-#define MasterMask 0xFFFF0000
-#define SlaveMask 0x0000FFFF
+#define MASTERMASK 0xFFFF0000
+#define SLAVEMASK 0x0000FFFF
 
 #define SWITCH1(buffer) (buffer) & 0x1
 #define SWITCH2(buffer) (buffer) & 0x2
@@ -89,25 +82,14 @@
 #define DATA_DIRECTION_OUTPUT 0
 #define DATA_DIRECTION_INPUT 1
 
-#define SWITCH3_BITMASK 0x1
 #define ADDR_OFFSET_EMPTY 1
 
-#define TRADE
-
-#define UPDATE_TEAM 0x70
-#define FINISHED_CONF 0x80
-
-#define TEAM_SPOT_1 0x10
-#define TEAM_SPOT_2 0x20
-#define TEAM_SPOT_3 0x30
-#define TEAM_SPOT_4 0x40
-#define TEAM_SPOT_5 0x50
-#define TEAM_SPOT_6 0x60
 
 #define MODE_TRADE 0
 #define MODE_MONITOR 1
 
-
+#define TRADE
+#define USE_TEST_DATA
 
 int main(){
 
@@ -131,101 +113,56 @@ int main(){
     address = (u32 *) XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR;  // address points to BASE ADDR of AXI BRAM controller
 
 	u32 data;			//variable for storing red in data
-	u32 dump;
 
-	u32 Mode = MODE_TRADE;
+	u32 PL_to_PS_buffer_value;
 
-	u32 control = TEAM_SPOT_1;
+	//u32 Mode = MODE_MONITOR;
+	u32 Mode;
+
     init_platform();
+    u16 result;
 
-
-//#undef USE_TEST_DATA
-
+#undef USE_TEST_DATA
 #ifdef TRADE
+#ifdef USE_TEST_DATA
 
+    xil_printf("Trade Test Data\n");
+    u32 sizearray = (sizeof(TestDataTrade1)/(sizeof(u32)));
+    xil_printf("Size of Array : %ld\n",sizearray);
+    for(size_t i = 0;i< sizearray;i++){
+    	PL_to_PS_buffer_value = XGpio_DiscreteRead(&PL_TO_PS_BUFFER_Device, PL_TO_PS_BUFFER_CHANNEL);
+    	data = TestDataTrade1[i] >> 16;
+    	result = TradeHandler_func(data,PL_to_PS_buffer_value);
+    	xil_printf("%04x : %04x | ",data,result);
+    }
+    print("\n\nFinished test loop \n\n");
+
+
+#else
+
+    Mode = MODE_TRADE;
     XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,Mode);
     xil_printf("Start Trading emulator\n");
 
     address = (u32 *) XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR;
 
-
-	   control = (TEAM_SPOT_1);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   for(u32 i = 0; i < 50; i++){
-		*(address) = Totodile_pokemonbuffer[i];
-	   }
-	   control = (UPDATE_TEAM);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   control = (TEAM_SPOT_2);;
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   for(u32 i = 0; i < 50; i++){
-		   *(address) = Cyndaquil_pokemonbuffer[i];
-	   }
-	   control = (UPDATE_TEAM);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   control = (TEAM_SPOT_3);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   for(u32 i = 0; i < 50; i++){
-		   *(address) = pokemonbuffer[i];
-	   }
-	   control = (UPDATE_TEAM);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   control = (TEAM_SPOT_4);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   for(u32 i = 0; i < 50; i++){
-		   *(address) = Chikorita_pokemonbuffer[i];
-	   }
-	   control = (UPDATE_TEAM);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   control = (TEAM_SPOT_5);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   for(u32 i = 0; i < 50; i++){
-		   *(address) = Scizor_pokemonbuffer[i];
-	   }
-	   control = (UPDATE_TEAM);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   control = (TEAM_SPOT_6);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   for(u32 i = 0; i < 50; i++){
-		   *(address) = Skarmory_pokemonbuffer[i];
-
-	   }
-	   control = (UPDATE_TEAM);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
-	   control = (FINISHED_CONF);
-	   XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,control);
-
     while(1){
+    	PL_to_PS_buffer_value = XGpio_DiscreteRead(&PL_TO_PS_BUFFER_Device, PL_TO_PS_BUFFER_CHANNEL);
 
-/*    	if (*(address+ADDR_OFFSET_EMPTY) == 0){ // checks the empty flag of the ringbuffer Hardware to indicate if there is new data to read from HW
+    	if (*(address+ADDR_OFFSET_EMPTY) == 0){ // checks the empty flag of the ringbuffer Hardware to indicate if there is new data to read from HW
+    		//reads data from Ringbuffer to get latest received data package
     		data = *(address);
-    		//reads from the ringbuffer if its not empty
-    		//dump = XGpio_DiscreteRead(&PL_TO_PS_BUFFER_Device, PL_TO_PS_BUFFER_CHANNEL);
-    		//N_updateFSM(data,dump);
-    		xil_printf("%d : %04x   ",(data & 0xF),(data >> 16));
-    		if ( (data & 0xF) == 9){
-    			xil_printf("\n");
-    		}
-    	}*/
+    		//Responds to the receives master packet with a own packet
+    		*(address) = TradeHandler_func(data,PL_to_PS_buffer_value);
+    	}
 
     }
-
+#endif;
 
 
 #else
-
+    Mode = MODE_MONITOR;
+    u32 dump;
 #ifdef USE_TEST_DATA
         print("Start Monitoring \n");
     dump = 1;
@@ -239,7 +176,7 @@ int main(){
     print("\n\nFinished test loop \n\n");
 
 #else
-
+    XGpio_DiscreteWrite(&PS_TO_PL_BUFFER_Device, PS_TO_PL_BUFFER_CHANNEL,Mode);
     while(1){
 
     	if (*(address+ADDR_OFFSET_EMPTY) == 0){ // checks the empty flag of the ringbuffer Hardware to indicate if there is new data to read from HW

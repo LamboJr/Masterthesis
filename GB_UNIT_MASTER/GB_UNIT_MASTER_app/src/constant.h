@@ -1,3 +1,7 @@
+#ifndef CONSTANT_HEADERFILE
+#define CONSTANT_HEADERFILE
+
+//Constants for Pokemon and traincerCard structures
 #define GAME_COLOSSEUM_BONUS 0
 #define GAME_SAPPHIRE 1
 #define GAME_RUBY 2
@@ -58,6 +62,6 @@
 #define MAX_BUFFER_SIZE 110
 #define TRAINER_BUFFER_SIZE 50
 
-
+#endif
 
 

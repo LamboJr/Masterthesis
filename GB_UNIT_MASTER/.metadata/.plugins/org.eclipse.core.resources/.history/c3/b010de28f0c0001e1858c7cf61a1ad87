@@ -1,0 +1,180 @@
+
+
+#define FRAME_LENGTH 9
+
+typedef enum {
+	handshakeState,
+	ExitState,
+	DataState,
+}Syncstate;
+
+typedef enum {
+	//CCCC
+	BlockRequest_State,
+	//BBBB
+	BlockInit_State,
+	//8888
+	BlockData_State,
+	//CAFE
+	Buttons_Hold_State,
+}DataBlockType;
+
+static u8 Switches_State;
+static u8 Tradebutton_State;
+static u8 Resetbutton_State;
+
+static Syncstate s_syncstate = handshakeState;
+static u32 FrameCounter = 2;
+
+static struct TradeHandler s_TradeHandlerMaster;
+static struct TradeHandler s_TradeHandlerSlave;
+/*struct TradeHandler{
+	u16 PokemonTeam[MAX_TEAM_SIZE][POKEMON_BUFFER_LENGTH];
+	u16 TrainerCard[TRAINER_BUFFER_SIZE];
+	u16 TeamIndex;
+	u16 DataIndex;
+	u8 BlockRequest;
+	u16 BlockRequestSize;
+	u8 InitBlock;
+	u16 InitBlockSize;
+	u8 ContBlock;
+	u8 ReadyCloseLink; //5FFF
+	u16 LinkCMD;
+	u16 LinkType;
+	u16 TempBuffer[MAX_BUFFER_SIZE];
+};*/
+
+void UpdateFrameCounter(u32* FrameCounterPtr){
+    if (*FrameCounterPtr == FRAME_LENGTH){
+		*FrameCounterPtr = 1;
+	}else{
+		(*FrameCounterPtr)++;
+	}
+    return;
+}
+
+
+u32 TradeHandler_func(u32 data){
+
+	u16 returnvalue = data ;
+	// Calculate the frame counter depending on the  sysnc state
+	if (s_syncstate == handshakeState){
+		FrameCounter = FRAME_LENGTH;
+		returnvalue = 0xB9A0;
+		//If data is 8FFF the communication switches to data phase
+		if (data == MASTER_HANDSHAKE){
+			s_syncstate = DataState;
+		}
+	}
+	else if(s_syncstate == ExitState){
+		UpdateFrameCounter(&FrameCounter);
+		returnvalue = data;
+		if(data == 0xB9A0){
+			s_syncstate = handshakeState;
+		}
+	}
+	else{
+		//Update FrameCounter
+		UpdateFrameCounter(&FrameCounter);
+
+		switch(FrameCounter){
+		case 1 :{
+			returnvalue = data;
+		}break;
+
+		case 2 :{
+			s_TradeHandlerMaster.LinkCMD = data;
+			switch(data){
+
+			case 0xCCCC : { //REquest Data Block
+				s_TradeHandlerMaster.BlockRequest = 1;
+				s_TradeHandlerSlave.BlockRequest = 1;
+				returnvalue = 0;
+			}break;
+
+			case 0xBBBB : { //Init Block
+				s_TradeHandlerMaster.DataIndex = 0;
+				s_TradeHandlerMaster.InitBlock = 1;
+				returnvalue = data;
+			}break;
+
+			case 0x8888 : { // Cont Data Block
+
+				s_TradeHandlerMaster.ContBlock = 1;
+				returnvalue = data;
+			}break;
+
+			case 0x2222 : { // Link CMD Type
+				returnvalue = 0;
+			}break;
+			case 0xCAFE : { // Hold buttons
+				returnvalue = 0xCAFE;
+			}break;
+
+			case MASTER_HANDSHAKE: { // 8FFF
+				returnvalue = 0xB9A0;
+			}break;
+
+			case 0x5FFF : { // Ready Close Link
+				returnvalue = data;
+				s_syncstate = ExitState;
+			}break;
+			case SLAVE_HANDSHAKE : {
+				//Detects if the master is still in handshake mode
+				returnvalue = 0xB9A0;
+			}break;
+			case 0x0000 :{
+				s_TradeHandlerMaster.DataIndex = 0;
+				returnvalue = data;
+			}break;
+			default : {}break;
+			}//end switch data
+
+		}break;
+
+		case 3 ... 9:{
+			returnvalue = data;
+			switch(s_TradeHandlerMaster.LinkCMD){
+
+			case 0x0000 : {}break;//Do nothing
+			case 0xB9A0 : {}break;//Do nothing
+			case 0x8FFF : {}break;//Do nothing
+			case 0x2222 : {// Determine the Link Type
+				if (FrameCounter == 3){s_TradeHandlerMaster.LinkType = data;}
+				returnvalue = 0;
+				// Print Link Type
+			}break;
+			case 0xCCCC : { // determine the requested Block Size
+				if (FrameCounter == 3){s_TradeHandlerMaster.BlockRequestSize = data;}
+				returnvalue = 0;
+			}break;
+			case 0xBBBB : {
+				if (FrameCounter == 3){s_TradeHandlerMaster.InitBlockSize = data;}
+				//returnvalue = 0;
+			}break;
+			case 0x8888 : {}break;
+			case 0xCAFE : {// Determine pressed buttons from MAster
+				if (FrameCounter == 3){s_TradeHandlerMaster.PressedButtons = data;
+				switch(Switches_State){
+				case 1 :{returnvalue = 0x0012;}break;
+				case 2 :{returnvalue = 0x0013;}break;
+				case 4 : {returnvalue = 0x0014;}break;
+				case 8 : {returnvalue = 0x0015;}break;
+				default : {returnvalue = data;}break;
+				}
+				}
+			}break;
+			default : {}break;
+			}// end switch LINKCMD
+
+
+		}break;
+		default:{
+			returnvalue = 0;
+		}
+		}//end switch Framecounter
+
+
+	}///end if syncstate
+	return returnvalue;
+}

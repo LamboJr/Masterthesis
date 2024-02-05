@@ -48,7 +48,7 @@ vcom -work axi_bram_ctrl_v4_1_8 -64 -93  \
 
 vcom -work xil_defaultlib -64 -93  \
 "../../../bd/GB_UNIT_design/ip/GB_UNIT_design_axi_bram_ctrl_0_0/sim/GB_UNIT_design_axi_bram_ctrl_0_0.vhd" \
-"../../../bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/GB_UNIT_design_axi_smc_0_sim_netlist.vhdl" \
+"/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_smc_0/GB_UNIT_design_axi_smc_0_sim_netlist.vhdl" \
 
 vcom -work lib_cdc_v1_0_2 -64 -93  \
 "../../../../GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \

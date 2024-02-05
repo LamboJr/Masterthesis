@@ -38,6 +38,11 @@ package Constants_and_Declarations is
     constant frame_buffer_3 : frame_buffer_type := (x"0000",x"8888",x"0000",x"0000",x"0000",x"FFFF",x"FFFF",x"FFFF",x"0000");
     
     
+    constant BlockRequestPokemon_buffer : frame_buffer_type := (x"0000",x"CCCC",x"0001",x"0000",x"0000",x"0000",x"0000",x"0000",x"0000");
+    constant BlockInitPokemon_buffer : frame_buffer_type := (x"0000",x"BBBB",x"00C8",x"0081",x"0000",x"0000",x"0000",x"0000",x"0000");
+    
+    
+    
     constant ReadyToTradeBuffer : Tradebuffertype := (frame_buffer_1,frame_buffer_2,frame_buffer_3);
     
     constant EmptyBuffer110 : t_BufferSize110 := (others => x"0000");

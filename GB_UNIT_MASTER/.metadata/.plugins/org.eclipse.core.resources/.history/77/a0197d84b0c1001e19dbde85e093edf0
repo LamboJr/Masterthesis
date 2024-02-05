@@ -1,0 +1,34 @@
+#ifndef TRADEHANDLER_HEADER
+#define TRADEHANDLER_HEADER
+
+#include "xil_types.h"
+#include "Link.h"
+#include "linkcommand.h"
+#define FRAME_LENGTH 9
+
+typedef enum {
+	handshakeState,
+	ExitState,
+	DataState,
+}Syncstate;
+
+typedef enum {
+	//CCCC
+	BlockRequest_State,
+	//BBBB
+	BlockInit_State,
+	//8888
+	BlockData_State,
+	//CAFE
+	Buttons_Hold_State,
+}DataBlockType;
+
+static u8 Switches_State;
+static u8 Resetbutton_State;
+static u8 Tradebutton_State;
+
+void UpdateFrameCounter(u32* FrameCounterPtr);
+
+u32 TradeHandler_func(u32 data);
+
+#endif
