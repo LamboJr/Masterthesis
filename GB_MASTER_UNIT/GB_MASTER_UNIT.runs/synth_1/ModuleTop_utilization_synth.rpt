@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Mon Feb  5 11:38:54 2024
+| Date         : Mon Feb 12 15:53:26 2024
 | Host         : Acer running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_utilization -file ModuleTop_utilization_synth.rpt -pb ModuleTop_utilization_synth.pb
 | Design       : ModuleTop
@@ -159,9 +159,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 | LUT1     |    9 |                 LUT |
 | IBUF     |    9 |                  IO |
 | RAMB36E1 |    3 |        Block Memory |
-| OBUFT    |    2 |                  IO |
+| OBUF     |    2 |                  IO |
 | MUXF7    |    2 |               MuxFx |
-| OBUF     |    1 |                  IO |
+| OBUFT    |    1 |                  IO |
 | MUXF8    |    1 |               MuxFx |
 +----------+------+---------------------+
 

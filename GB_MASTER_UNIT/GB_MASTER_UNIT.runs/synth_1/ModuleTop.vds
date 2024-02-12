@@ -3,16 +3,16 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Feb  5 11:38:07 2024
-# Process ID: 28639
+# Start of session at: Mon Feb 12 15:52:37 2024
+# Process ID: 84859
 # Current directory: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1
 # Command line: vivado -log ModuleTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ModuleTop.tcl
 # Log file: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/ModuleTop.vds
 # Journal file: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/vivado.jou
-# Running On: Acer, OS: Linux, CPU Frequency: 3392.391 MHz, CPU Physical cores: 4, Host memory: 8235 MB
+# Running On: Acer, OS: Linux, CPU Frequency: 2634.375 MHz, CPU Physical cores: 4, Host memory: 8235 MB
 #-----------------------------------------------------------
 source ModuleTop.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2062.934 ; gain = 125.992 ; free physical = 1084 ; free virtual = 3839
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2063.398 ; gain = 123.992 ; free physical = 1376 ; free virtual = 3012
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
@@ -28,9 +28,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 28677
+INFO: [Synth 8-7075] Helper process launched with PID 84892
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2847.734 ; gain = 377.770 ; free physical = 150 ; free virtual = 2806
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2848.199 ; gain = 378.770 ; free physical = 257 ; free virtual = 1972
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ModuleTop' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:25]
 INFO: [Synth 8-638] synthesizing module 'UART_RX' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/UART_RX.vhd:24]
@@ -42,18 +42,18 @@ INFO: [Synth 8-256] done synthesizing module 'UART_TX' (0#1) [/home/daniel/Maste
 INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_wrapper' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/imports/hdl/GB_UNIT_design_wrapper.vhd:50]
 INFO: [Synth 8-3491] module 'GB_UNIT_design' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:15' bound to instance 'GB_UNIT_design_i' of component 'GB_UNIT_design' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/imports/hdl/GB_UNIT_design_wrapper.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:54]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_bram_ctrl_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_axi_bram_ctrl_0_0_stub.vhdl:6' bound to instance 'axi_bram_ctrl_0' of component 'GB_UNIT_design_axi_bram_ctrl_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:536]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_bram_ctrl_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_axi_bram_ctrl_0_0_stub.vhdl:52]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_gpio_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_PLtoPS' of component 'GB_UNIT_design_axi_gpio_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:579]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_gpio_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_gpio_1_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_axi_gpio_1_0_stub.vhdl:6' bound to instance 'axi_gpio_PStoPL' of component 'GB_UNIT_design_axi_gpio_1_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:602]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_gpio_1_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_axi_gpio_1_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_smc_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:625]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_axi_smc_0_stub.vhdl:123]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_processing_system7_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'GB_UNIT_design_processing_system7_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:739]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_processing_system7_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_processing_system7_0_0_stub.vhdl:77]
-INFO: [Synth 8-3491] module 'GB_UNIT_design_rst_ps7_0_50M_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_rst_ps7_0_50M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_50M' of component 'GB_UNIT_design_rst_ps7_0_50M_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:807]
-INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_rst_ps7_0_50M_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-28639-Acer/realtime/GB_UNIT_design_rst_ps7_0_50M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_bram_ctrl_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_axi_bram_ctrl_0_0_stub.vhdl:6' bound to instance 'axi_bram_ctrl_0' of component 'GB_UNIT_design_axi_bram_ctrl_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:536]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_bram_ctrl_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_axi_bram_ctrl_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_gpio_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_PLtoPS' of component 'GB_UNIT_design_axi_gpio_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:579]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_gpio_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_gpio_1_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_axi_gpio_1_0_stub.vhdl:6' bound to instance 'axi_gpio_PStoPL' of component 'GB_UNIT_design_axi_gpio_1_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:602]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_gpio_1_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_axi_smc_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:625]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_axi_smc_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_axi_smc_0_stub.vhdl:123]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_processing_system7_0_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'GB_UNIT_design_processing_system7_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:739]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_processing_system7_0_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_processing_system7_0_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'GB_UNIT_design_rst_ps7_0_50M_0' declared at '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_rst_ps7_0_50M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_50M' of component 'GB_UNIT_design_rst_ps7_0_50M_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:807]
+INFO: [Synth 8-638] synthesizing module 'GB_UNIT_design_rst_ps7_0_50M_0' [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/.Xil/Vivado-84859-Acer/realtime/GB_UNIT_design_rst_ps7_0_50M_0_stub.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'GB_UNIT_design' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/synth/GB_UNIT_design.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'GB_UNIT_design_wrapper' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sources_1/imports/hdl/GB_UNIT_design_wrapper.vhd:50]
 INFO: [Synth 8-638] synthesizing module 'ringbuffer' [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Ringbuffer.vhd:33]
@@ -61,22 +61,21 @@ INFO: [Synth 8-638] synthesizing module 'ringbuffer' [/home/daniel/Masterthesis/
 	Parameter RAM_DEPTH bound to: 2048 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'ringbuffer' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Ringbuffer.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'ModuleTop' (0#1) [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:25]
-WARNING: [Synth 8-3848] Net LED in module/entity ModuleTop does not have driver. [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/top.vhdl:22]
 WARNING: [Synth 8-3917] design ModuleTop has port o_debug driven by constant 0
-WARNING: [Synth 8-7129] Port LED in module ModuleTop is either unconnected or has no load
+WARNING: [Synth 8-3917] design ModuleTop has port LED driven by constant 1
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2923.641 ; gain = 453.676 ; free physical = 250 ; free virtual = 2702
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2924.105 ; gain = 454.676 ; free physical = 158 ; free virtual = 1876
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2938.484 ; gain = 468.520 ; free physical = 248 ; free virtual = 2701
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2935.980 ; gain = 466.551 ; free physical = 155 ; free virtual = 1873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2938.484 ; gain = 468.520 ; free physical = 248 ; free virtual = 2701
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2935.980 ; gain = 466.551 ; free physical = 155 ; free virtual = 1873
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2938.484 ; gain = 0.000 ; free physical = 248 ; free virtual = 2702
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2935.980 ; gain = 0.000 ; free physical = 155 ; free virtual = 1873
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -104,24 +103,24 @@ Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/s
 Finished Parsing XDC File [/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3078.234 ; gain = 0.000 ; free physical = 221 ; free virtual = 2686
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3081.730 ; gain = 0.000 ; free physical = 126 ; free virtual = 1862
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3078.234 ; gain = 0.000 ; free physical = 221 ; free virtual = 2686
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3081.730 ; gain = 0.000 ; free physical = 126 ; free virtual = 1862
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PLtoPS' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PStoPL' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 219 ; free virtual = 2684
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 128 ; free virtual = 1859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 219 ; free virtual = 2684
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 128 ; free virtual = 1859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -134,7 +133,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/GB_UNIT_de
 Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PLtoPS. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/GB_UNIT_design_i/axi_gpio_PStoPL. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 219 ; free virtual = 2684
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 128 ; free virtual = 1860
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_TX'
 ---------------------------------------------------------------------------------------------------
@@ -148,7 +147,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'U
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'UART_TX'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 218 ; free virtual = 2683
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 129 ; free virtual = 1861
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -200,10 +199,10 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design ModuleTop has port o_debug driven by constant 0
-WARNING: [Synth 8-7129] Port LED in module ModuleTop is either unconnected or has no load
+WARNING: [Synth 8-3917] design ModuleTop has port LED driven by constant 1
 WARNING: [Synth 8-3936] Found unconnected internal register 'ringbuffer_PS_to_PL_inst/rd_data_reg' and it is trimmed from '32' to '16' bits. [/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Ringbuffer.vhd:109]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 209 ; free virtual = 2679
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 197 ; free virtual = 1842
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -225,13 +224,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 200 ; free virtual = 2677
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 186 ; free virtual = 1841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 200 ; free virtual = 2677
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 186 ; free virtual = 1841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -254,7 +253,7 @@ Start Technology Mapping
 INFO: [Synth 8-7052] The timing for the instance ringbuffer_PL_to_PS_inst/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance ringbuffer_PL_to_PS_inst/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 203 ; free virtual = 2681
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 186 ; free virtual = 1841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -272,37 +271,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 202 ; free virtual = 2680
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 180 ; free virtual = 1838
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 202 ; free virtual = 2680
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 180 ; free virtual = 1838
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 202 ; free virtual = 2680
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 180 ; free virtual = 1835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 202 ; free virtual = 2680
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 180 ; free virtual = 1835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 202 ; free virtual = 2680
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 180 ; free virtual = 1835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 202 ; free virtual = 2680
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 180 ; free virtual = 1835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -343,33 +342,32 @@ Report Cell Usage:
 |18    |FDRE                                       |   183|
 |19    |IBUF                                       |     8|
 |20    |IOBUF                                      |     1|
-|21    |OBUF                                       |     1|
-|22    |OBUFT                                      |     1|
+|21    |OBUF                                       |     2|
 +------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 202 ; free virtual = 2680
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 180 ; free virtual = 1835
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3078.234 ; gain = 468.520 ; free physical = 201 ; free virtual = 2678
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3078.234 ; gain = 608.270 ; free physical = 201 ; free virtual = 2678
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3081.730 ; gain = 466.551 ; free physical = 177 ; free virtual = 1835
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3081.730 ; gain = 612.301 ; free physical = 177 ; free virtual = 1835
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3078.234 ; gain = 0.000 ; free physical = 472 ; free virtual = 2949
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3081.730 ; gain = 0.000 ; free physical = 451 ; free virtual = 2110
 INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3078.234 ; gain = 0.000 ; free physical = 469 ; free virtual = 2948
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3081.730 ; gain = 0.000 ; free physical = 447 ; free virtual = 2109
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
 
-Synth Design complete | Checksum: 1c26166
+Synth Design complete | Checksum: 45d549a2
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+53 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 3078.234 ; gain = 956.770 ; free physical = 469 ; free virtual = 2948
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2618.339; main = 2306.973; forked = 362.080
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4012.539; main = 3078.238; forked = 966.316
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 3081.730 ; gain = 959.801 ; free physical = 447 ; free virtual = 2110
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2725.237; main = 2437.969; forked = 397.614
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4016.035; main = 3081.734; forked = 966.316
 INFO: [Common 17-1381] The checkpoint '/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/ModuleTop.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ModuleTop_utilization_synth.rpt -pb ModuleTop_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb  5 11:38:54 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 12 15:53:26 2024...

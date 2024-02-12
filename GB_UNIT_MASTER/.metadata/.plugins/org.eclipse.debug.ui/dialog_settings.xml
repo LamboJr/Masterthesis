@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
-		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1" value="299"/>
-		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2" value="696"/>
-		<item key="org.eclipse.debug.ui.EXPANDED_NODES" value=", com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate, "/>
-		<item key="DIALOG_WIDTH" value="1893"/>
+		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1" value="300"/>
+		<item key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2" value="699"/>
+		<item key="org.eclipse.debug.ui.EXPANDED_NODES" value=", com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate, com.xilinx.sdx.system.debug.launch.SdxMultiLaunchDelegate, "/>
+		<item key="DIALOG_WIDTH" value="1845"/>
 		<item key="DIALOG_HEIGHT" value="702"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>

@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Stopped at time : 48 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd" Line 76
+Stopped at time : 30400048 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd" Line 165
+Stopped at time : 48440048 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd" Line 172
+Failure: Tests Complete
+Time: 49480048 ns  Iteration: 0  Process: /FrameCounterGenerator_TB/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd
+$finish called at time : 49480048 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd" Line 182

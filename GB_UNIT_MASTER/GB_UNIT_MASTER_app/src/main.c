@@ -122,6 +122,8 @@ int main(){
     init_platform();
     u16 result;
 
+    u32 RingbufferValue;
+
 #undef USE_TEST_DATA
 #ifdef TRADE
 #ifdef USE_TEST_DATA
@@ -149,11 +151,13 @@ int main(){
     while(1){
     	PL_to_PS_buffer_value = XGpio_DiscreteRead(&PL_TO_PS_BUFFER_Device, PL_TO_PS_BUFFER_CHANNEL);
 
-    	if (*(address+ADDR_OFFSET_EMPTY) == 0){ // checks the empty flag of the ringbuffer Hardware to indicate if there is new data to read from HW
+    	if ((*(address+ADDR_OFFSET_EMPTY) & 0x1) == 0){ // checks the empty flag of the ringbuffer Hardware to indicate if there is new data to read from HW
+
     		//reads data from Ringbuffer to get latest received data package
     		data = *(address);
     		//Responds to the receives master packet with a own packet
     		*(address) = TradeHandler_func(data,PL_to_PS_buffer_value);
+
     	}
 
     }

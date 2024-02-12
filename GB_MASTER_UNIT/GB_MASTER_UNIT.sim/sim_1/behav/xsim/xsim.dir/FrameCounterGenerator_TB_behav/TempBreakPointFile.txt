@@ -1,0 +1,4 @@
+Breakpoint File Version 1.0
+76,true,"/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd"
+165,true,"/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd"
+172,true,"/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd"

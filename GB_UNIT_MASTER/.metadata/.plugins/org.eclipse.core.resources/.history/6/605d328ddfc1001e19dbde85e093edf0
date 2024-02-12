@@ -1,4 +1,0 @@
-#include "Pokemonbuffer.h"
-
-#include "xil_types.h"
-

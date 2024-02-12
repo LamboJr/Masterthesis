@@ -100,6 +100,9 @@ constant send_delay : integer := 3000;
 ----optionla to use debug signal
 signal w_debug : std_logic := '0';
 
+------Framecounter signal generated in HW and transported to SOftware
+signal frameCounter : integer := 1;
+
 
 ---------
 --new experimental
@@ -107,7 +110,7 @@ signal w_debug : std_logic := '0';
 type t_framingState is (s_idle,s_Processing,s_resetCounter,s_Holding);
 signal framingState : t_framingState := s_idle;
 
-signal frameCounter : integer := 1;
+
 
 signal BlockRequestActive : std_logic;
 signal BlockInitActive : std_logic;
@@ -212,6 +215,15 @@ full_next => full_next_PS_to_PL,
 fill_count => fill_count_PS_to_PL
 );   
     
+--FramecounterGenerator_Inst : entity work.FramecounterGenerator
+--port map (
+--    clk => clk,
+--    reset => rst,
+--    enable => i_enable,
+--    FrameCounter => Framecounter
+--);
+         
+    
 Transmitter : process(clk)
 begin
 if rising_edge(clk) then
@@ -293,8 +305,10 @@ monitoring :  process (clk)
     PL_to_PS_buffer(3) <= switch3;
     PL_to_PS_buffer(4) <= resetbutton;
     PL_to_PS_buffer(5) <= tradebutton;
+--    PL_to_PS_buffer(31 downto 28) <= std_logic_vector(to_unsigned(Framecounter,4));
     
     --conversion from the BRAM control signels to the ringbuffer control signals 
+    --temp(7 downto 4) <= std_logic_vector(to_unsigned(Framecounter,4));
     temp(0) <= empty_PL_TO_PS;
     --Ringbuffer Dout is set to rd_data only if data is requested at address 0 at Software level, else the empty flag is writen to dout 
     Ringbuffer_data_out <= rd_Data_PL_TO_PS when Ringbuffer_addr = x"00000000" else temp;
@@ -314,5 +328,6 @@ monitoring :  process (clk)
 
     --r_RX_Serial <= io_Serial;
     
+    LED <= '1';
     o_debug <= w_debug;
 end behav;

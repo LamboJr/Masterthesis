@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date                      : Mon Feb  5 11:40:07 2024
+| Date                      : Mon Feb 12 15:54:35 2024
 | Host                      : Acer running 64-bit Ubuntu 22.04.3 LTS
 | Command                   : report_io -file ModuleTop_io_placed.rpt
 | Design                    : ModuleTop
@@ -268,7 +268,7 @@ Table of Contents
 | M11        |             |            | GND                     | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | M12        |             |            | VCCINT                  | VCCINT      |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | M13        |             |            | GND                     | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
-| M14        | LED         | High Range | IO_L23P_T3_35           | TRISTATE    | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| M14        | LED         | High Range | IO_L23P_T3_35           | OUTPUT      | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | M15        |             | High Range | IO_L23N_T3_35           | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | M16        |             | High Range | VCCO_35                 | VCCO        |             |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | M17        |             | High Range | IO_L8P_T1_AD10P_35      | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

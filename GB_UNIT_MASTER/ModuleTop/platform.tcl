@@ -207,3 +207,23 @@ platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xs
 platform generate -domains 
 platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
 platform generate -domains 
+platform active {ModuleTop}
+bsp reload
+bsp config stdin "ps7_uart_1"
+bsp config xil_interrupt "false"
+bsp reload
+bsp reload
+domain active {zynq_fsbl}
+bsp reload
+platform active {ModuleTop}
+platform active {ModuleTop}
+platform generate
+platform active {ModuleTop}
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
+platform config -updatehw {/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa}
+platform generate -domains 
