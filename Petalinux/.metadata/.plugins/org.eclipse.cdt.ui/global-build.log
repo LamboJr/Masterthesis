@@ -1,3 +1,5 @@
-17:27:37 **** Incremental Build of project Petalinux_Platorm ****
-buildplatform.sh 35103 Petalinux_Platorm no_domain_build 
-XSDB Server Channel: tcfchan#2
+Nothing to build in platform 'Petalinux_Platorm'
+
+15:41:44 **** Incremental Build of configuration Debug for project Test_application ****
+make all 
+make: Nothing to be done for 'all'.

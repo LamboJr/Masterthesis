@@ -1,6 +1,2 @@
-2024-02-09T17:27:37.41183300255-17:27:37 **** Incremental Build of project Petalinux_Platorm ****
-000-buildplatform.sh 35103 Petalinux_Platorm no_domain_build 
-000-XSDB Server Channel: tcfchan#2
-00255-
-17:27:43 Build Finished (took 6s.491ms)
+2024-02-15T15:41:44.749645000-Nothing to build in platform 'Petalinux_Platorm'
 

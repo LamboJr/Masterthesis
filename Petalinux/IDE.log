@@ -64,3 +64,84 @@
 15:58:10 INFO  : Successfully done query RDI_DATADIR 
 16:24:27 INFO  : No changes in MSS file content so sources will not be generated.
 16:28:09 INFO  : Hardware specification for platform project 'Petalinux_Platorm' is updated.
+18:55:03 INFO  : Result from executing command 'getProjects': Petalinux_Platorm
+18:55:03 INFO  : Result from executing command 'getPlatforms': Petalinux_Platorm|/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm;xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+19:09:34 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+19:09:39 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+19:09:55 INFO  : XSCT server has started successfully.
+19:09:55 INFO  : Successfully done setting XSCT server connection channel  
+19:09:56 INFO  : plnx-install-location is set to ''
+19:09:56 INFO  : Successfully done setting workspace for the tool. 
+19:09:56 INFO  : Successfully done query RDI_DATADIR 
+19:09:57 INFO  : Registering command handlers for Vitis TCF services
+19:10:02 INFO  : Platform repository initialization has completed.
+11:04:21 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+11:04:22 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+11:04:25 INFO  : XSCT server has started successfully.
+11:04:25 INFO  : Successfully done setting XSCT server connection channel  
+11:04:25 INFO  : plnx-install-location is set to ''
+11:04:26 INFO  : Registering command handlers for Vitis TCF services
+11:04:27 INFO  : Platform repository initialization has completed.
+11:04:27 INFO  : Successfully done setting workspace for the tool. 
+11:04:27 INFO  : Successfully done query RDI_DATADIR 
+11:22:01 INFO  : Result from executing command 'getProjects': Petalinux_Platorm
+11:22:01 INFO  : Result from executing command 'getPlatforms': Petalinux_Platorm|/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm;xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+11:22:43 INFO  : The hardware specification used by project 'Test_application' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+11:22:45 INFO  : The file '/home/daniel/Masterthesis/Petalinux/Test_application/_ide/bitstream/ModuleTop.bit' stored in project is removed.
+11:22:45 INFO  : The updated bitstream files are copied from platform to folder '/home/daniel/Masterthesis/Petalinux/Test_application/_ide/bitstream' in project 'Test_application'.
+11:22:51 INFO  : The updated ps init files are copied from platform to folder '/home/daniel/Masterthesis/Petalinux/Test_application/_ide/psinit' in project 'Test_application'.
+12:05:42 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+12:05:43 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+12:05:46 INFO  : XSCT server has started successfully.
+12:05:46 INFO  : Registering command handlers for Vitis TCF services
+12:05:46 INFO  : plnx-install-location is set to ''
+12:05:46 INFO  : Successfully done setting XSCT server connection channel  
+12:05:46 INFO  : Successfully done query RDI_DATADIR 
+12:05:46 INFO  : Successfully done setting workspace for the tool. 
+12:05:47 INFO  : Platform repository initialization has completed.
+12:09:37 INFO  : Result from executing command 'getProjects': Petalinux_Platorm
+12:09:37 INFO  : Result from executing command 'getPlatforms': Petalinux_Platorm|/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm;xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+12:31:40 INFO  : Result from executing command 'getProjects': Petalinux_Platorm
+12:31:40 INFO  : Result from executing command 'getPlatforms': Petalinux_Platorm|/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm;xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+10:08:54 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+10:08:55 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+10:08:59 INFO  : XSCT server has started successfully.
+10:08:59 INFO  : Successfully done setting XSCT server connection channel  
+10:08:59 INFO  : plnx-install-location is set to ''
+10:08:59 INFO  : Successfully done setting workspace for the tool. 
+10:09:00 INFO  : Successfully done query RDI_DATADIR 
+10:09:00 INFO  : Registering command handlers for Vitis TCF services
+10:09:01 INFO  : Platform repository initialization has completed.
+10:12:36 ERROR : (XSDB Server)Hangup
+
+10:13:40 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+10:13:42 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+10:13:48 INFO  : XSCT server has started successfully.
+10:13:48 INFO  : Successfully done setting XSCT server connection channel  
+10:13:48 INFO  : plnx-install-location is set to ''
+10:13:48 INFO  : Successfully done setting workspace for the tool. 
+10:13:49 INFO  : Successfully done query RDI_DATADIR 
+10:13:51 INFO  : Registering command handlers for Vitis TCF services
+10:13:51 INFO  : Platform repository initialization has completed.
+14:38:28 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+14:38:29 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+14:38:32 INFO  : XSCT server has started successfully.
+14:38:32 INFO  : Registering command handlers for Vitis TCF services
+14:38:32 INFO  : plnx-install-location is set to ''
+14:38:32 INFO  : Successfully done setting XSCT server connection channel  
+14:38:32 INFO  : Successfully done query RDI_DATADIR 
+14:38:32 INFO  : Successfully done setting workspace for the tool. 
+14:38:33 INFO  : Platform repository initialization has completed.
+15:27:59 INFO  : Result from executing command 'getProjects': Petalinux_Platorm
+15:27:59 INFO  : Result from executing command 'getPlatforms': Petalinux_Platorm|/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm;xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+11:55:31 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+11:55:32 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+11:55:35 INFO  : Registering command handlers for Vitis TCF services
+11:55:35 INFO  : XSCT server has started successfully.
+11:55:35 INFO  : Successfully done setting XSCT server connection channel  
+11:55:35 INFO  : plnx-install-location is set to ''
+11:55:36 INFO  : Successfully done setting workspace for the tool. 
+11:55:36 INFO  : Successfully done query RDI_DATADIR 
+11:55:36 INFO  : Platform repository initialization has completed.
+11:57:46 INFO  : Result from executing command 'getProjects': Petalinux_Platorm
+11:57:46 INFO  : Result from executing command 'getPlatforms': Petalinux_Platorm|/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm;xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
