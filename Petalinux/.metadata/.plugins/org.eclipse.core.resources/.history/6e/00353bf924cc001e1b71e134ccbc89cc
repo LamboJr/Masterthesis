@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+
+#include "Includes/DataTypes.h"
+#include "Hardwarehandler.h"
+#include "Includes/MonitorTrade.h"
+#include "Includes/TradeHandler.h"
+
+#define MODE_TRADE 0
+#define MODE_MONITOR 1
+
+#define USE_TEST_DATA
+
+
+int main(int argc, char *argv[])
+{
+	int fd;
+	fd=open("/dev/mem",O_RDWR);
+		if(fd<1) {
+			perror("Error open FD \n");
+			exit(-1);
+	}
+
+	//Get Memory Pointer
+	void *Ringbufferptr = InitRingbufferMMap(fd);
+	void *PltoPSbufferptr = InitPLtoPSBuffer(fd);
+	void *PStoPLbufferptr = InitPStoPLBuffer(fd);
+
+	u32 PsToPlValue = MODE_TRADE; // == Mode Trading
+	u32 OutputData = 0x0000;
+	u32 Inputdata;
+	u32 dump = 1;
+
+
+	u32 PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
+	printf("PltoPSBuffer Value : %08x\n",PLtoPSBuffer_Value);
+
+	WritePStoPLBffer(PStoPLbufferptr,PsToPlValue);
+
+
+	while(1){
+		PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
+
+		if (ReadRingbuffer(Ringbufferptr,1) == 0){
+
+			Inputdata = ReadRingbuffer(Ringbufferptr,0);
+			WriteToRingbuffer(Ringbufferptr, TradeHandler(Inputdata,PLtoPSBuffer_Value), 0);
+
+			//MonitorHandler(Inputdata, dump);
+
+			//WriteToRingbuffer(Ringbufferptr,Inputdata,0);
+			//printf("Ringbuffer data : %08x\n",Inputdata);
+		}
+	}
+
+	return 0;
+}

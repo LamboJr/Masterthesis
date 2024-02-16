@@ -16527,3 +16527,376 @@ java.lang.Error
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 15:42:03.769
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '83'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 16:00:07.681
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 16:01:11.574
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '84'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 16:08:33.879
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '85'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 16:24:38.223
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY org.eclipse.core.resources 4 2 2024-02-15 16:26:40.613
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Test_application/Debug/src/Sources)[368]: java.lang.Exception: Resource '/Test_application/Debug/src/Sources' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.generateDependencies(GnuMakefileGenerator.java:598)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateDependencies(XilinxGnuMakefileGenerator.java:35)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:856)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:767)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-02-15 16:26:40.613
+!MESSAGE Resource '/Test_application/Debug/src/Sources' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Test_application/Debug/src/Sources' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.generateDependencies(GnuMakefileGenerator.java:598)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateDependencies(XilinxGnuMakefileGenerator.java:35)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:856)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:767)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-02-15 16:26:40.613
+!MESSAGE Resource '/Test_application/Debug/src/Sources' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Test_application/Debug/src/Sources' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.generateDependencies(GnuMakefileGenerator.java:598)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateDependencies(XilinxGnuMakefileGenerator.java:35)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:856)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:767)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2024-02-15 16:26:40.767
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 75 2024-02-15 16:26:40.767
+!MESSAGE Errors running builder 'CDT Builder' on project 'Test_application'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Test_application/Debug/src/Sources)[368]: java.lang.Exception: Resource '/Test_application/Debug/src/Sources' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.generateDependencies(GnuMakefileGenerator.java:598)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateDependencies(XilinxGnuMakefileGenerator.java:35)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:856)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:767)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.core.resources 4 368 2024-02-15 16:26:40.767
+!MESSAGE Resource '/Test_application/Debug/src/Sources' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Test_application/Debug/src/Sources' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.generateDependencies(GnuMakefileGenerator.java:598)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateDependencies(XilinxGnuMakefileGenerator.java:35)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:856)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:767)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-02-15 16:26:40.767
+!MESSAGE Resource '/Test_application/Debug/src/Sources' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Test_application/Debug/src/Sources' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.generateDependencies(GnuMakefileGenerator.java:598)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateDependencies(XilinxGnuMakefileGenerator.java:35)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:856)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:767)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 16:27:17.880
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '86'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 16:56:44.662
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 16:57:04.268
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 16:57:46.344
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:00:34.317
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:02:15.314
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:03:57.431
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:04:25.596
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:05:53.976
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:06:33.758
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:07:27.613
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:08:09.465
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:09:28.487
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:10:01.897
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:10:30.918
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:11:21.002
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:12:20.574
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:13:24.576
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:14:28.349
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:15:25.526
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:18:05.633
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 17:18:36.903
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '87'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 17:18:46.104
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '88'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:33:08.099
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:34:46.604
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:35:03.800
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 17:36:27.279
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '89'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 17:38:07.279
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '90'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:46:36.246
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 17:47:09.784
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 17:48:27.832
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '91'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 17:49:44.082
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '92'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 17:53:20.156
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '93'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 17:57:39.979
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '94'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-15 18:09:28.956
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 18:13:36.432
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '95'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 18:15:01.472
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '96'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 18:17:34.311
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '97'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 18:21:09.859
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '98'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 18:24:00.290
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '99'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-15 18:25:05.199
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '100'
+!SESSION 2024-02-16 09:21:25.262 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2024-02-16 09:21:26.112
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2024-02-16 09:21:26.158
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2024-02-16 09:21:35.231
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-16 09:21:40.603
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-16 09:21:40.604
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-16 09:21:40.604
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.061
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.062
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.062
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.065
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.066
+!MESSAGE XSCT Command: [setws /home/daniel/Masterthesis/Petalinux], Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.789
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.790
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.790
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.792
+!MESSAGE XSCT command with result: [setws /home/daniel/Masterthesis/Petalinux], Result: [null, ]. Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.793
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/SharedData/2023.1/data:/tools/Xilinx/Vitis/2023.1/data]. Thread: Worker-2: Initializing s/w repositories

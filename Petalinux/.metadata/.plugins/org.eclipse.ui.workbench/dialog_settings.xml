@@ -16,4 +16,11 @@
 	</section>
 	<section name="NewWizardAction">
 	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app/src"/>
+		</list>
+	</section>
 </section>

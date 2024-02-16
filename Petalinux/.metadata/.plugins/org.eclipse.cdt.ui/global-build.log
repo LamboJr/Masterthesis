@@ -1,5 +1,5 @@
 Nothing to build in platform 'Petalinux_Platorm'
 
-15:41:44 **** Incremental Build of configuration Debug for project Test_application ****
+18:24:55 **** Incremental Build of configuration Debug for project Test_application ****
 make all 
 make: Nothing to be done for 'all'.

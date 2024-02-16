@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+
+#include "Hardwarehandler.h"
+#include "Includes/DataTypes.h"
+
+int main(int argc, char *argv[])
+{
+	int fd;
+	fd=open("/dev/mem",O_RDWR);
+		if(fd<1) {
+			perror("Error open FD \n");
+			exit(-1);
+	}
+
+	//Get Memory Pointer
+	void *Ringbufferptr = InitRingbufferMMap(fd);
+	void *PltoPSbufferptr = InitPLtoPSBuffer(fd);
+	void *PStoPLbufferptr = InitPStoPLBuffer(fd);
+
+	uint32_t PsToPlValue = 0x00000001; // == Mode Trading
+	uint32_t OutputData = 0x0000;
+	uint32_t Inputdata;
+
+
+
+	uint32_t PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
+	printf("PltoPSBuffer Value : %08x\n",PLtoPSBuffer_Value);
+
+	WritePStoPLBffer(PStoPLbufferptr,PsToPlValue);
+
+
+	while(1){
+		if (ReadRingbuffer(Ringbufferptr,1) == 0){
+			Inputdata = ReadRingbuffer(Ringbufferptr,0);
+			WriteToRingbuffer(Ringbufferptr,Inputdata,0);
+			printf("Ringbuffer data : %08x\n",Inputdata);
+		}
+	}
+
+	return 0;
+}
