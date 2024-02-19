@@ -16900,3 +16900,1680 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 09:21:42.793
 !MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/SharedData/2023.1/data:/tools/Xilinx/Vitis/2023.1/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY org.eclipse.egit.core 4 0 2024-02-16 09:35:44.876
+!MESSAGE An exception occurred during push on URI https://github.com/LamboJr/Masterthesis.git: https://github.com/LamboJr/Masterthesis.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/LamboJr/Masterthesis.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:498)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:387)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1200)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:209)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui 2 2 2024-02-16 09:36:03.824
+!MESSAGE Invalid preference category path: com.xilinx.sdk.ui.preferences.page (bundle: com.xilinx.sdk.ui.customize, page: com.xilinx.sdk.ui.customize.sdkCustomizationPreferences)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 12:00:33.993
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 12:00:35.719
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 12:00:35.719
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 12:00:35.721
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Dec  6 11:59:59 2023",
+"vivado_version": "2023.1",
+"part": "xc7z020clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:00:35.921
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 12:02:34.693
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:03:34.805
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:03:50.780
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:16:11.806
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:17:45.354
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:25:26.115
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:26:38.167
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:28:20.666
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:30:18.457
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:30:33.044
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:31:12.616
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '11'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 12:32:27.924
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 12:32:51.928
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 12:33:35.556
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '12'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 12:37:13.765
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 14:09:38.014
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 14:10:41.523
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 14:11:27.060
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 14:11:46.121
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '13'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 14:12:46.152
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-16 14:12:46.162
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, {"axi_bram_ctrl_0": {"hier_name": "axi_bram_ctrl_0",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_gpio_PLtoPS": {"hier_name": "axi_gpio_PLtoPS",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_PStoPL": {"hier_name": "axi_gpio_PStoPL",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 14:12:58.726
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '14'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 14:17:19.521
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 14:17:47.400
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 14:18:08.681
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 14:19:45.685
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 14:30:08.003
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '15'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 14:34:58.948
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '16'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 14:37:03.657
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '17'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 14:39:12.488
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '18'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 14:40:39.512
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '19'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 14:57:08.766
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '20'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 15:09:41.294
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 15:10:49.631
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '21'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 16:06:54.847
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 16:08:00.618
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 16:09:44.791
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-16 16:10:35.490
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:20:23.759
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '22'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:22:41.674
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '23'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:24:54.991
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '24'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:29:00.208
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '25'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:30:42.154
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '26'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:35:22.277
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '27'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:38:21.325
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '28'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:40:04.104
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '29'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-16 16:41:07.739
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '30'
+!SESSION 2024-02-19 10:55:13.348 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2024-02-19 10:55:14.064
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2024-02-19 10:55:14.094
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2024-02-19 10:55:21.228
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-19 10:55:27.774
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-19 10:55:27.775
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-19 10:55:27.775
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:28.670
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:28.671
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:28.671
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:29.503
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:29.504
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:29.530
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:29.530
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:29.531
+!MESSAGE XSCT Command: [setws /home/daniel/Masterthesis/Petalinux], Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:29.546
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/SharedData/2023.1/data:/tools/Xilinx/Vitis/2023.1/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 10:55:29.549
+!MESSAGE XSCT command with result: [setws /home/daniel/Masterthesis/Petalinux], Result: [null, ]. Thread: Thread-23
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 12:41:51.880
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 13:58:20.351
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 13:58:37.411
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 13:59:22.663
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 13:59:53.218
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY org.eclipse.core.filebuffers 4 2 2024-02-19 14:01:04.092
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.filebuffers".
+!STACK 0
+org.eclipse.swt.SWTException: Graphic is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.graphics.Color.getRed(Color.java:303)
+	at org.eclipse.swt.graphics.Color.equals(Color.java:233)
+	at org.eclipse.swt.graphics.TextStyle.equals(TextStyle.java:223)
+	at org.eclipse.swt.custom.StyleRange.similarTo(StyleRange.java:166)
+	at org.eclipse.swt.custom.StyledTextRenderer.setStyleRanges(StyledTextRenderer.java:1534)
+	at org.eclipse.swt.custom.StyledText.setStyleRanges(StyledText.java:10286)
+	at org.eclipse.swt.custom.StyledText.replaceStyleRanges(StyledText.java:8006)
+	at org.eclipse.jface.text.TextViewer.addPresentation(TextViewer.java:4693)
+	at org.eclipse.jface.text.TextViewer.changeTextPresentation(TextViewer.java:4770)
+	at org.eclipse.jface.text.presentation.PresentationReconciler.applyTextRegionCollection(PresentationReconciler.java:562)
+	at org.eclipse.jface.text.presentation.PresentationReconciler.processDamage(PresentationReconciler.java:551)
+	at org.eclipse.jface.text.presentation.PresentationReconciler.access$3(PresentationReconciler.java:547)
+	at org.eclipse.jface.text.presentation.PresentationReconciler$InternalListener.inputDocumentChanged(PresentationReconciler.java:121)
+	at org.eclipse.jface.text.presentation.PresentationReconciler.install(PresentationReconciler.java:352)
+	at org.eclipse.jface.text.source.SourceViewer.configure(SourceViewer.java:494)
+	at org.eclipse.cdt.internal.ui.editor.CSourceViewer.configure(CSourceViewer.java:174)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.doSetInput(CEditor.java:1420)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.setInputWithNotify(AbstractTextEditor.java:4273)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.setInput(AbstractTextEditor.java:4293)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener$1.run(AbstractTextEditor.java:525)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:586)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementMoved(AbstractTextEditor.java:553)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.underlyingFileMoved(TextFileDocumentProvider.java:335)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$6.run(TextFileBufferManager.java:709)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireUnderlyingFileMoved(TextFileBufferManager.java:706)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.handleFileMoved(ResourceFileBuffer.java:422)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$FileSynchronizer$3.execute(ResourceFileBuffer.java:163)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer$SafeFileChange.run(ResourceFileBuffer.java:86)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:324)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:636)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:148)
+	at org.eclipse.ltk.ui.refactoring.resource.RenameResourceWizard$RenameResourceRefactoringConfigurationPage.performFinish(RenameResourceWizard.java:135)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:450)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:192)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:212)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:126)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.RenameResourceHandler.performRename(RenameResourceHandler.java:105)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.RenameResourceHandler.execute(RenameResourceHandler.java:57)
+	at com.xilinx.sdx.core.handler.SDXRenameResourceHandler.execute(SDXRenameResourceHandler.java:23)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:440)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:140)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openRenameWizard(LTKLauncher.java:99)
+	at org.eclipse.ui.actions.RenameResourceAction.run(RenameResourceAction.java:462)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:171)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:413)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 14:02:42.658
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 14:03:42.575
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 14:06:30.993
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 14:08:50.381
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 14:08:52.184
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 14:08:52.185
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 14:08:52.187
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Dec  6 11:59:59 2023",
+"vivado_version": "2023.1",
+"part": "xc7z020clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:08:52.398
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:09:30.569
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:11:05.518
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:13:51.115
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:16:37.495
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 14:20:22.835
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:20:48.507
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:21:40.697
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:24:46.059
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:27:32.310
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:30:23.131
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:33:29.713
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '11'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:35:10.244
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '12'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:36:43.525
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '13'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 14:41:57.919
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 14:43:04.251
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:44:05.027
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '14'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 14:46:21.377
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '15'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 15:07:43.029
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '16'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 15:08:54.826
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '17'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 15:10:59.536
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '18'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 15:16:09.623
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '19'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 16:27:08.882
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '20'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 16:41:19.788
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 16:41:55.379
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:38.028
+!MESSAGE XSCT Command: [platform read {/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr}], Thread: Worker-57: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:38.038
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: Worker-44: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:40.297
+!MESSAGE XSCT command with result: [platform read {/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr}], Result: [null, ]. Thread: Worker-57: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:40.297
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, ]. Thread: Worker-44: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:40.298
+!MESSAGE XSCT Command: [platform active {Petalinux_Platorm}], Thread: Worker-57: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:40.298
+!MESSAGE XSCT command with result: [platform active {Petalinux_Platorm}], Result: [null, ]. Thread: Worker-57: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.139
+!MESSAGE XSCT Command: [domain active {zynq_fsbl}], Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.140
+!MESSAGE XSCT command with result: [domain active {zynq_fsbl}], Result: [null, ]. Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.140
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.141
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa]. Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.141
+!MESSAGE XSCT Command: [::scw::regenerate_psinit /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.142
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, ]. Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.142
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.144
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss]. Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.151
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss ], Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.152
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss ], Result: [null, ]. Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.152
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.154
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-58: Initializing 'zynq_fsbl' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.241
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.249
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
+"version": "1.13",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.5.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_13",
+},
+"standalone_v8_1": {"name": "standalone",
+"version": "8.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/bsp/standalone_v8_1",
+},
+},
+"ps7_cortexa9_1": {"freertos10_xilinx_v1_13": {"name": "freertos10_xilinx",
+"version": "1.13",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.5.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_13",
+},
+"standalone_v8_1": {"name": "standalone",
+"version": "8.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/bsp/standalone_v8_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.275
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.276
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa ps7_cortexa9_0], Result: [null, axi_bram_ctrl_0 axi_gpio_PLtoPS axi_gpio_PStoPL ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.277
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.281
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.8",
+},
+"axi_gpio_PLtoPS": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_gpio_PStoPL": {"name": "gpio",
+"ver": "4.9",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.8",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.2",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.7",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.18",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.11",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.10",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "5.1",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.4",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.4",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "4.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.12",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.7",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.6",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.11",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.281
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.370
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, {"axi_bram_ctrl_0": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"bram_v4_8": {"name": "bram",
+"version": "4.8",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_gpio_PLtoPS": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"gpio_v4_9": {"name": "gpio",
+"version": "4.9",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_gpio_PStoPL": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"gpio_v4_9": {"name": "gpio",
+"version": "4.9",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_smc": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"processing_system7_0": {"version": "5.5",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"rst_ps7_0_50M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_clockc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_uart_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"uartps_v3_12": {"name": "uartps",
+"version": "3.12",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_12",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_pl310_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_pmu_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_qspi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"qspips_v3_10": {"name": "qspips",
+"version": "3.10",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/qspips_v3_10",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_qspi_linear_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_axi_interconnect_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_cortexa9_0": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"cpu_cortexa9_v2_11": {"name": "cpu_cortexa9",
+"version": "2.11",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_cortexa9_1": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"cpu_cortexa9_v2_11": {"name": "cpu_cortexa9",
+"version": "2.11",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"ddrps_v1_2": {"name": "ddrps",
+"version": "1.2",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/ddrps_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ethernet_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"emacps_v3_18": {"name": "emacps",
+"version": "3.18",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/emacps_v3_18",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_usb_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"usbps_v2_7": {"name": "usbps",
+"version": "2.7",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/usbps_v2_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_sd_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"sdps_v4_1": {"name": "sdps",
+"version": "4.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/sdps_v4_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpio_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"gpiops_v3_11": {"name": "gpiops",
+"version": "3.11",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddrc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dev_cfg_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"devcfg_v3_7": {"name": "devcfg",
+"version": "3.7",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/devcfg_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_xadc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"xadcps_v2_6": {"name": "xadcps",
+"version": "2.6",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ocmc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_coresight_comp_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"coresightps_dcc_v1_8": {"name": "coresightps_dcc",
+"version": "1.8",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/coresightps_dcc_v1_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpv_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_scuc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_globaltimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_intc_dist_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_l2cachec_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dma_s": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"dmaps_v2_8": {"name": "dmaps",
+"version": "2.8",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_iop_bus_config_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_ram_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_ram_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_scugic_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scugic_v5_1": {"name": "scugic",
+"version": "5.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scugic_v5_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scutimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scutimer_v2_4": {"name": "scutimer",
+"version": "2.4",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scutimer_v2_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scuwdt_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scuwdt_v2_4": {"name": "scuwdt",
+"version": "2.4",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_slcr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dma_ns": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"dmaps_v2_8": {"name": "dmaps",
+"version": "2.8",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_afi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_2": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_3": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_m_axi_gp0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.1",
+"repo": "/tools/Xilinx/Vitis/2023.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.499
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.500
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, xilffs xilrsa]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.501
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.502
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss], Result: [null, {"xilffs": "5.0",
+"xilrsa": "1.6",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.502
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "5.0"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.505
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "5.0"  && TYPE == "LIBRARY"}]], Result: [null, /tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilffs_v5_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.524
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "5.0"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.527
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilffs" && VERSION == "5.0"  && TYPE == "LIBRARY"}]], Result: [null, /tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilffs_v5_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.528
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilrsa" && VERSION == "1.6"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.530
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilrsa" && VERSION == "1.6"  && TYPE == "LIBRARY"}]], Result: [null, /tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilrsa_v1_6]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.534
+!MESSAGE XSCT Command: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilrsa" && VERSION == "1.6"  && TYPE == "LIBRARY"}]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.536
+!MESSAGE XSCT command with result: [hsi get_property REPOSITORY [hsi get_sw_cores -filter {NAME == "xilrsa" && VERSION == "1.6"  && TYPE == "LIBRARY"}]], Result: [null, /tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/sw_services/xilrsa_v1_6]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.587
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:04:51.620
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.038
+!MESSAGE XSCT Command: [domain active {Standalone_APP}], Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.039
+!MESSAGE XSCT command with result: [domain active {Standalone_APP}], Result: [null, ]. Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.039
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.040
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa]. Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.040
+!MESSAGE XSCT Command: [::scw::regenerate_psinit /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.041
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, ]. Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.041
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.043
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss]. Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.043
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss ], Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.044
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss ], Result: [null, ]. Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.044
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss], Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.045
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "8.1",
+}]. Thread: Worker-61: Initializing 'Standalone_APP' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.155
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.159
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.8",
+},
+"axi_gpio_PLtoPS": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_gpio_PStoPL": {"name": "gpio",
+"ver": "4.9",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.8",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.2",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.7",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.18",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.11",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.10",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "5.1",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.4",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.4",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "4.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.12",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.7",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.6",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.11",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.199
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.201
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.201
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.202
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/ps7_cortexa9_0/Standalone_APP/bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.254
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:05:03.284
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 17:30:18.455
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:32:26.153
+!MESSAGE XSCT Command: [platform read {/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr}], Thread: Worker-58: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:32:28.241
+!MESSAGE XSCT command with result: [platform read {/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr}], Result: [null, ]. Thread: Worker-58: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:32:54.988
+!MESSAGE XSCT Command: [domain active {linux_domain}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:32:54.990
+!MESSAGE XSCT command with result: [domain active {linux_domain}], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:32:55.013
+!MESSAGE XSCT Command: [domain config -generate-bif], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:32:55.016
+!MESSAGE XSCT command with result: [domain config -generate-bif], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:32:55.108
+!MESSAGE XSCT Command: [platform write], Thread: Worker-58: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:32:55.142
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr"]. Thread: Worker-58: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:03.560
+!MESSAGE XSCT Command: [domain config -bif {}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:03.562
+!MESSAGE XSCT command with result: [domain config -bif {}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:03.640
+!MESSAGE XSCT Command: [platform write], Thread: Worker-67: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:03.644
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr"]. Thread: Worker-67: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:33:10.770
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: linux_rootfs, Group preference: platform_editor
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:33:10.770
+!MESSAGE Preference loaded using local preference: /home/daniel/Test/images
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:25.819
+!MESSAGE XSCT Command: [domain config -rootfs {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/rootfs.tar.gz}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:25.823
+!MESSAGE XSCT command with result: [domain config -rootfs {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/rootfs.tar.gz}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:25.920
+!MESSAGE XSCT Command: [platform write], Thread: Worker-58: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:25.925
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr"]. Thread: Worker-58: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:33:29.527
+!MESSAGE Opening file dialog using preferences. Current path: , Local preference: boot_components_directory, Group preference: platform_editor
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:33:29.527
+!MESSAGE Preference loaded using local preference: /home/daniel/Test/images
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:43.976
+!MESSAGE XSCT Command: [domain config -boot {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:43.980
+!MESSAGE XSCT command with result: [domain config -boot {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:44.085
+!MESSAGE XSCT Command: [platform write], Thread: Worker-65: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:33:44.092
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr"]. Thread: Worker-65: Saving platform
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 17:33:58.849
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 17:34:31.396
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:34:31.399
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:34:51.048
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: bif_file, Group preference: platform_editor
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:34:51.049
+!MESSAGE Preference loaded using local preference: /home/daniel/Test/images
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:35:14.307
+!MESSAGE XSCT Command: [domain config -bif {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/bootgen.bif}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:35:14.310
+!MESSAGE XSCT command with result: [domain config -bif {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/bootgen.bif}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:35:14.412
+!MESSAGE XSCT Command: [platform write], Thread: Worker-65: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:35:14.416
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr"]. Thread: Worker-65: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:35:33.212
+!MESSAGE Opening file dialog using preferences. Current path: , Local preference: fat32_partition_directory, Group preference: platform_editor
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:35:33.212
+!MESSAGE Preference loaded using local preference: /home/daniel/Test/images
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:35:35.328
+!MESSAGE XSCT Command: [domain config -image {/home/daniel/Test/images}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:35:35.331
+!MESSAGE XSCT command with result: [domain config -image {/home/daniel/Test/images}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:35:35.427
+!MESSAGE XSCT Command: [platform write], Thread: Worker-66: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-19 17:35:35.431
+!MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/platform.spr"]. Thread: Worker-66: Saving platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:36:31.763
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-19 17:36:54.893
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-19 17:37:13.682
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'

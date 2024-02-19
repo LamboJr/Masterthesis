@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <stdbool.h>
+#include <arpa/inet.h>
+
+#include "Includes/DataTypes.h"
+#include "Hardwarehandler.h"
+#include "Includes/MonitorTrade.h"
+#include "Includes/TradeHandler.h"
+
+#include "TCP_Server.h"
+
+#define MODE_TRADE 0
+#define MODE_MONITOR 1
+
+#define TESTDATA_ARRAY TestDataTradePokemonExchange
+
+FILE *PokemonFp;
+
+int main_TradeHandlerTest()
+{
+	printf("Test for Tradehandler\n");
+
+	u32 OPMode = MODE_TRADE;
+
+	printf("Set Mode to Trading Mode\n");
+	//Configure Trading or Monitoring mode
+
+	FILE *fp;
+
+	if (OPMode == MODE_MONITOR){
+		printf("Write Monitor Output to file log.txt\n");
+		 // Open file in write mode
+		 fp = fopen("/home/petalinux/log.txt", "w");
+		 // Check if file opened successfully
+		if (fp == NULL) {
+			printf("Error opening file.\n");
+			return 1;
+		}
+		// Write output to file
+		//fprintf(fp, "This is the output that will be written to the file.\n");
+		printf("Write Extracted Data into datalog.txt\n");
+		PokemonFp = fopen("/home/petalinux/datalog.txt","w");
+		if(PokemonFp == NULL){
+			printf("Error opening file datalog.txt.\n");
+			return 1;
+		}
+
+	}
+
+	printf("Store output in /home/petalinux/test_Tradhandler.txt\n");
+
+
+	printf("Staring Main Program\n");
+
+	u16 data;
+	u16 returnvalue = 0;
+	for(int i = 0; i < sizeof(TESTDATA_ARRAY);i++){
+		data = TESTDATA_ARRAY[i];
+		returnvalue = TradeHandler(data,0x0);
+	}
+
+	return 0;
+}

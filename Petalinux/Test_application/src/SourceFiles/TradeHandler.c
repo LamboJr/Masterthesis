@@ -23,6 +23,8 @@ extern u8 Switches_State;
 	u16 LinkType;
 	u16 TempBuffer[MAX_BUFFER_SIZE];
 };*/
+u16 ReceivedTeam[6][50];
+
 
 void UpdateFrameCounter(u32* FrameCounterPtr){
     if (*FrameCounterPtr == FRAME_LENGTH){
@@ -51,6 +53,8 @@ u8 rising_edge_detection_Tradebutton(u8 Tradebutton){
 	}
 
 }
+
+
 
 
 s8 Ready_to_Trade(u32 FrameCounter,u32 data,u16* returnvalue,u8 SpotNumber){
@@ -144,6 +148,44 @@ s8 Ready_to_Trade(u32 FrameCounter,u32 data,u16* returnvalue,u8 SpotNumber){
 	//Wait till FrameCounter is 1 to Send data sequence
 
 }
+void BlockRequestAnalyser(u32 Framecounter,u16 data){
+	//Function which safes the received Pokemondata(Master) in a corresponding data structure
+	static u8 bufferindex = 0;
+	static u8 TeamIndex = 0;
+	static u8 DataFieldActive =0;
+
+	if (Framecounter == 1){
+		//ignore
+	}
+	else if( Framecounter == 2){
+		if( data == 0x8888){
+			DataFieldActive = 1;
+		}
+		else{
+			DataFieldActive = 0;
+		}
+	}
+	else{
+		if ( DataFieldActive == 1){
+			if ( bufferindex < 50 ){
+				ReceivedTeam[TeamIndex][bufferindex++] = data;
+			}else if ((bufferindex >= 50) && (bufferindex < 100)){
+				ReceivedTeam[TeamIndex+1][(bufferindex++)-50] = data;
+			}else{
+				DataFieldActive = 0;
+				bufferindex = 0;
+				//decode_Pokemon_data(ReceivedTeam[TeamIndex]);
+				//decode_Pokemon_data(ReceivedTeam[TeamIndex+1]);
+				TeamIndex = (TeamIndex + 2) % 6;
+
+			}
+
+		}
+		else{
+			//do nothing
+		}
+	}
+}
 
 
 s8 BlockRequestResponse(u32 FrameCounter, u16* returnvalue){
@@ -207,6 +249,7 @@ s8 BlockRequestResponse(u32 FrameCounter, u16* returnvalue){
 	}
 	return 1;
 }
+
 
 
 
@@ -300,8 +343,10 @@ u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 
 		case BlockRequestHandler : {
 
-			if (s_TradeHandlerMaster.BlockRequestSize == 1){
+			if (s_TradeHandlerMaster.BlockRequestSize == 1){// Inddicates Pokemon structure send
+
 				s_TradeHandlerMaster.BlockRequest = BlockRequestResponse(FrameCounter, &returnvalue);
+				BlockRequestAnalyser(FrameCounter, data);
 			}else{
 				//printf("Debug block request size ungleich 1\n");
 				s_TradeHandlerMaster.BlockRequest = 0;

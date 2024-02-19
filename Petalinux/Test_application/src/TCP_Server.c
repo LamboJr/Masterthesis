@@ -27,18 +27,23 @@
 
 #define PORT 8080
 #define MAX_PENDING_CONNECTIONS 5
-#define BUFFER_SIZE 1024
+#define TEXT_BUFFER_SIZE 1024
+#define DATA_BUFFER_SIZE 128
 
 
 #define ADDR_OFFSET_EMPTY 1
 
+int server_fd, new_socket;
+
+
 int TCP_Server_Init() {
 
 
-    int server_fd, new_socket;
+    //int server_fd, new_socket;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
-    char buffer[BUFFER_SIZE] = {0};
+    u16 buffer[DATA_BUFFER_SIZE] = {0};
+    char textbuffer[TEXT_BUFFER_SIZE] = {0};
     const char *hello = "Hello from server";
 
     // Create socket
@@ -64,20 +69,27 @@ int TCP_Server_Init() {
         perror("listen failed");
         exit(EXIT_FAILURE);
     }
-    printf("Accecpt the incoming connection \n");
+    printf("Accept the incoming connection \n");
+    printf("Please connect Client PC to the Board and start the software\n");
     // Accept an incoming connection
     if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen)) < 0) {
         perror("accept failed");
         exit(EXIT_FAILURE);
     }
+    printf("New socket accepted\n");
+
+
 
     // Read data from the client
-    read(new_socket, buffer, BUFFER_SIZE);
-    printf("Client: %s\n", buffer);
+    read(new_socket, buffer, DATA_BUFFER_SIZE);
+/*    for(int i = 0; i < DATA_BUFFER_SIZE;i++){
+    	//printf("Index[%d] = %04x\n",i,buffer[i]);
+    }*/
+    printf("Detected Client \n");
 
     // Send data to the client
     send(new_socket, hello, strlen(hello), 0);
-    printf("Hello message sent\n");
+    printf("Connected to Client via TCP \n");
 
     return 0;
 }

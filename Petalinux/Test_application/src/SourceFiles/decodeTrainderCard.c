@@ -40,7 +40,7 @@ void decodeTrainerCard(uint16_t* TrainerBuffer){
     printf("PokemonTrades : %d\n",trainercard.pokemonTrades);
     printf("Money : %d\n",trainercard.money);
     for(size_t i = 0;i<TRAINER_CARD_PROFILE_LENGTH;i++){
-        printf("EasyChatProfile[%ld] : %d\n",i,trainercard.easyChatProfile[i]);
+        printf("EasyChatProfile[%d] : %d\n",i,trainercard.easyChatProfile[i]);
     }
     printf("PlayerName : %s\n",trainercard.playerName);
     printf("Version : %d\n",trainercard.version);
@@ -48,7 +48,7 @@ void decodeTrainerCard(uint16_t* TrainerBuffer){
     printf("LinkPointss : %d\n",trainercard.linkPoints.frontier);
     printf("UnionroomNumber : %d\n",trainercard.unionRoomNum);
     for(size_t i = 0;i<8;i++){
-        printf("Filler[%ld] : %d\n",i,trainercard.filler[i]);
+        printf("Filler[%d] : %d\n",i,trainercard.filler[i]);
     }
     printf("ShouldDrwastickers : %d\n",trainercard.shouldDrawStickers);
     printf("Unused : %d\n",trainercard.unused);

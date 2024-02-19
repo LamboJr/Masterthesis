@@ -1,8 +1,9 @@
 #include "../Includes/DataTypes.h"
+#include <stdio.h>
 #include "../Includes/MonitorTrade.h"
 
 #include "../Includes/Link.h"
-#include <stdio.h>
+
 #include "../Includes/linkcommand.h"
 #include "../Includes/decodeTrainderCard.h"
 #include "../Includes/decode_Pokemon_structure.h"
@@ -12,7 +13,7 @@ static struct TradeHandler sTradeHandler[2];
 static u32 frameCount = 1;		//count variable for formating the monitoring output and also used for interpreting data
 
 
-void MonitorHandler(u32 data,u32 dump){
+void MonitorHandler(u32 data,u32 dump,FILE *fp){
 
 	static s_SystemState s_NextState = TransitionState;	//FSM state vaiable
 
@@ -22,8 +23,8 @@ void MonitorHandler(u32 data,u32 dump){
 	switch(s_NextState){
 	case IdleState:{
 		if ( (dump & 0x1) == 1){
-			printf("%04x:%04x  ",GET_MASTERDATA(data),GET_SLAVEDATA(data));
-			printf("\n");
+			printf("%04x:%04x  \n",GET_MASTERDATA(data),GET_SLAVEDATA(data));
+			fprintf(fp,"%04x:%04x  \n",GET_MASTERDATA(data),GET_SLAVEDATA(data));
 		}
 		if(GET_MASTERDATA(data) == MASTER_HANDSHAKE){
 			s_NextState = TradingState;
@@ -180,7 +181,7 @@ void MonitorHandler(u32 data,u32 dump){
 				default:break;
 				}//end switch case statemachine
 				//------------------------------------------------------------------------------------------
-				printDataFrame(dump,data);
+				printDataFrame(dump,data,fp);
 	}break;
 	case TransitionState:{
 		if(GET_MASTERDATA(data) == SLAVE_HANDSHAKE){
@@ -189,7 +190,7 @@ void MonitorHandler(u32 data,u32 dump){
 			frameCount = 0;
 		}
 		//printf("In Transition ");
-		printDataFrame(dump,data);
+		printDataFrame(dump,data,fp);
 	}break;
 
 	default:break;
@@ -230,6 +231,7 @@ void updateBuffer(u8 MSC,u32 data){
 					}
 					PRINTMS(MSC)
 					printf("Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);
+					printf("DEBUG\n");
 					decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
 					sTradeHandler[MSC].TeamIndex++;
 
@@ -333,15 +335,20 @@ void printBlankspace(char* text){
 
 #endif
 }
-void printDataFrame(u32 dump,u32 data){
+void printDataFrame(u32 dump,u32 data,FILE *fp){
 	if ( (dump & 0x1) == 1){
 		printf("%04x:%04x \t",GET_MASTERDATA(data),GET_SLAVEDATA(data));
-		if ((frameCount == 1) || (frameCount == 0)){printf("|\t");}
+		fprintf(fp,"%04x:%04x \t",GET_MASTERDATA(data),GET_SLAVEDATA(data));
+		if ((frameCount == 1) || (frameCount == 0)){
+			printf("|\t");
+			fprintf(fp,"|\t");
+		}
 	}
 
 	if ((frameCount % 8 == 0) && (frameCount != 0)){
 		if ( (dump & 0x1) == 1){
 			printf("\n");
+			fprintf(fp,"\n");
 		}
 		frameCount = 0;
 	}

@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Memory/>
+<Memory>
+    <Block Addr="0xbed55bfc" Context="P533" Size="4">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="0xbed55bfa" Context="P533" Size="2">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="0x488c8f" Context="P533" Size="1">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="0x488c90" Context="P533" Size="1">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="0x488c8e" Context="P533" Size="1">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+    <Block Addr="ReceivedTeam" Context="P527" Size="-1">
+        <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.floatingpoint.FPRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+        <Rendering ID="org.eclipse.cdt.debug.ui.memory.traditional.TraditionalRendering" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.2"/>
+    </Block>
+</Memory>

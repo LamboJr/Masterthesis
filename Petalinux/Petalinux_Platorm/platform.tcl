@@ -75,3 +75,24 @@ domain active {Standalone_APP}
 bsp reload
 platform generate
 platform generate
+platform active {Petalinux_Platorm}
+domain active {zynq_fsbl}
+bsp reload
+domain active {Standalone_APP}
+bsp reload
+platform generate -domains 
+domain active {linux_domain}
+domain config -generate-bif
+platform write
+domain config -bif {}
+platform write
+domain config -rootfs {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/rootfs.tar.gz}
+platform write
+domain config -boot {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux}
+platform write
+platform generate -domains 
+domain config -bif {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/bootgen.bif}
+platform write
+domain config -image {/home/daniel/Test/images}
+platform write
+platform generate -domains 

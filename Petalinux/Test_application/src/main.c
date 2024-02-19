@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <sys/mman.h>
 #include <fcntl.h>
+#include <stdbool.h>
+#include <arpa/inet.h>
 
 #include "Includes/DataTypes.h"
 #include "Hardwarehandler.h"
@@ -11,14 +13,24 @@
 
 #include "TCP_Server.h"
 
+#include "Test_Tradehanlder.h"
+
 #define MODE_TRADE 0
 #define MODE_MONITOR 1
 
-#define USE_TEST_DATA
+//#define USE_TEST_DATA
 
+FILE *PokemonFp;
 
 int main(int argc, char *argv[])
 {
+
+#ifdef USE_TEST_DATA
+	main_TradeHandlerTest();
+	printf("Test finished\n");
+	return 1;
+#endif
+
 	printf("Initialize Hardware components ... \n");
 	int fd;
 	fd=open("/dev/mem",O_RDWR);
@@ -33,20 +45,60 @@ int main(int argc, char *argv[])
 	void *PStoPLbufferptr = InitPStoPLBuffer(fd);
 
 	printf("Finished\n");
+
 	u32 OPMode = MODE_TRADE;
-	u32 PsToPlValue = MODE_TRADE; // == Mode Trading
-	u32 OutputData = 0x0000;
-	u32 Inputdata;
+	bool Valid = 0;
+	while(!Valid){
+	printf ("Enter Trading Mode (0) or Monitoring Mode (1) : ");
+	scanf ("%d",&OPMode);
+	printf(" OP Mode = %d\n",OPMode);
+	if((OPMode == 0 )||( OPMode == 1)){
+		printf("valid Value \n");
+		Valid = 1;
+	}else{
+		printf("Invalid Value \n");
+		Valid = 0;
+	}
+	}
+	//Configure Trading or Monitoring mode
+	u32 PsToPlValue = OPMode; // == Mode Trading
+	printf("Configure Trading or Monitoring Mode\n");
+	WritePStoPLBffer(PStoPLbufferptr,PsToPlValue);
+
+	FILE *fp;
+
+	if (OPMode == MODE_MONITOR){
+		printf("Write Monitor Output to file log.txt\n");
+
+		 // Open file in write mode
+		 fp = fopen("/home/petalinux/log.txt", "w");
+		 // Check if file opened successfully
+		if (fp == NULL) {
+			printf("Error opening file.\n");
+			return 1;
+		}
+		// Write output to file
+		//fprintf(fp, "This is the output that will be written to the file.\n");
+		printf("Write Extracted Data into datalog.txt\n");
+		PokemonFp = fopen("/home/petalinux/datalog.txt","w");
+		if(PokemonFp == NULL){
+			printf("Error opening file datalog.txt.\n");
+			return 1;
+		}
+
+	}
+
+	//u32 OutputData = 0x0000;
+	u32 Inputdata = 0;
 	u32 dump = 1;
 	u32 PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
 
-	printf("Setting to Output to 0x0000...\n");
+	printf("Setting Output to 0x0000...\n");
 	WriteToRingbuffer(Ringbufferptr,0x0000, 0);
 
+	extern int new_socket;
 	TCP_Server_Init();
-	//Configure Trading or Monitoring mode
-	printf("Configure Trading or Monitoring Mode\n");
-	WritePStoPLBffer(PStoPLbufferptr,PsToPlValue);
+
 
 
 	//Clean buffer for clean start in communiccation
@@ -57,6 +109,8 @@ int main(int argc, char *argv[])
 	printf("Finished cleaning buffer\n");
 
 	printf("Staring Main Program\n");
+
+
 	while(1){
 		PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
 
@@ -64,9 +118,10 @@ int main(int argc, char *argv[])
 
 			Inputdata = ReadRingbuffer(Ringbufferptr,0);
 			if (OPMode == MODE_TRADE){
+
 				WriteToRingbuffer(Ringbufferptr, TradeHandler(Inputdata,PLtoPSBuffer_Value), 0);
 			}else{
-				MonitorHandler(Inputdata, dump);
+				MonitorHandler(Inputdata, dump,fp);
 			}
 		}
 	}

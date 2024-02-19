@@ -1,5 +1,27 @@
 Nothing to build in platform 'Petalinux_Platorm'
 
-18:24:55 **** Incremental Build of configuration Debug for project Test_application ****
+17:37:04 **** Incremental Build of configuration Debug for project Test_application ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/DatabaseHandler.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DatabaseHandler.o" -MMD -MP -MF"src/DatabaseHandler.d" -MT"src/DatabaseHandler.o" -o "src/DatabaseHandler.o" "../src/DatabaseHandler.c"
+Finished building: ../src/DatabaseHandler.c
+ 
+Building target: Test_application.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "Test_application.elf" ./src/SourceFiles/MonitorTrade.o ./src/SourceFiles/TradeHandler.o ./src/SourceFiles/decodeTrainderCard.o ./src/SourceFiles/decode_Pokemon_structure.o ./src/SourceFiles/functions.o  ./src/DatabaseHandler.o ./src/HardwareHandler.o ./src/TCP_Server.o ./src/Test_Tradehandler.o ./src/main.o   
+Finished building target: Test_application.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size Test_application.elf  |tee "Test_application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30386	 227464	   4500	 262350	  400ce	Test_application.elf
+Finished building: Test_application.elf.size
+ 
+17:37:04 **** Incremental Build of configuration Debug for project Test_application_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm -domains linux_domain -bifpath /home/daniel/Masterthesis/Petalinux/Test_application_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm --sys_config Petalinux_Platorm --bif /home/daniel/Masterthesis/Petalinux/Test_application_system/Debug/system.bif --bitstream /home/daniel/Masterthesis/Petalinux/Test_application/_ide/bitstream/ModuleTop.bit --sd_file /home/daniel/Masterthesis/Petalinux/Test_application/Debug/Test_application.elf
+creating BOOT.BIN using /home/daniel/Masterthesis/Petalinux/Test_application/_ide/bitstream/ModuleTop.bit
+Running /tools/Xilinx/Vitis/2023.1/bin/bootgen  -image /home/daniel/Masterthesis/Petalinux/Test_application_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

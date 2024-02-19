@@ -23,9 +23,9 @@ typedef enum {
 
 } s_SystemState;
 
-void MonitorHandler(u32 data,u32 dump);
+void MonitorHandler(u32 data,u32 dump,FILE *fp);
 
-void printDataFrame(u32 dump,u32 data);
+void printDataFrame(u32 dump,u32 data,FILE *fp);
 void printBlankspace(char* text);
 
 void updateBuffer(u8 MSC,u32 data);
