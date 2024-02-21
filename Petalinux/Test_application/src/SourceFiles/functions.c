@@ -1,6 +1,7 @@
 #include "../Includes/Link.h"
 #include "../Includes/DataTypes.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include "../Includes/structs.h"
 
 #include "../Includes/functions.h"

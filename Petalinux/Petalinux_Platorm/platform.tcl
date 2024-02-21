@@ -96,3 +96,19 @@ platform write
 domain config -image {/home/daniel/Test/images}
 platform write
 platform generate -domains 
+platform clean
+platform generate
+platform active {Petalinux_Platorm}
+domain config -bif {}
+platform write
+domain config -boot {}
+platform write
+domain config -rootfs {}
+platform write
+domain config -image {}
+platform write
+domain active {zynq_fsbl}
+bsp reload
+domain active {Standalone_APP}
+bsp reload
+platform generate -domains 

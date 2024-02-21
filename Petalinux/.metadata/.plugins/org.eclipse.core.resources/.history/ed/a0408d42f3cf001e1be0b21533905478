@@ -1,0 +1,13 @@
+#ifndef RINGBUFFER_HEADER
+#define RINGBUFFER_HEADER
+
+#define MAX_BUFFER_LENGTH 1024
+
+
+void ResetControlBuffer();
+void ResetDataBuffer();
+u16 ReadDataBuffer();
+
+
+
+#endif

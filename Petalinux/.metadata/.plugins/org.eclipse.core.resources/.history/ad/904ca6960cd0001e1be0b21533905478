@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "../Includes/DataTypes.h"
+
+void concat(u16 *Buffer1, u16 *Buffer2,u16 *ResultBuffer,size_t Buffer1size,size_t Buffer2size) {
+	memcpy(ResultBuffer,Buffer1,Buffer1size);
+	memcpy(ResultBuffer+Buffer1size, Buffer2, Buffer2size);
+	//
+	return;
+}
+

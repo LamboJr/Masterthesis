@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="fprintf(PokemonFp,"/>
+		<item key="selection" value="InitTrade"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="InitTrade"/>
+			<item value="rising_edge_detection_Tradebutton"/>
 			<item value="printf("/>
 			<item value="    printf("/>
 			<item value="xil_printf"/>
 			<item value="uint32_t"/>
 		</list>
 		<list key="replacehistory">
+			<item value="DetectButtonPress"/>
 			<item value="fprintf(PokemonFp,"/>
 			<item value="printf"/>
 			<item value="u32"/>

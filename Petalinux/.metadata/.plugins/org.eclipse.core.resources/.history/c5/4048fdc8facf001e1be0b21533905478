@@ -1,0 +1,74 @@
+#include "../Includes/DataTypes.h"
+#include <stdio.h>
+
+#include "../Includes/Ringbuffer.h"
+
+
+struct BufferType{
+	u16 Data[MAX_BUFFER_LENGTH];
+	u16 WriteIndex;
+	u16 ReadIndex;
+};
+
+struct BufferType DataBuffer;
+struct BufferType ControlBuffer;
+// DEclare a buffer structure for a Buffer with Data to be send to Ringbuffer of HW
+uint16_t DataBuffer[MAX_BUFFER_LENGTH];
+uint16_t DataBufferWriteIndex = 0;
+uint16_t DataBufferReadIndex = 0;
+
+// DEclare a buffer structure for a Buffer with Data to be send to Ringbuffer of HW
+u16 ControlBuffer[MAX_BUFFER_LENGTH];
+u16 ControlBufferWriteIndex = 0;
+u16 ControlBufferReadIndex = 0;
+
+void ResetBuffer(struct BufferType *Buffer){
+	Buffer -> WriteIndex = 0;
+	Buffer -> ReadIndex = 0;
+}
+
+
+//Reset Head and Tail of Data buffer
+void ResetControlBuffer(){
+	ControlBufferReadIndex = 0;
+	ControlBufferReadIndex = 0;
+}
+
+void ResetDataBuffer(){
+	DataBufferReadIndex = 0;
+	DataBufferWriteIndex = 0;
+}
+u16 ReadDataBuffer(){
+	u16 returnvalue = 0;
+	//If Head == Tail Buffer is empty. return 0;
+	if (DataBufferReadIndex == DataBufferWriteIndex){
+		return returnvalue;
+	}else{
+		returnvalue = DataBuffer[DataBufferReadIndex];
+		if (DataBufferReadIndex >= (MAX_BUFFER_LENGTH-1)){
+			DataBufferReadIndex = 0;
+		}
+		else{
+			DataBufferReadIndex++;
+		}
+		return returnvalue;
+	}
+
+}
+
+s8 WriteDataBuffer(u16 datainput){
+	DataBuffer[DataBufferWriteIndex] = datainput;
+	if (DataBufferWriteIndex >= (MAX_BUFFER_LENGTH-1)){
+		DataBufferWriteIndex = 0;
+	}
+	else{
+		DataBufferWriteIndex++;
+	}
+	if (DataBufferWriteIndex == DataBufferReadIndex){
+		printf("Data Buffer full now");
+	}
+
+
+
+	return 0;
+}

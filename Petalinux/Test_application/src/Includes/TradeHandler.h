@@ -32,10 +32,20 @@ typedef enum {
 	Buttons_Hold_State,
 }DataBlockType;
 
-s8 Ready_to_Trade(u32 FrameCounter,u32 data,u16* returnvalue,u8 SpotNumber);
+s8 ReadytoTrade(u32 FrameCounter,u32 data,u16* returnvalue,u8 SpotNumber);
+
 
 void UpdateFrameCounter(u32* FrameCounterPtr);
 
 u32 TradeHandler(u32 data, u32 PL_to_PS_buffer_value);
 
+u8 DetectResetButtonPress(u8 Button,char *ButtonType);
+u8 DetectTradeButtonPress(u8 Button);
+
+void GenerateBlockInit(u16 Blocksize);
+
+void GenerateDataBlock(u16 Blocksize,u16 *Databuffer);
+
+//void  InitTradeBuffer(u8 Spotnumber);
+void *InitTradeBuffer(void* ptr);
 #endif

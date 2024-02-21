@@ -43,3 +43,11 @@ TRACE::2024-02-19.17:35:51::SCWLinux::Copying the qemu file from  /home/daniel/M
 TRACE::2024-02-19.17:35:51::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
 TRACE::2024-02-19.17:35:51::SCWLinux:: Copying the user libraries. 
 TRACE::2024-02-19.17:35:51::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-20.20:24:12::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-20.20:24:12::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-20.20:24:12::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-20.20:24:12::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-20.21:33:42::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-20.21:33:42::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-20.21:33:42::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-20.21:33:42::SCWLinux::Skipping the Petalinux build as image is already given.

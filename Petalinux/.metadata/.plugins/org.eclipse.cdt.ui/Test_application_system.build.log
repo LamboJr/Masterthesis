@@ -1,10 +1,12 @@
-17:37:04 **** Incremental Build of configuration Debug for project Test_application_system ****
+21:33:47 **** Incremental Build of configuration Debug for project Test_application_system ****
 make all 
 Generating bif file for the system project
 Executing command '::scw::generate_bif -xpfm /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm -domains linux_domain -bifpath /home/daniel/Masterthesis/Petalinux/Test_application_system/Debug/system.bif' on XSCT
 sdcard_gen --xpfm /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm --sys_config Petalinux_Platorm --bif /home/daniel/Masterthesis/Petalinux/Test_application_system/Debug/system.bif --bitstream /home/daniel/Masterthesis/Petalinux/Test_application/_ide/bitstream/ModuleTop.bit --sd_file /home/daniel/Masterthesis/Petalinux/Test_application/Debug/Test_application.elf
 creating BOOT.BIN using /home/daniel/Masterthesis/Petalinux/Test_application/_ide/bitstream/ModuleTop.bit
 Running /tools/Xilinx/Vitis/2023.1/bin/bootgen  -image /home/daniel/Masterthesis/Petalinux/Test_application_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+Error writing SD card data : Error when running '/tools/Xilinx/Vitis/2023.1/bin/bootgen  -image /home/daniel/Masterthesis/Petalinux/Test_application_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN'
+make: *** [makefile:40: package] Error 1
 
-17:37:13 Build Finished (took 8s.838ms)
+21:33:55 Build Finished (took 7s.782ms)
 

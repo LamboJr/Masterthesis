@@ -13,7 +13,8 @@
 
 #include "TCP_Server.h"
 
-#include "Test_Tradehanlder.h"
+#include "Testing/Test_Tradehanlder.h"
+
 
 #define MODE_TRADE 0
 #define MODE_MONITOR 1
@@ -26,8 +27,9 @@ int main(int argc, char *argv[])
 {
 
 #ifdef USE_TEST_DATA
-	main_TradeHandlerTest();
-	printf("Test finished\n");
+
+	RunAllTests();
+	printf("Tests finished\n");
 	return 1;
 #endif
 
@@ -96,8 +98,8 @@ int main(int argc, char *argv[])
 	printf("Setting Output to 0x0000...\n");
 	WriteToRingbuffer(Ringbufferptr,0x0000, 0);
 
-	extern int new_socket;
-	TCP_Server_Init();
+	extern int __attribute__ ((unused)) new_socket;
+	//TCP_Server_Init();
 
 
 
@@ -113,6 +115,7 @@ int main(int argc, char *argv[])
 
 	while(1){
 		PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
+
 
 		if (ReadRingbuffer(Ringbufferptr,1) == 0){
 

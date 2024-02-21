@@ -1,0 +1,3 @@
+void ResetControlBuffer();
+void ResetDataBuffer();
+u16 ReadDataBuffer();
