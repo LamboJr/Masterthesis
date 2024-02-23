@@ -203,3 +203,34 @@
 10:16:55 INFO  : Successfully done query RDI_DATADIR 
 10:16:56 INFO  : Platform repository initialization has completed.
 10:30:48 INFO  : Launch of emulator has been cancelled. Launch configuration will be terminated.
+14:10:35 ERROR : Could not connect to host '10.0.0.2' specified in the target 'Linux Agent'
+09:56:04 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+09:56:05 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+09:56:08 INFO  : XSCT server has started successfully.
+09:56:08 INFO  : Registering command handlers for Vitis TCF services
+09:56:09 INFO  : Successfully done setting XSCT server connection channel  
+09:56:09 INFO  : plnx-install-location is set to ''
+09:56:09 INFO  : Successfully done query RDI_DATADIR 
+09:56:09 INFO  : Successfully done setting workspace for the tool. 
+09:56:09 INFO  : Platform repository initialization has completed.
+12:17:09 INFO  : Result from executing command 'removePlatformRepo': 
+12:17:25 INFO  : Result from executing command 'getProjects': Petalinux_Platorm
+12:17:25 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+19:41:46 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+19:41:47 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+19:41:50 INFO  : XSCT server has started successfully.
+19:41:50 INFO  : Registering command handlers for Vitis TCF services
+19:41:50 INFO  : Successfully done setting XSCT server connection channel  
+19:41:50 INFO  : plnx-install-location is set to ''
+19:41:50 INFO  : Successfully done query RDI_DATADIR 
+19:41:50 INFO  : Successfully done setting workspace for the tool. 
+19:41:51 INFO  : Platform repository initialization has completed.
+09:37:09 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/Petalinux/IDE.log'.
+09:37:10 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/Petalinux/temp_xsdb_launch_script.tcl
+09:37:15 INFO  : XSCT server has started successfully.
+09:37:15 INFO  : Registering command handlers for Vitis TCF services
+09:37:15 INFO  : Successfully done setting XSCT server connection channel  
+09:37:15 INFO  : Successfully done query RDI_DATADIR 
+09:37:15 INFO  : plnx-install-location is set to ''
+09:37:15 INFO  : Successfully done setting workspace for the tool. 
+09:37:16 INFO  : Platform repository initialization has completed.

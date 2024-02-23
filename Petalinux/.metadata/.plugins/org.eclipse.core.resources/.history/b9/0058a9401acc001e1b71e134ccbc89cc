@@ -1,8 +1,0 @@
-#ifndef DATATYPES_HEADER
-#define DATATYPES_HEADER
-#include <stdint.h>
-#define u32 uint32_t
-#define u16 uint16_t
-#define u8  uint8_t
-
-#endif

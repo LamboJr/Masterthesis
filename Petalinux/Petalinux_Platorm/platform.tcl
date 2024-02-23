@@ -112,3 +112,5 @@ bsp reload
 domain active {Standalone_APP}
 bsp reload
 platform generate -domains 
+platform clean
+platform generate

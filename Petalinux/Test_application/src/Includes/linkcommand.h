@@ -61,13 +61,6 @@
 #define MASTER_HANDSHAKE  0x8FFF
 #define SLAVE_HANDSHAKE   0xB9A0
 #define EREADER_HANDSHAKE 0xCCD0
-/*
-enum {
-    BLOCK_REQ_SIZE_NONE, // Identical to 200
-    BLOCK_REQ_SIZE_200, //xC8
-    BLOCK_REQ_SIZE_100, //64
-    BLOCK_REQ_SIZE_220, //DC
-    BLOCK_REQ_SIZE_40, //28
-};*/
+
 
 #endif

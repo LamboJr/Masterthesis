@@ -14,14 +14,22 @@
 #include "TCP_Server.h"
 
 #include "Testing/Test_Tradehanlder.h"
+#include "Includes/ConCat.h"
+
+#include <pthread.h>
 
 
 #define MODE_TRADE 0
 #define MODE_MONITOR 1
 
+#define MODE_BACKUP 0
+#define MODE_ETHERNET_TRADE 1
+
 //#define USE_TEST_DATA
 
 FILE *PokemonFp;
+
+u8 TradeOPMode;
 
 int main(int argc, char *argv[])
 {
@@ -88,7 +96,41 @@ int main(int argc, char *argv[])
 			return 1;
 		}
 
-	}
+
+	}else{
+
+		Valid = 0;
+		while(!Valid){
+			printf ("Enter BAckUp Mode (0) or Trade over IP Mode (1) : ");
+			scanf ("%d",&TradeOPMode);
+			printf("TradeOP Mode = %d\n",TradeOPMode);
+			if((TradeOPMode == 0 )||( TradeOPMode == 1)){
+				printf("valid Value \n");
+				Valid = 1;
+			}else{
+				printf("Invalid Value \n");
+				Valid = 0;
+			}
+		}
+
+	}//end OPMODE
+
+
+
+
+	//Prepare Pokemon Buffer
+
+	extern u16 Magikarp_pokemonbuffer[50];
+	extern u16 Latios_pokemonbuffer[50];
+	extern u16 Salamence_pokemonbuffer[50];
+	extern u16 NoPokemon[50];
+	extern u16 PokemonTeamBuffer[3][100];
+	size_t Buffersize = sizeof(Magikarp_pokemonbuffer)/sizeof(u16);
+	printf("Size of : %d\n",Buffersize);
+	concat(Magikarp_pokemonbuffer,Latios_pokemonbuffer, PokemonTeamBuffer[0],Buffersize,Buffersize);
+	concat(Magikarp_pokemonbuffer,Salamence_pokemonbuffer, PokemonTeamBuffer[1],Buffersize,Buffersize);
+	concat(NoPokemon,NoPokemon, PokemonTeamBuffer[2],Buffersize,Buffersize);
+
 
 	//u32 OutputData = 0x0000;
 	u32 Inputdata = 0;
@@ -99,7 +141,8 @@ int main(int argc, char *argv[])
 	WriteToRingbuffer(Ringbufferptr,0x0000, 0);
 
 	extern int __attribute__ ((unused)) new_socket;
-	//TCP_Server_Init();
+
+	TCP_Server_Init();
 
 
 

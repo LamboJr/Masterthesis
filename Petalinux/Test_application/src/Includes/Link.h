@@ -20,13 +20,33 @@
 #include "DataTypes.h"
 #include "constant.h"
 
+typedef enum{
+    BLOCK_REQ_SIZE_NONE, // Identical to 200
+    BLOCK_REQ_SIZE_200, //xC8
+    BLOCK_REQ_SIZE_100, //64
+    BLOCK_REQ_SIZE_220, //DC
+    BLOCK_REQ_SIZE_40 //28
+}BlockSizes;
+typedef enum{
+	NoRequest,
+	Active
+}RequestStatus;
+
+typedef enum{
+	NoData,
+	CaptureData,
+	WaitforThread,
+	SendData
+} DataHandlerStatus;
+
 struct TradeHandler{
 	u16 PokemonTeam[MAX_TEAM_SIZE][POKEMON_BUFFER_LENGTH];
 	u16 TrainerCard[TRAINER_BUFFER_SIZE];
 	u16 TeamIndex;
 	u16 DataIndex;
-	u8 BlockRequest;
-	u16 BlockRequestSize;
+	RequestStatus BlockRequest;
+	BlockSizes BlockRequestSize;
+	DataHandlerStatus DataHandlerstatus;
 	u8 InitBlock;
 	u16 InitBlockSize;
 	u8 ContBlock;
@@ -37,6 +57,14 @@ struct TradeHandler{
 	u16 PressedButtons;
 
 };
+
+typedef enum{
+	NoThread,
+	Finished,
+	Running
+
+}ThreadStatus;
+
 
 
 #endif

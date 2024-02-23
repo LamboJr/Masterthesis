@@ -24,11 +24,13 @@
 #include <arpa/inet.h>
 #include "Includes/DataTypes.h"
 #include "TCP_Server.h"
+#include "Includes/Link.h"
+#include "Includes/ConCat.h"
 
 #define PORT 8080
 #define MAX_PENDING_CONNECTIONS 5
 #define TEXT_BUFFER_SIZE 1024
-#define DATA_BUFFER_SIZE 128
+#define DATA_BUFFER_SIZE 50
 
 
 #define ADDR_OFFSET_EMPTY 1
@@ -42,7 +44,7 @@ int TCP_Server_Init() {
     //int server_fd, new_socket;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
-    u16 buffer[DATA_BUFFER_SIZE] = {0};
+    //u16 buffer[DATA_BUFFER_SIZE] = {0};
     char textbuffer[TEXT_BUFFER_SIZE] = {0};
     const char *hello = "Hello from server";
 
@@ -81,15 +83,99 @@ int TCP_Server_Init() {
 
 
     // Read data from the client
-    read(new_socket, buffer, DATA_BUFFER_SIZE);
-/*    for(int i = 0; i < DATA_BUFFER_SIZE;i++){
+    read(new_socket,textbuffer, TEXT_BUFFER_SIZE);
+    /*read(new_socket, buffer, sizeof(buffer));
+    for(int i = 0; i < DATA_BUFFER_SIZE;i++){
     	//printf("Index[%d] = %04x\n",i,buffer[i]);
     }*/
-    printf("Detected Client \n");
+    printf("Detected Client with message : %s\n",textbuffer);
 
     // Send data to the client
     send(new_socket, hello, strlen(hello), 0);
     printf("Connected to Client via TCP \n");
 
     return 0;
+}
+
+void *NewConnectionServer(void *ptr){
+    // Accept an incoming connection
+	extern ThreadStatus Threadstatus;
+	Threadstatus = Running;printf("Tread is running\n");
+	extern u16 PokemonTeamBuffer[3][100];
+
+	u8* TeamIndexptr = (u8*) ptr;
+	extern struct TradeHandler s_TradeHandlerMaster;
+	extern u16 ReceivedTeam[6][50];
+	SendTeamIndex(*TeamIndexptr);
+	SendBufferTCP(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr], sizeof(s_TradeHandlerMaster.PokemonTeam[1]));
+	SendBufferTCP(s_TradeHandlerMaster.PokemonTeam[(*TeamIndexptr)+1], sizeof(s_TradeHandlerMaster.PokemonTeam[1]));
+
+	ReceiveBufferTCP(ReceivedTeam[*TeamIndexptr],sizeof(ReceivedTeam[1]));
+	ReceiveBufferTCP(ReceivedTeam[(*TeamIndexptr)+1],sizeof(ReceivedTeam[1]));
+	concat(ReceivedTeam[*TeamIndexptr],ReceivedTeam[(*TeamIndexptr)+1], PokemonTeamBuffer[(*TeamIndexptr)/2],sizeof(ReceivedTeam[1]), sizeof(ReceivedTeam[1]));
+
+	Threadstatus = Finished;printf("Thread is finished\n");
+	return NULL;
+}
+
+
+
+
+
+void SendTeamIndex(u8 TeamIndex){
+	u8 TeamIndexptr[1] = {TeamIndex};
+	printf("Send Team Index %d of Size %d Bytes\n",TeamIndex,sizeof(TeamIndexptr));
+	send(new_socket,TeamIndexptr,sizeof(TeamIndexptr),0);
+	s8 RecTeamIndex[1];
+	read(new_socket,RecTeamIndex,sizeof(RecTeamIndex));
+	printf("Client received Team Index %d \n",*RecTeamIndex);
+	return;
+}
+
+u8 ReceiveTeamIndex(){
+	u8 TeamIndexptr[1];
+	read(new_socket,TeamIndexptr,sizeof(TeamIndexptr));
+	printf("Received Team Index : %d of Size %d Bytes\n",*TeamIndexptr,sizeof(TeamIndexptr));
+	printf("Send Team Index %d ACK\n",*TeamIndexptr);
+	send(new_socket,TeamIndexptr,sizeof(TeamIndexptr),0);
+	return TeamIndexptr[0];
+}
+
+void SendBufferTCP(u16 *BufferArg,size_t BufferArgSize){
+
+	printf("Send Buffer with size %d Bytes over Ethernet\n",BufferArgSize);
+    for(int i= 0;i < BufferArgSize/sizeof(u16);i++){
+        printf("%04x  ",BufferArg[i]);
+        if(((i%10) == 0) && (i!=0)) {
+            printf("\n");
+        }
+    }
+    printf("\n");
+	send(new_socket, BufferArg,BufferArgSize,0);
+
+	s8 RecPokemonbuffer[1];
+	read(new_socket,RecPokemonbuffer,sizeof(RecPokemonbuffer));
+	printf("Client received Pokemon Buffer %d\n",*RecPokemonbuffer);
+
+
+	return;
+}
+
+void ReceiveBufferTCP(u16* BufferArg,size_t BufferArgSize){
+
+	read(new_socket, BufferArg, BufferArgSize);
+	//read(new_socket, ReceiveBuffer, sizeof(ReceiveBuffer));
+	for(int i = 0; i < 50;i++){
+    	printf("%04x ",BufferArg[i]);
+    	if(((i%10)==0) && (i!=0)){
+    		printf("\n");
+    	}
+	}printf("\n");
+	u8 AckPtr[1];
+	*AckPtr = 1;
+	send(new_socket,AckPtr,sizeof(AckPtr),0);
+	printf("Send Ack \n");
+
+	printf("Finished receving Buffer\n");
+
 }

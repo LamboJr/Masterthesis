@@ -1,21 +1,6 @@
-12:24:33 **** Incremental Build of configuration Debug for project Test_application ****
+19:42:06 **** Incremental Build of configuration Debug for project Test_application ****
 make all 
-Building file: ../src/main.c
-Invoking: ARM v7 Linux gcc compiler
-arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: Test_application.elf
-Invoking: ARM v7 Linux gcc linker
-arm-linux-gnueabihf-gcc  -o "Test_application.elf" ./src/Testing/Test_Tradehandler.o ./src/Testing/TradeHandlerbackup.o  ./src/SourceFiles/ConCat.o ./src/SourceFiles/MonitorTrade.o ./src/SourceFiles/Ringbuffer.o ./src/SourceFiles/TradeHandler.o ./src/SourceFiles/decodeTrainderCard.o ./src/SourceFiles/decode_Pokemon_structure.o ./src/SourceFiles/functions.o  ./src/DatabaseHandler.o ./src/HardwareHandler.o ./src/TCP_Server.o ./src/main.o   
-Finished building target: Test_application.elf
- 
-Invoking: ARM v7 Linux Print Size
-arm-linux-gnueabihf-size Test_application.elf  |tee "Test_application.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  42550	 227404	   8620	 278574	  4402e	Test_application.elf
-Finished building: Test_application.elf.size
- 
+make: Nothing to be done for 'all'.
 
-12:24:34 Build Finished (took 669ms)
+19:42:06 Build Finished (took 485ms)
 

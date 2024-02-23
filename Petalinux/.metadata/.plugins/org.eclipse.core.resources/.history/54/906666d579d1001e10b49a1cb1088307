@@ -1,0 +1,9 @@
+int TCP_Server_Init();
+
+void SendBufferTCP();
+
+void ReceiveBufferTCP();
+
+
+void SendTeamIndex(u8 TeamIndex);
+u8 ReceiveTeamIndex();

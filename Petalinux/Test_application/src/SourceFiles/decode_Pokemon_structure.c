@@ -40,7 +40,7 @@ void decode_Pokemon_data(u16 *Pokemonbuffer){
     }
 
     if(Pokemonstruct.level == 0){
-    	printf("No Pokemon on this place\n");
+    	fprintf(PokemonFp,"No valid Pokemon on this place\n");
     	return;
     }
 #ifdef DEBUG_PRINT

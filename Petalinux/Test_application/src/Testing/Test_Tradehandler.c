@@ -7,9 +7,10 @@
 #include <arpa/inet.h>
 #include <assert.h>
 
+#include "../Includes/Link.h"
+
 #include "../Includes/DataTypes.h"
 
-#include "../Includes/TestDataTrade.h"
 #include "../Includes/TradeHandler.h"
 
 #include "../Includes/decode_Pokemon_structure.h"
@@ -18,6 +19,7 @@
 #include "../Includes/Ringbuffer.h"
 
 #include "../Includes/ConCat.h"
+#include "TestDataTrade.h"
 
 
 #define MODE_TRADE 0
@@ -74,10 +76,18 @@ void main_TradeHandlerTest()
 		data = (u16)((TESTDATA_ARRAY[i] >> 16) & 0xFFFF);
 		returnvalue = TradeHandler(data,0x0);
 	}
-	extern u16 ReceivedTeam[6][50];
+/*	extern u16 ReceivedTeam[6][50];
 	for(int u = 0;u <6;u++){
-		decode_Pokemon_data(ReceivedTeam[u]);
-	}
+		printf("ReceivedTeam[%d] = \n",u);
+		for (int i = 0; i < 50; i++){
+			printf("0x%04x ,",ReceivedTeam[u][i]);
+			if((i%7)==0){
+				printf("\n");
+			}
+		}
+		printf("\n");
+		//decode_Pokemon_data(ReceivedTeam[u]);
+	}*/
 
 	return;
 }
@@ -163,7 +173,9 @@ void GenerateDataBlockTest(){
 	extern u16 Magikarp_pokemonbuffer[50];
 	size_t Buffersize = sizeof(Magikarp_pokemonbuffer)/sizeof(u16);
 	concat(Magikarp_pokemonbuffer, Magikarp_pokemonbuffer, ArgBuffer,Buffersize,Buffersize);
+	assert((s_DataBuffer.WriteIndex == 0));
 	GenerateDataBlock(Blocksize,ArgBuffer);
+	assert((s_DataBuffer.WriteIndex == 105)); //
 	for (int i = 0; i < 15;i++){
 		assert(ReadBuffer(&s_ControlBuffer) == 0x8888);
 	}
@@ -179,26 +191,14 @@ void GenerateDataBlockTest(){
 		TestBuffer[i] = i;
 	}
 	Blocksize = 28;
+	assert((s_DataBuffer.WriteIndex == 0));
 	GenerateDataBlock(Blocksize, TestBuffer);
+	assert((s_DataBuffer.WriteIndex == 14));
 	assert((ReadBuffer(&s_ControlBuffer) == 0x8888) && (ReadBuffer(&s_ControlBuffer) == 0x8888) && (ReadBuffer(&s_ControlBuffer) == 0));
 	for(int i = 0; i< Buffersize;i++){
 		assert((ReadBuffer(&s_DataBuffer) == i));
 	}
 	EndFunctionTestPrint("GenerateDataBlock");
-	return;
-}
-
-
-void ReadyToTradeTest(){
-	printf("Test of function --ReadyToTrade--\n");
-	u32 FrameCounter = 1;
-	u32 data =0;
-	u16 returnvalue = 0;
-	u8 SpotNumber = 1;
-	s8 Check = 0;
-	Check = ReadytoTrade(FrameCounter,data,&returnvalue,SpotNumber);
-
-	printf("Test of function --ReadyToTrade-- successful\n");
 	return;
 }
 
@@ -330,6 +330,51 @@ void SendTradeChoiceTest(){
 	return;
 }
 
+void GenerateBlockRequestResponseTest(){
+	StartFunctionTestPrint("GenerateBlockRequestResponseTest");
+	extern struct BufferType s_DataBuffer;
+	extern struct BufferType s_ControlBuffer;
+	ResetBuffer(&s_ControlBuffer);
+	ResetBuffer(&s_DataBuffer);
+	BlockSizes Blocksize = BLOCK_REQ_SIZE_200;
+	GenerateBlockRequestResponse(Blocksize);
+	assert(ReadBuffer(&s_ControlBuffer) == 0x0000);
+	assert(ReadBuffer(&s_ControlBuffer) == 0x0000);
+	assert(ReadBuffer(&s_ControlBuffer) == 0xBBBB);
+	assert(ReadBuffer(&s_ControlBuffer) == 0x0000);
+	assert(ReadBuffer(&s_ControlBuffer) == 0x0000);
+	for (int i = 0; i < 15;i++){
+		assert(ReadBuffer(&s_ControlBuffer) == 0x8888);
+	}
+	EndFunctionTestPrint("GenerateBlockRequestResponseTest");
+	return;
+}
+
+
+void TestTCPServer(){
+	StartFunctionTestPrint("TestTCPServer");
+	TCP_Server_Init();
+	u16 TestTeam[6][50];
+	for(int i = 0;i< 6;i++){
+		for(int u = 0; u< 50;u++){
+			TestTeam[i][u] = (i*50)+u;
+		}
+	}
+
+	SendTeamIndex(3);
+	printf("REC Team Index = %d\n",ReceiveTeamIndex());
+
+	SendBufferTCP(TestTeam[1],sizeof(TestTeam[1]));
+
+	printf("Now receive new buffer\n\n");
+	ReceiveBufferTCP(TestTeam[2],sizeof(TestTeam[2]));
+
+	EndFunctionTestPrint("TestTCPServer");
+	return;
+}
+
+
+
 
 void RunRingbufferTests(){
 	ResetBufferTest();
@@ -351,6 +396,10 @@ void RunAllTests(){
 	InitTradeBufferTest();
 
 	SendTradeChoiceTest();
+
+	GenerateBlockRequestResponseTest();
+
+	TestTCPServer();
 
 	//main_TradeHandlerTest();
 	return;
