@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="s_TradeHandlerMaster.PokemonTeam"/>
+		<item key="selection" value="MainTradehandler"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="TradeHandler"/>
+			<item value="*TeamIndexPtr"/>
 			<item value="ReceivedTeam"/>
 			<item value="InitTrade"/>
 			<item value="rising_edge_detection_Tradebutton"/>
@@ -17,6 +19,8 @@
 			<item value="uint32_t"/>
 		</list>
 		<list key="replacehistory">
+			<item value="MainTradehandler"/>
+			<item value="s_TradeHandlerMaster.TeamIndex"/>
 			<item value="s_TradeHandlerMaster.PokemonTeam"/>
 			<item value="DetectButtonPress"/>
 			<item value="fprintf(PokemonFp,"/>
@@ -25,8 +29,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1139"/>
-		<item key="DIALOG_Y_ORIGIN" value="218"/>
+		<item key="DIALOG_X_ORIGIN" value="1278"/>
+		<item key="DIALOG_Y_ORIGIN" value="417"/>
 		<item key="DIALOG_WIDTH" value="503"/>
 		<item key="DIALOG_HEIGHT" value="437"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>

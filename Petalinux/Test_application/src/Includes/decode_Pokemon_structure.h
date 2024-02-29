@@ -7,4 +7,5 @@
 #define DEBUG_PRINT
 
 void decode_Pokemon_data(u16 *Pokemonbuffer);
+struct Pokemon PrintDecodedPokemonData(u16 *Pokemonbuffer);
 #endif

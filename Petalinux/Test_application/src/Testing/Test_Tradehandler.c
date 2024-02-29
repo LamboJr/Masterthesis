@@ -74,7 +74,7 @@ void main_TradeHandlerTest()
 	u16 returnvalue = 0;
 	for(int i = 0; i < sizeof(TESTDATA_ARRAY);i++){
 		data = (u16)((TESTDATA_ARRAY[i] >> 16) & 0xFFFF);
-		returnvalue = TradeHandler(data,0x0);
+		returnvalue = MainTradeHandler(data,0x0);
 	}
 /*	extern u16 ReceivedTeam[6][50];
 	for(int u = 0;u <6;u++){
@@ -312,22 +312,71 @@ void SendTradeChoiceTest(){
 	u32 PLtoPSBuffer_Value = 0;
 	u32 Inputdata = 0x8FFF;
 	u16 returnvalue;
-	returnvalue= TradeHandler(Inputdata,PLtoPSBuffer_Value);
-	returnvalue= TradeHandler(Inputdata,PLtoPSBuffer_Value);
-	returnvalue= TradeHandler(Inputdata,PLtoPSBuffer_Value);
-	returnvalue= TradeHandler(Inputdata,PLtoPSBuffer_Value);
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
 	PLtoPSBuffer_Value = 0x22;
-	returnvalue= TradeHandler(Inputdata,PLtoPSBuffer_Value);
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
 	PLtoPSBuffer_Value = 0;
-	returnvalue= TradeHandler(Inputdata,PLtoPSBuffer_Value);
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
 	Inputdata = 0x1234;
 	for(int i = 0;i < 100;i++){
-		returnvalue= TradeHandler(Inputdata,PLtoPSBuffer_Value);
+		returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
 		//printf("value = %08x\n",returnvalue);
 	}
 
 	EndFunctionTestPrint("SendTradeChoice");
 	return;
+}
+
+void ExitStateTest(){
+	StartFunctionTestPrint("ExitState");
+	TCP_Server_Init();
+	u32 PLtoPSBuffer_Value = 0;
+	u32 Inputdata = 0xB9A0;
+	u16 returnvalue = 0;
+	while (returnvalue != 0xB9A0){
+		returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+		//printf("value = %08x\n",returnvalue);
+	}
+	for(int i = 0;i < 10;i++){
+			returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+			printf("value = %04x\n",returnvalue);
+		}
+	Inputdata = 0x8FFF;printf("MASTER HANDSHAKE\n");
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+	printf("value = %04x\n",returnvalue);
+	Inputdata = 0x1234;
+	for(int i = 0;i < 9;i++){
+		returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+		printf("value = %04x\n",returnvalue);
+	}
+	Inputdata = 0x7890;
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+	printf("value = %04x\n",returnvalue);
+	Inputdata = 0x5FFF;printf("Check\n");
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);printf("value = %04x\n",returnvalue);
+	Inputdata = 0xC;
+	returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);printf("value = %04x\n",returnvalue);
+	Inputdata = 0x1234;
+	for(int i = 0;i < 9;i++){
+		returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+		printf("value = %04x\n",returnvalue);
+	}
+	while(returnvalue != 0x5FFF){
+		returnvalue = MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+		printf("value = %04x\n",returnvalue);
+	}
+	printf("Received 5fff\n");
+	returnvalue = MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+	printf("value = %04x\n",returnvalue);
+	for(int i = 0;i < 10;i++){
+		returnvalue= MainTradeHandler(Inputdata,PLtoPSBuffer_Value);
+		//printf("value = %04x\n",returnvalue);
+	}
+
+	EndFunctionTestPrint("ExitState");
 }
 
 void GenerateBlockRequestResponseTest(){
@@ -360,19 +409,44 @@ void TestTCPServer(){
 			TestTeam[i][u] = (i*50)+u;
 		}
 	}
+	ThreadData TData;
+	TData.Connect_ID = ExchangePokemonData;
+	ExchangeIDTCP((void*) &TData);
+	printf("result = %d\n",TData.result);
 
 	SendTeamIndex(3);
-	printf("REC Team Index = %d\n",ReceiveTeamIndex());
+	//printf("REC Team Index = %d\n",ReceiveTeamIndex());
 
 	SendBufferTCP(TestTeam[1],sizeof(TestTeam[1]));
+	SendBufferTCP(TestTeam[2],sizeof(TestTeam[2]));
 
 	printf("Now receive new buffer\n\n");
-	ReceiveBufferTCP(TestTeam[2],sizeof(TestTeam[2]));
+	ReceiveBufferTCP(TestTeam[3],sizeof(TestTeam[2]));
+	ReceiveBufferTCP(TestTeam[4],sizeof(TestTeam[2]));
 
 	EndFunctionTestPrint("TestTCPServer");
 	return;
 }
 
+void ExchangeBufferTCPTest(){
+	StartFunctionTestPrint("ExchangeBufferTCPTest");
+	TCP_Server_Init();
+	u16 Testbuffer[50];
+	u16 TestbufferSize = sizeof(Testbuffer); printf("Testbuffersize = %d\n",TestbufferSize);
+	for(int i = 0;i < TestbufferSize/2;i++){
+		Testbuffer[i] = i;
+	}
+	ThreadData TData;
+	TData.Connect_ID = ExchangeTrainerData;
+	TData.ArgBufferSize =TestbufferSize;
+	TData.ArgBufferPtr = Testbuffer;
+	extern u16 ReceiveBuffer[110];
+	ExchangeBufferTCP((void *)&TData);
+
+
+	EndFunctionTestPrint("ExchangeBufferTCPTest");
+	return;
+}
 
 
 
@@ -384,23 +458,26 @@ void RunRingbufferTests(){
 	return;
 }
 void RunAllTests(){
-	ConCatTest();
-	UpdateFramecounterTest();
-	ButtonPressTest();
-	RunRingbufferTests();
+//	ExitStateTest();
+//
+//	ConCatTest();
+//	UpdateFramecounterTest();
+//	ButtonPressTest();
+//	RunRingbufferTests();
+//
+//	GenerateBlockInitTest();
+//
+//	GenerateDataBlockTest();
+//
+//	InitTradeBufferTest();
+//
+//	SendTradeChoiceTest();
+//
+//	GenerateBlockRequestResponseTest();
 
-	GenerateBlockInitTest();
+	//TestTCPServer();
 
-	GenerateDataBlockTest();
-
-	InitTradeBufferTest();
-
-	SendTradeChoiceTest();
-
-	GenerateBlockRequestResponseTest();
-
-	TestTCPServer();
-
+	ExchangeBufferTCPTest();
 	//main_TradeHandlerTest();
 	return;
 }

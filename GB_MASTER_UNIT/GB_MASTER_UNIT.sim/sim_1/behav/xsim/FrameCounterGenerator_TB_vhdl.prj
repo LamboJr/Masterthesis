@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../GB_MASTER_UNIT.srcs/sources_1/new/FrameCounterGenerator.vhd" \
-"../../../../GB_MASTER_UNIT.srcs/sim_1/new/FrameCounterGenerator_TB.vhd" \
-
-# Do not sort compile order
-nosort

@@ -114,3 +114,32 @@ bsp reload
 platform generate -domains 
 platform clean
 platform generate
+platform clean
+platform generate
+platform active {Petalinux_Platorm}
+domain remove Standalone_APP
+platform generate -domains 
+platform write
+platform generate -domains 
+platform active {Petalinux_Platorm}
+domain config -sysroot {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi}
+platform write
+platform generate -domains 
+domain config -sysroot {}
+platform write
+platform generate -domains 
+domain config -bootmode {qspi}
+platform write
+platform generate -domains 
+platform active {Petalinux_Platorm}
+domain active {zynq_fsbl}
+bsp reload
+platform clean
+domain active {linux_domain}
+domain config -bootmode {sd}
+platform write
+platform generate
+domain config -sysroot {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi}
+platform write
+platform clean
+platform generate

@@ -103,7 +103,17 @@
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.c.link.option.libs.1212613349" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" useByScannerDiscovery="false"/>
+                                <option id="xilinx.gnu.c.link.option.libs.1212613349" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="sqlite3"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.link.option.paths.250464340" name="Library search path (-L)" superClass="xilinx.gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib}&quot;"/>
+                                    								
+                                </option>
                                 								
                                 <inputType id="xilinx.gnu.linker.input.1987269180" superClass="xilinx.gnu.linker.input">
                                     									

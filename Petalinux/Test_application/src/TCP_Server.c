@@ -26,6 +26,7 @@
 #include "TCP_Server.h"
 #include "Includes/Link.h"
 #include "Includes/ConCat.h"
+#include <pthread.h>
 
 #define PORT 8080
 #define MAX_PENDING_CONNECTIONS 5
@@ -97,30 +98,100 @@ int TCP_Server_Init() {
     return 0;
 }
 
-void *NewConnectionServer(void *ptr){
+void *ExchangePokemonBufferTCP(void *ptr){
     // Accept an incoming connection
 	extern ThreadStatus Threadstatus;
+	ThreadData *Tdata= (ThreadData *)ptr;
+	u8 ID = Tdata->Connect_ID;
+	u8 TeamIndex = Tdata->TeamIndex;
 	Threadstatus = Running;printf("Tread is running\n");
 	extern u16 PokemonTeamBuffer[3][100];
-
-	u8* TeamIndexptr = (u8*) ptr;
-	extern struct TradeHandler s_TradeHandlerMaster;
+	extern TradeHandler s_TradeHandlerMaster;
 	extern u16 ReceivedTeam[6][50];
-	SendTeamIndex(*TeamIndexptr);
-	SendBufferTCP(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr], sizeof(s_TradeHandlerMaster.PokemonTeam[1]));
-	SendBufferTCP(s_TradeHandlerMaster.PokemonTeam[(*TeamIndexptr)+1], sizeof(s_TradeHandlerMaster.PokemonTeam[1]));
+	SendID(ID);
+	u8 RecvID = ReceiveID();
+	if(ID == RecvID){
+	//if(*IdPtr == RecvID){
+		Tdata->MatchingID = SameID;
+		printf("Correct ID \n");
+	}else{
+		Tdata->MatchingID = DifferentID;
+		printf("Wrong ID Out of Sync\n");
+	}
+	SendTeamIndex(TeamIndex);
+	SendBufferTCP(s_TradeHandlerMaster.PokemonTeam[TeamIndex], sizeof(s_TradeHandlerMaster.PokemonTeam[1]));
+	SendBufferTCP(s_TradeHandlerMaster.PokemonTeam[(TeamIndex)+1], sizeof(s_TradeHandlerMaster.PokemonTeam[1]));
 
-	ReceiveBufferTCP(ReceivedTeam[*TeamIndexptr],sizeof(ReceivedTeam[1]));
-	ReceiveBufferTCP(ReceivedTeam[(*TeamIndexptr)+1],sizeof(ReceivedTeam[1]));
-	concat(ReceivedTeam[*TeamIndexptr],ReceivedTeam[(*TeamIndexptr)+1], PokemonTeamBuffer[(*TeamIndexptr)/2],sizeof(ReceivedTeam[1]), sizeof(ReceivedTeam[1]));
+	ReceiveBufferTCP(ReceivedTeam[TeamIndex],sizeof(ReceivedTeam[1]));
+	ReceiveBufferTCP(ReceivedTeam[(TeamIndex)+1],sizeof(ReceivedTeam[1]));
+
+	concat(ReceivedTeam[TeamIndex],ReceivedTeam[(TeamIndex)+1], PokemonTeamBuffer[(TeamIndex)/2],sizeof(ReceivedTeam[1]), sizeof(ReceivedTeam[1]));
+	printf("100 Byte Buffer:\n");
+//	for(int i = 0;i < 100;i++){
+//		printf("%04x ",s_TradeHandlerMaster.PokemonTeamBuffer[TeamIndex/2][i]);
+//		if(i%9 == 0){printf("\n");}
+//	}
+	Threadstatus = Finished;printf("Thread is finished\n");
+
+	pthread_exit(NULL);
+}
+void *ExchangeBufferTCP(void *arg){
+	extern ThreadStatus Threadstatus;
+	Threadstatus = Running;
+	printf("Tread is running\n");
+	ThreadData *Tdata= (ThreadData *)arg;
+	u8 ID = Tdata->Connect_ID;
+	SendID(ID);
+	u8 RecvID = ReceiveID();
+	if(ID == RecvID){
+			Tdata->MatchingID = SameID;printf("Correct ID \n");
+		}else{
+			Tdata->MatchingID = DifferentID;printf("Wrong ID Out of Sync\n");
+	}
+	size_t BufferSize = Tdata->ArgBufferSize;
+	SendBufferTCP(Tdata->ArgBufferPtr, BufferSize);
+	extern u16 ReceiveBuffer[110];
+	ReceiveBufferTCP(ReceiveBuffer, BufferSize);
+	printf("Sent %d Bytes\n",BufferSize);
 
 	Threadstatus = Finished;printf("Thread is finished\n");
-	return NULL;
+
+	pthread_exit(NULL);
 }
 
 
+void *ExchangeIDTCP(void *arg){
+	extern ThreadStatus Threadstatus;
+	Threadstatus = Running;printf("Tread is running\n");
+	ThreadData *Tdata= (ThreadData *)arg;
+	u8 ID = Tdata->Connect_ID;
+	SendID(ID);
+	u8 RecvID = ReceiveID();
+	if(ID == RecvID){
+	//if(*IdPtr == RecvID){
+		Tdata->MatchingID = SameID;
+		printf("Correct ID \n");
+	}else{
+		Tdata->MatchingID = DifferentID;
+		printf("Wrong ID Out of Sync\n");
+	}
+	Threadstatus = Finished;
+	printf("Thread is finished\n");
+	return NULL;
+}
 
-
+void SendID(u8 ID){
+	u8 IDPtr[1] = {ID};
+	printf("Send TCP Connection ID %d\n",*IDPtr);
+	send(new_socket,IDPtr,sizeof(IDPtr),0);
+	return;
+}
+u8 ReceiveID(){
+	u8 RecvID[1] = {0};
+	read(new_socket,RecvID,sizeof(RecvID));
+	printf("Received ID : %d\n",*RecvID);
+	return *RecvID;
+}
 
 void SendTeamIndex(u8 TeamIndex){
 	u8 TeamIndexptr[1] = {TeamIndex};
@@ -165,7 +236,7 @@ void ReceiveBufferTCP(u16* BufferArg,size_t BufferArgSize){
 
 	read(new_socket, BufferArg, BufferArgSize);
 	//read(new_socket, ReceiveBuffer, sizeof(ReceiveBuffer));
-	for(int i = 0; i < 50;i++){
+	for(int i = 0; i < BufferArgSize/2;i++){
     	printf("%04x ",BufferArg[i]);
     	if(((i%10)==0) && (i!=0)){
     		printf("\n");

@@ -2,10 +2,10 @@
 <section name="Workbench">
 	<item key="scw_hwspec" value="/home/daniel/PetaLinuxProjects"/>
 	<item key="bif_file" value="/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux"/>
-	<item key="platform_editor" value="/home/daniel/Test/images"/>
+	<item key="platform_editor" value="/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi"/>
 	<item key="boot_components_directory" value="/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux"/>
 	<item key="fat32_partition_directory" value="/home/daniel/Test/images"/>
 	<item key="linux_rootfs" value="/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux"/>
-	<item key="sysroot_directory" value="/home/daniel/PetaLinuxProjects/ZynqLinux/project-spec/meta-user"/>
+	<item key="sysroot_directory" value="/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi"/>
 	<item key="bootgen_files_selection" value="/home/daniel/Dokumente/Images/Test_application_system.bif"/>
 </section>

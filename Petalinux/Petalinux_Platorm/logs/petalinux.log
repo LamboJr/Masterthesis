@@ -55,3 +55,35 @@ TRACE::2024-02-22.12:17:22::SCWLinux::Copying the qemu file from  /home/daniel/M
 TRACE::2024-02-22.12:17:22::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
 TRACE::2024-02-22.12:17:22::SCWLinux:: Copying the user libraries. 
 TRACE::2024-02-22.12:17:22::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-23.12:08:48::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-23.12:08:48::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-23.12:08:48::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-23.12:08:48::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-28.16:38:11::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-28.16:38:11::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-28.16:38:11::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-28.16:38:11::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-28.16:38:16::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-28.16:38:16::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-28.16:38:16::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-28.16:38:16::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-28.18:16:41::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-28.18:16:41::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-28.18:16:41::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-28.18:16:41::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-28.18:22:58::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-28.18:22:58::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-28.18:22:58::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-28.18:22:58::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-28.18:23:34::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-28.18:23:34::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-28.18:23:34::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-28.18:23:34::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-28.21:46:13::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-28.21:46:13::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-28.21:46:13::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-28.21:46:13::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-02-28.21:48:00::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/qemu/
+TRACE::2024-02-28.21:48:00::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/resources/Petalinux_Platorm/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/qemu/
+TRACE::2024-02-28.21:48:00::SCWLinux:: Copying the user libraries. 
+TRACE::2024-02-28.21:48:00::SCWLinux::Skipping the Petalinux build as image is already given.

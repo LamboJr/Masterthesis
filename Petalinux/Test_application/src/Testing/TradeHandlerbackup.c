@@ -5,11 +5,21 @@
 #include "../Includes/linkcommand.h"
 #include <stdlib.h>
 
+
+
 #include "../Includes/TradeHandler.h"
 #include "../Includes/Pokemonbuffer.h"
 
-extern u8 Switches_State;
+#include "../Includes/Ringbuffer.h"
+
+#include "../Includes/decode_Pokemon_structure.h"
+
+#include <pthread.h>
+#include "../TCP_Server.h"
+
+//extern u8 Switches_State;
 struct TradeHandler{
+
 	u16 PokemonTeam[MAX_TEAM_SIZE][POKEMON_BUFFER_LENGTH];
 	u16 TrainerCard[TRAINER_BUFFER_SIZE];
 	u16 TeamIndex;
@@ -25,7 +35,57 @@ struct TradeHandler{
 	u16 TempBuffer[MAX_BUFFER_SIZE];
 };
 u16 ReceivedTeam[6][50];
+extern struct BufferType s_DataBuffer;
+// DEclare a buffer structure for a Buffer with Data to be send to Ringbuffer of HW
+extern struct BufferType s_ControlBuffer;
 
+struct TradeHandler s_TradeHandlerMaster;
+
+ThreadStatus Threadstatus = NoThread;
+
+//pthread_attr_t attr;
+pthread_t thread1;
+int rc;
+
+
+void *DecodePokemonToFile(void *ptr){
+	u8* TeamIndexptr = (u8*) ptr;
+	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr]);
+	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr + 1]);
+
+	return ptr;
+}
+
+void *DecodeReceivedPokemonToFile(void *ptr){
+	extern FILE *PokemonFp;;
+	printf("Write Extracted Data into datalog.txt\n");
+	PokemonFp = fopen("/home/petalinux/datalog.txt","w");
+	if(PokemonFp == NULL){
+		printf("Error opening file datalog.txt.\n");
+		exit(0);
+	}
+	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[0]);
+	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[1]);
+	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[2]);
+	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[3]);
+	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[4]);
+	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[5]);
+	printf("Write Successful\n");
+	fclose(PokemonFp);
+	return ptr;
+}
+
+u16 GetBlockSize(BlockSizes BlockSize){
+	switch(BlockSize){
+	case BLOCK_REQ_SIZE_NONE : {return 200;}break; // Identical to 200
+	case BLOCK_REQ_SIZE_200 : {return 200;}break;//xC8
+	case BLOCK_REQ_SIZE_100 : {return 100;}break;//64
+	case BLOCK_REQ_SIZE_220 : {return 220;}break;//DC
+	case BLOCK_REQ_SIZE_40 : {return 40;}break;
+	default : {return 0;}
+	}
+	return 0;
+}
 
 void UpdateFrameCounter(u32* FrameCounterPtr){
     if (*FrameCounterPtr == FRAME_LENGTH){
@@ -36,7 +96,7 @@ void UpdateFrameCounter(u32* FrameCounterPtr){
     return;
 }
 
-u8 DetectButtonPress(u8 Button,char *ButtonType){
+u8 DetectResetButtonPress(u8 Button,char *ButtonType){
 	static u8 previousState = 0;
 	if ((previousState == 0) && (Button == 1) == 1){
 		//detect of rising edge
@@ -54,105 +114,42 @@ u8 DetectButtonPress(u8 Button,char *ButtonType){
 	}
 
 }
-
-
-s8 ReadytoTrade(u32 FrameCounter,u32 data,u16* returnvalue,u8 SpotNumber){
-	//Returnvalue = 0 if Sequence not finished, = 1 if Tradesequence is finished and normal Operation is to be continued
-	static u8 FrameNumber = 0;
-	//If Framecounter = 1 return sended data
-	if (FrameCounter == 1){
-
-		*returnvalue = (u16)data;
+u8 DetectTradeButtonPress(u8 Button){
+	static u8 previousState = 0;
+	if ((previousState == 0) && (Button == 1) == 1){
+		//detect of rising edge
+		previousState = Button;
+		printf("Button pressed\n");
+		return 1;
 	}
-	else if (FrameCounter == 2){
-		if (FrameNumber == 0){
-			*returnvalue = (u16)data;
-		}
-		else if (FrameNumber == 1){
-			*returnvalue = LINKCMD_INIT_BLOCK;
-		}
-		else if (FrameNumber == 2){
-			*returnvalue = LINKCMD_CONT_BLOCK;
-		}else if(FrameNumber == 3){
-			*returnvalue = LINKCMD_CONT_BLOCK;
-		}
-		else{
-			*returnvalue = 0;
-		}
+	else if ((previousState == 1) && (Button == 0)){
+		previousState = Button;
+		printf("Button released\n");
 		return 0;
-	}
-	else if (FrameCounter == 3){
-		if (FrameNumber == 0){
-			*returnvalue = (u16)data;
-		}
-		else if (FrameNumber == 1){
-			*returnvalue = 0x0014; //
-		}
-		else if (FrameNumber == 2){
-			*returnvalue = LINKCMD_READY_TO_TRADE; //AABB
-		}
-		else{
-			*returnvalue = 0;
-		}
-	}
-	else if (FrameCounter == 4){
-		if (FrameNumber == 0){
-			*returnvalue = (u16)data;
-		}
-		else if (FrameNumber == 1){
-			*returnvalue = 0x0081;
-		}
-		else if (FrameNumber == 2){
-			if (SpotNumber > 5){
-				*returnvalue = 5;
-			}
-			else{
-				*returnvalue = SpotNumber;
-			}
-
-		}
-		else{
-			*returnvalue = 0;
-		}
-	}
-	else if (FrameCounter == 9){
-		if (FrameNumber == 0){
-			FrameNumber++;
-			*returnvalue = (u16)data;
-		}
-		else if (FrameNumber == 3){
-			*returnvalue = 0;
-			FrameNumber = 0; // since static variable it is set to zero before return 1
-			return 1; // Return to normal operation mode
-		}
-		else{
-			FrameNumber++;
-			*returnvalue = 0;
-		}
-	}
-	else{
-		if (FrameNumber == 0){
-			*returnvalue = (u16)data;
-		}
-		else{
-			*returnvalue = 0;
-		}
-	}
-	if ((FrameNumber < 0) && (FrameNumber > 3)){
-		return -1; // Error
 	}
 	else{
 		return 0;
 	}
-	//Wait till FrameCounter is 1 to Send data sequence
-
 }
 
-void BlockRequestAnalyser(u32 Framecounter,u16 data){
+void *InitTradeBuffer(void* ptr){
+	u8* Spotnumber = (u8*) ptr;
+	u16 Blocksize = 0x0014;
+	u16 Databuffer[10] = {0xAABB,*Spotnumber,0,0,0,0,0,0,0,0};
+	printf("init Trade Buffer with spot %d\n",*Spotnumber);
+	GenerateBlockInit(Blocksize);
+	GenerateDataBlock(Blocksize, Databuffer);
+	printf("Finsihed\n");
+	return ptr;
+}
+
+u8 BlockRequestAnalyser(u32 Framecounter,u16 data){
 	//Function which safes the received Pokemondata(Master) in a corresponding data structure
 	static u8 bufferindex = 0;
 	static u8 TeamIndex = 0;
 	static u8 DataFieldActive =0;
+	static u8 Teamindexptr[1];
+
 
 	if (Framecounter == 1){
 		//ignore
@@ -168,109 +165,114 @@ void BlockRequestAnalyser(u32 Framecounter,u16 data){
 	else{
 		if ( DataFieldActive == 1){
 			if ( bufferindex < 50 ){
-				ReceivedTeam[TeamIndex][bufferindex++] = data;
-			}else if ((bufferindex >= 50) && (bufferindex < 100)){
-				ReceivedTeam[TeamIndex+1][(bufferindex++)-50] = data;
-			}else{
-				DataFieldActive = 0;
-				bufferindex = 0;
-				//decode_Pokemon_data(ReceivedTeam[TeamIndex]);
-				//decode_Pokemon_data(ReceivedTeam[TeamIndex+1]);
-				TeamIndex = (TeamIndex + 2) % 6;
 
+				s_TradeHandlerMaster.PokemonTeam[TeamIndex][bufferindex++] = data;
+			}else if ((bufferindex >= 50) && (bufferindex < 100)){
+				s_TradeHandlerMaster.PokemonTeam[TeamIndex+1][(bufferindex++)-50] = data;
+			}else{
+				if( Framecounter == 9){
+					DataFieldActive = 0;
+					bufferindex = 0;
+					*Teamindexptr = TeamIndex;
+					Threadstatus = Running;
+					rc = pthread_create( &thread1, NULL, NewConnectionServer,(void *)Teamindexptr);
+					//rc = pthread_create( &thread1, NULL, DecodePokemonToFile, (void *)Teamindexptr);
+					TeamIndex = (TeamIndex + 2);
+					if(TeamIndex > 5){
+						TeamIndex = 0;
+						//rc = pthread_create( &thread1, NULL, DecodeReceivedPokemonToFile, NULL);
+					}
+					return 1;
+				}
 			}
 
 		}
-		else{
-			//do nothing
-		}
 	}
+	return 0;
 }
 
 //Generates an Array buffer with the data to send back to master for initilizing a data Block Transfer from the Slave
 //The Array to be filles with data is passed by reference in the function arguments
-void GenerateBlockInitArray(u16 Blocksize,u16 *BlockInitArray){
-	size_t elementsize = sizeof(u16);
-	size_t Arraysize = sizeof(BlockInitArray) / elementsize;
-	*(BlockInitArray) = 0xBBBB;
-	*(BlockInitArray+1) = Blocksize;
-	*(BlockInitArray+2) = 0x0081; //Dont know what this means exactly but master sens 0x0080
-	for(int i = 3; i < Arraysize;i++){
-		*(BlockInitArray+i) = 0;
+
+void GenerateBlockInit(u16 Blocksize){
+	WriteBuffer(0xBBBB, &s_ControlBuffer);
+	WriteBuffer(Blocksize, &s_DataBuffer);
+	WriteBuffer(0x0081, &s_DataBuffer);
+	for(int i = 4;i < FRAME_LENGTH;i++){
+		WriteBuffer(0, &s_DataBuffer);
 	}
+
 	return;
+}
+
+void GenerateEmptyFrame(){
+	WriteBuffer(0, &s_ControlBuffer);
+	for (int i = 0;i < 7;i++){
+		WriteBuffer(0, &s_DataBuffer);
+	}
 }
 //Generates an Array buffer for data to send back to master for actually transfering the corresponding data
 //The Array to be filles with data is passed by reference in the function arguments
-void GenerateDataBlockArray(u16 Blocksize,u16 *Databuffer, u16 *DataBlockArray){
+void GenerateDataBlock(u16 Blocksize,u16 *Databuffer){
+	u16 AmountControlFields = 0;
+	u16 Buffersize = Blocksize/2;
+	u8 remainder = Buffersize%7;
+	if(Blocksize > 0 ){
+		if (  remainder == 0){
+			AmountControlFields = Buffersize/7;
+		}else{
+			AmountControlFields = (Buffersize/7)+1;
+		}
+		//printf("Amount = %d Buffersize = %d Blcoksize = %d\n",AmountControlFields,Buffersize,Blocksize);
+	}
+	for(int i = 0; i < AmountControlFields;i++){
+		WriteBuffer(0x8888, &s_ControlBuffer);
+	}
+	for(int i = 0;i < Buffersize;i++){
+		WriteBuffer(Databuffer[i], &s_DataBuffer);
+	}
+
+	if ( remainder != 0){
+		for (int i = 0; i < (7-remainder);i++){
+			WriteBuffer(0, &s_DataBuffer);
+			//printf("debug : %d Added\n",i);
+		}
+	}
+
 	return;
 }
 
 
-s8 BlockRequestResponse(u32 FrameCounter, u16* returnvalue){
-	static u16 BlockInitArray[8];
-
-	static u8 bufferindex = 0;
-	static u8 FrameCount = 0;
-
+void GenerateBlockRequestResponse(BlockSizes Blocksize){
+	u16 BlocksizeByte = GetBlockSize(Blocksize);
 	static u8 TeamIndex = 0;
-	switch(FrameCount){
-	case 0 ... 1 : {
-		*returnvalue = 0;
-	}break;
+	extern u16 PokemonTeamBuffer[3][100];
+	GenerateEmptyFrame();
+	GenerateEmptyFrame();
+	GenerateBlockInit(BlocksizeByte);
+	switch(Blocksize){
+	case BLOCK_REQ_SIZE_NONE : {
 
-	case 2 : {
-		*returnvalue = BlockInitArray[FrameCounter-2];
-	}break;
+	}break; // Identical to 200
+	case BLOCK_REQ_SIZE_200 : {
+		GenerateEmptyFrame();
+		GenerateEmptyFrame();
+		GenerateDataBlock(BlocksizeByte,PokemonTeamBuffer[TeamIndex++]);
+		TeamIndex= TeamIndex%3;
+	}break;//xC8
+	case BLOCK_REQ_SIZE_100 : {
 
-	case 3 ... 4 : {
-		*returnvalue = 0;
-	}break;
-	case 5 ... 19 : {
-		if (FrameCounter == 2){
-			*returnvalue = 0x8888;
-		}else{
+	}break;//64
+	case BLOCK_REQ_SIZE_220 : {
 
-			if (bufferindex < 50){
-				*returnvalue = PokemonTeam[TeamIndex][bufferindex++];
-				if (bufferindex == 50){
-					TeamIndex++;
-				}
-				//*returnvalue = Cyndaquil_pokemonbuffer[bufferindex++];
-			}else if ((bufferindex >= 50) && (bufferindex < 100)){
-				*returnvalue = PokemonTeam[TeamIndex][(bufferindex++) - 50];
-				if (bufferindex == 100){
-					TeamIndex++;
-
-				}
-				//*returnvalue = Totodile_pokemonbuffer[(bufferindex++) - 50];
-			}
-			else{
-				*returnvalue = 0;
-			}
-		}
-	}break;
-	case 20 : {
-		*returnvalue = 0;
-		if (FrameCounter == 9){
-			bufferindex = 0;
-			FrameCount = 0;
-			TeamIndex = TeamIndex % 6;
-			return 0;
-		}
+	}break;//DC
+	case BLOCK_REQ_SIZE_40 : {
 
 	}break;
-	default : {
-		*returnvalue = 0;
-	}break;
-	}//end switch Framecount
-	if (FrameCounter == 9){
-		FrameCount++;
+	default : {}
 	}
-	return 1;
+	return;
 }
-
-
 
 
 u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
@@ -281,37 +283,46 @@ u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 
 	static Frametype s_Frametype = Identification;
 
-	static s8 Check = 0;
-
-	//static u8 index = 0;
-
 	u16 returnvalue = (u16)data ;
+	//static pthread_t thread1;
+	//int rc;
 
-	static struct TradeHandler s_TradeHandlerMaster;
+	//static struct TradeHandler s_TradeHandlerMaster;
 	static __attribute__ ((unused)) struct TradeHandler s_TradeHandlerSlave;
 
-	static u8 SendTradeDataStatus= 0;
+	static RequestStatus SendTradeDataStatus=  NoRequest;
 
 	static u8 __attribute__ ((unused)) Switches_State;
 	static u8 __attribute__ ((unused)) Resetbutton_State;
 	static u8 __attribute__ ((unused)) Tradebutton_State ;
+
+
 	Switches_State = (u8)(PL_to_PS_buffer_value & SWITCH_BITMASK);
+	//u8 Spotnumber = Switches_State%6;
+	static u8* Spotptr = &Switches_State;
 	Resetbutton_State = (u8)((PL_to_PS_buffer_value & RESETBUTTON_STATE) >> 4);
 	Tradebutton_State = (u8)((PL_to_PS_buffer_value & TRADEBUTTON_STATE) >> 5);
 	//Reset
-	if (DetectButtonPress(Resetbutton_State, "Reset") == 1){
+	if (DetectResetButtonPress(Resetbutton_State,"reset") == 1){
 		s_syncstate = handshakeState;
+		ResetBuffer(&s_DataBuffer);
+		ResetBuffer(&s_ControlBuffer);
 		return 0;
 	}
 
-	if ((DetectButtonPress(Tradebutton_State,"Trade") == 1) && (SendTradeDataStatus == 0)){
-		SendTradeDataStatus = 1;
+	if ((DetectTradeButtonPress(Tradebutton_State) == 1) && (SendTradeDataStatus == NoRequest)){
+
+		Spotptr = &Switches_State;
+		InitTradeBuffer((void *) Spotptr);
+		//rc = pthread_create( &thread1, NULL, InitTradeBuffer, (void *)Spotptr);
+		SendTradeDataStatus = Active;
 	}
 
 	// Calculate the frame counter depending on the  sysnc state
 	if (s_syncstate == handshakeState){
 		FrameCounter = FRAME_LENGTH;
 		returnvalue = 0xB9A0;
+		s_TradeHandlerMaster.DataHandlerstatus = NoData;
 		//If data is 8FFF the communication switches to data phase
 		if (data == MASTER_HANDSHAKE){
 			s_syncstate = DataState;
@@ -331,12 +342,12 @@ u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 		//update The Frametyp which is now to be dealt with
 		if (FrameCounter == 1){
 			//printf("\n");
-			if ((SendTradeDataStatus == 1)){
+			if ((SendTradeDataStatus == Active)){
 				s_Frametype = Tradebutton;
 				return data;
 			}
 //			printf("BR : %d \n",s_TradeHandlerMaster.BlockRequest);
-			if (s_TradeHandlerMaster.BlockRequest == 1){
+			if (s_TradeHandlerMaster.BlockRequest == Active){
 				s_Frametype = BlockRequestHandler;
 				return data;
 			}
@@ -345,32 +356,73 @@ u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 		}
 
 		switch(s_Frametype){
+
 		// Handler for Tradebutton pressed
 		case Tradebutton : {
-			Check = ReadytoTrade(FrameCounter, data, &returnvalue, Switches_State);
-			if( Check == -1){
-				printf("Error in Ready_to_Trade\n");
-				abort();
-			}else if(Check == 1){
-				SendTradeDataStatus = 0;
-				printf("Successful send Trade Choice\n");
-				return returnvalue;
+
+			if(FrameCounter == 2){
+				returnvalue = ReadBuffer(&s_ControlBuffer);
+			}else{
+				returnvalue = ReadBuffer(&s_DataBuffer);
+				if (FrameCounter == 9){
+					if (BufferEmpty(&s_ControlBuffer) == 1){
+						SendTradeDataStatus = NoRequest;
+						printf("Successful Send Trade Choice\n");
+					}
+				}
 			}
-			else{//Check = 0
-				return returnvalue;
-			}
+			return returnvalue;
 		}break;
 
-
 		case BlockRequestHandler : {
+			if (s_TradeHandlerMaster.BlockRequestSize == BLOCK_REQ_SIZE_200){
+				switch(s_TradeHandlerMaster.DataHandlerstatus){
+				case NoData :{ returnvalue = 0;}break;
 
-			if (s_TradeHandlerMaster.BlockRequestSize == 1){// Inddicates Pokemon structure send
+				case CaptureData : {
+					returnvalue = 0;
+					if(BlockRequestAnalyser(FrameCounter, data) == 1){
+						s_TradeHandlerMaster.DataHandlerstatus = WaitforThread;
+						printf("Wait for Thread to finish\n");
+					}else{
+						s_TradeHandlerMaster.DataHandlerstatus = CaptureData;
+					}
 
-				s_TradeHandlerMaster.BlockRequest = BlockRequestResponse(FrameCounter, &returnvalue);
-				BlockRequestAnalyser(FrameCounter, data);
-			}else{
-				//printf("Debug block request size ungleich 1\n");
-				s_TradeHandlerMaster.BlockRequest = 0;
+				}break;
+
+				case WaitforThread : {
+					if( Threadstatus == Finished){
+						if(FrameCounter == 9){
+							Threadstatus = NoThread;
+							s_TradeHandlerMaster.DataHandlerstatus = SendData;
+							GenerateBlockRequestResponse(BLOCK_REQ_SIZE_200);
+						}
+					}else{
+						s_TradeHandlerMaster.DataHandlerstatus = WaitforThread;
+					}
+
+				}break;
+
+				case SendData : {
+					if(FrameCounter == 2){
+						returnvalue = ReadBuffer(&s_ControlBuffer);
+					}else{
+						returnvalue = ReadBuffer(&s_DataBuffer);
+						if (FrameCounter == 9){
+							if (BufferEmpty(&s_ControlBuffer) == 1){
+								s_TradeHandlerMaster.BlockRequest = NoRequest;
+								s_TradeHandlerMaster.DataHandlerstatus = NoData;
+								printf("Successful Send 100 Bytes PokemonBuffer\n");
+							}
+						}
+					}
+
+				}break;
+
+				}//end switch
+			}
+			else{//For other request, currently only pokemon data captured
+				s_TradeHandlerMaster.BlockRequest = NoRequest;
 				returnvalue = data;
 			}
 			return returnvalue;
@@ -385,20 +437,17 @@ u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 				s_TradeHandlerMaster.LinkCMD = data;
 				switch(data){
 				case 0xCCCC : { //REquest Data Block
-					s_TradeHandlerMaster.BlockRequest = 1;
-					s_TradeHandlerSlave.BlockRequest = 1;
+					s_TradeHandlerMaster.BlockRequest = Active;
+					s_TradeHandlerMaster.DataHandlerstatus = CaptureData;
 					returnvalue = 0;
 				}break;
 
 				case 0xBBBB : { //Init Block
-					s_TradeHandlerMaster.DataIndex = 0;
-					s_TradeHandlerMaster.InitBlock = 1;
+					s_TradeHandlerMaster.InitBlock = Active;
 					returnvalue = data;
 				}break;
 
 				case 0x8888 : { // Cont Data Block
-
-					s_TradeHandlerMaster.ContBlock = 1;
 					returnvalue = data;
 				}break;
 
@@ -422,7 +471,6 @@ u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 					returnvalue = 0xB9A0;
 				}break;
 				case 0x0000 :{
-					s_TradeHandlerMaster.DataIndex = 0;
 					returnvalue = data;
 				}break;
 				default : {}break;
@@ -442,10 +490,9 @@ u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 				// Print Link Type
 				}break;
 				case 0xCCCC : { // determine the requested Block Size
-				if ((FrameCounter == 3) && (s_TradeHandlerMaster.BlockRequest == 1)){
+				if ((FrameCounter == 3) && (s_TradeHandlerMaster.BlockRequest == Active)){
 					s_TradeHandlerMaster.BlockRequestSize = data;
 				}
-
 					returnvalue = 0;
 				}break;
 				case 0xBBBB : {
@@ -484,19 +531,39 @@ u32 TradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 	return returnvalue;
 }
 */
+
+
+
 /*
-s8 WriteBuffer(u16 datainput, struct BufferType *Buffer){
-	Buffer->Data[Buffer->WriteIndex] = datainput;
-	if (Buffer->WriteIndex >= (MAX_BUFFER_LENGTH-1) ){
-		Buffer->WriteIndex = 0;
-	}
-	else{
-		Buffer->WriteIndex++;
-	}
-	if (Buffer->WriteIndex == (Buffer->ReadIndex){
-		Buffer->Full = 1;
-		printf("Buffer full now\n");
-		return 1;
-	}
-	return 0;
-}*/
+		UpdateFrameCounter(&FrameCounter);
+		if (ExitStateCheck == 0 ){
+			if( Threadstatus == NoThread){
+				Threadstatus = Running;
+				Threaddata.Connect_ID = Exit;
+				rc = pthread_create( &thread1, NULL, ExchangeIDTCP,(void *)&Threaddata);
+				returnvalue = data;
+			}
+			else if (Threadstatus == Finished){
+				if(FrameCounter == 1){
+					returnvalue = data;
+				}
+				else if(FrameCounter == 2){
+					returnvalue = 0x5FFF;
+					if(Threaddata.MatchingID == SameID){
+						printf("Return in Exit state with %04x\n",returnvalue);
+						ExitStateCheck = 1;
+					}
+					Threadstatus = NoThread;
+				}
+			}
+		}else{
+			returnvalue = data;
+			if (data == 0xB9A0){
+				s_syncstate = handshakeState;
+				ExitStateCheck = 0;
+			}
+		}
+
+
+*/
+

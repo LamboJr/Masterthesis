@@ -1,0 +1,166 @@
+#include <stdio.h>
+#include "Includes/DataTypes.h"
+#include "DatabaseHandler.h"
+#include <string.h>
+#include <sqlite3.h>
+void DatabaseInit(){
+    sqlite3 *db;
+    char *zErrMsg = 0;
+    int ret;
+
+    // Open database, create it if it doesn't exist
+    ret = sqlite3_open("/home/petalinux/database/Pokemon.db", &db);
+
+    if (ret) {
+        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+        return;
+    } else {
+        fprintf(stderr, "Opened database successfully\n");
+    }
+
+    // SQL statement to create a table
+    const char *sql = "CREATE TABLE IF NOT EXISTS Pokemon ("
+                      "id INTEGER PRIMARY KEY,"
+                      "name TEXT NOT NULL,"
+                      "Level INTEGER);";
+
+    // Execute SQL statement
+    ret = sqlite3_exec(db, sql, 0, 0, &zErrMsg);
+
+    if (ret != SQLITE_OK) {
+        fprintf(stderr, "SQL error: %s\n", zErrMsg);
+        sqlite3_free(zErrMsg);
+    } else {
+        fprintf(stdout, "Table created successfully\n");
+    }
+
+    // Close database
+    sqlite3_close(db);
+
+    return;
+}
+
+
+#define BUFFER_SIZE 50
+
+int DataBaseInsertBuffer(u16* buffer){
+    sqlite3 *db;
+    char *err_msg = 0;
+
+    // Open SQLite database or create if not exists
+    int rc = sqlite3_open("/home/petalinux/database/Pokemon.db", &db);
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "Cannot open database: %s\n", sqlite3_errmsg(db));
+        sqlite3_close(db);
+        return 1;
+    }
+
+    // Create table
+    const char *sql_create_table = "CREATE TABLE IF NOT EXISTS buffer_data (id INTEGER PRIMARY KEY, value INTEGER)";
+    rc = sqlite3_exec(db, sql_create_table, 0, 0, &err_msg);
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "SQL error: %s\n", err_msg);
+        sqlite3_free(err_msg);
+        sqlite3_close(db);
+        return 1;
+    }
+
+    // Sample buffer of 50 entries
+//    uint16_t buffer[BUFFER_SIZE];
+//    for (int i = 0; i < BUFFER_SIZE; ++i) {
+//        buffer[i] = i; // Sample data
+//    }
+
+    // Insert buffer data into SQLite database
+    const char *sql_insert = "INSERT INTO buffer_data (value) VALUES (?)";
+    sqlite3_stmt *stmt;
+    rc = sqlite3_prepare_v2(db, sql_insert, -1, &stmt, 0);
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "SQL error: %s\n", sqlite3_errmsg(db));
+        sqlite3_close(db);
+        return 1;
+    }
+
+    // Bind and insert data into the database
+    for (int i = 0; i < BUFFER_SIZE; ++i) {
+        sqlite3_bind_int(stmt, 1, buffer[i]);
+        rc = sqlite3_step(stmt);
+        if (rc != SQLITE_DONE) {
+            fprintf(stderr, "SQL error: %s\n", sqlite3_errmsg(db));
+            sqlite3_close(db);
+            return 1;
+        }
+        sqlite3_reset(stmt);
+    }
+
+    // Finalize and close database connection
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+
+    printf("Data inserted successfully\n");
+    return 0;
+}
+
+
+int DataBaseReadBuffer() {
+    sqlite3 *db;
+    char *err_msg = 0;
+
+    // Open SQLite database
+    int rc = sqlite3_open("/home/petalinux/database/Pokemon.db", &db);
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "Cannot open database: %s\n", sqlite3_errmsg(db));
+        sqlite3_close(db);
+        return 1;
+    }
+
+    // Prepare SQL statement to select data
+    const char *sql_select = "SELECT value FROM buffer_data";
+    sqlite3_stmt *stmt;
+    rc = sqlite3_prepare_v2(db, sql_select, -1, &stmt, 0);
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "SQL error: %s\n", sqlite3_errmsg(db));
+        sqlite3_close(db);
+        return 1;
+    }
+
+    // Create buffer to store retrieved data
+    uint16_t buffer[BUFFER_SIZE];
+    int index = 0;
+
+    // Retrieve data and store in buffer
+    while (sqlite3_step(stmt) == SQLITE_ROW && index < BUFFER_SIZE) {
+        buffer[index++] = sqlite3_column_int(stmt, 0);
+    }
+
+    // Finalize statement and close database connection
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+
+    // Display retrieved data
+    printf("Retrieved data from database:\n");
+    for (int i = 0; i < index; ++i) {
+        printf("%04x ", buffer[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+
+int create_table(sqlite3 *db, const char *table_name) {
+    char *err_msg = 0;
+
+    // Prepare SQL statement to create a new table
+    char sql_create_table[100];
+    snprintf(sql_create_table, sizeof(sql_create_table), "CREATE TABLE IF NOT EXISTS %s (id INTEGER PRIMARY KEY, value INTEGER)", table_name);
+    int rc = sqlite3_exec(db, sql_create_table, 0, 0, &err_msg);
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "SQL error: %s\n", err_msg);
+        sqlite3_free(err_msg);
+        return 1;
+    }
+
+    printf("Table '%s' created successfully\n", table_name);
+    return 0;
+}
+

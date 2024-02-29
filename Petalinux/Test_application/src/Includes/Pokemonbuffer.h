@@ -40,6 +40,8 @@
 	};
 	u16 PokemonTeamBuffer[3][100];
 
+
+
 	//u32 *PokemonTeam[6] = {Latios_pokemonbuffer,Metagross_pokemonbuffer,Breloom_pokemonbuffer,Salamence_pokemonbuffer,Scizor_pokemonbuffer,Skarmory_pokemonbuffer};
 
 

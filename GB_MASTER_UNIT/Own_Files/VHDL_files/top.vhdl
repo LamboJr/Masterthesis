@@ -27,10 +27,10 @@ architecture behav of ModuleTop is
 --32 Bit signal for transmitting data from PL to PS
 signal PL_to_PS_buffer : std_logic_vector(31 downto 0) := (others => '0');
 
--- 23 Bit signal for transmitting data from PS to PL
+--32 Bit signal for transmitting data from PS to PL
 signal PS_to_PL_buffer : std_logic_vector(31 downto 0) := (others => '0');
 
---signals for connecting the Ringbuffer to the RTL and the ZYNQ processor
+--signals for connecting the Ringbuffer(s) to the RTL and the ZYNQ processor
 signal Ringbuffer_Addr : std_logic_vector(12 downto 0);
 signal clk : std_logic;
 signal Ringbuffer_Data_in : std_logic_vector( 31 downto 0);
@@ -41,21 +41,21 @@ signal ringbuffer_wr_en : std_logic_vector(3 downto 0);
 
 
 -- Test Bench uses a 125 MHz Clock
---Board Freq is changeable but its alos set to 125 MHz. Until there is a reason to change it
+--Board Freq is changeable but is also set to 125 MHz. Until there is a reason to change it
 -- Want to interface to 115200 baud UART
 -- 125000000 / 115200 = 1085 Clocks Per Bit.
 constant c_CLKS_PER_BIT : integer := 1085;
     
 --signals for connecting the UART TX and RX components
-signal w_RX_DV     : std_logic;
-signal w_RX_WORD   : std_logic_vector(15 downto 0);
-signal r_RX_SERIAL : std_logic; 
+signal w_RX_DV     : std_logic;  --Data Valid (Output data)
+signal w_RX_WORD   : std_logic_vector(15 downto 0);  --Data Word
+signal r_RX_SERIAL : std_logic;  --Serial Bit Stream
 
 signal w_TX_Active : std_logic;
-signal r_TX_DV     : std_logic                    := '0';
-signal r_TX_WORD   : std_logic_vector(15 downto 0) := (others => '0');
-signal w_TX_SERIAL : std_logic;
-signal w_TX_DONE   : std_logic;
+signal r_TX_DV     : std_logic                 := '0'; -- Data Valid (Input data)
+signal r_TX_WORD   : std_logic_vector(15 downto 0) := (others => '0');   --Data Word
+signal w_TX_SERIAL : std_logic;  -- Serial Bit Stream
+signal w_TX_DONE   : std_logic;  -- Transmission Done
 
 --Ringbuffer signals abd constant ----
 
@@ -101,42 +101,9 @@ constant send_delay : integer := 3000;
 signal w_debug : std_logic := '0';
 
 ------Framecounter signal generated in HW and transported to SOftware
-signal frameCounter : integer := 1;
+--signal frameCounter : integer := 1;
 
 
----------
---new experimental
-
-type t_framingState is (s_idle,s_Processing,s_resetCounter,s_Holding);
-signal framingState : t_framingState := s_idle;
-
-
-
-signal BlockRequestActive : std_logic;
-signal BlockInitActive : std_logic;
-signal BlockDatalength : integer;
-signal Blockrequesttype : t_BlockRequestType;
-
-signal DataInputBuffer : t_BufferSize110 := (others => x"0003");
-
-signal team_spot : natural range 0 to TEAM_SIZE := 0;
-signal team_buffer_index : natural range 0 to (PKMN_BUFFER_DEPTH ) := 50;
-
---buffer counter for indexing position of buffer
-signal buffer_index : natural range 0 to 110 := 0;
-
-signal Team : Team_structure := (Zapdos_buffer,Milotic_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer);
-signal team_index : natural range 0 to TEAM_SIZE -1 := 0;
-
-signal Team_new : Team_structure := (Zapdos_buffer,Milotic_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer,No_Pokemon_buffer);
-signal Team_valid : std_logic;
-
-signal Team2PokemonBuffer : t_TwoPokemonbuffer := (EmptyBuffer110,EmptyBuffer110,EmptyBuffer110);
-signal TrainerDataSize110 : t_BufferSize110 := (others => x"0000");
-
-signal BlockRequestPokemonIndex : natural range 0 to 2;
-
-signal TradeSpotNumber : std_logic_vector(2 downto 0);
 
 begin
 
@@ -180,7 +147,7 @@ zynq_ps_interface_inst: entity work.GB_UNIT_design_wrapper
         PS_to_PL_buffer => PS_to_PL_buffer);
         
 
-  
+  --ringbuffer PL to PS
 ringbuffer_PL_to_PS_inst : entity work.ringbuffer
 generic map (RAM_DEPTH => RAM_DEPTH,RAM_WIDTH => RAM_WIDTH)
 port map(
@@ -197,7 +164,7 @@ full => full_PL_to_PS,
 full_next => full_next_PL_to_PS,
 fill_count => fill_count_PL_to_PS
 );
-
+--ringbuffer Ps to PL
 ringbuffer_PS_to_PL_inst : entity work.ringbuffer
 generic map (RAM_DEPTH => RAM_DEPTH,RAM_WIDTH => RAM_WIDTH)
 port map(
