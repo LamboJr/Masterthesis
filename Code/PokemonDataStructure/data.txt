@@ -1,0 +1,9 @@
+Latios @ Shell Bell  
+Ability: Levitate  
+EVs: 124 HP / 132 Def / 252 SpA  
+Modest Nature  
+IVs: 0 Atk  
+- Dragon Claw  
+- Ice Beam  
+- Thunderbolt  
+- Calm Mind

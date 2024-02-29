@@ -1,0 +1,12 @@
+./gen --dump --nature Docile --level 34 --species Bulbasaur --met-level 0 --experience 33100 --pp-bonus  0:0:0:0 --moves LEECH_SEED:SYNTHESIS:GIGA_DRAIN:SLEEP_POWDER --met-location 88 --met-game leafgreen --pokeball standard --iv-hp 21 --iv-attack 3 --iv-defense 14 --iv-speed 12 --iv-special-attack 22 --iv-special-defense 11 Bisasam Daniel
+
+./gen --raw --nature Modest --level 34 --species Squirtle --met-level 0 --experience 33100 --pp-bonus 0:0:0:0 --moves ICE_BEAM:HYDRO_PUMP:YAWN:SUBSTITUTE --met-location 88 --met-game leafgreen --pokeball standard --iv-hp 16 --iv-attack 7 --iv-defense 17 --iv-speed 12 --iv-special-attack 19 --iv-special-defense 10 Schiggy Daniel
+
+./gen --raw --nature Mild --level 34 --species Cyndaquil --met-level 0 --experience 36434 --pp-bonus 0:0:0:0 --moves FLAMETHROWER:SUNNY_DAY:QUICK_ATTACK:FIRE_BLAST --met-location 88 --met-game leafgreen --pokeball standard --iv-hp 22 --iv-attack 12 --iv-defense 7 --iv-speed 22 --iv-special-attack 12 --iv-special-defense 20 FEURIGEL Daniel
+
+./gen --raw --nature Mild --level 34 --species Totodile --met-level 0 --experience 36434 --pp-bonus 0:0:0:0 --moves ANCIENT_POWER:BRICK_BREAK:SWORDS_DANCE:AERIAL_ACE --met-location 88 --met-game leafgreen --pokeball standard --iv-hp 21 --iv-attack 4 --iv-defense 6 --iv-speed 14 --iv-special-attack 17 --iv-special-defense 12 KARNIMANI Daniel
+
+./gen --raw --nature Lonely --level 34 --species Chikorita --met-level 0 --experience 36434 --pp-bonus 0:0:0:0 --moves LEECH_SEED:LIGHT_SCREEN:REFLECT:SUBSTITUTE --met-location 88 --met-game leafgreen --pokeball standard --iv-hp 2 --iv-attack 0 --iv-defense 16 --iv-speed 20 --iv-special-attack 9 --iv-special-defense 21 ENDIVIE Daniel
+
+./gen --raw --nature Adamant --level 100 --species Metagross --met-level 0 --pp-bonus 0:0:0:0 --moves EARTHQUAKE:METEOR_MASH:ROCK_SLIDE:SHADOW_BALL --met-location 88 --met-game leafgreen --pokeball standard --iv-hp 31 --iv-attack 31 --iv-defense 31 --iv-speed 31 --iv-special-attack 31 --iv-special-defense 31 --ev-hp 252 --ev-attack 252 --ev-speed 4 METAGROSS Daniel
+

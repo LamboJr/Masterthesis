@@ -1,0 +1,54 @@
+To create a petalinux image
+
+1. Create Petalinux Poject for Zynq architecture
+petalinux-create --type project --template zynq --name ZynqLinux
+
+2. Config Petalinux Project for own custom Hardware description (XSA File)
+cd ZynqLinux/
+petalinux-config --get-hw-description /home/daniel/PetaLinuxProjects/ModuleTop.xsa 
+
+3. Build Petalinux project   (Separate because programm will likly crash for complete build)
+petalinux-build -c kernel
+petalinux-build -c rootfs
+petalinux-build 
+
+
+4. Packaging and Booting
+petalinux-package --boot --u-boot
+petalinux-package --prebuilt --fpga /home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/system.bit
+petalinux-boot --jtag --prebuilt 3
+petalinux-boot --qemu --prebuilt 3
+
+$ SD CArd
+petalinux-package --boot --fsbl <ZYncfsblimaga> --fpga system.bit --u-boot
+
+tempory root Filesystem ändern in ext4 partition
+petalinux config -> Image Packaging Configuration -> Root filesystemtype == EXT4 
+petalinux-build
+petalinux-package --boot --fsbl zynq_fsbl.elf --fpga system.bit --u-boot --force
+ sudo umount /media/daniel/BOOT
+sudo umount /media/daniel/rootfs 
+ sudo fdisk /dev/mmcblk0
+ p
+ d
+ d
+ n p 
+ a
+ n
+ w
+ 
+ 
+sudo mkfs.vfat -F 32 -n BOOT /dev/mmcblk0p1
+ sudo mkfs.ext4 -L rootfs /dev/mmcblk0p2
+ 
+ SD KArte raus und wider rein oder mounten
+ sudo cp BOOT.BIN image.ub boot.scr /media/daniel/BOOT
+ 
+ sudo mount /dev/mmcblk0p2 /mnt
+cd /mnt
+ sudo cp rootfs.tar.gz  /mnt
+sudo tar -xzvf rootfs.tar.gz 
+
+
+petalinux-build --sdkpetalinux-package --sysroot
+. /home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sdk/environment-setup-cortexa9t2hf-neon-xilinx-linux-gnueabi
