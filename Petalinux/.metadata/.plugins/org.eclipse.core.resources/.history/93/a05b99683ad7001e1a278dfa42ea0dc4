@@ -1,0 +1,100 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <stdbool.h>
+#include <arpa/inet.h>
+#include <assert.h>
+
+#include "../Includes/Link.h"
+
+#include "../Includes/DataTypes.h"
+
+#include "../Includes/TradeHandler.h"
+
+#include "../Includes/decode_Pokemon_structure.h"
+#include "../TCP_Server.h"
+
+#include "../Includes/Ringbuffer.h"
+
+#include "../Includes/ConCat.h"
+#include "../Includes/BackUpHandler.h"
+#include "Test_Tradehanlder.h"
+#include "Test_BackupHandler.h"
+
+
+
+#define MODE_TRADE 0
+#define MODE_MONITOR 1
+
+#define TESTDATA_ARRAY TestDataTradePokemonExchange
+
+extern FILE *PokemonFp;
+
+extern u16 Magikarp_pokemonbuffer[50];
+
+
+void BackupTradeHandlerTest(){
+	StartFunctionTestPrint(__func__);
+
+	EndFunctionTestPrint(__func__);
+	return;
+};
+
+
+void DataBaseTest(){
+	const char* TestTableName = "TestTable";
+	u16 Testbuffer[50];
+	for (int i = 0;i <50;i++){
+		Testbuffer[i] = i;
+	}
+	DataBaseInsertBuffer(TestTableName,);
+	int DataBaseReadBuffer(u16 *buffer, const char *Tablename);
+	int create_table(sqlite3 *db, const char *Tablename);
+	int print_table_names() ;
+	void*  DataBaseInsertThread(void * arg);
+	int validDataBaseEntry(char *CompareString);
+	int DataBaseDropTable(char* Tablename);
+
+
+}
+
+void InitBlockAnalyserTest(){
+	u32 Framecounter  =1 ;
+	u16 TestDataField[]  = {
+			 0x0000    ,0xBBBB    ,0x0014    ,0x0080    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0xBC4F    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x8888    ,0xCCDD    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x5565    ,0x8888    ,0x0000    ,0x0000    ,0x0000    ,0xFFFF    ,0xFFFF    ,0xFFFF    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+	};
+	for (int i = 0; i < sizeof(TestDataField)/sizeof(u16);i++){
+		if( InitBlockAnalyser(Framecounter, TestDataField[i]) == Granted){
+
+		}else{
+
+		}
+		UpdateFrameCounter(&Framecounter);
+	}
+	extern TradeHandler s_TradeHandlerMaster;
+	for (int i = 0; i < 10;i++){
+		printf("%04x ",s_TradeHandlerMaster.TradeCommandBuffer[i]);
+	}printf("\n");
+	assert(s_TradeHandlerMaster.TradeCommandBuffer[0] == TestDataField[38]);
+};
+
+
+void RunBackUpHandlerTests(){
+	printf("Start the test of BackupHandler functions\n");
+	BackupTradeHandlerTest();
+	InitBlockAnalyserTest();
+	printf("Test successful\n");
+	return;
+}
+

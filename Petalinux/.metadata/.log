@@ -25650,3 +25650,271 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 16:46:03.678
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '34'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 18:21:23.812
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 18:23:05.348
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 18:25:11.669
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '35'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 18:26:31.880
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '36'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 18:27:41.125
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '37'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 18:30:49.587
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '38'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 18:42:20.479
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 18:55:59.650
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 18:57:09.122
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 18:57:54.973
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 19:01:19.273
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 19:01:57.614
+!MESSAGE Build step failed, canceling full build chain.
+!SESSION 2024-02-29 20:04:36.438 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2024-02-29 20:04:37.085
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2024-02-29 20:04:37.119
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2024-02-29 20:04:44.803
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-29 20:04:51.693
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-29 20:04:51.694
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-02-29 20:04:51.694
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:53.871
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:53.871
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:53.873
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:54.586
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:54.587
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:54.588
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:54.589
+!MESSAGE XSCT Command: [setws /home/daniel/Masterthesis/Petalinux], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:54.597
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:54.597
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/SharedData/2023.1/data:/tools/Xilinx/Vitis/2023.1/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:04:54.601
+!MESSAGE XSCT command with result: [setws /home/daniel/Masterthesis/Petalinux], Result: [null, ]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:07:10.377
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:07:25.787
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:07:57.976
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:09:41.437
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:09:43.185
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:09:43.186
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-02-29 20:09:43.188
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Dec  6 11:59:59 2023",
+"vivado_version": "2023.1",
+"part": "xc7z020clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:12:20.051
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:12:47.436
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:28:33.865
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:30:09.432
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:30:28.650
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:33:09.636
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:33:32.272
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:33:50.284
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '7'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:47:26.221
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:47:46.026
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:48:10.216
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:48:34.228
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:50:12.266
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:50:29.653
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:52:43.624
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '10'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 20:53:20.135
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:53:26.902
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '11'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:53:41.312
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '12'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 20:55:58.084
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '13'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 21:13:08.174
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 21:22:12.421
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 21:41:58.204
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '14'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 21:57:14.794
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '15'
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-02-29 22:02:08.008
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-02-29 22:02:33.364
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '16'
+!SESSION 2024-03-01 09:39:24.157 -----------------------------------------------
+eclipse.buildId=2023.1
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2024-03-01 09:39:24.820
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2024-03-01 09:39:24.852
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2024-03-01 09:39:33.204
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-01 09:39:39.478
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-01 09:39:39.479
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-03-01 09:39:39.480
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:50.710
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:50.710
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:50.710
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:51.257
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:51.257
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:51.257
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:51.258
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:51.258
+!MESSAGE XSCT Command: [setws /home/daniel/Masterthesis/Petalinux], Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:51.258
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/SharedData/2023.1/data:/tools/Xilinx/Vitis/2023.1/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:39:51.259
+!MESSAGE XSCT command with result: [setws /home/daniel/Masterthesis/Petalinux], Result: [null, ]. Thread: Thread-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:54:49.216
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:54:50.986
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:54:50.987
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-03-01 09:54:50.989
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/hw/ModuleTop.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Dec  6 11:59:59 2023",
+"vivado_version": "2023.1",
+"part": "xc7z020clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 09:54:51.219
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-03-01 10:29:14.783
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'

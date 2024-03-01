@@ -11,12 +11,11 @@
 
 #include "../Includes/Ringbuffer.h"
 
-#include "../Includes/decode_Pokemon_structure.h"
-
 #include <pthread.h>
 #include "../TCP_Server.h"
 #include "../Includes/ConCat.h"
 #include "../DatabaseHandler.h"
+#include "../Includes/DecodePokemonData.h"
 
 
 extern u16 ReceivedTeam[6][50];

@@ -16,11 +16,12 @@
 #include "TCP_Server.h"
 
 #include "Testing/Test_Tradehanlder.h"
+#include "Testing/Test_BackupHandler.h"
 #include "Includes/ConCat.h"
 #include "Includes/structs.h"
 #include <pthread.h>
 #include "DatabaseHandler.h"
-#include "Includes/decode_Pokemon_structure.h"
+#include "Includes/DecodePokemonData.h"
 
 
 #define MODE_TRADE 0
@@ -42,7 +43,8 @@ int main(int argc, char *argv[])
 
 #ifdef USE_TEST_DATA
 
-	RunAllTests();
+	//RunAllTests();
+	RunBackUpHandlerTests();
 	printf("Tests finished\n");
 	return 1;
 #endif

@@ -4,9 +4,10 @@
 #include <sqlite3.h>
 #include "DatabaseHandler.h"
 #include <pthread.h>
+
+#include "Includes/DecodePokemonData.h"
 #include "Includes/Link.h"
 #include "Includes/structs.h"
-#include "Includes/decode_Pokemon_structure.h"
 
 #define BUFFER_SIZE 50
 

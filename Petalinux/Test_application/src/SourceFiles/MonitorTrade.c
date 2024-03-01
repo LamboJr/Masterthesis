@@ -6,7 +6,7 @@
 
 #include "../Includes/linkcommand.h"
 #include "../Includes/decodeTrainderCard.h"
-#include "../Includes/decode_Pokemon_structure.h"
+#include "../Includes/DecodePokemonData.h"
 
 static struct TradeHandler sTradeHandler[2];
 
@@ -213,26 +213,26 @@ void updateBuffer(u8 MSC,u32 data){
 				}else{
 					//If Buffer is full
 					sTradeHandler[MSC].InitBlock  = 0;
-					printf("\n");
+					//printf("\n");
 					//Copy temporary buffer in the coresponding Teambuffer in the struct field
 					for(size_t i =0;i<POKEMON_BUFFER_LENGTH;i++){
 						sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i] = sTradeHandler[MSC].TempBuffer[i];
 						//printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
 					}
-					PRINTMS(MSC)
-					printf("Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);
+					//PRINTMS(MSC)
+					//printf("Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);
 /*					if(MSC == MASTER){printf("Master Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);}
 					else{printf("Slave Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);}*/
-					decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
+					//decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
 					sTradeHandler[MSC].TeamIndex++; //update TeamIndex
 					for(size_t i = 0;i<POKEMON_BUFFER_LENGTH;i++){
 						sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i] = sTradeHandler[MSC].TempBuffer[i+50];
 						//printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
 					}
-					PRINTMS(MSC)
-					printf("Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);
-					printf("DEBUG\n");
-					decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
+					//PRINTMS(MSC)
+					//printf("Pokemon Spot %d\n",sTradeHandler[MSC].TeamIndex+1);
+					//printf("DEBUG\n");
+					//decode_Pokemon_data(sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex]);
 					sTradeHandler[MSC].TeamIndex++;
 
 					//There are always send two Pokemon at once
@@ -257,15 +257,19 @@ void updateBuffer(u8 MSC,u32 data){
 							sTradeHandler[MSC].DataIndex++;  //Increase buffer index after succesfully storing data in it
 				}else{
 					sTradeHandler[MSC].InitBlock  = 0;
-					printf("\n");
+					//printf("\n");
 					//Copy temporary buffer in the coresponding Teambuffer in the struct field
 					for(size_t i =0;i<TRAINER_BUFFER_SIZE;i++){
 						sTradeHandler[MSC].TrainerCard[i] = sTradeHandler[MSC].TempBuffer[i];
 						//printf("Team[%d][%ld] = %04x\n ",sTradeHandler[MSC].TeamIndex,i,sTradeHandler[MSC].PokemonTeam[sTradeHandler[MSC].TeamIndex][i]);
 					}
-					if(MSC == MASTER){printf("Master TrainerCard\n");}
-					else{printf("Slave TrainerCard\n");}
-					decodeTrainerCard(sTradeHandler[MSC].TrainerCard);
+					if(MSC == MASTER){//printf("Master TrainerCard\n");
+
+					}
+					else{//printf("Slave TrainerCard\n");
+
+					}
+					//decodeTrainerCard(sTradeHandler[MSC].TrainerCard);
 
 
 					//There are always send two Pokemon at once
@@ -292,26 +296,26 @@ void updateBuffer(u8 MSC,u32 data){
 					sTradeHandler[MSC].DataIndex++;
 				}else{
 					sTradeHandler[MSC].InitBlock  = 0;
-					printf("\n");
+					//printf("\n");
 					sTradeHandler[MSC].LinkCMD = sTradeHandler[MSC].TempBuffer[0];
-					PRINTMS(MSC)
-					printf("Command : %04x\n",sTradeHandler[MSC].LinkCMD);
+					//PRINTMS(MSC)
+					//printf("Command : %04x\n",sTradeHandler[MSC].LinkCMD);
 
-					switch (sTradeHandler[MSC].LinkCMD){
-						CASEPRINT(LINKCMD_READY_TO_TRADE)
-						CASEPRINT(LINKCMD_READY_FINISH_TRADE)
-						CASEPRINT(LINKCMD_READY_CANCEL_TRADE)
-						CASEPRINT(LINKCMD_START_TRADE)
-						CASEPRINT(LINKCMD_CONFIRM_FINISH_TRADE)
-						CASEPRINT(LINKCMD_SET_MONS_TO_TRADE)
-						CASEPRINT(LINKCMD_PLAYER_CANCEL_TRADE)
-						CASEPRINT(LINKCMD_REQUEST_CANCEL)
-						CASEPRINT(LINKCMD_BOTH_CANCEL_TRADE)
-						CASEPRINT(LINKCMD_PARTNER_CANCEL_TRADE)
-						CASEPRINT(LINKCMD_NONE)
-
-						default:break;
-					}//end switch Link CMD
+//					switch (sTradeHandler[MSC].LinkCMD){
+//						CASEPRINT(LINKCMD_READY_TO_TRADE)
+//						CASEPRINT(LINKCMD_READY_FINISH_TRADE)
+//						CASEPRINT(LINKCMD_READY_CANCEL_TRADE)
+//						CASEPRINT(LINKCMD_START_TRADE)
+//						CASEPRINT(LINKCMD_CONFIRM_FINISH_TRADE)
+//						CASEPRINT(LINKCMD_SET_MONS_TO_TRADE)
+//						CASEPRINT(LINKCMD_PLAYER_CANCEL_TRADE)
+//						CASEPRINT(LINKCMD_REQUEST_CANCEL)
+//						CASEPRINT(LINKCMD_BOTH_CANCEL_TRADE)
+//						CASEPRINT(LINKCMD_PARTNER_CANCEL_TRADE)
+//						CASEPRINT(LINKCMD_NONE)
+//
+//						default:break;
+//					}//end switch Link CMD
 					printBlankspace("");
 				}
 			}

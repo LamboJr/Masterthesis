@@ -3,6 +3,12 @@
 #include <string.h>
 #include "../Includes/DataTypes.h"
 
+/*ConCat is a simple function to Concatinate two integer arrays to a bigger one
+  The size of the resulting Array is sizeof(Array1) plus sizeof(Array2)
+ */
+
+
+
 void concat(u16 *Buffer1, u16 *Buffer2,u16 *ResultBuffer,size_t Buffer1size,size_t Buffer2size) {
 	//printf("Size of Buffer 1: %d and Buffer2 : %d",Buffer1size,Buffer2size);
 	memcpy(ResultBuffer,Buffer1,Buffer1size*sizeof(u16));

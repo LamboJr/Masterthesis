@@ -94,6 +94,7 @@ typedef enum{
 	Exit_20, // ExitValue 20;
 	Exit_C,
 	SendInitialBlock,
+	SendTradeCommand
 
 }ID_Type;
 

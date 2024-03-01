@@ -4,8 +4,8 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <stdint.h>
-#include "Pokemonbuffer.h"
- #include "ReverseDecoding.h"
+#include "PokemonDataStructure/Pokemonbuffer.h"
+ #include "PokemonDataStructure/ReverseDecoding.h"
 
 
  #define u8 uint8_t

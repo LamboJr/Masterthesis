@@ -17,6 +17,7 @@
 #include "../TCP_Server.h"
 #include "../Includes/ConCat.h"
 #include "../Includes/TradeHandler.h"
+#include "../Includes/BackUpHandler.h"
 
 u16 ReceivedTeam[6][50];
 
@@ -57,8 +58,8 @@ u32 MainTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 
 
 	Switches_State = (u8)(PL_to_PS_buffer_value & SWITCH_BITMASK);
-	//u8 Spotnumber = Switches_State%6;
-	static u8* Spotptr = &Switches_State;
+	static u16 SpotNumber;
+
 	Resetbutton_State = (u8)((PL_to_PS_buffer_value & RESETBUTTON_STATE) >> 4);
 	Tradebutton_State = (u8)((PL_to_PS_buffer_value & TRADEBUTTON_STATE) >> 5);
 	//Reset
@@ -70,9 +71,9 @@ u32 MainTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 	}
 
 	if ((DetectTradeButtonPress(Tradebutton_State) == 1) && (SendTradeDataStatus == NoRequest)){
+		SpotNumber = Switches_State % 6;
 
-		Spotptr = &Switches_State;
-		InitTradeBuffer((void *) Spotptr);
+		InitTradeBuffer((void *) &SpotNumber);
 		//rc = pthread_create( &thread1, NULL, InitTradeBuffer, (void *)Spotptr);
 		SendTradeDataStatus = Active;
 	}
@@ -264,6 +265,71 @@ u32 MainTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 		return returnvalue;
 	}break;
 
+	case InitBlockState : {
+			if (FrameCounter ==1 ){
+				returnvalue = data;
+			}else{
+				returnvalue = 0;
+				switch(s_TradeHandlerMaster.DataHandlerstatus){
+				case CaptureData :{
+					if(InitBlockAnalyser(FrameCounter, data) == Granted){
+						s_TradeHandlerMaster.DataHandlerstatus = WaitforThread;
+					}else{
+						s_TradeHandlerMaster.DataHandlerstatus = CaptureData;
+					}
+				}break;
+				case WaitforThread :{
+					returnvalue = 0;
+						if(FrameCounter == 9){
+							s_TradeHandlerMaster.DataHandlerstatus = SendData;
+							s_TradeHandlerMaster.TradeCommand = s_TradeHandlerMaster.TradeCommandBuffer[0];
+							switch (s_TradeHandlerMaster.TradeCommand){
+							case LINKCMD_SET_MONS_TO_TRADE : {
+								s_TradeHandlerMaster.ReceivedSpotNumber = s_TradeHandlerMaster.TradeCommandBuffer[1];
+
+							}break;//0xDDDD
+							case LINKCMD_START_TRADE :{}break; // 0xCCDD
+							case LINKCMD_PLAYER_CANCEL_TRADE :{}break; //DDEE
+
+							case LINKCMD_CONFIRM_FINISH_TRADE : {
+
+							}break;//DCBA
+							default : {
+								GenerateTradeCommandBlock(s_TradeHandlerMaster.TradeCommand, s_TradeHandlerMaster.TradeCommandBuffer[1]);
+								printf("Send Init Block\n");
+							}break;
+							}//end switch
+
+						}else{
+							s_TradeHandlerMaster.DataHandlerstatus = WaitforThread;
+					}
+				}break;
+
+				case SendData : {
+					if(FrameCounter == 2){
+						returnvalue = ReadBuffer(&s_ControlBuffer);
+						//printf("RV C : %04x ",returnvalue);
+					}else{
+						returnvalue = ReadBuffer(&s_DataBuffer);
+						//printf("RV : %04x ",returnvalue);
+						if (FrameCounter == 9){
+							//printf("\n");
+							if (BufferEmpty(&s_ControlBuffer) == 1){
+								s_syncstate = DataState;
+								s_TradeHandlerMaster.DataHandlerstatus = NoData;
+								printf("Successful Send Buffer\n");
+							}
+						}
+					}
+				}break;
+				default : {
+
+				}break;
+				}//end switch
+				//s_TradeHandlerMaster.InitBlockSize
+			}
+
+		}break;
 
 	case DataState : {
 
@@ -284,8 +350,10 @@ u32 MainTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 							returnvalue = 0;
 						}break;
 						case 0xBBBB : { //Init Block
-							s_TradeHandlerMaster.InitBlock = Active;
-							returnvalue = data;
+							s_TradeHandlerMaster.DataHandlerstatus = CaptureData;
+							returnvalue = 0;
+//							s_TradeHandlerMaster.InitBlock = Active;
+//							returnvalue = data;
 						}break;
 						case 0x8888 : { // Cont Data Block
 							returnvalue = data;
@@ -336,6 +404,9 @@ u32 MainTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 				}break;
 				case 0xBBBB : {
 					s_TradeHandlerMaster.InitBlockSize = data;
+					s_syncstate = InitBlockState;
+					returnvalue = 0;
+
 					//returnvalue = 0;
 				}break;
 				case 0x8888 : {}break;

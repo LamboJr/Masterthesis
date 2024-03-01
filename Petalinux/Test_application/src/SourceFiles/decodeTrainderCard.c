@@ -7,6 +7,10 @@
 
 #include "../Includes/decodeTrainderCard.h"
 
+/*This function is used to decode the TrainerCard Buffer into the corresponding TrainerCard struct
+ * It takes a Pointer to an uint16_t buffer as input and prints the individual field of the trainer card struct
+ */
+
 void decodeTrainerCard(uint16_t* TrainerBuffer){
     struct TrainerCard trainercard;
     uint16_t* TrainerPtr = (uint16_t* )&trainercard;

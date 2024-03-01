@@ -1,0 +1,116 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <stdbool.h>
+#include <arpa/inet.h>
+#include <assert.h>
+
+#include "../Includes/Link.h"
+
+#include "../Includes/DataTypes.h"
+
+#include "../Includes/TradeHandler.h"
+
+#include "../Includes/decode_Pokemon_structure.h"
+#include "../TCP_Server.h"
+
+#include "../Includes/Ringbuffer.h"
+
+#include "../Includes/ConCat.h"
+#include "../Includes/BackUpHandler.h"
+#include "Test_Tradehanlder.h"
+#include "Test_BackupHandler.h"
+
+
+
+#define MODE_TRADE 0
+#define MODE_MONITOR 1
+
+#define TESTDATA_ARRAY TestDataTradePokemonExchange
+
+extern FILE *PokemonFp;
+
+extern u16 Magikarp_pokemonbuffer[50];
+
+
+void BackupTradeHandlerTest(){
+	StartFunctionTestPrint(__func__);
+
+	EndFunctionTestPrint(__func__);
+	return;
+};
+
+
+
+void BackupBlockRequestAnalyserTest(){
+
+};
+void BackupGenerateBlockRequestResponseTest(){
+
+};
+void InitBlockAnalyserTest(){
+	u32 Framecounter  =1 ;
+	u16 TestDataField[]  = {
+			 0x0000    ,0xBBBB    ,0x0014    ,0x0080    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0xBC4F    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x8888    ,0xCCDD    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x5565    ,0x8888    ,0x0000    ,0x0000    ,0x0000    ,0xFFFF    ,0xFFFF    ,0xFFFF    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+			,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000    ,0x0000
+	};
+	for (int i = 0; i < sizeof(TestDataField)/sizeof(u16);i++){
+		if( InitBlockAnalyser(Framecounter, TestDataField[i]) == Granted){
+
+		}else{
+
+		}
+		UpdateFrameCounter(&Framecounter);
+	}
+
+
+	RequestStatus InitBlockAnalyser(u32 Framecounter, u16 data){
+		static u8 bufferindex = 0;
+		static u8 DataFieldActive =0;
+		if (Framecounter == 1){}
+		else if( Framecounter == 2){
+			if( data == 0x8888){
+				DataFieldActive = 1;
+			}
+			else{
+				DataFieldActive = 0;
+			}
+		}else{
+			if ( DataFieldActive == 1){
+				if ( bufferindex < 10 ){
+					s_TradeHandlerMaster.TradeCommandBuffer[bufferindex++] = data;
+				}else{
+					if( Framecounter == 9){
+						DataFieldActive = 0;
+						bufferindex = 0;
+						printf("Init Block Analyser Finished\n");
+						return Granted;
+					}
+				}
+			}
+		}
+		return Pending;
+
+
+	}
+
+};
+
+
+void RunBackUpHandlerTests(){
+	printf("Start the test of BackupHandler functions\n");
+	BackupTradeHandlerTest();
+	printf("Test successful\n");
+	return;
+}
+
