@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="MonitoringUnit" location="/home/daniel/Masterthesis/Petalinux/MonitoringUnit" platform="/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/Petalinux_Platorm.xpfm" platformUID="xilinx:zybo-z7-20::0.0(custom)" systemProject="PetalinuxDomain" sysConfig="Petalinux_Platorm" runtime="C/C++" cpu="linux_domain" cpuInstance="cortex-a9" os="linux">
+  <configuration name="Debug" id="xilinx.gnu.armv7.linux.exe.debug.533675628">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.linux.exe.release.1443491117" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="linux_empty_app"/>
+</sdkproject:SdkProject>

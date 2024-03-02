@@ -1,20 +1,34 @@
 Nothing to build in platform 'Petalinux_Platorm'
 
-10:16:10 **** Incremental Build of configuration Debug for project Test_application ****
+13:12:18 **** Incremental Build of configuration Debug for project MonitoringUnit ****
 make all 
+Building file: ../src/Testing/MonitorUnitTest.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Testing/MonitorUnitTest.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/Testing/MonitorUnitTest.d" -MT"src/Testing/MonitorUnitTest.o" -o "src/Testing/MonitorUnitTest.o" "../src/Testing/MonitorUnitTest.c"
+Finished building: ../src/Testing/MonitorUnitTest.c
+ 
 Building file: ../src/SourceFiles/MonitorTrade.c
 Invoking: ARM v7 Linux gcc compiler
 arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SourceFiles/MonitorTrade.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/SourceFiles/MonitorTrade.d" -MT"src/SourceFiles/MonitorTrade.o" -o "src/SourceFiles/MonitorTrade.o" "../src/SourceFiles/MonitorTrade.c"
 Finished building: ../src/SourceFiles/MonitorTrade.c
  
-Building target: Test_application.elf
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:48:15: warning: unused variable 'PltoPSbufferptr' [-Wunused-variable]
+   48 |         void *PltoPSbufferptr = InitPLtoPSBuffer(fd);
+      |               ^~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: MonitoringUnit.elf
 Invoking: ARM v7 Linux gcc linker
-arm-linux-gnueabihf-gcc -L"/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib" -L/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/lib -L/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib -o "Test_application.elf" ./src/Testing/Test_BackupHandler.o ./src/Testing/Test_Tradehandler.o ./src/Testing/TradeHandlerbackup.o  ./src/SourceFiles/BackUpHandler.o ./src/SourceFiles/ConCat.o ./src/SourceFiles/DecodePokemonData.o ./src/SourceFiles/MonitorTrade.o ./src/SourceFiles/Ringbuffer.o ./src/SourceFiles/TradeHandler.o ./src/SourceFiles/decodeTrainderCard.o ./src/SourceFiles/functions.o  ./src/DatabaseHandler.o ./src/HardwareHandler.o ./src/TCP_Server.o ./src/main.o   -lsqlite3 --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -Wl,-rpath-link=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/lib -Wl,-rpath-link=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib
-Finished building target: Test_application.elf
+arm-linux-gnueabihf-gcc -L"/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib" -L/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/lib -L/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib -o "MonitoringUnit.elf" ./src/Testing/MonitorUnitTest.o  ./src/SourceFiles/ConCat.o ./src/SourceFiles/DecodePokemonData.o ./src/SourceFiles/MonitorTrade.o ./src/SourceFiles/decodeTrainderCard.o ./src/SourceFiles/functions.o  ./src/HardwareHandler.o ./src/main.o   -lsqlite3 --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -Wl,-rpath-link=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/lib -Wl,-rpath-link=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib
+Finished building target: MonitoringUnit.elf
  
 Invoking: ARM v7 Linux Print Size
-arm-linux-gnueabihf-size Test_application.elf  |tee "Test_application.elf.size"
+arm-linux-gnueabihf-size MonitoringUnit.elf  |tee "MonitoringUnit.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  69878	 228140	  15440	 313458	  4c872	Test_application.elf
-Finished building: Test_application.elf.size
+  23079	 230932	   3376	 257387	  3ed6b	MonitoringUnit.elf
+Finished building: MonitoringUnit.elf.size
  

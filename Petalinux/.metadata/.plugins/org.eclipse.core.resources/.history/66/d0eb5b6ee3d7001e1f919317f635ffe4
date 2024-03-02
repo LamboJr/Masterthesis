@@ -1,0 +1,67 @@
+#include "../Includes/DataTypes.h"
+#include <stdio.h>
+#include "../Includes/MonitorTrade.h"
+
+#include "../Includes/Link.h"
+
+#include "../Includes/linkcommand.h"
+#include "../Includes/decodeTrainderCard.h"
+#include "../Includes/DecodePokemonData.h"
+#include "../Testing/TestDataTrade.h"
+#include "MonitorUnitTest.h"
+
+
+void StartFunctionTestPrint(const char *FuncName){
+	printf("Start test of function --%s--\n",FuncName);
+	return;
+}
+void EndFunctionTestPrint(const char *FuncName){
+	printf("Test of function --%s-- successful\n",FuncName);
+	return;
+}
+
+void RunAllMonitorTests(){
+	StartFunctionTestPrint(__func__);
+
+	MonitorHanlderTest();
+	EndFunctionTestPrint(__func__);
+	return;
+}
+
+void MonitorHanlderTest(){
+	StartFunctionTestPrint(__func__);
+	FILE *fp;
+	extern FILE *PokemonFp;
+	//--------------------------------------------------------------------------
+	printf("Write Monitor Output to file log.txt\n");
+	 // Open file in write mode
+	 fp = fopen("/home/petalinux/log.txt", "w");
+	 // Check if file opened successfully
+	if (fp == NULL) {
+		printf("Error opening file.\n");
+		return;
+	}
+	// Write output to file
+	//fprintf(fp, "This is the output that will be written to the file.\n");
+	printf("Write Extracted Data into datalog.txt\n");
+	PokemonFp = fopen("/home/petalinux/datalog.txt","w");
+	if(PokemonFp == NULL){
+		printf("Error opening file datalog.txt.\n");
+		return;
+	}
+	u32 Inputdata;
+	u32 dump = 1;//
+	int size = sizeof(TestDataTrade)/sizeof(u32);
+
+	for(int i = 0; i< size; i++){
+		Inputdata = TestDataTrade[i];
+		MonitorHandler(dump,Inputdata,fp);
+		printf("%08x  \n",Inputdata);
+		//MonitorHandler(Inputdata, dump,fp);
+	}
+
+
+
+	EndFunctionTestPrint(__func__);
+	return;
+}

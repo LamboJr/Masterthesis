@@ -1,0 +1,26 @@
+#include "../Includes/DataTypes.h"
+#include <stdio.h>
+#include "../Includes/MonitorTrade.h"
+
+#include "../Includes/Link.h"
+
+#include "../Includes/linkcommand.h"
+#include "../Includes/decodeTrainderCard.h"
+#include "../Includes/DecodePokemonData.h"
+
+
+void StartFunctionTestPrint(const char *FuncName){
+	printf("Start test of function --%s--\n",FuncName);
+	return;
+}
+void EndFunctionTestPrint(const char *FuncName){
+	printf("Test of function --%s-- successful\n",FuncName);
+	return;
+}
+
+void RunAllMonitorTests(){
+	StartFunctionTestPrint(__func__);
+
+
+	EndFunctionTestPrint(__func__);
+}

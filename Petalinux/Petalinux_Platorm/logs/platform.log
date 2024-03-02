@@ -19006,3 +19006,601 @@ TRACE::2024-02-28.21:48:09::SCWWriter::formatted JSON is {
 		}]
 }
 KEYINFO::2024-02-28.21:48:09::SCWPlatform::updated the xpfm file.
+TRACE::2024-03-01.12:02:27::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:27::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:27::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:27::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:02:27::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:27::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:02:27::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-03-01.12:02:29::SCWPlatform::Opened new HwDB with name ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWReader::Active system found as  Petalinux_Platorm
+TRACE::2024-03-01.12:02:29::SCWReader::Handling sysconfig Petalinux_Platorm
+TRACE::2024-03-01.12:02:29::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-01.12:02:29::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-03-01.12:02:29::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:02:29::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:02:29::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-03-01.12:02:29::SCWMssOS::No sw design opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS::mss exists loading the mss file  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS::Opened the sw design from mss  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS::Adding the swdes entry /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-03-01.12:02:29::SCWMssOS::updating the scw layer about changes
+TRACE::2024-03-01.12:02:29::SCWMssOS::Opened the sw design.  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:02:29::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:02:29::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS:: library already available in sw design:  xilffs:5.0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:02:29::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:02:29::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-03-01.12:02:29::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-01.12:02:29::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-01.12:02:29::SCWMssOS::Commit changes completed.
+TRACE::2024-03-01.12:02:29::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-01.12:02:29::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:02:29::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-01.12:02:29::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:02:29::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:02:29::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:02:29::SCWReader::No isolation master present  
+TRACE::2024-03-01.12:02:29::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-01.12:02:29::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2024-03-01.12:02:29::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2024-03-01.12:02:29::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-01.12:02:29::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-01.12:02:29::SCWReader::No isolation master present  
+TRACE::2024-03-01.12:16:31::SCWPlatform::Clearing the existing platform
+TRACE::2024-03-01.12:16:31::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-03-01.12:16:31::SCWBDomain::clearing the fsbl build
+TRACE::2024-03-01.12:16:31::SCWMssOS::Removing the swdes entry for  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:31::SCWSystem::Clearing the domains completed.
+TRACE::2024-03-01.12:16:31::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-03-01.12:16:31::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:31::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:31::SCWPlatform:: Platform location is /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:31::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:31::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:31::SCWPlatform::Removing the HwDB with name /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:31::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:31::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:31::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:31::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:31::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:31::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:31::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-03-01.12:16:34::SCWPlatform::Opened new HwDB with name ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWReader::Active system found as  Petalinux_Platorm
+TRACE::2024-03-01.12:16:34::SCWReader::Handling sysconfig Petalinux_Platorm
+TRACE::2024-03-01.12:16:34::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-01.12:16:34::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-03-01.12:16:34::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Opened existing hwdb ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Opened existing hwdb ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Opened existing hwdb ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:16:34::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Opened existing hwdb ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:16:34::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-03-01.12:16:34::SCWMssOS::No sw design opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS::mss exists loading the mss file  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS::Opened the sw design from mss  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS::Adding the swdes entry /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-03-01.12:16:34::SCWMssOS::updating the scw layer about changes
+TRACE::2024-03-01.12:16:34::SCWMssOS::Opened the sw design.  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Opened existing hwdb ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:16:34::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:16:34::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS:: library already available in sw design:  xilffs:5.0
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Opened existing hwdb ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:16:34::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:16:34::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-03-01.12:16:34::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-01.12:16:34::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-01.12:16:34::SCWMssOS::Commit changes completed.
+TRACE::2024-03-01.12:16:34::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-01.12:16:34::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:16:34::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:16:34::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Opened existing hwdb ModuleTop_2
+TRACE::2024-03-01.12:16:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:16:34::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:16:34::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:16:34::SCWReader::No isolation master present  
+TRACE::2024-03-01.12:16:34::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-01.12:16:34::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2024-03-01.12:16:34::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2024-03-01.12:16:34::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-01.12:16:34::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-01.12:16:34::SCWReader::No isolation master present  
+LOG::2024-03-01.12:18:02::SCWPlatform::Started generating the artifacts platform Petalinux_Platorm
+TRACE::2024-03-01.12:18:02::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-03-01.12:18:02::SCWPlatform::Started generating the artifacts for system configuration Petalinux_Platorm
+LOG::2024-03-01.12:18:02::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-03-01.12:18:02::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-03-01.12:18:02::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-03-01.12:18:02::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-03-01.12:18:02::SCWSystem::Checking the domain linux_domain
+LOG::2024-03-01.12:18:02::SCWSystem::Not a boot domain 
+LOG::2024-03-01.12:18:02::SCWSystem::Started Processing the domain linux_domain
+TRACE::2024-03-01.12:18:02::SCWDomain::Generating domain artifcats
+LOG::2024-03-01.12:18:02::SCWSystem::Completed Processing the domain linux_domain
+LOG::2024-03-01.12:18:02::SCWSystem::Completed Processing the sysconfig Petalinux_Platorm
+LOG::2024-03-01.12:18:02::SCWPlatform::Completed generating the artifacts for system configuration Petalinux_Platorm
+TRACE::2024-03-01.12:18:02::SCWPlatform::Started preparing the platform 
+TRACE::2024-03-01.12:18:02::SCWSystem::Writing the bif file for system config Petalinux_Platorm
+TRACE::2024-03-01.12:18:02::SCWSystem::dir created 
+TRACE::2024-03-01.12:18:02::SCWSystem::Writing the bif 
+TRACE::2024-03-01.12:18:02::SCWPlatform::Started writing the spfm file 
+TRACE::2024-03-01.12:18:02::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-03-01.12:18:02::SCWPlatform::Completed generating the platform
+TRACE::2024-03-01.12:18:02::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:18:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-01.12:18:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-01.12:18:02::SCWMssOS::Commit changes completed.
+TRACE::2024-03-01.12:18:02::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:18:02::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:18:02::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:18:02::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:18:02::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:18:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:18:02::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_2
+TRACE::2024-03-01.12:18:02::SCWPlatform::Opened existing hwdb ModuleTop_2
+TRACE::2024-03-01.12:18:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:18:02::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:18:02::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:18:02::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:18:02::SCWWriter::formatted JSON is {
+	"platformName":	"Petalinux_Platorm",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Petalinux_Platorm",
+	"platHandOff":	"/home/daniel/PetaLinuxProjects/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Petalinux_Platorm",
+	"systems":	[{
+			"systemName":	"Petalinux_Platorm",
+			"systemDesc":	"Petalinux_Platorm",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"Petalinux_Platorm",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"d371d78c61985e758ecb005c2ed0a439",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on ps7_cortexa9",
+					"domainDesc":	"linux_domain",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/Petalinux_Platorm/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Petalinux_Platorm/linux_domain/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"",
+					"sysrootLocation":	"/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-03-01.12:18:02::SCWPlatform::updated the xpfm file.
+TRACE::2024-03-01.12:19:03::SCWPlatform::Clearing the existing platform
+TRACE::2024-03-01.12:19:03::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-03-01.12:19:03::SCWBDomain::clearing the fsbl build
+TRACE::2024-03-01.12:19:03::SCWMssOS::Removing the swdes entry for  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:03::SCWSystem::Clearing the domains completed.
+TRACE::2024-03-01.12:19:03::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-03-01.12:19:03::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:03::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:03::SCWPlatform:: Platform location is /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:03::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:03::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:03::SCWPlatform::Removing the HwDB with name /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:03::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:03::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:03::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:03::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:03::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:03::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:03::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-03-01.12:19:05::SCWPlatform::Opened new HwDB with name ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWReader::Active system found as  Petalinux_Platorm
+TRACE::2024-03-01.12:19:05::SCWReader::Handling sysconfig Petalinux_Platorm
+TRACE::2024-03-01.12:19:05::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-01.12:19:05::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-03-01.12:19:05::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Opened existing hwdb ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Opened existing hwdb ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Opened existing hwdb ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:19:05::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Opened existing hwdb ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:19:05::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-03-01.12:19:05::SCWMssOS::No sw design opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS::mss exists loading the mss file  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS::Opened the sw design from mss  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS::Adding the swdes entry /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-03-01.12:19:05::SCWMssOS::updating the scw layer about changes
+TRACE::2024-03-01.12:19:05::SCWMssOS::Opened the sw design.  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Opened existing hwdb ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:19:05::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:19:05::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS:: library already available in sw design:  xilffs:5.0
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Opened existing hwdb ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:19:05::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:19:05::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-03-01.12:19:05::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-01.12:19:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-01.12:19:05::SCWMssOS::Commit changes completed.
+TRACE::2024-03-01.12:19:05::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-01.12:19:05::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:19:05::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:19:05::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Opened existing hwdb ModuleTop_3
+TRACE::2024-03-01.12:19:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:19:05::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:19:05::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:19:05::SCWReader::No isolation master present  
+TRACE::2024-03-01.12:19:05::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-01.12:19:05::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2024-03-01.12:19:05::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2024-03-01.12:19:05::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-01.12:19:05::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-01.12:19:05::SCWReader::No isolation master present  
+LOG::2024-03-01.12:20:23::SCWPlatform::Started generating the artifacts platform Petalinux_Platorm
+TRACE::2024-03-01.12:20:23::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-03-01.12:20:23::SCWPlatform::Started generating the artifacts for system configuration Petalinux_Platorm
+LOG::2024-03-01.12:20:23::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-03-01.12:20:23::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-03-01.12:20:23::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-03-01.12:20:23::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-03-01.12:20:23::SCWSystem::Checking the domain linux_domain
+LOG::2024-03-01.12:20:23::SCWSystem::Not a boot domain 
+LOG::2024-03-01.12:20:23::SCWSystem::Started Processing the domain linux_domain
+TRACE::2024-03-01.12:20:23::SCWDomain::Generating domain artifcats
+LOG::2024-03-01.12:20:23::SCWSystem::Completed Processing the domain linux_domain
+LOG::2024-03-01.12:20:23::SCWSystem::Completed Processing the sysconfig Petalinux_Platorm
+LOG::2024-03-01.12:20:23::SCWPlatform::Completed generating the artifacts for system configuration Petalinux_Platorm
+TRACE::2024-03-01.12:20:23::SCWPlatform::Started preparing the platform 
+TRACE::2024-03-01.12:20:23::SCWSystem::Writing the bif file for system config Petalinux_Platorm
+TRACE::2024-03-01.12:20:23::SCWSystem::dir created 
+TRACE::2024-03-01.12:20:23::SCWSystem::Writing the bif 
+TRACE::2024-03-01.12:20:23::SCWPlatform::Started writing the spfm file 
+TRACE::2024-03-01.12:20:23::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-03-01.12:20:23::SCWPlatform::Completed generating the platform
+TRACE::2024-03-01.12:20:23::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:20:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-01.12:20:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-01.12:20:23::SCWMssOS::Commit changes completed.
+TRACE::2024-03-01.12:20:23::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:20:23::SCWPlatform::DSA given /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:20:23::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:20:23::SCWPlatform::DSA directory /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw
+TRACE::2024-03-01.12:20:23::SCWPlatform:: Platform Path /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/hw/ModuleTop.xsa
+TRACE::2024-03-01.12:20:23::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-01.12:20:23::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_3
+TRACE::2024-03-01.12:20:23::SCWPlatform::Opened existing hwdb ModuleTop_3
+TRACE::2024-03-01.12:20:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-01.12:20:23::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:20:23::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-01.12:20:23::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-01.12:20:23::SCWWriter::formatted JSON is {
+	"platformName":	"Petalinux_Platorm",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Petalinux_Platorm",
+	"platHandOff":	"/home/daniel/PetaLinuxProjects/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Petalinux_Platorm",
+	"systems":	[{
+			"systemName":	"Petalinux_Platorm",
+			"systemDesc":	"Petalinux_Platorm",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"Petalinux_Platorm",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"d371d78c61985e758ecb005c2ed0a439",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on ps7_cortexa9",
+					"domainDesc":	"linux_domain",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/Petalinux_Platorm/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Petalinux_Platorm/linux_domain/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"",
+					"sysrootLocation":	"/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-03-01.12:20:23::SCWPlatform::updated the xpfm file.

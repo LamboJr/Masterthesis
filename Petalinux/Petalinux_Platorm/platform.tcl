@@ -143,3 +143,6 @@ domain config -sysroot {/home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sd
 platform write
 platform clean
 platform generate
+platform active {Petalinux_Platorm}
+platform generate -domains 
+platform generate -domains 
