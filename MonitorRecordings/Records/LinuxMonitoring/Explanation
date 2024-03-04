@@ -1,0 +1,77 @@
+Notizen zu Recordings 
+Leafgreen Master Emerald fake is Slave
+B9A0 sync
+FFF8 sync when not searching of Slave but MAster is searching
+
+8FFF indication of end of sync
+
+Framecount = 1		Framecount > 1
+
+2222 from MAster	1133
+						(Theorie. Die Zahl 2222 im Kontrollfeld wird nur vom Master gesendet und nie vom Slave. Die daraffolgende Zahl könnte sowas wie den State der Interaktion 
+						markieren. Zum Beispiel Data exchange for TradingRoom und Data exhcnage for Tradingauswahl. Gefunde Zahl 1133,1133,1144,1111
+						(Durch Vergleich mit Kampfseqeunz ergibt sich: bei kämpfen statt 11.. 22..  Wird wohl benutz um herauszufinden ob MAster und Slave die gleiche Asuwahl
+						getroffen haben zu Beginn. Bedeutung im späteren Verlauf noch analysieren. Kommt in erstem unbekannten Datenfeld vor
+						 (Master auswhal 1122 / Slave asuwahl 2233) zum Beispiel. Nur wenn da gleich ist geht es weiter
+
+
+BBBB from Master	003C	0080
+in same 9er frame
+BBBB from Slave		003C	0081
+
+8888
+Data exchange in coming 7 frames
+
+CCCC from MAster 	0002			(Theorie: Kommt immer bevor ein Datenfeld mit 8888 als Start kommt. Die Zahl im selben 9Frame identifiziert die ART der darauf gesendetten Daten. 
+						(Pokemondaten = 0001, Trainer Daten = 0002, 0003 == 0xFFFF Daten(unbekannt aktuell) 0004 = kleinere 0xFFF Sequenz
+
+BBBB			0064	0080
+BBBB			0064	0081
+
+						(Theorie: Vor jedenm Datenblock der mit 8888 als kennziffer geschickt wird folgt vohrher ein Frame der mit BBBB beginnt. Die darauffokgende Zahl gibt die 
+						Anzahl der danach gesendeten (relevanten ) Bytes an. Bei 100 16 Bit frames sind also 200 Bytes.
+						Die Zahl 0080 und 0081 muss noch rausgefunden werden).
+
+2FFE from MAster or Slave, not necessary in same 9er frame
+						(Theorie: 8FFF,5FFF,2FFE kommen jeweils im framecount 1 vor. Sie kontrollieren den Ablauf der Satemachine ?. Wenn 8FFF kommt ist
+						B9A0 Sequenz vorbei. Wenn 5FFF kommt kommt bald darauf eine B9A0 Sync Phase. 2FFE deutet auf den Abschluss eines States hin.
+						Kommt zum Beispiel vor bevor in CAFECAFE übergegangen wird.)
+
+
+CAFE  Movement sequence
+
+
+5FFF from both simultan
+
+B9A0B9A0 ----
+
+2222 from MAster 	1122
+
+BBBBBBBB		003c003C 00800081
+
+CCCC			0001
+
+BBBBBBBB		00C800C8	00800081
+
+einzelkampf
+//Testkampf um mehr informationen zu erhalten
+
+2222			2233   -> Scheinbar indendifiziert das erste Byte die Art der Interaktion 11 == Tausch, 22 == Einzelkampf
+
+BBBB	Zahl/Zahl Bytes 0080 0081 bleibt scheinbar gleich
+
+2222			2211
+
+
+Doppelkampf
+
+2222			2244 -> 22 markiert scheinbar auch Doppelkampf.
+			2211 -> 11 nach einehmen des Platzes
+			
+//In diesem Szenario gibt es bei der Übertragung der Pokemon Datenfelder keine zusätzlichen FFFFFFF Felder nach den 6 Team Pokemon
+
+
+
+
+
+
