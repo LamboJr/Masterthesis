@@ -1,6 +1,69 @@
-15:43:35 **** Incremental Build of configuration Debug for project DataBaseUnit ****
+13:31:55 **** Incremental Build of configuration Debug for project DataBaseUnit ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/Testing/Test_BackupHandler.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Testing/Test_BackupHandler.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/Testing/Test_BackupHandler.d" -MT"src/Testing/Test_BackupHandler.o" -o "src/Testing/Test_BackupHandler.o" "../src/Testing/Test_BackupHandler.c"
+Finished building: ../src/Testing/Test_BackupHandler.c
+ 
+Building file: ../src/SourceFiles/BackUpHandler.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SourceFiles/BackUpHandler.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/SourceFiles/BackUpHandler.d" -MT"src/SourceFiles/BackUpHandler.o" -o "src/SourceFiles/BackUpHandler.o" "../src/SourceFiles/BackUpHandler.c"
+Finished building: ../src/SourceFiles/BackUpHandler.c
+ 
+Building file: ../src/SourceFiles/TradeHandler.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SourceFiles/TradeHandler.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/SourceFiles/TradeHandler.d" -MT"src/SourceFiles/TradeHandler.o" -o "src/SourceFiles/TradeHandler.o" "../src/SourceFiles/TradeHandler.c"
+Finished building: ../src/SourceFiles/TradeHandler.c
+ 
+Building file: ../src/SourceFiles/decodeTrainderCard.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SourceFiles/decodeTrainderCard.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/SourceFiles/decodeTrainderCard.d" -MT"src/SourceFiles/decodeTrainderCard.o" -o "src/SourceFiles/decodeTrainderCard.o" "../src/SourceFiles/decodeTrainderCard.c"
+Finished building: ../src/SourceFiles/decodeTrainderCard.c
+ 
+Building file: ../src/SourceFiles/functions.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SourceFiles/functions.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/SourceFiles/functions.d" -MT"src/SourceFiles/functions.o" -o "src/SourceFiles/functions.o" "../src/SourceFiles/functions.c"
+Finished building: ../src/SourceFiles/functions.c
+ 
+Building file: ../src/DatabaseHandler.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DatabaseHandler.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/DatabaseHandler.d" -MT"src/DatabaseHandler.o" -o "src/DatabaseHandler.o" "../src/DatabaseHandler.c"
+../src/DatabaseHandler.c: In function 'DatabaseInit':
+../src/DatabaseHandler.c:16:11: warning: unused variable 'zErrMsg' [-Wunused-variable]
+   16 |     char *zErrMsg = 0;
+      |           ^~~~~~~
+../src/DatabaseHandler.c: In function 'validDataBaseEntry':
+../src/DatabaseHandler.c:257:36: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  257 |                 char *table_name = sqlite3_column_text(stmt, 0);
+      |                                    ^~~~~~~~~~~~~~~~~~~
+Finished building: ../src/DatabaseHandler.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -I/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:74:15: warning: unused variable 'fp' [-Wunused-variable]
+   74 |         FILE *fp;
+      |               ^~
+../src/main.c:67:14: warning: unused variable 'Valid' [-Wunused-variable]
+   67 |         bool Valid = 0;
+      |              ^~~~~
+../src/main.c:64:13: warning: unused variable 'dump' [-Wunused-variable]
+   64 |         u32 dump = 1;
+      |             ^~~~
+Finished building: ../src/main.c
+ 
+Building target: DataBaseUnit.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc -L"/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib" -L/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/lib -L/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib -o "DataBaseUnit.elf" ./src/Testing/Test_BackupHandler.o  ./src/SourceFiles/BackUpHandler.o ./src/SourceFiles/ConCat.o ./src/SourceFiles/DecodePokemonData.o ./src/SourceFiles/Ringbuffer.o ./src/SourceFiles/TradeHandler.o ./src/SourceFiles/decodeTrainderCard.o ./src/SourceFiles/functions.o  ./src/DatabaseHandler.o ./src/HardwareHandler.o ./src/main.o   -lsqlite3 --sysroot=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi -Wl,-rpath-link=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/lib -Wl,-rpath-link=/home/daniel/Masterthesis/Petalinux/Petalinux_Platorm/export/Petalinux_Platorm/sw/Petalinux_Platorm/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib
+Finished building target: DataBaseUnit.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size DataBaseUnit.elf  |tee "DataBaseUnit.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35227	  23668	   9708	  68603	  10bfb	DataBaseUnit.elf
+Finished building: DataBaseUnit.elf.size
+ 
 
-15:43:35 Build Finished (took 528ms)
+13:31:57 Build Finished (took 2s.452ms)
 

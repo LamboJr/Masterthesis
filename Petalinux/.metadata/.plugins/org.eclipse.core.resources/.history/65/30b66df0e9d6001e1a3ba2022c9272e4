@@ -1,3 +1,0 @@
-void DatabaseInit();
-int DataBaseInsertBuffer(u16* buffer);
-int DataBaseReadBuffer(sqlite3 *db,u16 *buffer);

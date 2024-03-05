@@ -1,0 +1,728 @@
+
+Pokemon 1 and 2 from Slave (Leafgreaan)
+
+Personality Value : 00000003
+Trainer Id : 392b8d44
+Nickname = Kapilz
+Trainername = Kevin
+Status : 0
+Level : 92
+Pokerus : 255
+Current Health : 175
+Max Health : 240
+Attack : 299
+Defense : 180
+Speed : 162
+Special Attack : 128
+Special Defense : 143
+Species : 307 Breloom
+Held Item : 217 Silk Scarf
+Experience : 1251525
+PP Bnous Move1 3
+PP Bnous Move2 3
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 142
+Move1 : 147 Spore PP : 18
+Move2 : 206 False Swipe PP : 61
+Move3 : 15 Cut PP : 30
+Move4 : 249 Rock Smash PP : 15
+HP EV : 0
+Attack_EV : 1
+Defense_EV : 2
+Speed_EV : 2
+SpecialAttack_EV : 0
+SpecialDefense_EV : 0
+Coolness : 255
+Beauty: 255
+Cuteness : 255
+Smartness : 255
+Toughness : 255
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 255
+Level met: 5
+Game met : 3
+Pokeball Type : 12
+Trainder gender : 0
+HP_IV: 31
+Attack_IV : 31
+Defense_IV : 31
+Speed_IV : 31
+SpecialAttack_IV : 31
+SpecialDefense_IV : 31
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 4 Beauty : 4 Cute : 4 Smart : 4
+Tough : 4 Champion : 1 Winning : 1 victory : 1
+artist : 1 effort : 1 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 1
+
+Personality Value : c541dd89
+Trainer Id : 60acc371
+Nickname = GLURAK
+Trainername = Daniel
+Status : 0
+Level : 100
+Pokerus : 255
+Current Health : 290
+Max Health : 290
+Attack : 194
+Defense : 228
+Speed : 274
+Special Attack : 246
+Special Defense : 208
+Species : 6 Charizard
+Held Item : 0 None
+Experience : 1059860
+PP Bnous Move1 2
+PP Bnous Move2 1
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 255
+Move1 : 53 Flamethrower PP : 21
+Move2 : 89 Earthquake PP : 12
+Move3 : 307 Blast Burn PP : 5
+Move4 : 19 Fly PP : 15
+HP EV : 58
+Attack_EV : 72
+Defense_EV : 98
+Speed_EV : 233
+SpecialAttack_EV : 33
+SpecialDefense_EV : 16
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 88
+Level met: 5
+Game met : 5
+Pokeball Type : 4
+Trainder gender : 0
+HP_IV: 10
+Attack_IV : 25
+Defense_IV : 23
+Speed_IV : 11
+SpecialAttack_IV : 15
+SpecialDefense_IV : 29
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 1 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+
+Pokemon 1 and 2 from Master (emerlad)
+
+
+Personality Value : 00000003
+Trainer Id : 06a64753
+Nickname = Scizor
+Trainername = Lambo
+Status : 0
+Level : 100
+Pokerus : 255
+Current Health : 344
+Max Health : 344
+Attack : 394
+Defense : 236
+Speed : 166
+Special Attack : 131
+Special Defense : 196
+Species : 212 Scizor
+Held Item : 141 Lum Berry
+Experience : 1250000
+PP Bnous Move1 3
+PP Bnous Move2 3
+PP Bnous Move3 3
+PP Bnous Move4 3
+Friendship : 71
+Move1 : 14 Swords Dance PP : 10
+Move2 : 38 Double Edge PP : 10
+Move3 : 211 Steel Wing PP : 10
+Move4 : 98 Quick Attack PP : 10
+HP EV : 252
+Attack_EV : 252
+Defense_EV : 0
+Speed_EV : 0
+SpecialAttack_EV : 0
+SpecialDefense_EV : 0
+Coolness : 255
+Beauty: 255
+Cuteness : 255
+Smartness : 255
+Toughness : 255
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 255
+Level met: 5
+Game met : 5
+Pokeball Type : 12
+Trainder gender : 0
+HP_IV: 31
+Attack_IV : 31
+Defense_IV : 31
+Speed_IV : 31
+SpecialAttack_IV : 31
+SpecialDefense_IV : 31
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 4 Beauty : 4 Cute : 4 Smart : 4
+Tough : 4 Champion : 1 Winning : 1 victory : 1
+artist : 1 effort : 1 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 1
+
+Personality Value : 1b0e804e
+Trainer Id : 06a64753
+Nickname = WINGULL
+Trainername = Lambo
+Status : 0
+Level : 11
+Pokerus : 255
+Current Health : 30
+Max Health : 30
+Attack : 12
+Defense : 13
+Speed : 22
+Special Attack : 18
+Special Defense : 14
+Species : 309 Wingull
+Held Item : 0 None
+Experience : 1407
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 70
+Move1 : 45 Growl PP : 40
+Move2 : 55 Water Gun PP : 25
+Move3 : 19 Fly PP : 15
+Move4 : 48 Supersonic PP : 20
+HP EV : 3
+Attack_EV : 0
+Defense_EV : 2
+Speed_EV : 0
+SpecialAttack_EV : 0
+SpecialDefense_EV : 3
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 19
+Level met: 4
+Game met : 3
+Pokeball Type : 4
+Trainder gender : 0
+HP_IV: 8
+Attack_IV : 8
+Defense_IV : 11
+Speed_IV : 15
+SpecialAttack_IV : 11
+SpecialDefense_IV : 28
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 1 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+
+
+Pokemon 3 and 4 from Slave
+
+Personality Value : f434d375
+Trainer Id : 60acc371
+Nickname = DESPOTAR
+Trainername = Daniel
+Status : 0
+Level : 100
+Pokerus : 255
+Current Health : 337
+Max Health : 337
+Attack : 310
+Defense : 298
+Speed : 169
+Special Attack : 240
+Special Defense : 221
+Species : 248 Tyranitar
+Held Item : 0 None
+Experience : 1250000
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 255
+Move1 : 58 Ice Beam PP : 10
+Move2 : 157 Rock Slide PP : 10
+Move3 : 89 Earthquake PP : 10
+Move4 : 85 Thunderbolt PP : 15
+HP EV : 30
+Attack_EV : 140
+Defense_EV : 91
+Speed_EV : 89
+SpecialAttack_EV : 98
+SpecialDefense_EV : 62
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 169
+Level met: 15
+Game met : 5
+Pokeball Type : 3
+Trainder gender : 0
+HP_IV: 20
+Attack_IV : 2
+Defense_IV : 24
+Speed_IV : 20
+SpecialAttack_IV : 21
+SpecialDefense_IV : 26
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 1 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+Personality Value : e8ad6dcd
+Trainer Id : 06a64753
+Nickname = KYOGRE
+Trainername = Lambo
+Status : 0
+Level : 71
+Pokerus : 255
+Current Health : 227
+Max Health : 227
+Attack : 169
+Defense : 146
+Speed : 154
+Special Attack : 236
+Special Defense : 210
+Species : 404 Kyogre
+Held Item : 0 None
+Experience : 456074
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 96
+Move1 : 57 Surf PP : 15
+Move2 : 156 Rest PP : 10
+Move3 : 329 Sheer Cold PP : 5
+Move4 : 127 Waterfall PP : 15
+HP EV : 2
+Attack_EV : 12
+Defense_EV : 2
+Speed_EV : 19
+SpecialAttack_EV : 4
+SpecialDefense_EV : 9
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 203
+Level met: 70
+Game met : 3
+Pokeball Type : 1
+Trainder gender : 0
+HP_IV: 6
+Attack_IV : 31
+Defense_IV : 19
+Speed_IV : 28
+SpecialAttack_IV : 25
+SpecialDefense_IV : 8
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 0 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+
+Pokemon 3 and 4 from Slave
+
+Personality Value : 00000018
+Trainer Id : 60acc371
+Nickname = Magikarp
+Trainername = Daniel
+Status : 0
+Level : 1
+Pokerus : 255
+Current Health : 11
+Max Health : 11
+Attack : 5
+Defense : 6
+Speed : 6
+Special Attack : 5
+Special Defense : 5
+Species : 129 Magikarp
+Held Item : 0 None
+Experience : 9
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 70
+Move1 : 150 Splash PP : 5
+Move2 : 182 Protect PP : 5
+Move3 : 0 None PP : 5
+Move4 : 0 None PP : 5
+HP EV : 0
+Attack_EV : 0
+Defense_EV : 0
+Speed_EV : 0
+SpecialAttack_EV : 0
+SpecialDefense_EV : 0
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 88
+Level met: 0
+Game met : 5
+Pokeball Type : 4
+Trainder gender : 0
+HP_IV: 0
+Attack_IV : 0
+Defense_IV : 0
+Speed_IV : 0
+SpecialAttack_IV : 0
+SpecialDefense_IV : 0
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 0 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+Personality Value : 0fb8a609
+Trainer Id : 06a64753
+Nickname = FLEMMLI
+Trainername = Bot
+Status : 0
+Level : 6
+Pokerus : 255
+Current Health : 22
+Max Health : 22
+Attack : 12
+Defense : 11
+Speed : 11
+Special Attack : 15
+Special Defense : 10
+Species : 280 Torchic
+Held Item : 0 None
+Experience : 221
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 70
+Move1 : 10 Scratch PP : 35
+Move2 : 70 Strength PP : 15
+Move3 : 15 Cut PP : 30
+Move4 : 249 Rock Smash PP : 15
+HP EV : 0
+Attack_EV : 1
+Defense_EV : 0
+Speed_EV : 1
+SpecialAttack_EV : 0
+SpecialDefense_EV : 0
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 16
+Level met: 5
+Game met : 3
+Pokeball Type : 4
+Trainder gender : 0
+HP_IV: 20
+Attack_IV : 12
+Defense_IV : 27
+Speed_IV : 14
+SpecialAttack_IV : 20
+SpecialDefense_IV : 20
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 1 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+
+Pokemon 5 and 6 from Slave
+
+Personality Value : 4e769a3f
+Trainer Id : 60acc371
+Nickname = MEWTU
+Trainername = Daniel
+Status : 0
+Level : 100
+Pokerus : 255
+Current Health : 353
+Max Health : 353
+Attack : 249
+Defense : 235
+Speed : 306
+Special Attack : 331
+Special Defense : 221
+Species : 150 Mewtwo
+Held Item : 189 Amulet Coin
+Experience : 1250000
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 255
+Move1 : 94 Psychic PP : 10
+Move2 : 248 Future Sight PP : 15
+Move3 : 247 Shadow Ball PP : 15
+Move4 : 53 Flamethrower PP : 15
+HP EV : 51
+Attack_EV : 59
+Defense_EV : 116
+Speed_EV : 85
+SpecialAttack_EV : 125
+SpecialDefense_EV : 74
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 141
+Level met: 70
+Game met : 5
+Pokeball Type : 1
+Trainder gender : 0
+HP_IV: 19
+Attack_IV : 10
+Defense_IV : 0
+Speed_IV : 20
+SpecialAttack_IV : 24
+SpecialDefense_IV : 18
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 1 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+Personality Value : cfbdb508
+Trainer Id : 60acc371
+Nickname = GARADOS
+Trainername = Daniel
+Status : 1
+Level : 16
+Pokerus : 255
+Current Health : 58
+Max Health : 58
+Attack : 40
+Defense : 34
+Speed : 38
+Special Attack : 28
+Special Defense : 38
+Species : 130 Gyarados
+Held Item : 0 None
+Experience : 5120
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 70
+Move1 : 37 Thrash PP : 20
+Move2 : 0 None PP : 0
+Move3 : 0 None PP : 0
+Move4 : 0 None PP : 0
+HP EV : 0
+Attack_EV : 0
+Defense_EV : 0
+Speed_EV : 0
+SpecialAttack_EV : 0
+SpecialDefense_EV : 0
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 167
+Level met: 16
+Game met : 5
+Pokeball Type : 2
+Trainder gender : 0
+HP_IV: 13
+Attack_IV : 0
+Defense_IV : 26
+Speed_IV : 30
+SpecialAttack_IV : 24
+SpecialDefense_IV : 7
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 0 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+
+Pokemon 5 and 6 from Master
+
+Personality Value : 69d47c5b
+Trainer Id : 8ab841af
+Nickname = GECKARBOR
+Trainername = PETRA
+Status : 0
+Level : 6
+Pokerus : 255
+Current Health : 21
+Max Health : 21
+Attack : 11
+Defense : 9
+Speed : 12
+Special Attack : 14
+Special Defense : 14
+Species : 277 Treecko
+Held Item : 0 None
+Experience : 219
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 70
+Move1 : 1 Pound PP : 35
+Move2 : 43 Leer PP : 30
+Move3 : 71 Absorb PP : 20
+Move4 : 0 None PP : 0
+HP EV : 0
+Attack_EV : 1
+Defense_EV : 0
+Speed_EV : 0
+SpecialAttack_EV : 1
+SpecialDefense_EV : 0
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 16
+Level met: 5
+Game met : 2
+Pokeball Type : 4
+Trainder gender : 1
+HP_IV: 13
+Attack_IV : 26
+Defense_IV : 12
+Speed_IV : 13
+SpecialAttack_IV : 21
+SpecialDefense_IV : 31
+Egg: 0
+Ability : 0
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 0 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+
+Personality Value : 9e01f751
+Trainer Id : 60acc371
+Nickname = GEOWAZ
+Trainername = Daniel
+Status : 0
+Level : 44
+Pokerus : 0
+Current Health : 133
+Max Health : 133
+Attack : 112
+Defense : 122
+Speed : 43
+Special Attack : 56
+Special Defense : 75
+Species : 76 Golem
+Held Item : 124 Mech Mail
+Experience : 77440
+PP Bnous Move1 0
+PP Bnous Move2 0
+PP Bnous Move3 0
+PP Bnous Move4 0
+Friendship : 73
+Move1 : 222 Magnitude PP : 30
+Move2 : 120 Self Destruct PP : 5
+Move3 : 70 Strength PP : 15
+Move4 : 350 Rock Blast PP : 10
+HP EV : 0
+Attack_EV : 0
+Defense_EV : 0
+Speed_EV : 0
+SpecialAttack_EV : 0
+SpecialDefense_EV : 0
+Coolness : 0
+Beauty: 0
+Cuteness : 0
+Smartness : 0
+Toughness : 0
+Feel : 0
+Pokerus days remanining : 0  Strain : 0 
+Met Location : 141
+Level met: 44
+Game met : 5
+Pokeball Type : 2
+Trainder gender : 0
+HP_IV: 21
+Attack_IV : 2
+Defense_IV : 8
+Speed_IV : 9
+SpecialAttack_IV : 6
+SpecialDefense_IV : 30
+Egg: 0
+Ability : 1
+Ribbons:
+Cool: 0 Beauty : 0 Cute : 0 Smart : 0
+Tough : 0 Champion : 0 Winning : 0 victory : 0
+artist : 0 effort : 0 special1 : 0 special2 : 0
+special3 : 0 special4 : 0 special 5 : 0 special6 : 0
+Obedience : 0
+

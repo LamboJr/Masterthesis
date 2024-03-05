@@ -6,6 +6,7 @@
 		<project>MonitoringUnit</project>
 		<project>ExchangePlatform</project>
 		<project>DataBaseUnit</project>
+		<project>TestApplication</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

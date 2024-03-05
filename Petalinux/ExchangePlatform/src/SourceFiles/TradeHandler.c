@@ -273,6 +273,7 @@ u32 MainTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 				case CaptureData :{
 					if(InitBlockAnalyser(FrameCounter, data) == Granted){
 						s_TradeHandlerMaster.DataHandlerstatus = WaitforThread;
+
 					}else{
 						s_TradeHandlerMaster.DataHandlerstatus = CaptureData;
 					}

@@ -11,7 +11,10 @@ u16 DecodeDataField(u16 checksum,u32 personality,u32 trainer_id,u32 *DataField);
 struct Pokemon decode_Pokemon_structure(u16 *Pokemonbuffer);
 
 #define CC(c , h) case (h): return c; break;
-// Coverts the ASCII Format into Pokemon Letter format
+// Fucntion to Covert the ASCII Format into Pokemon Letter format
+
+
+
 char char_conv( u8 character,u16 language){
 	if(language != LANGUAGE_GERMAN){return 1;}
 		switch(character){
@@ -266,7 +269,8 @@ u16 DecodeDataField(u16 checksum,u32 personality,u32 trainer_id,u32 *DataField){
     return 0;
 }
 
-
+//Function to decode uint16_t Array with 50 entries into the Pokemon struct structure
+// Also decodes the TrainerName and Nickname into the ASCII format with the function char_conv
 struct Pokemon decode_Pokemon_structure(u16 *Pokemonbuffer){
 	struct Pokemon Pokemonstruct;
     u16* PokemonPtr = (u16* )&Pokemonstruct;

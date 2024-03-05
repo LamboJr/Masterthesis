@@ -1,22 +1,6 @@
 #ifndef LINK_HEADER
 #define LINK_HEADER
-/*
-#include <stdio.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdint.h>
-#include <stdlib.h>
 
-
-#include "linkcommand.h"
-#include "structs.h"
-
-#include "functions.h"
-#include "items.h"
-#include "Pokemonnames.h"
-#include "moves.h"
-#include "decode_Pokemon_structure.h"
-#include "decodeTrainderCard.h"*/
 #include "DataTypes.h"
 #include "constant.h"
 

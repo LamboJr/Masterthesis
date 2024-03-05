@@ -32,7 +32,7 @@ void MonitorHandler(u32 data,u32 dump,FILE *fp){
 
 			TradehandlerReset(&sTradeHandler[MASTER]);
 			TradehandlerReset(&sTradeHandler[SLAVE]);
-			printf("Entering Trading State\n");
+			//printf("Entering Trading State\n");
 		}
 	}break;
 	case DataState:{
@@ -195,7 +195,7 @@ void MonitorHandler(u32 data,u32 dump,FILE *fp){
 	case RequestExitState:{
 		if(GET_MASTERDATA(data) == SLAVE_HANDSHAKE){
 			s_NextState = handshakeState;
-			printf("Entering Handshake state\n");
+			//printf("Entering Handshake state\n");
 			FrameCounter = FRAME_LENGTH;
 		}
 		//printf("In Transition ");
@@ -291,15 +291,15 @@ RequestStatus MonitorBlockRequestAnalyser(u32 Framecounter,u16 data, TradeHandle
 						if( Framecounter == 9){
 							s_Tradehandler->DataFieldActive  = NoRequest;
 							s_Tradehandler->BufferIndex = 0;
-							PrintDecodedPokemonData(s_Tradehandler->PokemonTeam[s_Tradehandler->TeamIndex]);
-							PrintDecodedPokemonData(s_Tradehandler->PokemonTeam[s_Tradehandler->TeamIndex+1]);
+							//PrintDecodedPokemonData(s_Tradehandler->PokemonTeam[s_Tradehandler->TeamIndex]);
+							//PrintDecodedPokemonData(s_Tradehandler->PokemonTeam[s_Tradehandler->TeamIndex+1]);
 							decode_Pokemon_data(s_Tradehandler->PokemonTeam[s_Tradehandler->TeamIndex]);
 							decode_Pokemon_data(s_Tradehandler->PokemonTeam[s_Tradehandler->TeamIndex+1]);
 							s_Tradehandler->TeamIndex = (s_Tradehandler->TeamIndex + 2);
 							if(s_Tradehandler->TeamIndex > 5){
 								s_Tradehandler->TeamIndex = 0;
 							}
-							printf("Block Analyser finished\n");
+							//printf("Block Analyser finished\n");
 							return Granted;
 						}
 					}
@@ -311,7 +311,7 @@ RequestStatus MonitorBlockRequestAnalyser(u32 Framecounter,u16 data, TradeHandle
 						if( Framecounter == 9){
 							s_Tradehandler->DataFieldActive  = NoRequest;
 							s_Tradehandler->BufferIndex = 0;
-							printf("Block Analyser finished\n");
+							//printf("Block Analyser finished\n");
 							return Granted;
 						}
 					}
@@ -324,7 +324,7 @@ RequestStatus MonitorBlockRequestAnalyser(u32 Framecounter,u16 data, TradeHandle
 						if( Framecounter == 9){
 							s_Tradehandler->DataFieldActive  = NoRequest;
 							s_Tradehandler->BufferIndex= 0;
-							printf("Block Analyser finished\n");
+							//printf("Block Analyser finished\n");
 							return Granted;
 						}
 					}
@@ -337,7 +337,7 @@ RequestStatus MonitorBlockRequestAnalyser(u32 Framecounter,u16 data, TradeHandle
 						if( Framecounter == 9){
 							s_Tradehandler->DataFieldActive  = NoRequest;
 							s_Tradehandler->BufferIndex = 0;
-							printf("Block Analyser finished\n");
+							//printf("Block Analyser finished\n");
 							return Granted;
 						}
 					}
@@ -350,7 +350,7 @@ RequestStatus MonitorBlockRequestAnalyser(u32 Framecounter,u16 data, TradeHandle
 						if(Framecounter == 9){
 							s_Tradehandler->DataFieldActive  = NoRequest;
 							s_Tradehandler->BufferIndex = 0;
-							printf("Block Analyser finished\n");
+							//printf("Block Analyser finished\n");
 							return Granted;
 						}
 					}
@@ -362,7 +362,7 @@ RequestStatus MonitorBlockRequestAnalyser(u32 Framecounter,u16 data, TradeHandle
 							if( Framecounter == 9){
 								s_Tradehandler->DataFieldActive  = NoRequest;
 								s_Tradehandler->BufferIndex = 0;
-								printf("Init Block Analyser Finished\n");
+								//printf("Init Block Analyser Finished\n");
 								return Granted;
 							}
 						}

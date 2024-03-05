@@ -1,4 +1,0 @@
-void DatabaseInit();
-int DataBaseInsertBuffer(u16* buffer);
-int DataBaseReadBuffer(sqlite3 *db,u16 *buffer);
-int create_table(sqlite3 *db, const char *table_name) ;

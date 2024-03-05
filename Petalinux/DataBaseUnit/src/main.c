@@ -9,6 +9,7 @@
 
 #include "Includes/DataTypes.h"
 #include "Hardwarehandler.h"
+#include "Includes/Link.h"
 #include "Includes/TradeHandler.h"
 #include "Includes/BackUpHandler.h"
 

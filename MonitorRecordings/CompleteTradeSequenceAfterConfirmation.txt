@@ -1,6 +1,6 @@
 #################################################################################################################
 ####Recording of Trade sequence, no inputs from both MAster or Slave in this time. Not influenced by inputs at this time
-#### Master traded Pokemon spot 4 and Slave pokemon spot 6
+#### Master traded Pokemon spot 4 and Slave pokemon spot 6. Teams described in detail in PokeomonTeams.txt#######
 #################################################################################################################
 
 

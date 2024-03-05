@@ -146,3 +146,4 @@ platform generate
 platform active {Petalinux_Platorm}
 platform generate -domains 
 platform generate -domains 
+platform generate

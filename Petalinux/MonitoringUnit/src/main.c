@@ -17,7 +17,7 @@
 #define MODE_MONITOR 1
 
 
-#define UNIT_TEST
+//#define UNIT_TEST
 
 FILE *PokemonFp;
 

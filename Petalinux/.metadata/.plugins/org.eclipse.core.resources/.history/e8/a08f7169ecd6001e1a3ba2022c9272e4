@@ -1,6 +1,0 @@
-#include <sqlite3.h>
-
-void DatabaseInit();
-int DataBaseInsertBuffer(sqlite3 *db,const char *Tablename,u16* buffer);
-int DataBaseReadBuffer(sqlite3 *db,u16 *buffer, const char *table_name);
-int create_table(sqlite3 *db, const char *table_name);

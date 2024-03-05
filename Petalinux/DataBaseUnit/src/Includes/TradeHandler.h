@@ -21,7 +21,6 @@ typedef enum {
 	TradebuttonState
 }Syncstate;
 
-#include "../Includes/Link.h"
 
 void GenerateEmptyFrame();
 void GenerateBlockRequestResponse(BlockSizes Blocksize);
