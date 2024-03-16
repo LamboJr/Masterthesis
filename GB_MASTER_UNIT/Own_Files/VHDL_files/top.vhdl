@@ -31,13 +31,13 @@ signal PL_to_PS_buffer : std_logic_vector(31 downto 0) := (others => '0');
 signal PS_to_PL_buffer : std_logic_vector(31 downto 0) := (others => '0');
 
 --signals for connecting the Ringbuffer(s) to the RTL and the ZYNQ processor
-signal Ringbuffer_Addr : std_logic_vector(12 downto 0);
+signal BRAM_Controller_Addr : std_logic_vector(12 downto 0);
 signal clk : std_logic;
-signal Ringbuffer_Data_in : std_logic_vector( 31 downto 0);
-signal Ringbuffer_Data_out : std_logic_vector( 31 downto 0);
-signal ringbuffer_en : std_logic;
+signal BRAM_Controller_Data_in : std_logic_vector( 31 downto 0);
+signal BRAM_Controller_Data_out : std_logic_vector( 31 downto 0);
+signal BRAM_Controller_en : std_logic;
 signal rst : std_logic;
-signal ringbuffer_wr_en : std_logic_vector(3 downto 0);
+signal BRAM_Controller_wr_en : std_logic_vector(3 downto 0);
 
 
 -- Test Bench uses a 125 MHz Clock
@@ -136,13 +136,13 @@ begin
 --zynq system block
 zynq_ps_interface_inst: entity work.GB_UNIT_design_wrapper
     port map (
-        BRAM_PORTA_0_addr => Ringbuffer_Addr,
+        BRAM_PORTA_0_addr => BRAM_Controller_Addr,
         BRAM_PORTA_0_clk => clk,
-        BRAM_PORTA_0_din => Ringbuffer_data_in,
-        BRAM_PORTA_0_dout => ringbuffer_data_out,
-        BRAM_PORTA_0_en => ringbuffer_en,
+        BRAM_PORTA_0_din => BRAM_Controller_data_out,
+        BRAM_PORTA_0_dout => BRAM_Controller_data_in,
+        BRAM_PORTA_0_en => BRAM_Controller_en,
         BRAM_PORTA_0_rst => rst,
-        BRAM_PORTA_0_we => ringbuffer_wr_en,
+        BRAM_PORTA_0_we => BRAM_Controller_wr_en,
         PL_to_PS_buffer => PL_to_PS_buffer,
         PS_to_PL_buffer => PS_to_PL_buffer);
         
@@ -278,12 +278,12 @@ monitoring :  process (clk)
     --temp(7 downto 4) <= std_logic_vector(to_unsigned(Framecounter,4));
     temp(0) <= empty_PL_TO_PS;
     --Ringbuffer Dout is set to rd_data only if data is requested at address 0 at Software level, else the empty flag is writen to dout 
-    Ringbuffer_data_out <= rd_Data_PL_TO_PS when Ringbuffer_addr = x"00000000" else temp;
-    rd_en_PL_TO_PS <= (not(ringbuffer_wr_en(0)) and ringbuffer_en) when ringbuffer_addr = x"00000000" else '0';
+    BRAM_Controller_data_in <= rd_Data_PL_TO_PS when BRAM_Controller_addr = x"00000000" else temp;
+    rd_en_PL_TO_PS <= (not(BRAM_Controller_wr_en(0)) and BRAM_Controller_en) when BRAM_Controller_addr = x"00000000" else '0';
     
     --Data send from Ps to Pl into Ringbuffer and corrsponding signals
-    wr_data_PS_to_Pl <= ringbuffer_data_in; 
-    wr_en_Ps_to_Pl <= ringbuffer_wr_en(0) and ringbuffer_en;
+    wr_data_PS_to_Pl <= BRAM_Controller_data_out; 
+    wr_en_Ps_to_Pl <= BRAM_Controller_wr_en(0) and BRAM_Controller_en;
     
     ----------Setting the Monitoring/tRading Mode respectivly
     ModeMonitor <= PS_to_PL_buffer(0);
