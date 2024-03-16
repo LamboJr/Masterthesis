@@ -38,8 +38,8 @@
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
         <mruHistory>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/GB_UNIT_MASTER_app_system/_ide/launch/SystemDebugger_GB_UNIT_MASTER_app_system.launch&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/GB_UNIT_MASTER_app/_ide/launch/Debugger_GB_UNIT_MASTER_app-Default.launch&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/GB_UNIT_MASTER_app_system/_ide/launch/SystemDebugger_GB_UNIT_MASTER_app_system.launch&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/GB_UNIT_MASTER_app/_ide/launch/Debugger_GB_UNIT_MASTER_app-Emulation.launch&quot;/&gt;&#10;"/>
         </mruHistory>
         <favorites/>
@@ -101,8 +101,8 @@
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
         <mruHistory>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/GB_UNIT_MASTER_app_system/_ide/launch/SystemDebugger_GB_UNIT_MASTER_app_system.launch&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/GB_UNIT_MASTER_app/_ide/launch/Debugger_GB_UNIT_MASTER_app-Default.launch&quot;/&gt;&#10;"/>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/GB_UNIT_MASTER_app_system/_ide/launch/SystemDebugger_GB_UNIT_MASTER_app_system.launch&quot;/&gt;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/GB_UNIT_MASTER_app/_ide/launch/Debugger_GB_UNIT_MASTER_app-Emulation.launch&quot;/&gt;&#10;"/>
         </mruHistory>
         <favorites/>

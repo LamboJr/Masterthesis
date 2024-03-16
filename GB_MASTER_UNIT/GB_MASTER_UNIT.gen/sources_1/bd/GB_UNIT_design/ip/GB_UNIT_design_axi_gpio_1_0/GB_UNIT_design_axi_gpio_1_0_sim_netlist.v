@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Wed Nov 15 15:16:33 2023
+// Date        : Wed Nov 15 15:16:32 2023
 // Host        : Acer running 64-bit Ubuntu 22.04.3 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_1_0/GB_UNIT_design_axi_gpio_1_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top GB_UNIT_design_axi_gpio_1_0 -prefix
+//               GB_UNIT_design_axi_gpio_1_0_ GB_UNIT_design_axi_gpio_1_0_sim_netlist.v
 // Design      : GB_UNIT_design_axi_gpio_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -134,7 +134,6 @@ module GB_UNIT_design_axi_gpio_1_0
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "GPIO_Core" *) 
 module GB_UNIT_design_axi_gpio_1_0_GPIO_Core
    (gpio_io_o,
     ip2bus_wrack_i,
@@ -1030,7 +1029,6 @@ module GB_UNIT_design_axi_gpio_1_0_GPIO_Core
         .O(ip2bus_wrack_i));
 endmodule
 
-(* ORIG_REF_NAME = "address_decoder" *) 
 module GB_UNIT_design_axi_gpio_1_0_address_decoder
    (\GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg ,
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg ,
@@ -1213,7 +1211,7 @@ endmodule
 (* C_FAMILY = "zynq" *) (* C_GPIO2_WIDTH = "32" *) (* C_GPIO_WIDTH = "32" *) 
 (* C_INTERRUPT_PRESENT = "0" *) (* C_IS_DUAL = "0" *) (* C_S_AXI_ADDR_WIDTH = "9" *) 
 (* C_S_AXI_DATA_WIDTH = "32" *) (* C_TRI_DEFAULT = "32'b11111111111111111111111111111111" *) (* C_TRI_DEFAULT_2 = "32'b11111111111111111111111111111111" *) 
-(* ORIG_REF_NAME = "axi_gpio" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_group = "LOGICORE" *) 
+(* downgradeipidentifiedwarnings = "yes" *) (* ip_group = "LOGICORE" *) 
 module GB_UNIT_design_axi_gpio_1_0_axi_gpio
    (s_axi_aclk,
     s_axi_aresetn,
@@ -1654,7 +1652,6 @@ module GB_UNIT_design_axi_gpio_1_0_axi_gpio
         .R(bus2ip_reset));
 endmodule
 
-(* ORIG_REF_NAME = "axi_lite_ipif" *) 
 module GB_UNIT_design_axi_gpio_1_0_axi_lite_ipif
    (bus2ip_reset,
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg ,
@@ -1765,7 +1762,6 @@ module GB_UNIT_design_axi_gpio_1_0_axi_lite_ipif
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "pselect_f" *) 
 module GB_UNIT_design_axi_gpio_1_0_pselect_f
    (ce_expnd_i_3,
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0] );
@@ -1801,7 +1797,6 @@ module GB_UNIT_design_axi_gpio_1_0_pselect_f__parameterized1
         .O(ce_expnd_i_1));
 endmodule
 
-(* ORIG_REF_NAME = "slave_attachment" *) 
 module GB_UNIT_design_axi_gpio_1_0_slave_attachment
    (SR,
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg ,

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date                      : Mon Feb 12 15:54:35 2024
-| Host                      : Acer running 64-bit Ubuntu 22.04.3 LTS
+| Date                      : Sat Mar 16 20:31:59 2024
+| Host                      : Acer running 64-bit Ubuntu 22.04.4 LTS
 | Command                   : report_io -file ModuleTop_io_placed.rpt
 | Design                    : ModuleTop
 | Device                    : xc7z020
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            11 |
+|            10 |
 +---------------+
 
 
@@ -410,7 +410,7 @@ Table of Contents
 | W13        | switch2     | High Range | IO_L4N_T0_34            | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W14        |             | High Range | IO_L8P_T1_34            | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W15        |             | High Range | IO_L10N_T1_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| W16        | o_debug     | High Range | IO_L18N_T2_34           | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| W16        |             | High Range | IO_L18N_T2_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W17        |             | High Range | VCCO_34                 | VCCO        |             |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | W18        |             | High Range | IO_L22P_T3_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W19        |             | High Range | IO_L22N_T3_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

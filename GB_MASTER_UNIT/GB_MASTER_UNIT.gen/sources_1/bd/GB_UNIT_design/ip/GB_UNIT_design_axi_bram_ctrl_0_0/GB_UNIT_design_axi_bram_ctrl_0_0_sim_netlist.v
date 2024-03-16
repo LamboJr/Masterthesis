@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Fri Nov  3 11:36:05 2023
+// Date        : Fri Nov  3 11:36:04 2023
 // Host        : Acer running 64-bit Ubuntu 22.04.3 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_bram_ctrl_0_0/GB_UNIT_design_axi_bram_ctrl_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top GB_UNIT_design_axi_bram_ctrl_0_0 -prefix
+//               GB_UNIT_design_axi_bram_ctrl_0_0_ GB_UNIT_design_axi_bram_ctrl_0_0_sim_netlist.v
 // Design      : GB_UNIT_design_axi_bram_ctrl_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -256,7 +256,7 @@ endmodule
 (* C_READ_LATENCY = "1" *) (* C_SINGLE_PORT_BRAM = "1" *) (* C_S_AXI_ADDR_WIDTH = "13" *) 
 (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) (* C_S_AXI_DATA_WIDTH = "32" *) 
 (* C_S_AXI_ID_WIDTH = "1" *) (* C_S_AXI_PROTOCOL = "AXI4" *) (* C_S_AXI_SUPPORTS_NARROW_BURST = "0" *) 
-(* ORIG_REF_NAME = "axi_bram_ctrl" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* downgradeipidentifiedwarnings = "yes" *) 
 module GB_UNIT_design_axi_bram_ctrl_0_0_axi_bram_ctrl
    (s_axi_aclk,
     s_axi_aresetn,
@@ -568,7 +568,6 @@ module GB_UNIT_design_axi_bram_ctrl_0_0_axi_bram_ctrl
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_bram_ctrl_top" *) 
 module GB_UNIT_design_axi_bram_ctrl_0_0_axi_bram_ctrl_top
    (\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg ,
     \GEN_NO_RD_CMD_OPT.axi_rlast_int_reg ,
@@ -695,7 +694,6 @@ module GB_UNIT_design_axi_bram_ctrl_0_0_axi_bram_ctrl_top
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "full_axi" *) 
 module GB_UNIT_design_axi_bram_ctrl_0_0_full_axi
    (\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg ,
     \GEN_NO_RD_CMD_OPT.axi_rlast_int_reg ,
@@ -1082,7 +1080,6 @@ module GB_UNIT_design_axi_bram_ctrl_0_0_full_axi
         .\save_init_bram_addr_ld_reg[3] (SR));
 endmodule
 
-(* ORIG_REF_NAME = "rd_chnl" *) 
 module GB_UNIT_design_axi_bram_ctrl_0_0_rd_chnl
    (s_axi_aresetn_0,
     s_axi_rdata,
@@ -3311,7 +3308,6 @@ module GB_UNIT_design_axi_bram_ctrl_0_0_rd_chnl
         .O(s_axi_rready_0));
 endmodule
 
-(* ORIG_REF_NAME = "sng_port_arb" *) 
 module GB_UNIT_design_axi_bram_ctrl_0_0_sng_port_arb
    (s_axi_awready,
     s_axi_arready,
@@ -3627,7 +3623,6 @@ module GB_UNIT_design_axi_bram_ctrl_0_0_sng_port_arb
         .O(ar_active_re));
 endmodule
 
-(* ORIG_REF_NAME = "wr_chnl" *) 
 module GB_UNIT_design_axi_bram_ctrl_0_0_wr_chnl
    (aw_active_d1,
     bram_wrdata_a,
@@ -4384,7 +4379,6 @@ module GB_UNIT_design_axi_bram_ctrl_0_0_wr_chnl
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "wrap_brst" *) 
 module GB_UNIT_design_axi_bram_ctrl_0_0_wrap_brst
    (curr_fixed_burst_reg_reg,
     curr_wrap_burst_reg_reg,

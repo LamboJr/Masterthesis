@@ -18,7 +18,7 @@ entity ModuleTop is
         switch2 : in std_logic;
         switch1 : in std_logic;
         switch0 : in std_logic;
-        o_debug : out std_logic;
+        --o_debug : out std_logic;
         LED : out std_logic);
 end ModuleTop;
 
@@ -200,11 +200,21 @@ if rising_edge(clk) then
     else
         if ModeTrading = '1' then
             if i_MS_SLV = '0' then
-                if send_delay_counter < send_delay then
+                if send_delay_counter < send_delay-2 then
                     send_delay_counter <= send_delay_counter + 1;
                     r_TX_DV <= '0';
+                elsif send_delay_counter = send_delay -2 then    
+                    rd_en_PS_to_PL <= '1';
+                    r_TX_DV <= '0';
+                    send_delay_counter <= send_delay_counter + 1;
+                elsif send_delay_counter = send_delay -1 then    
+                    r_TX_DV <= '0';
+                    send_delay_counter <= send_delay_counter + 1;
+                    rd_en_PS_to_PL <= '0';
                 elsif send_delay_counter = send_delay then
+                
                     r_TX_DV <= '1';
+                    rd_en_PS_to_PL <= '0';
                     send_delay_counter <= send_delay_counter + 1;
                 else
                     r_TX_DV <= '0';                          
@@ -218,17 +228,19 @@ if rising_edge(clk) then
 end if;
 end process;  
 
-receive_Response : process(clk)
-begin
-if rising_edge(clk) then
-    rd_en_PS_to_PL <= '1';
-    if rd_valid_PS_to_PL = '1' then
-        r_TX_Word <= rd_data_PS_to_PL(15 downto 0);
-    end if;
-end if;
-end process;  
+--UpdateTransmitter : process(clk)
+--begin
+--if rising_edge(clk) then
+--    --rd_en_PS_to_PL <= '1';
+--    if rd_valid_PS_to_PL = '1' then
+--        r_TX_Word <= rd_data_PS_to_PL(15 downto 0);
+--    end if;
+--end if;
+--end process;  
 
-monitoring :  process (clk)
+
+
+sampling :  process (clk)
  begin
     if rising_edge(clk) then
        if rst = '1' then
@@ -285,6 +297,9 @@ monitoring :  process (clk)
     wr_data_PS_to_Pl <= BRAM_Controller_data_out; 
     wr_en_Ps_to_Pl <= BRAM_Controller_wr_en(0) and BRAM_Controller_en;
     
+    ---Update data for transmitter if there is a valid read from the ringbuffer PS-to-PL
+    r_TX_Word <= rd_data_PS_to_PL(15 downto 0) when (rd_valid_PS_to_PL = '1') else r_TX_Word;
+    
     ----------Setting the Monitoring/tRading Mode respectivly
     ModeMonitor <= PS_to_PL_buffer(0);
     ModeTrading <= not(PS_to_PL_buffer(0));
@@ -296,5 +311,5 @@ monitoring :  process (clk)
     --r_RX_Serial <= io_Serial;
     
     LED <= '1';
-    o_debug <= w_debug;
+    --o_debug <= w_debug;
 end behav;

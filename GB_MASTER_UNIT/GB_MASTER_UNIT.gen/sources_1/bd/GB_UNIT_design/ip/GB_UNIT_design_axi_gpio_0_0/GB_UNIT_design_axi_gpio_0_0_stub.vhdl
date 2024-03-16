@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Tue Nov 14 18:15:11 2023
+-- Date        : Tue Nov 14 18:15:10 2023
 -- Host        : Acer running 64-bit Ubuntu 22.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.gen/sources_1/bd/GB_UNIT_design/ip/GB_UNIT_design_axi_gpio_0_0/GB_UNIT_design_axi_gpio_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top GB_UNIT_design_axi_gpio_0_0 -prefix
+--               GB_UNIT_design_axi_gpio_0_0_ GB_UNIT_design_axi_gpio_0_0_stub.vhdl
 -- Design      : GB_UNIT_design_axi_gpio_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

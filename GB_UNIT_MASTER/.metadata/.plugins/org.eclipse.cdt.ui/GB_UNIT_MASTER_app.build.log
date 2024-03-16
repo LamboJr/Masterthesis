@@ -1,65 +1,10 @@
-15:56:51 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
+20:35:17 **** Incremental Build of configuration Debug for project GB_UNIT_MASTER_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
-Building file: ../src/MonitorTrade.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MonitorTrade.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/MonitorTrade.d" -MT"src/MonitorTrade.o" -o "src/MonitorTrade.o" "../src/MonitorTrade.c"
-Finished building: ../src/MonitorTrade.c
- 
-Building file: ../src/TradeHandler.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TradeHandler.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TradeHandler.d" -MT"src/TradeHandler.o" -o "src/TradeHandler.o" "../src/TradeHandler.c"
-Finished building: ../src/TradeHandler.c
- 
-Building file: ../src/decodeTrainderCard.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/decodeTrainderCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/decodeTrainderCard.d" -MT"src/decodeTrainderCard.o" -o "src/decodeTrainderCard.o" "../src/decodeTrainderCard.c"
-Finished building: ../src/decodeTrainderCard.c
- 
-Building file: ../src/decode_Pokemon_structure.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/decode_Pokemon_structure.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/decode_Pokemon_structure.d" -MT"src/decode_Pokemon_structure.o" -o "src/decode_Pokemon_structure.o" "../src/decode_Pokemon_structure.c"
-Finished building: ../src/decode_Pokemon_structure.c
- 
-Building file: ../src/functions.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/functions.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/functions.d" -MT"src/functions.o" -o "src/functions.o" "../src/functions.c"
-Finished building: ../src/functions.c
- 
-Building file: ../src/main.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:164:7: warning: extra tokens at end of #endif directive [-Wendif-labels]
-  164 | #endif;
-      |       ^
-../src/main.c:125:9: warning: unused variable 'RingbufferValue' [-Wunused-variable]
-  125 |     u32 RingbufferValue;
-      |         ^~~~~~~~~~~~~~~
-../src/main.c:123:9: warning: unused variable 'result' [-Wunused-variable]
-  123 |     u16 result;
-      |         ^~~~~~
-Finished building: ../src/main.c
- 
-Building file: ../src/platform.c
-Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-Finished building: ../src/platform.c
- 
-Building target: GB_UNIT_MASTER_app.elf
-Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/sw/ModuleTop/standalone_ps7_cortexa9_0/bsplib/lib -o "GB_UNIT_MASTER_app.elf" ./src/outdated/main_HW_Trade.o  ./src/MonitorTrade.o ./src/TradeHandler.o ./src/decodeTrainderCard.o ./src/decode_Pokemon_structure.o ./src/functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: GB_UNIT_MASTER_app.elf
- 
-Invoking: ARM v7 Print Size
-arm-none-eabi-size GB_UNIT_MASTER_app.elf  |tee "GB_UNIT_MASTER_app.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  46109	 230936	  26600	 303645	  4a21d	GB_UNIT_MASTER_app.elf
-Finished building: GB_UNIT_MASTER_app.elf.size
- 
+make[1]: Nothing to be done for 'main-build'.
 
-15:56:52 Build Finished (took 1s.326ms)
+20:35:17 Build Finished (took 522ms)
 

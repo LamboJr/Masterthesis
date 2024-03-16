@@ -155,8 +155,9 @@ int main(){
 
     		//reads data from Ringbuffer to get latest received data package
     		data = *(address);
+    		*(address) = data;
     		//Responds to the receives master packet with a own packet
-    		*(address) = TradeHandler_func(data,PL_to_PS_buffer_value);
+    		//*(address) = TradeHandler_func(data,PL_to_PS_buffer_value);
 
     	}
 
