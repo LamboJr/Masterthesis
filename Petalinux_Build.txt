@@ -24,18 +24,89 @@ petalinux-package --boot --fsbl <ZYncfsblimaga> --fpga system.bit --u-boot
 
 tempory root Filesystem ändern in ext4 partition
 petalinux config -> Image Packaging Configuration -> Root filesystemtype == EXT4 
+
+
 petalinux-build
 petalinux-package --boot --fsbl zynq_fsbl.elf --fpga system.bit --u-boot --force
  sudo umount /media/daniel/BOOT
 sudo umount /media/daniel/rootfs 
+
+
  sudo fdisk /dev/mmcblk0
- p
- d
- d
- n p 
- a
- n
- w
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+This disk is currently in use - repartitioning is probably a bad idea.
+It's recommended to umount all file systems, and swapoff all swap
+partitions on this disk.
+
+
+Command (m for help): p
+
+Disk /dev/mmcblk0: 14,87 GiB, 15962472448 bytes, 31176704 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x6c8bb634
+
+Device         Boot   Start      End  Sectors  Size Id Type
+/dev/mmcblk0p1 *       2048  4196351  4194304    2G 83 Linux
+/dev/mmcblk0p2      4196352 31176703 26980352 12,9G 83 Linux
+
+Command (m for help): d
+Partition number (1,2, default 2): 
+
+Partition 2 has been deleted.
+
+Command (m for help): d
+Selected partition 1
+Partition 1 has been deleted.
+
+Command (m for help): n
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p): 
+
+Using default response p.
+Partition number (1-4, default 1): 
+First sector (2048-31176703, default 2048): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-31176703, default 31176703): +2G
+
+Created a new partition 1 of type 'Linux' and of size 2 GiB.
+Partition #1 contains a vfat signature.
+
+Do you want to remove the signature? [Y]es/[N]o: Y
+
+The signature will be removed by a write command.
+
+Command (m for help): a
+Selected partition 1
+The bootable flag on partition 1 is enabled now.
+
+Command (m for help): n
+Partition type
+   p   primary (1 primary, 0 extended, 3 free)
+   e   extended (container for logical partitions)
+Select (default p): 
+
+Using default response p.
+Partition number (2-4, default 2): 
+First sector (4196352-31176703, default 4196352): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (4196352-31176703, default 31176703): 
+
+Created a new partition 2 of type 'Linux' and of size 12,9 GiB.
+Partition #2 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o: Y
+
+The signature will be removed by a write command.
+
+Command (m for help): q
+
+
  
  
 sudo mkfs.vfat -F 32 -n BOOT /dev/mmcblk0p1
@@ -45,10 +116,11 @@ sudo mkfs.vfat -F 32 -n BOOT /dev/mmcblk0p1
  sudo cp BOOT.BIN image.ub boot.scr /media/daniel/BOOT
  
  sudo mount /dev/mmcblk0p2 /mnt
-cd /mnt
  sudo cp rootfs.tar.gz  /mnt
+ cd /mnt
 sudo tar -xzvf rootfs.tar.gz 
 
 
-petalinux-build --sdkpetalinux-package --sysroot
+petalinux-build --sdk
+petalinux-package --sysroot
 . /home/daniel/PetaLinuxProjects/ZynqLinux/images/linux/sdk/environment-setup-cortexa9t2hf-neon-xilinx-linux-gnueabi

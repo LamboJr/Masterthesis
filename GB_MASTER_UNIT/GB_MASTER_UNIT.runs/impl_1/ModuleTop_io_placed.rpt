@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date                      : Sat Mar 16 20:31:59 2024
+| Date                      : Sun Mar 17 17:01:41 2024
 | Host                      : Acer running 64-bit Ubuntu 22.04.4 LTS
 | Command                   : report_io -file ModuleTop_io_placed.rpt
 | Design                    : ModuleTop
