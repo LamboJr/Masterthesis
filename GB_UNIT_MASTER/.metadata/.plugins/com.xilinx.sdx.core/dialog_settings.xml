@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop"/>
+	<item key="sdx.custom.platform.repository.locations" value="/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop;/home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/export/Testlinux"/>
 </section>

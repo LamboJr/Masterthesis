@@ -147,3 +147,7 @@ platform active {Petalinux_Platorm}
 platform generate -domains 
 platform generate -domains 
 platform generate
+platform active {Petalinux_Platorm}
+platform active {Petalinux_Platorm}
+catch {platform remove tses}
+platform active {Petalinux_Platorm}

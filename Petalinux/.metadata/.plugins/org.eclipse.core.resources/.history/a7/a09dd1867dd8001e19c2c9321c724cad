@@ -1,2 +1,0 @@
-void RunAllMonitorTests();
-void MonitorHanlderTest();

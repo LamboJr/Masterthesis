@@ -23529,3 +23529,23 @@ con
 
 20:35:52 INFO  : Launch script is exported to file '/home/daniel/Masterthesis/GB_UNIT_MASTER/GB_UNIT_MASTER_app_system/_ide/scripts/debugger_gb_unit_master_app-default.tcl'
 20:46:24 INFO  : Disconnected from the channel tcfchan#13.
+17:16:32 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/GB_UNIT_MASTER/IDE.log'.
+17:16:33 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/GB_UNIT_MASTER/temp_xsdb_launch_script.tcl
+17:16:36 INFO  : XSCT server has started successfully.
+17:16:36 INFO  : Successfully done setting XSCT server connection channel  
+17:16:36 INFO  : plnx-install-location is set to ''
+17:16:36 INFO  : Successfully done setting workspace for the tool. 
+17:16:36 INFO  : Successfully done query RDI_DATADIR 
+17:16:37 INFO  : Platform repository initialization has completed.
+17:16:37 INFO  : Registering command handlers for Vitis TCF services
+17:24:41 DEBUG : Logs will be stored at '/home/daniel/Masterthesis/GB_UNIT_MASTER/IDE.log'.
+17:24:42 INFO  : Launching XSCT server: xsct -n  -interactive /home/daniel/Masterthesis/GB_UNIT_MASTER/temp_xsdb_launch_script.tcl
+17:24:45 INFO  : XSCT server has started successfully.
+17:24:45 INFO  : plnx-install-location is set to ''
+17:24:45 INFO  : Successfully done setting XSCT server connection channel  
+17:24:45 INFO  : Successfully done setting workspace for the tool. 
+17:24:45 INFO  : Successfully done query RDI_DATADIR 
+17:24:47 INFO  : Platform repository initialization has completed.
+17:24:47 INFO  : Registering command handlers for Vitis TCF services
+17:28:28 INFO  : Result from executing command 'getProjects': ModuleTop;Testlinux
+17:28:28 INFO  : Result from executing command 'getPlatforms': ModuleTop|/home/daniel/Masterthesis/GB_UNIT_MASTER/ModuleTop/export/ModuleTop/ModuleTop.xpfm;xilinx_vck190_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm

@@ -1,0 +1,1448 @@
+TRACE::2024-03-18.17:26:08::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:08::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:08::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:08::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:08::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:08::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:08::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-03-18.17:26:11::SCWPlatform::Opened new HwDB with name ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWWriter::formatted JSON is {
+	"platformName":	"Testlinux",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Testlinux",
+	"platHandOff":	"/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2024-03-18.17:26:11::SCWWriter::formatted JSON is {
+	"platformName":	"Testlinux",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Testlinux",
+	"platHandOff":	"/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Testlinux",
+	"systems":	[{
+			"systemName":	"Testlinux",
+			"systemDesc":	"Testlinux",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Testlinux"
+		}]
+}
+TRACE::2024-03-18.17:26:11::SCWPlatform::Boot application domains not present, creating them
+TRACE::2024-03-18.17:26:11::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-18.17:26:11::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-03-18.17:26:11::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-03-18.17:26:11::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:11::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:11::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:11::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:11::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:11::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:11::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2024-03-18.17:26:11::SCWPlatform::Generating the sources  .
+TRACE::2024-03-18.17:26:11::SCWBDomain::Generating boot domain sources.
+TRACE::2024-03-18.17:26:11::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2024-03-18.17:26:11::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:11::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:11::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:11::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:11::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-03-18.17:26:11::SCWMssOS::No sw design opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:11::SCWMssOS::mss does not exists at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:11::SCWMssOS::Creating sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:11::SCWMssOS::Adding the swdes entry, created swdb /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:11::SCWMssOS::updating the scw layer changes to swdes at   /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:11::SCWMssOS::Writing mss at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:11::SCWMssOS::Completed writing the mss file at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-03-18.17:26:11::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2024-03-18.17:26:11::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2024-03-18.17:26:11::SCWBDomain::Completed writing the mss file at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-03-18.17:26:16::SCWPlatform::Generating sources Done.
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-03-18.17:26:16::SCWMssOS::No sw design opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::mss exists loading the mss file  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::Opened the sw design from mss  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::Adding the swdes entry /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-03-18.17:26:16::SCWMssOS::updating the scw layer about changes
+TRACE::2024-03-18.17:26:16::SCWMssOS::Opened the sw design.  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Commit changes completed.
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWWriter::formatted JSON is {
+	"platformName":	"Testlinux",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Testlinux",
+	"platHandOff":	"/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Testlinux",
+	"systems":	[{
+			"systemName":	"Testlinux",
+			"systemDesc":	"Testlinux",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Testlinux",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"d371d78c61985e758ecb005c2ed0a439",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-18.17:26:16::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2024-03-18.17:26:16::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2024-03-18.17:26:16::SCWDomain::Qemu Directory name is changed from "" to "qemu"
+TRACE::2024-03-18.17:26:16::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Commit changes completed.
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWWriter::formatted JSON is {
+	"platformName":	"Testlinux",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Testlinux",
+	"platHandOff":	"/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Testlinux",
+	"systems":	[{
+			"systemName":	"Testlinux",
+			"systemDesc":	"Testlinux",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Testlinux",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"d371d78c61985e758ecb005c2ed0a439",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux_domain",
+					"domainDesc":	"linux_domain",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/Testlinux/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Testlinux/linux_domain/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-03-18.17:26:16::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Commit changes completed.
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWWriter::formatted JSON is {
+	"platformName":	"Testlinux",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Testlinux",
+	"platHandOff":	"/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Testlinux",
+	"systems":	[{
+			"systemName":	"Testlinux",
+			"systemDesc":	"Testlinux",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Testlinux",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"d371d78c61985e758ecb005c2ed0a439",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on ps7_cortexa9",
+					"domainDesc":	"linux_domain",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/Testlinux/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Testlinux/linux_domain/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-03-18.17:26:16::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Commit changes completed.
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWWriter::formatted JSON is {
+	"platformName":	"Testlinux",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Testlinux",
+	"platHandOff":	"/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Testlinux",
+	"systems":	[{
+			"systemName":	"Testlinux",
+			"systemDesc":	"Testlinux",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"Testlinux",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"d371d78c61985e758ecb005c2ed0a439",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on ps7_cortexa9",
+					"domainDesc":	"linux_domain",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/Testlinux/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Testlinux/linux_domain/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-03-18.17:26:16::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-18.17:26:16::SCWMssOS::Commit changes completed.
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Opened existing hwdb ModuleTop_0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:16::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:16::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWWriter::formatted JSON is {
+	"platformName":	"Testlinux",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Testlinux",
+	"platHandOff":	"/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Testlinux",
+	"systems":	[{
+			"systemName":	"Testlinux",
+			"systemDesc":	"Testlinux",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"Testlinux",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"d371d78c61985e758ecb005c2ed0a439",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on ps7_cortexa9",
+					"domainDesc":	"linux_domain",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/Testlinux/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Testlinux/linux_domain/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-03-18.17:26:16::SCWPlatform::Clearing the existing platform
+TRACE::2024-03-18.17:26:16::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-03-18.17:26:16::SCWBDomain::clearing the fsbl build
+TRACE::2024-03-18.17:26:16::SCWMssOS::Removing the swdes entry for  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:16::SCWSystem::Clearing the domains completed.
+TRACE::2024-03-18.17:26:16::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform location is /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Removing the HwDB with name /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:16::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-03-18.17:26:20::SCWPlatform::Opened new HwDB with name ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWReader::Active system found as  Testlinux
+TRACE::2024-03-18.17:26:20::SCWReader::Handling sysconfig Testlinux
+TRACE::2024-03-18.17:26:20::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-18.17:26:20::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-03-18.17:26:20::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:20::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:20::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-03-18.17:26:20::SCWMssOS::No sw design opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS::mss exists loading the mss file  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS::Opened the sw design from mss  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS::Adding the swdes entry /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-03-18.17:26:20::SCWMssOS::updating the scw layer about changes
+TRACE::2024-03-18.17:26:20::SCWMssOS::Opened the sw design.  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:20::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:20::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS:: library already available in sw design:  xilffs:5.0
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:20::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:20::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-03-18.17:26:20::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-18.17:26:20::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-18.17:26:20::SCWMssOS::Commit changes completed.
+TRACE::2024-03-18.17:26:20::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-18.17:26:20::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:26:20::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:26:20::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:26:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:26:20::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:26:20::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:26:20::SCWReader::No isolation master present  
+TRACE::2024-03-18.17:26:20::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-18.17:26:20::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2024-03-18.17:26:20::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2024-03-18.17:26:20::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-18.17:26:20::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-18.17:26:20::SCWReader::No isolation master present  
+LOG::2024-03-18.17:28:23::SCWPlatform::Started generating the artifacts platform Testlinux
+TRACE::2024-03-18.17:28:23::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-03-18.17:28:23::SCWPlatform::Started generating the artifacts for system configuration Testlinux
+LOG::2024-03-18.17:28:23::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-03-18.17:28:23::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-03-18.17:28:23::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-03-18.17:28:23::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2024-03-18.17:28:23::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:28:23::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:28:23::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:28:23::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:28:23::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:28:23::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:28:23::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:28:23::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:28:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:28:23::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:28:23::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:28:23::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:28:23::SCWBDomain::Completed writing the mss file at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-03-18.17:28:23::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-03-18.17:28:23::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-03-18.17:28:23::SCWBDomain::System Command Ran  cd  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl ; bash -c " make -C zynq_fsbl_bsp ; make  " 
+TRACE::2024-03-18.17:28:23::SCWBDomain::make: Entering directory '/home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make --no-print-directory seq_libs
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/bram_v4_8/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/bram_v4_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:23::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:23::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2024-03-18.17:28:23::SCWBDomain::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2024-03-18.17:28:23::SCWBDomain::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-no
+TRACE::2024-03-18.17:28:23::SCWBDomain::ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
+TRACE::2024-03-18.17:28:23::SCWBDomain::=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-03-18.17:28:23::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-03-18.17:28:23::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:23::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:23::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-03-18.17:28:23::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-03-18.17:28:23::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_18/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_18/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:23::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:23::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_11/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:23::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:23::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_9/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:23::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:23::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:23::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:23::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_1/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:23::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:23::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-03-18.17:28:23::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-03-18.17:28:23::SCWBDomain:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:23::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:23::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_1/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:23::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:23::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/standalone_v8_1/src
+
+TRACE::2024-03-18.17:28:23::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v8_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2024-03-18.17:28:23::SCWBDomain::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2024-03-18.17:28:23::SCWBDomain::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_12/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_12/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:24::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:24::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-03-18.17:28:24::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-03-18.17:28:24::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xilffs_v5_0/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-03-18.17:28:24::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-03-18.17:28:24::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Finished building libraries sequentially.
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -j 6 --no-print-directory par_libs
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/bram_v4_8/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/bram_v4_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:24::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:24::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-
+TRACE::2024-03-18.17:28:24::SCWBDomain::none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-a
+TRACE::2024-03-18.17:28:24::SCWBDomain::bi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-no
+TRACE::2024-03-18.17:28:24::SCWBDomain::ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
+TRACE::2024-03-18.17:28:24::SCWBDomain::=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-03-18.17:28:24::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-03-18.17:28:24::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-03-18.17:28:24::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-03-18.17:28:24::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_18/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_18/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:24::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:24::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_11/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_9/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:24::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:24::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:24::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:24::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:24::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:24::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_1/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-03-18.17:28:24::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-03-18.17:28:24::SCWBDomain:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_1/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:24::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:24::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/standalone_v8_1/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v8_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2024-03-18.17:28:24::SCWBDomain::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2024-03-18.17:28:24::SCWBDomain::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_12/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_12/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:24::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:24::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-03-18.17:28:24::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-03-18.17:28:24::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xilffs_v5_0/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-03-18.17:28:24::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-03-18.17:28:24::SCWBDomain::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_8/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/bram_v4_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-03-18.17:28:24::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-03-18.17:28:24::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-non
+TRACE::2024-03-18.17:28:24::SCWBDomain::e-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2024-03-18.17:28:24::SCWBDomain::hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-
+TRACE::2024-03-18.17:28:24::SCWBDomain::eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=ha
+TRACE::2024-03-18.17:28:24::SCWBDomain::rd -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-03-18.17:28:24::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-03-18.17:28:24::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_8/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-03-18.17:28:24::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-03-18.17:28:24::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-03-18.17:28:24::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-03-18.17:28:24::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_18/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_18/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:24::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:24::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_11/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_11/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:24::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:24::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_9/src
+
+TRACE::2024-03-18.17:28:24::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-03-18.17:28:24::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-03-18.17:28:24::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_10/src
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:25::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:25::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/scugic_v5_1/src
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-03-18.17:28:25::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-03-18.17:28:25::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_4/src
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-03-18.17:28:25::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-03-18.17:28:25::SCWBDomain::ostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-03-18.17:28:25::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-03-18.17:28:25::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/sdps_v4_1/src
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-03-18.17:28:25::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-03-18.17:28:25::SCWBDomain::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/standalone_v8_1/src
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v8_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eab
+TRACE::2024-03-18.17:28:25::SCWBDomain::i-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard 
+TRACE::2024-03-18.17:28:25::SCWBDomain::-nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_12/src
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_12/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-03-18.17:28:25::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-03-18.17:28:25::SCWBDomain::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_7/src
+
+TRACE::2024-03-18.17:28:25::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-03-18.17:28:25::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-03-18.17:28:25::SCWBDomain::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:26::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_6/src
+
+TRACE::2024-03-18.17:28:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-03-18.17:28:26::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-03-18.17:28:26::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:26::SCWBDomain::Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v5_0/src
+
+TRACE::2024-03-18.17:28:26::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-03-18.17:28:26::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-03-18.17:28:26::SCWBDomain::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::Finished building libraries parallelly.
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::make --no-print-directory archive
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/_open.o ps7_cortexa9_0/lib/_sbrk
+TRACE::2024-03-18.17:28:27::SCWBDomain::.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/close.o ps7_cortexa
+TRACE::2024-03-18.17:28:27::SCWBDomain::9_0/lib/cpputest_time.o ps7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/fcntl.o ps7_cortexa9_0/lib/
+TRACE::2024-03-18.17:28:27::SCWBDomain::fstat.o ps7_cortexa9_0/lib/getentropy.o ps7_cortexa9_0/lib/getpid.o ps7_cortexa9_0/lib/inbyte.o ps7_cortexa9_0/lib/isatty.o ps7
+TRACE::2024-03-18.17:28:27::SCWBDomain::_cortexa9_0/lib/kill.o ps7_cortexa9_0/lib/lseek.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/outbyte.o ps7_cortexa9_0/lib/pri
+TRACE::2024-03-18.17:28:27::SCWBDomain::nt.o ps7_cortexa9_0/lib/putnum.o ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/sleep.o ps7_cortexa9_0/
+TRACE::2024-03-18.17:28:27::SCWBDomain::lib/time.o ps7_cortexa9_0/lib/translation_table.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/usleep.o ps7_cortexa9_0/lib/ve
+TRACE::2024-03-18.17:28:27::SCWBDomain::ctors.o ps7_cortexa9_0/lib/write.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_0/lib/xadcps_g.o ps7_cortexa9_0/lib/xadcps_intr.o p
+TRACE::2024-03-18.17:28:27::SCWBDomain::s7_cortexa9_0/lib/xadcps_selftest.o ps7_cortexa9_0/lib/xadcps_sinit.o ps7_cortexa9_0/lib/xbram.o ps7_cortexa9_0/lib/xbram_g.o p
+TRACE::2024-03-18.17:28:27::SCWBDomain::s7_cortexa9_0/lib/xbram_intr.o ps7_cortexa9_0/lib/xbram_selftest.o ps7_cortexa9_0/lib/xbram_sinit.o ps7_cortexa9_0/lib/xcoresig
+TRACE::2024-03-18.17:28:27::SCWBDomain::htpsdcc.o ps7_cortexa9_0/lib/xdevcfg.o ps7_cortexa9_0/lib/xdevcfg_g.o ps7_cortexa9_0/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xdevcf
+TRACE::2024-03-18.17:28:27::SCWBDomain::g_intr.o ps7_cortexa9_0/lib/xdevcfg_selftest.o ps7_cortexa9_0/lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/li
+TRACE::2024-03-18.17:28:27::SCWBDomain::b/xdmaps_g.o ps7_cortexa9_0/lib/xdmaps_hw.o ps7_cortexa9_0/lib/xdmaps_selftest.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9
+TRACE::2024-03-18.17:28:27::SCWBDomain::_0/lib/xemacps.o ps7_cortexa9_0/lib/xemacps_bdring.o ps7_cortexa9_0/lib/xemacps_control.o ps7_cortexa9_0/lib/xemacps_g.o ps7_co
+TRACE::2024-03-18.17:28:27::SCWBDomain::rtexa9_0/lib/xemacps_hw.o ps7_cortexa9_0/lib/xemacps_intr.o ps7_cortexa9_0/lib/xemacps_sinit.o ps7_cortexa9_0/lib/xgpio.o ps7_c
+TRACE::2024-03-18.17:28:27::SCWBDomain::ortexa9_0/lib/xgpio_extra.o ps7_cortexa9_0/lib/xgpio_g.o ps7_cortexa9_0/lib/xgpio_intr.o ps7_cortexa9_0/lib/xgpio_selftest.o ps
+TRACE::2024-03-18.17:28:27::SCWBDomain::7_cortexa9_0/lib/xgpio_sinit.o ps7_cortexa9_0/lib/xgpiops.o ps7_cortexa9_0/lib/xgpiops_g.o ps7_cortexa9_0/lib/xgpiops_hw.o ps7_
+TRACE::2024-03-18.17:28:27::SCWBDomain::cortexa9_0/lib/xgpiops_intr.o ps7_cortexa9_0/lib/xgpiops_selftest.o ps7_cortexa9_0/lib/xgpiops_sinit.o ps7_cortexa9_0/lib/xil-c
+TRACE::2024-03-18.17:28:27::SCWBDomain::rt0.o ps7_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xil_cache.o ps7_cortexa9_0/lib/xil_clocking.o ps7_cortexa9_0/lib/xil_e
+TRACE::2024-03-18.17:28:27::SCWBDomain::xception.o ps7_cortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/xil_misc_psreset_api.o ps7_cortexa9_0/lib/xil_mmu.o ps7_cortexa9_0/l
+TRACE::2024-03-18.17:28:27::SCWBDomain::ib/xil_printf.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xil_sleeptimer.o ps7_cortexa9_0/lib/xil_spinlock.o ps7_
+TRACE::2024-03-18.17:28:27::SCWBDomain::cortexa9_0/lib/xil_testcache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/xil_testmem.o ps7_cortexa9_0/lib/xil_util.o p
+TRACE::2024-03-18.17:28:27::SCWBDomain::s7_cortexa9_0/lib/xinterrupt_wrap.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cortexa9_0/lib/xplatform_info.o ps7_cortexa9_0/lib/x
+TRACE::2024-03-18.17:28:27::SCWBDomain::pm_counter.o ps7_cortexa9_0/lib/xqspips.o ps7_cortexa9_0/lib/xqspips_g.o ps7_cortexa9_0/lib/xqspips_hw.o ps7_cortexa9_0/lib/xqs
+TRACE::2024-03-18.17:28:27::SCWBDomain::pips_options.o ps7_cortexa9_0/lib/xqspips_selftest.o ps7_cortexa9_0/lib/xqspips_sinit.o ps7_cortexa9_0/lib/xscugic.o ps7_cortex
+TRACE::2024-03-18.17:28:27::SCWBDomain::a9_0/lib/xscugic_g.o ps7_cortexa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib/xscugic_selftest.o ps
+TRACE::2024-03-18.17:28:27::SCWBDomain::7_cortexa9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xscutimer.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_cortexa9_0/lib/xscutimer_s
+TRACE::2024-03-18.17:28:27::SCWBDomain::elftest.o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xscuwdt_g.o ps7_cortexa9_0/lib/x
+TRACE::2024-03-18.17:28:27::SCWBDomain::scuwdt_selftest.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib/xsdps_card.o ps7_cortexa9_0/
+TRACE::2024-03-18.17:28:27::SCWBDomain::lib/xsdps_g.o ps7_cortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xsdps_sinit.o ps7_cortexa9_
+TRACE::2024-03-18.17:28:27::SCWBDomain::0/lib/xtime_l.o ps7_cortexa9_0/lib/xuartps.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0/lib/xuartps_hw.o ps7_cortexa9_0/lib/
+TRACE::2024-03-18.17:28:27::SCWBDomain::xuartps_intr.o ps7_cortexa9_0/lib/xuartps_options.o ps7_cortexa9_0/lib/xuartps_selftest.o ps7_cortexa9_0/lib/xuartps_sinit.o ps
+TRACE::2024-03-18.17:28:27::SCWBDomain::7_cortexa9_0/lib/xusbps.o ps7_cortexa9_0/lib/xusbps_endpoint.o ps7_cortexa9_0/lib/xusbps_g.o ps7_cortexa9_0/lib/xusbps_hw.o ps7
+TRACE::2024-03-18.17:28:27::SCWBDomain::_cortexa9_0/lib/xusbps_intr.o ps7_cortexa9_0/lib/xusbps_sinit.o
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::Finished building libraries
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::make: Leaving directory '/home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_f
+TRACE::2024-03-18.17:28:27::SCWBDomain::sbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c image_mover.c -o image_mover.o -Izynq
+TRACE::2024-03-18.17:28:27::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c main.c -o main.o -Izynq_fsbl_bsp/ps7_
+TRACE::2024-03-18.17:28:27::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:27::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2024-03-18.17:28:27::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_
+TRACE::2024-03-18.17:28:28::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2024-03-18.17:28:28::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_
+TRACE::2024-03-18.17:28:28::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c ps7_init.c -o ps7_init.o -Izynq_fsbl_
+TRACE::2024-03-18.17:28:28::SCWBDomain::bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_
+TRACE::2024-03-18.17:28:28::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2024-03-18.17:28:28::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cort
+TRACE::2024-03-18.17:28:28::SCWBDomain::exa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c fsbl_handoff.S -o fsbl_handoff.o -Izy
+TRACE::2024-03-18.17:28:28::SCWBDomain::nq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2024-03-18.17:28:28::SCWBDomain::arm-none-eabi-gcc -o fsbl.elf fsbl_handoff.o fsbl_hooks.o image_mover.o main.o md5.o nand.o nor.o pcap.o ps7_init.o qspi.o rsa.
+TRACE::2024-03-18.17:28:28::SCWBDomain::o sd.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id
+TRACE::2024-03-18.17:28:28::SCWBDomain::=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-
+TRACE::2024-03-18.17:28:28::SCWBDomain::group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                      -Wl,--gc-sections -Lzynq_fsbl_bs
+TRACE::2024-03-18.17:28:28::SCWBDomain::p/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2024-03-18.17:28:28::SCWSystem::Checking the domain linux_domain
+LOG::2024-03-18.17:28:28::SCWSystem::Not a boot domain 
+LOG::2024-03-18.17:28:28::SCWSystem::Started Processing the domain linux_domain
+TRACE::2024-03-18.17:28:28::SCWDomain::Generating domain artifcats
+LOG::2024-03-18.17:28:28::SCWSystem::Completed Processing the domain linux_domain
+LOG::2024-03-18.17:28:28::SCWSystem::Completed Processing the sysconfig Testlinux
+LOG::2024-03-18.17:28:28::SCWPlatform::Completed generating the artifacts for system configuration Testlinux
+TRACE::2024-03-18.17:28:28::SCWPlatform::Started preparing the platform 
+TRACE::2024-03-18.17:28:28::SCWSystem::Writing the bif file for system config Testlinux
+TRACE::2024-03-18.17:28:28::SCWSystem::dir created 
+TRACE::2024-03-18.17:28:28::SCWSystem::Writing the bif 
+TRACE::2024-03-18.17:28:28::SCWPlatform::Started writing the spfm file 
+TRACE::2024-03-18.17:28:28::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-03-18.17:28:28::SCWPlatform::Completed generating the platform
+TRACE::2024-03-18.17:28:28::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:28:28::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-18.17:28:28::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-18.17:28:28::SCWMssOS::Commit changes completed.
+TRACE::2024-03-18.17:28:28::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:28:28::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:28:28::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:28:28::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-18.17:28:28::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-18.17:28:28::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-18.17:28:28::SCWPlatform::Trying to set the existing hwdb with name ModuleTop_1
+TRACE::2024-03-18.17:28:28::SCWPlatform::Opened existing hwdb ModuleTop_1
+TRACE::2024-03-18.17:28:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-18.17:28:28::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:28:28::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-18.17:28:28::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-18.17:28:28::SCWWriter::formatted JSON is {
+	"platformName":	"Testlinux",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Testlinux",
+	"platHandOff":	"/home/daniel/Masterthesis/GB_MASTER_UNIT/ModuleTop.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ModuleTop.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Testlinux",
+	"systems":	[{
+			"systemName":	"Testlinux",
+			"systemDesc":	"Testlinux",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"Testlinux",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"d371d78c61985e758ecb005c2ed0a439",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.0", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on ps7_cortexa9",
+					"domainDesc":	"linux_domain",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/Testlinux/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Testlinux/linux_domain/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-03-18.17:28:28::SCWPlatform::updated the xpfm file.
