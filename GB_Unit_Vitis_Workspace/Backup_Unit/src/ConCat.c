@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../Includes/DataTypes.h"
+#include "Includes/DataTypes.h"
 
 /*ConCat is a simple function to Concatinate two integer arrays to a bigger one
   The size of the resulting Array is sizeof(Array1) plus sizeof(Array2)

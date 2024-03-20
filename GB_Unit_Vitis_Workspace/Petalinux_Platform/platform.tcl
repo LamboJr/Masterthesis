@@ -22,3 +22,4 @@ platform active {Petalinux_Platform}
 library -lib-path {} -inc-path {/home/daniel/Masterthesis/GB_Unit_Vitis_Workspace/Petalinux_Platform/export/Petalinux_Platform/sw/Petalinux_Platform/linux_domain/sysroot/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib}
 platform write
 platform generate -domains 
+platform generate

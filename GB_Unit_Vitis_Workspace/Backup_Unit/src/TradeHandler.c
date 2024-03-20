@@ -1,22 +1,22 @@
-#include "../Includes/DataTypes.h"
+#include "Includes/DataTypes.h"
 #include <stdio.h>
-#include "../Includes/Link.h"
-#include "../Includes/linkcommand.h"
+#include "Includes/Link.h"
+#include "Includes/linkcommand.h"
 #include <stdlib.h>
 
 
 
 
-#include "../Includes/Pokemonbuffer.h"
+#include "Includes/Pokemonbuffer.h"
 
-#include "../Includes/Ringbuffer.h"
+#include "Includes/Ringbuffer.h"
 
 
 
 #include <pthread.h>
-#include "../Includes/ConCat.h"
-#include "../Includes/TradeHandler.h"
-#include "../Includes/BackUpHandler.h"
+#include "Includes/ConCat.h"
+#include "Includes/TradeHandler.h"
+#include "Includes/BackUpHandler.h"
 
 u16 ReceivedTeam[6][50];
 

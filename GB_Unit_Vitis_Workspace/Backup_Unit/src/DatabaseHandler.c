@@ -1,10 +1,12 @@
+
+
 #include <stdio.h>
 #include "Includes/DataTypes.h"
 #include <string.h>
 #include <sqlite3.h>
-#include "DatabaseHandler.h"
 #include <pthread.h>
 
+#include "Includes/DatabaseHandler.h"
 #include "Includes/DecodePokemonData.h"
 #include "Includes/Link.h"
 #include "Includes/structs.h"

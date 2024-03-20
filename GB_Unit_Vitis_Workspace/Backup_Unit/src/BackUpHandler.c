@@ -1,21 +1,21 @@
-#include "../Includes/DataTypes.h"
+#include "Includes/DataTypes.h"
 #include <stdio.h>
-#include "../Includes/Link.h"
-#include "../Includes/linkcommand.h"
+#include "Includes/Link.h"
+#include "Includes/linkcommand.h"
 #include <stdlib.h>
 
 
 
-#include "../Includes/TradeHandler.h"
-#include "../Includes/BackUpHandler.h"
+#include "Includes/TradeHandler.h"
+#include "Includes/BackUpHandler.h"
 
-#include "../Includes/Ringbuffer.h"
+#include "Includes/Ringbuffer.h"
 
 #include <pthread.h>
 
-#include "../Includes/ConCat.h"
-#include "../DatabaseHandler.h"
-#include "../Includes/DecodePokemonData.h"
+#include "Includes/ConCat.h"
+#include "Includes/DecodePokemonData.h"
+#include "Includes/DatabaseHandler.h"
 
 
 extern u16 ReceivedTeam[6][50];

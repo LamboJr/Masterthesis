@@ -8,13 +8,13 @@
 #include <string.h>
 
 #include "Includes/DataTypes.h"
-#include "Hardwarehandler.h"
 #include "Includes/TradeHandler.h"
 #include "Testing/Test_Tradehanlder.h"
 #include "Includes/ConCat.h"
 #include "Includes/structs.h"
 #include <pthread.h>
 #include "Includes/DecodePokemonData.h"
+#include "Includes/Hardwarehandler.h"
 
 
 #define MODE_TRADE 0

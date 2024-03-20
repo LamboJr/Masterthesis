@@ -18,7 +18,7 @@
 
 #include "../Includes/ConCat.h"
 #include "../Includes/DecodePokemonData.h"
-#include "../TCP_Server.h"
+#include "../Includes/TCP_Server.h"
 #include "TestDataTrade.h"
 
 u32 TestArrayPokemon1Data[100] = {

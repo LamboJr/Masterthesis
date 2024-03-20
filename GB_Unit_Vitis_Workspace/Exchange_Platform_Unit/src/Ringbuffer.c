@@ -1,7 +1,7 @@
-#include "../Includes/DataTypes.h"
+#include "Includes/DataTypes.h"
 #include <stdio.h>
 
-#include "../Includes/Ringbuffer.h"
+#include "Includes/Ringbuffer.h"
 
 // DEclare a buffer structure for a Buffer with Data to be send to Ringbuffer of HW
 struct BufferType s_DataBuffer;

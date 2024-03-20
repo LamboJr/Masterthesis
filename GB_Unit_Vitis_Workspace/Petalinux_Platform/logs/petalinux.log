@@ -6,3 +6,7 @@ TRACE::2024-03-19.16:54:45::SCWLinux::Copying the qemu file from  /home/daniel/M
 TRACE::2024-03-19.16:54:45::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/GB_Unit_Vitis_Workspace/Petalinux_Platform/resources/Petalinux_Platform/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/GB_Unit_Vitis_Workspace/Petalinux_Platform/export/Petalinux_Platform/sw/Petalinux_Platform/linux_domain/qemu/
 TRACE::2024-03-19.16:54:45::SCWLinux:: Copying the user libraries. 
 TRACE::2024-03-19.16:54:46::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2024-03-20.15:26:33::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/GB_Unit_Vitis_Workspace/Petalinux_Platform/resources/Petalinux_Platform/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/GB_Unit_Vitis_Workspace/Petalinux_Platform/export/Petalinux_Platform/sw/Petalinux_Platform/qemu/
+TRACE::2024-03-20.15:26:33::SCWLinux::Copying the qemu file from  /home/daniel/Masterthesis/GB_Unit_Vitis_Workspace/Petalinux_Platform/resources/Petalinux_Platform/linux_domain/qemu_args.txt To /home/daniel/Masterthesis/GB_Unit_Vitis_Workspace/Petalinux_Platform/export/Petalinux_Platform/sw/Petalinux_Platform/linux_domain/qemu/
+TRACE::2024-03-20.15:26:33::SCWLinux:: Copying the user libraries. 
+TRACE::2024-03-20.15:26:41::SCWLinux::Skipping the Petalinux build as image is already given.

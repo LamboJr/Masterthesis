@@ -8,7 +8,6 @@
 #include <string.h>
 
 #include "Includes/DataTypes.h"
-#include "Hardwarehandler.h"
 #include "Includes/Link.h"
 #include "Includes/TradeHandler.h"
 #include "Includes/BackUpHandler.h"
@@ -18,8 +17,10 @@
 #include "Includes/ConCat.h"
 #include "Includes/structs.h"
 #include <pthread.h>
-#include "DatabaseHandler.h"
+
+#include "Includes/DatabaseHandler.h"
 #include "Includes/DecodePokemonData.h"
+#include "Includes/Hardwarehandler.h"
 
 
 #define MODE_TRADE 0
@@ -41,10 +42,12 @@ int main(int argc, char *argv[])
 	return 1;
 #endif
 
-//---------------------------------------------------------------
+//-----------------------------------------------------------------
 //-----Initialize Hardware components------------------------------
-
+//-----------------------------------------------------------------
 	printf("Initialize Hardware components ... \n");
+
+	//open file /dev/dem in Read and Write mode and create a file decsribtor fd
 	int fd;
 	fd=open("/dev/mem",O_RDWR);
 		if(fd<1) {
@@ -52,7 +55,7 @@ int main(int argc, char *argv[])
 			exit(-1);
 	}
 
-	//Get Memory Pointer
+	//Get Memory Pointer to the AXI Components
 	void *Ringbufferptr = InitRingbufferMMap(fd);
 	void *PltoPSbufferptr = InitPLtoPSBuffer(fd);
 	void *PStoPLbufferptr = InitPStoPLBuffer(fd);
@@ -61,25 +64,31 @@ int main(int argc, char *argv[])
 
 	//Declare Variables
 	u32 Inputdata = 0;
+	//Variable to set if Monitored Values are printed on the console or not
 	u32 dump = 1;
+	//Value to store read data from PLtoPS Buffer
 	u32 PLtoPSBuffer_Value;
+	//Variable to set MODE
 	u32 OPMode = MODE_TRADE;
 	bool Valid = 0;
 
 	//Configure Trading or Monitoring mode
 	u32 PsToPlValue = OPMode; // == Mode Trading
 	printf("Configure Trading or Monitoring Mode\n");
+	// Write Mode Value to the Hardware
 	WritePStoPLBffer(PStoPLbufferptr,PsToPlValue);
 
 	FILE *fp;
 
-
 	PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
 
+
+	//Setting the first Ringbuffer PS to PL value to 0
 	printf("Setting Output to 0x0000...\n");
 	WriteToRingbuffer(Ringbufferptr,0x0000, 0);
 
-	//Clean buffer for clean start in communiccation
+	//Clear buffer for clean start in communiccation
+	//Read alle stored value in the Rinbuffer(Pl to PS) until it is empty
 	printf("Clean Buffer \n");
 	while( ReadRingbuffer(Ringbufferptr,1) == 0){
 		Inputdata = ReadRingbuffer(Ringbufferptr,0);
@@ -95,7 +104,9 @@ int main(int argc, char *argv[])
 	extern u16 Magikarp_pokemonbuffer[50];
 	u8 StartBackupProcess = 0;
 
+	//Buffer for Data read from Database. It contains 50 16 bit values. Exactly enough space for one Pokemon data structure.
 	u16 DBReadBuffer[50];
+	//This buffer is initialized with the No Pokemon Buffer( all 0 Values)
 	for(int i = 0;i< 50;i++){
 		DBReadBuffer[i] = NoPokemon[i];
 	}
@@ -104,6 +115,9 @@ int main(int argc, char *argv[])
 	//DataBaseInsertBuffer("Brutalanda", Salamence_pokemonbuffer);
 
 
+
+	//---------------while loop:----------------------------------
+	// This while loop prints alle accessable database entries of the database
 	while (StartBackupProcess == 0){
 		print_table_names();
 		printf("---------------------------------------------------------\n");

@@ -7,11 +7,11 @@
 #include <string.h>
 
 #include "Includes/DataTypes.h"
-#include "Hardwarehandler.h"
 #include "Includes/MonitorTrade.h"
 
 #include "Includes/structs.h"
 #include "Includes/DecodePokemonData.h"
+#include "Includes/Hardwarehandler.h"
 #include "Testing/MonitorUnitTest.h"
 
 #define MODE_MONITOR 1

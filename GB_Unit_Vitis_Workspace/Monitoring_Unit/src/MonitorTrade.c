@@ -1,15 +1,15 @@
-#include "../Includes/DataTypes.h"
+#include "Includes/DataTypes.h"
 #include <stdio.h>
 
 
-#include "../Includes/Link.h"
-#include "../Includes/structs.h"
+#include "Includes/Link.h"
+#include "Includes/structs.h"
 
-#include "../Includes/linkcommand.h"
-#include "../Includes/decodeTrainderCard.h"
-#include "../Includes/DecodePokemonData.h"
-#include "../Includes/MonitorTrade.h"
-#include "../Includes/constant.h"
+#include "Includes/linkcommand.h"
+#include "Includes/decodeTrainderCard.h"
+#include "Includes/DecodePokemonData.h"
+#include "Includes/MonitorTrade.h"
+#include "Includes/constant.h"
 
 static struct TradeHandler sTradeHandler[2];
 
