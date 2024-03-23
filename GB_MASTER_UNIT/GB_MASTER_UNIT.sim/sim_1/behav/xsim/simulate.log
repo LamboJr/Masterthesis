@@ -1,4 +1,14 @@
 Time resolution is 1 ps
+Stopped at time : 330504 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TopModule_TB.vhd" Line 121
+Note: Test Passed - Correct Data Received
+Time: 330512 ns  Iteration: 1  Process: /TopModule_TB/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TopModule_TB.vhd
+Note: Test Passed - Correct Data Received
+Time: 330552 ns  Iteration: 1  Process: /TopModule_TB/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TopModule_TB.vhd
+Note: Test Failed - Incorrect Data Received
+Time: 486944 ns  Iteration: 1  Process: /TopModule_TB/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TopModule_TB.vhd
+Stopped at time : 486952 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TopModule_TB.vhd" Line 180
+Note: Test Passed - Correct Data Received
+Time: 486960 ns  Iteration: 1  Process: /TopModule_TB/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TopModule_TB.vhd
 Failure: Tests Complete
-Time: 1000072 ns  Iteration: 0  Process: /Ringbuffer_tb/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/Ringbuffer_tb.vhd
-$finish called at time : 1000072 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/Own_Files/VHDL_files/Testbenches/Ringbuffer_tb.vhd" Line 126
+Time: 531008 ns  Iteration: 0  Process: /TopModule_TB/stimuli  File: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TopModule_TB.vhd
+$finish called at time : 531008 ns : File "/home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.srcs/sim_1/new/TopModule_TB.vhd" Line 201

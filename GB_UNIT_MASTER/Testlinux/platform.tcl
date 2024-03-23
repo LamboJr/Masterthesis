@@ -15,3 +15,4 @@ platform create -name {Testlinux}\
 platform write
 platform active {Testlinux}
 platform generate
+platform active {Testlinux}

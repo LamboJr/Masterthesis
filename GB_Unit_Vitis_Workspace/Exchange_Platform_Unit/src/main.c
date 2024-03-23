@@ -91,7 +91,8 @@ int main(int argc, char *argv[])
 	printf("---------------TCP Trading-------------------------------\n");
 	printf("---------------------------------------------------------\n");
 	extern int __attribute__ ((unused)) new_socket;
-	TCP_Server_Init();
+	//TCP_Server_Init();
+	TCP_Client_Init();
 	while(1){
 		PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
 		if (ReadRingbuffer(Ringbufferptr,1) == 0){

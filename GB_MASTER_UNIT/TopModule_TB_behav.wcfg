@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TopModule_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TopModule_TB" />
+            <top_module name="constants_and_declarations" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="167,466,376 ps"></ZoomStartTime>
+      <ZoomEndTime time="167,466,387 ps"></ZoomEndTime>
+      <Cursor1Time time="167,466,376 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="65" />
+   <wvobject fp_name="divider41" type="divider">
+      <obj_property name="label">Topsignals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/switch0">
+      <obj_property name="ElementShortName">switch0</obj_property>
+      <obj_property name="ObjectShortName">switch0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/switch1">
+      <obj_property name="ElementShortName">switch1</obj_property>
+      <obj_property name="ObjectShortName">switch1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/switch2">
+      <obj_property name="ElementShortName">switch2</obj_property>
+      <obj_property name="ObjectShortName">switch2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/switch3">
+      <obj_property name="ElementShortName">switch3</obj_property>
+      <obj_property name="ObjectShortName">switch3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/resetbutton">
+      <obj_property name="ElementShortName">resetbutton</obj_property>
+      <obj_property name="ObjectShortName">resetbutton</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/tradebutton">
+      <obj_property name="ElementShortName">tradebutton</obj_property>
+      <obj_property name="ObjectShortName">tradebutton</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/io_Serial">
+      <obj_property name="ElementShortName">io_Serial</obj_property>
+      <obj_property name="ObjectShortName">io_Serial</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/i_MS_SLV">
+      <obj_property name="ElementShortName">i_MS_SLV</obj_property>
+      <obj_property name="ObjectShortName">i_MS_SLV</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/i_Enable">
+      <obj_property name="ElementShortName">i_Enable</obj_property>
+      <obj_property name="ObjectShortName">i_Enable</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/BRAM_Controller_Addr">
+      <obj_property name="ElementShortName">BRAM_Controller_Addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_Addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/BRAM_Controller_Data_in">
+      <obj_property name="ElementShortName">BRAM_Controller_Data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_Data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/BRAM_Controller_Data_out">
+      <obj_property name="ElementShortName">BRAM_Controller_Data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_Data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/BRAM_Controller_en">
+      <obj_property name="ElementShortName">BRAM_Controller_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/BRAM_Controller_wr_en">
+      <obj_property name="ElementShortName">BRAM_Controller_wr_en[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_wr_en[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/PL_to_PS_buffer">
+      <obj_property name="ElementShortName">PL_to_PS_buffer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PL_to_PS_buffer[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/PS_to_PL_buffer">
+      <obj_property name="ElementShortName">PS_to_PL_buffer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PS_to_PL_buffer[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider42" type="divider">
+      <obj_property name="label">Top Module signales</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider82" type="divider">
+      <obj_property name="label">BRAM controllrer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/BRAM_Controller_Addr">
+      <obj_property name="ElementShortName">BRAM_Controller_Addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_Addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/BRAM_Controller_Data_in">
+      <obj_property name="ElementShortName">BRAM_Controller_Data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_Data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/BRAM_Controller_Data_out">
+      <obj_property name="ElementShortName">BRAM_Controller_Data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_Data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/BRAM_Controller_en">
+      <obj_property name="ElementShortName">BRAM_Controller_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/BRAM_Controller_wr_en">
+      <obj_property name="ElementShortName">BRAM_Controller_wr_en[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_Controller_wr_en[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider83" type="divider">
+      <obj_property name="label">UART RX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/w_RX_DV">
+      <obj_property name="ElementShortName">w_RX_DV</obj_property>
+      <obj_property name="ObjectShortName">w_RX_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/w_RX_WORD">
+      <obj_property name="ElementShortName">w_RX_WORD[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_RX_WORD[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/r_RX_SERIAL">
+      <obj_property name="ElementShortName">r_RX_SERIAL</obj_property>
+      <obj_property name="ObjectShortName">r_RX_SERIAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider84" type="divider">
+      <obj_property name="label">UART TX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/w_TX_Active">
+      <obj_property name="ElementShortName">w_TX_Active</obj_property>
+      <obj_property name="ObjectShortName">w_TX_Active</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/r_TX_DV">
+      <obj_property name="ElementShortName">r_TX_DV</obj_property>
+      <obj_property name="ObjectShortName">r_TX_DV</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/r_TX_WORD">
+      <obj_property name="ElementShortName">r_TX_WORD[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_TX_WORD[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/w_TX_SERIAL">
+      <obj_property name="ElementShortName">w_TX_SERIAL</obj_property>
+      <obj_property name="ObjectShortName">w_TX_SERIAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/w_TX_DONE">
+      <obj_property name="ElementShortName">w_TX_DONE</obj_property>
+      <obj_property name="ObjectShortName">w_TX_DONE</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider85" type="divider">
+      <obj_property name="label">Ringbuffer PS to Pl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/wr_en_PS_to_PL">
+      <obj_property name="ElementShortName">wr_en_PS_to_PL</obj_property>
+      <obj_property name="ObjectShortName">wr_en_PS_to_PL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/wr_data_PS_to_PL">
+      <obj_property name="ElementShortName">wr_data_PS_to_PL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data_PS_to_PL[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/rd_en_PS_to_PL">
+      <obj_property name="ElementShortName">rd_en_PS_to_PL</obj_property>
+      <obj_property name="ObjectShortName">rd_en_PS_to_PL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/rd_valid_PS_to_PL">
+      <obj_property name="ElementShortName">rd_valid_PS_to_PL</obj_property>
+      <obj_property name="ObjectShortName">rd_valid_PS_to_PL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/rd_data_PS_to_PL">
+      <obj_property name="ElementShortName">rd_data_PS_to_PL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data_PS_to_PL[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/empty_PS_to_PL">
+      <obj_property name="ElementShortName">empty_PS_to_PL</obj_property>
+      <obj_property name="ObjectShortName">empty_PS_to_PL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/empty_next_PS_to_PL">
+      <obj_property name="ElementShortName">empty_next_PS_to_PL</obj_property>
+      <obj_property name="ObjectShortName">empty_next_PS_to_PL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/full_PS_to_PL">
+      <obj_property name="ElementShortName">full_PS_to_PL</obj_property>
+      <obj_property name="ObjectShortName">full_PS_to_PL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/full_next_PS_to_PL">
+      <obj_property name="ElementShortName">full_next_PS_to_PL</obj_property>
+      <obj_property name="ObjectShortName">full_next_PS_to_PL</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/TopModule_TB/TOP_INST/fill_count_PS_to_PL">
+      <obj_property name="ElementShortName">fill_count_PS_to_PL</obj_property>
+      <obj_property name="ObjectShortName">fill_count_PS_to_PL</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider86" type="divider">
+      <obj_property name="label">Ringbuffer PL to PS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/wr_en_PL_to_PS">
+      <obj_property name="ElementShortName">wr_en_PL_to_PS</obj_property>
+      <obj_property name="ObjectShortName">wr_en_PL_to_PS</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/wr_data_PL_to_PS">
+      <obj_property name="ElementShortName">wr_data_PL_to_PS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data_PL_to_PS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/rd_en_PL_to_PS">
+      <obj_property name="ElementShortName">rd_en_PL_to_PS</obj_property>
+      <obj_property name="ObjectShortName">rd_en_PL_to_PS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/rd_valid_PL_to_PS">
+      <obj_property name="ElementShortName">rd_valid_PL_to_PS</obj_property>
+      <obj_property name="ObjectShortName">rd_valid_PL_to_PS</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/rd_data_PL_to_PS">
+      <obj_property name="ElementShortName">rd_data_PL_to_PS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data_PL_to_PS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/empty_PL_to_PS">
+      <obj_property name="ElementShortName">empty_PL_to_PS</obj_property>
+      <obj_property name="ObjectShortName">empty_PL_to_PS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/empty_next_PL_to_PS">
+      <obj_property name="ElementShortName">empty_next_PL_to_PS</obj_property>
+      <obj_property name="ObjectShortName">empty_next_PL_to_PS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/full_PL_to_PS">
+      <obj_property name="ElementShortName">full_PL_to_PS</obj_property>
+      <obj_property name="ObjectShortName">full_PL_to_PS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/full_next_PL_to_PS">
+      <obj_property name="ElementShortName">full_next_PL_to_PS</obj_property>
+      <obj_property name="ObjectShortName">full_next_PL_to_PS</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/TopModule_TB/TOP_INST/fill_count_PL_to_PS">
+      <obj_property name="ElementShortName">fill_count_PL_to_PS</obj_property>
+      <obj_property name="ObjectShortName">fill_count_PL_to_PS</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider87" type="divider">
+      <obj_property name="label">Misc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/ModeMonitor">
+      <obj_property name="ElementShortName">ModeMonitor</obj_property>
+      <obj_property name="ObjectShortName">ModeMonitor</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TopModule_TB/TOP_INST/ModeTrading">
+      <obj_property name="ElementShortName">ModeTrading</obj_property>
+      <obj_property name="ObjectShortName">ModeTrading</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/TopModule_TB/TOP_INST/send_delay_counter">
+      <obj_property name="ElementShortName">send_delay_counter</obj_property>
+      <obj_property name="ObjectShortName">send_delay_counter</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TopModule_TB/TOP_INST/temp">
+      <obj_property name="ElementShortName">temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[31:0]</obj_property>
+   </wvobject>
+</wave_config>

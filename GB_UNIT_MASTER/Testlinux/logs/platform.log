@@ -1446,3 +1446,115 @@ TRACE::2024-03-18.17:28:28::SCWWriter::formatted JSON is {
 		}]
 }
 KEYINFO::2024-03-18.17:28:28::SCWPlatform::updated the xpfm file.
+TRACE::2024-03-22.23:51:02::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:02::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:02::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:02::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-22.23:51:02::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-22.23:51:02::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-03-22.23:51:04::SCWPlatform::Opened new HwDB with name ModuleTop
+TRACE::2024-03-22.23:51:04::SCWReader::Active system found as  Testlinux
+TRACE::2024-03-22.23:51:04::SCWReader::Handling sysconfig Testlinux
+TRACE::2024-03-22.23:51:04::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-22.23:51:04::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-03-22.23:51:04::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to set the existing hwdb with name ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Opened existing hwdb ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to set the existing hwdb with name ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Opened existing hwdb ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to set the existing hwdb with name ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Opened existing hwdb ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-22.23:51:04::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to set the existing hwdb with name ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Opened existing hwdb ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-22.23:51:04::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-03-22.23:51:04::SCWMssOS::No sw design opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS::mss exists loading the mss file  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS::Opened the sw design from mss  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS::Adding the swdes entry /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-03-22.23:51:04::SCWMssOS::updating the scw layer about changes
+TRACE::2024-03-22.23:51:04::SCWMssOS::Opened the sw design.  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to set the existing hwdb with name ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Opened existing hwdb ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-22.23:51:04::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-22.23:51:04::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS:: library already available in sw design:  xilffs:5.0
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to set the existing hwdb with name ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Opened existing hwdb ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-22.23:51:04::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-22.23:51:04::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-03-22.23:51:04::SCWMssOS::Saving the mss changes /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-03-22.23:51:04::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-03-22.23:51:04::SCWMssOS::Commit changes completed.
+TRACE::2024-03-22.23:51:04::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-22.23:51:04::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to open the hw design at /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA given /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA absoulate path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform::DSA directory /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Platform Path /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/hw/ModuleTop.xsa
+TRACE::2024-03-22.23:51:04::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2024-03-22.23:51:04::SCWPlatform::Trying to set the existing hwdb with name ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Opened existing hwdb ModuleTop
+TRACE::2024-03-22.23:51:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-03-22.23:51:04::SCWMssOS::Checking the sw design at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWMssOS::DEBUG:  swdes dump  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-03-22.23:51:04::SCWMssOS::Sw design exists and opened at  /home/daniel/Masterthesis/GB_UNIT_MASTER/Testlinux/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-03-22.23:51:04::SCWReader::No isolation master present  
+TRACE::2024-03-22.23:51:04::SCWDomain::checking for install qemu data   : 
+TRACE::2024-03-22.23:51:04::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2024-03-22.23:51:04::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2024-03-22.23:51:04::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-03-22.23:51:04::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-03-22.23:51:04::SCWReader::No isolation master present  

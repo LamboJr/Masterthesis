@@ -553,8 +553,8 @@ void BackupGenerateBlockRequestResponse(BlockSizes Blocksize){
 
 void *DecodePokemonToFile(void *ptr){
 	u8* TeamIndexptr = (u8*) ptr;
-	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr]);
-	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr + 1]);
+	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr]);
+	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr + 1]);
 
 	return ptr;
 }
@@ -567,12 +567,12 @@ void *DecodeReceivedPokemonToFile(void *ptr){
 		printf("Error opening file datalog.txt.\n");
 		exit(0);
 	}
-	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[0]);
-	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[1]);
-	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[2]);
-	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[3]);
-	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[4]);
-	decode_Pokemon_data(s_TradeHandlerMaster.PokemonTeam[5]);
+	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[0]);
+	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[1]);
+	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[2]);
+	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[3]);
+	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[4]);
+	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[5]);
 	printf("Write Successful\n");
 	fclose(PokemonFp);
 	return ptr;

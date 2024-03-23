@@ -62,6 +62,8 @@ signal w_TX_DONE   : std_logic;  -- Transmission Done
 constant RAM_WIDTH : natural := 32;
 constant RAM_DEPTH : natural := 2048;
 
+constant Zero_address : std_logic_vector(12 downto 0) := b"0000000000000";
+
 ----------------------Ringbuffer PS to Pl--------------------------
 signal wr_en_PS_to_PL : std_logic;
 signal wr_data_PS_to_PL : std_logic_vector(RAM_WIDTH-1 downto 0);
@@ -101,7 +103,7 @@ constant send_delay : integer := 3000;
 signal w_debug : std_logic := '0';
 
 ------Framecounter signal generated in HW and transported to SOftware
---signal frameCounter : integer := 1;
+signal frameCounter : integer := 1;
 
 
 
@@ -287,11 +289,11 @@ sampling :  process (clk)
 --    PL_to_PS_buffer(31 downto 28) <= std_logic_vector(to_unsigned(Framecounter,4));
     
     --conversion from the BRAM control signels to the ringbuffer control signals 
-    --temp(7 downto 4) <= std_logic_vector(to_unsigned(Framecounter,4));
+    ---temp(7 downto 4) <= std_logic_vector(to_unsigned(Framecounter,4));
     temp(0) <= empty_PL_TO_PS;
     --Ringbuffer Dout is set to rd_data only if data is requested at address 0 at Software level, else the empty flag is writen to dout 
-    BRAM_Controller_data_in <= rd_Data_PL_TO_PS when BRAM_Controller_addr = x"00000000" else temp;
-    rd_en_PL_TO_PS <= (not(BRAM_Controller_wr_en(0)) and BRAM_Controller_en) when BRAM_Controller_addr = x"00000000" else '0';
+    BRAM_Controller_data_in <= rd_Data_PL_TO_PS when BRAM_Controller_addr = Zero_address else temp;
+    rd_en_PL_TO_PS <= (not(BRAM_Controller_wr_en(0)) and BRAM_Controller_en) when BRAM_Controller_addr = Zero_address else '0';
     
     --Data send from Ps to Pl into Ringbuffer and corrsponding signals
     wr_data_PS_to_Pl <= BRAM_Controller_data_out; 

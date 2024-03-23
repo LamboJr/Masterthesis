@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Mar 17 16:59:52 2024
-# Process ID: 4559
+# Start of session at: Sat Mar 23 00:24:04 2024
+# Process ID: 58888
 # Current directory: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1
 # Command line: vivado -log ModuleTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ModuleTop.tcl
 # Log file: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/ModuleTop.vds
 # Journal file: /home/daniel/Masterthesis/GB_MASTER_UNIT/GB_MASTER_UNIT.runs/synth_1/vivado.jou
-# Running On: Acer, OS: Linux, CPU Frequency: 3491.576 MHz, CPU Physical cores: 4, Host memory: 8235 MB
+# Running On: Acer, OS: Linux, CPU Frequency: 3572.612 MHz, CPU Physical cores: 4, Host memory: 8235 MB
 #-----------------------------------------------------------
 source ModuleTop.tcl -notrace

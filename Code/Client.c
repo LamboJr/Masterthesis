@@ -14,8 +14,11 @@
 
 #define PORT 8080
 #define BUFFER_SIZE 1024
+#define MAX_PENDING_CONNECTIONS 5
 //#define SERVER_ADDRESS "192.168.178.114"
 #define SERVER_ADDRESS "10.0.0.2"
+
+
 
 void SendBufferTCP(int new_socket,uint16_t *BufferArg,size_t BufferArgSize);
 void ReceiveBufferTCP(int new_socket,uint16_t* BufferArg,size_t BufferArgSize);
@@ -23,45 +26,19 @@ uint8_t ReceiveTeamIndex(int new_socket);
 void SendTeamIndex(int new_socket,uint8_t TeamIndex);
 void SendID(int new_socket,u8 ID);
 u8 ReceiveID(int new_socket);
+int TCP_Server_Init();
+
+
 int main() {
-    int sock = 0;
-    struct sockaddr_in serv_addr;
-    char buffer[BUFFER_SIZE] = {0};
-    const char *hello = "Hello from client Daniel ";
-
-    // Create socket
-    if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
-        perror("socket creation failed");
-        exit(EXIT_FAILURE);
-    }
-
-    serv_addr.sin_family = AF_INET;
-    serv_addr.sin_port = htons(PORT);
-
-    // Convert IPv4 and IPv6 addresses from text to binary form
-    if (inet_pton(AF_INET, SERVER_ADDRESS, &serv_addr.sin_addr) <= 0) {
-        perror("Invalid address/ Address not supported");
-        exit(EXIT_FAILURE);
-    }
-
-    // Connect to server
-    if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) {
-        perror("Connection Failed");
-        exit(EXIT_FAILURE);
-    }
-
-    // Send data to server
-    send(sock, hello, strlen(hello), 0);
-
-    //send(sock, Salamence_pokemonbuffer, sizeof(Salamence_pokemonbuffer),0);
-    //printf("Buffer sent with %ld Bytes\n",sizeof(Salamence_pokemonbuffer));
-
-    // Read data from server
-    read(sock, buffer, BUFFER_SIZE);
-    printf("Server: %s\n", buffer);
 
     u8 Received_iD;
     u8 TeamIndex;
+
+
+
+   int  sock = TCP_Server_Init();
+
+
      uint16_t ReceiveBuffer[6][50];
 uint16_t ReceivegenericBuffer[110];
 
@@ -226,41 +203,106 @@ u8 ReceiveID(int new_socket){
 	printf("Received ID : %d\n",*RecvID);
 	return *RecvID;
 }
-/* //-----------------------------------------------------------------------------------
 
-    uint8_t SendBufferptr[1] = {0x1};
-    //uint16_t* SendBufferptr = ((uint16_t* ) Inputdata);
-	uint8_t ReceiveBufferptr[1] = {0x0};
 
-    uint16_t ReceivedTeam[6][50];
-    uint16_t ReceiveBuffer[50];
-    for(int i = 0;i<50;i++){
-        ReceiveBuffer[i] = 0;
+int TCP_Client_Init(void){
+
+   int sock = 0;
+    struct sockaddr_in serv_addr;
+    char buffer[BUFFER_SIZE] = {0};
+    const char *hello = "Hello from client Daniel ";
+
+    // Create socket
+    if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+        perror("socket creation failed");
+        exit(EXIT_FAILURE);
     }
 
-    read(sock, ReceiveBufferptr, sizeof(ReceiveBufferptr));
-    printf("Received : %04x\n",*ReceiveBufferptr);
+    serv_addr.sin_family = AF_INET;
+    serv_addr.sin_port = htons(PORT);
 
-    send(sock,SendBufferptr,sizeof(SendBufferptr),0);
-    printf("Send Teamindex ack\n");
+    // Convert IPv4 and IPv6 addresses from text to binary form
+    if (inet_pton(AF_INET, SERVER_ADDRESS, &serv_addr.sin_addr) <= 0) {
+        perror("Invalid address/ Address not supported");
+        exit(EXIT_FAILURE);
+    }
 
-    //printf("Sizeof ReceivedTeam[1] = %ld\n",sizeof(ReceivedTeam[*ReceiveBufferptr]));
-    /*read(sock, ReceivedTeam[*ReceiveBufferptr],sizeof(ReceivedTeam[1]));
-    for(int i= 0;i < 50;i++){
-        printf("%04x  ",ReceivedTeam[*ReceiveBufferptr][i]);
-        if(((i%10) == 0) && (i!=0)) {
-            printf("\n");
-        }
+    // Connect to server
+    if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) {
+        perror("Connection Failed");
+        exit(EXIT_FAILURE);
     }
-    printf("Sizeof ReceiveBuffer = %ld\n",sizeof(ReceiveBuffer));
-    read(sock, ReceiveBuffer,sizeof(ReceiveBuffer));
-    for(int i= 0;i < 50;i++){
-        printf("%04x  ",ReceiveBuffer[i]);
-        if(((i%10) == 0) && (i!=0)) {
-            printf("\n");
-        }
+
+    // Send data to server
+    send(sock, hello, strlen(hello), 0);
+
+    //send(sock, Salamence_pokemonbuffer, sizeof(Salamence_pokemonbuffer),0);
+    //printf("Buffer sent with %ld Bytes\n",sizeof(Salamence_pokemonbuffer));
+
+    // Read data from server
+    read(sock, buffer, BUFFER_SIZE);
+    printf("Server: %s\n", buffer);
+    return sock;
+
+
+}
+
+
+
+
+int TCP_Server_Init(void) {
+
+    int server_fd, new_socket;
+    struct sockaddr_in address;
+    int addrlen = sizeof(address);
+    //u16 buffer[DATA_BUFFER_SIZE] = {0};
+    char textbuffer[BUFFER_SIZE] = {0};
+    const char *hello = "Hello from server";
+
+    // Create socket
+    if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
+        perror("socket failed");
+        exit(EXIT_FAILURE);
     }
-    *SendBufferptr = 3;
-    printf("Send Buffer receive ack\n");
-    send(sock,SendBufferptr,sizeof(SendBufferptr),0);
-*/
+
+    // Set socket address settings
+    address.sin_family = AF_INET;
+    address.sin_addr.s_addr = INADDR_ANY;
+    address.sin_port = htons(PORT);
+
+    // Bind the socket to localhost and the specified port
+    if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {
+        perror("bind failed");
+        exit(EXIT_FAILURE);
+    }
+
+    // Listen for connections
+    printf("Listing for new connection ... \n");
+    if (listen(server_fd, MAX_PENDING_CONNECTIONS) < 0) {
+        perror("listen failed");
+        exit(EXIT_FAILURE);
+    }
+    printf("Accept the incoming connection \n");
+    printf("Please connect Client PC to the Board and start the software\n");
+    // Accept an incoming connection
+    if ((new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t*)&addrlen)) < 0) {
+        perror("accept failed");
+        exit(EXIT_FAILURE);
+    }
+    printf("New socket accepted\n");
+
+
+    // Send data to the client
+    send(new_socket, hello, strlen(hello), 0);
+    printf("Connected to Client via TCP \n");
+
+
+    // Read data from the client
+    read(new_socket,textbuffer,BUFFER_SIZE);
+    /*read(new_socket, buffer, sizeof(buffer));
+    for(int i = 0; i < DATA_BUFFER_SIZE;i++){
+    	//printf("Index[%d] = %04x\n",i,buffer[i]);
+    }*/
+    printf("Detected Client with message : %s\n",textbuffer);
+    return new_socket;
+}

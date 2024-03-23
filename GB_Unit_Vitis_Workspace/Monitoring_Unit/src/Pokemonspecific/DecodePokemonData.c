@@ -11,15 +11,19 @@
 #include "../Includes/DecodePokemonData.h"
 
 /*
-This Function takes a pointer to an uint16_t buffer with 50 elements as input
-The functions uses a aux function to decode the Buffer data into the corresponding Pokemon structure
-It prints all the individual values of the Pokemon data structure.
-There are two version. One prints the  Values to the stdout (console) and the other one prints the output to a textfile
+ * The data of a Pokemon is stored within a 100 Bytes data structure. If the Pokemon data is send over th elink cable,
+ * the Pokemon data structure is transmitted as a data block, with 50 16-bit data pakets
+This Function takes a pointer to an uint16_t buffer with 50 elements as an input argument.
+The functions uses a aux. function to decode the Buffer data into the corresponding Pokemon data structure
+It prints all the individual values of the Pokemon data structure in a meaningful way
+The function also returns the individual decoded values as a struct.
+There are two version.
+PrintDecoodedPokemonDataTiFile : prints the output to a textfile
+PirntDecodedPokemonData : prints the  Values to the stdout (console) of the program
 
 */
 
-
-void decode_Pokemon_data(u16 *Pokemonbuffer){
+void PrintDecodedPokemonDataToFile(u16 *Pokemonbuffer){
 	extern FILE *PokemonFp;
 
     struct Pokemon Pokemonstruct = decode_Pokemon_structure(Pokemonbuffer);

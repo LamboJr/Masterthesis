@@ -18,11 +18,53 @@
 #define MAX_PENDING_CONNECTIONS 5
 #define TEXT_BUFFER_SIZE 1024
 #define DATA_BUFFER_SIZE 50
-
+#define SERVER_ADDRESS "10.0.0.4"
 
 #define ADDR_OFFSET_EMPTY 1
 
 int server_fd, new_socket;
+
+
+
+int TCP_Client_Init(){
+    //int new_socket = 0;
+    struct sockaddr_in serv_addr;
+    char buffer[TEXT_BUFFER_SIZE] = {0};
+    const char *hello = "Hello from client Zybo Board ";
+
+    // Create socket
+    if ((new_socket = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+        perror("socket creation failed");
+        exit(EXIT_FAILURE);
+    }
+
+    serv_addr.sin_family = AF_INET;
+    serv_addr.sin_port = htons(PORT);
+
+    // Convert IPv4 and IPv6 addresses from text to binary form
+    if (inet_pton(AF_INET, SERVER_ADDRESS, &serv_addr.sin_addr) <= 0) {
+        perror("Invalid address/ Address not supported");
+        exit(EXIT_FAILURE);
+    }
+
+    // Connect to server
+    if (connect(new_socket, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) {
+        perror("Connection Failed");
+        exit(EXIT_FAILURE);
+    }
+
+    // Send data to server
+    send(new_socket, hello, strlen(hello), 0);
+
+    //send(sock, Salamence_pokemonbuffer, sizeof(Salamence_pokemonbuffer),0);
+    //printf("Buffer sent with %ld Bytes\n",sizeof(Salamence_pokemonbuffer));
+
+    // Read data from server
+    read(new_socket, buffer, TEXT_BUFFER_SIZE);
+    printf("Server: %s\n", buffer);
+    return 0;
+}
+
 
 
 int TCP_Server_Init() {

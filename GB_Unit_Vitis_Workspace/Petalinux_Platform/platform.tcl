@@ -23,3 +23,4 @@ library -lib-path {} -inc-path {/home/daniel/Masterthesis/GB_Unit_Vitis_Workspac
 platform write
 platform generate -domains 
 platform generate
+platform generate
