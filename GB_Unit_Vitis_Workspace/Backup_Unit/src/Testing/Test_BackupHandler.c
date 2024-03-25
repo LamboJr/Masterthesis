@@ -48,7 +48,11 @@ void EndFunctionTestPrint(const char *FuncName){
 void BackupTradeHandlerTest(){
 	StartFunctionTestPrint(__func__);
 
-	//BackupTradeHandler(data, PL_to_PS_buffer_value)
+	//Most of the individual functions are testet in the Test environment of the Exchange Platform Unit,
+	//because some functions are used by both of the Units.
+	//The test of the BackupTradehandler function is carried out by debugging the application while running it on the board.
+	//A whole lot of the functionality is already testet in the exchange platform unit tests.
+	//
 	EndFunctionTestPrint(__func__);
 	return;
 };

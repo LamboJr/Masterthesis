@@ -1,4 +1,4 @@
-# Instruction
+# Monitoring Unit Instruction
 Connect two Gameboys to the Zybo Z7 Board and start the App with
 ./Monitoring_Unit.elf
 Then start the Trade with both Gameboys and observe the exchanges data paktes.
