@@ -199,8 +199,8 @@ void MonitorBlockRequestAnalyserTest(){
 
 void RunAllMonitorTests(){
 	StartFunctionTestPrint(__func__);
-	//HandshakeMonitortest();
-	//MonitorBlockRequestAnalyserTest();
+	HandshakeMonitortest();
+	MonitorBlockRequestAnalyserTest();
 	MonitorHanlderTest();
 	EndFunctionTestPrint(__func__);
 	return;

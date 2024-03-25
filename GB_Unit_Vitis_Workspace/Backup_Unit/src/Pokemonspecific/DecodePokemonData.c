@@ -19,7 +19,7 @@ There are two version. One prints the  Values to the stdout (console) and the ot
 */
 
 
-void decode_Pokemon_data(u16 *Pokemonbuffer){
+void PrintDecodedPokemonDataToFile(u16 *Pokemonbuffer){
 	extern FILE *PokemonFp;
 
     struct Pokemon Pokemonstruct = decode_Pokemon_structure(Pokemonbuffer);

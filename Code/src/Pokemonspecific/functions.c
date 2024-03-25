@@ -11,6 +11,10 @@ u16 DecodeDataField(u16 checksum,u32 personality,u32 trainer_id,u32 *DataField);
 struct Pokemon decode_Pokemon_structure(u16 *Pokemonbuffer);
 
 #define CC(c , h) case (h): return c; break;
+
+
+
+
 // Coverts the ASCII Format into Pokemon Letter format
 char char_conv( u8 character,u16 language){
 	if(language != LANGUAGE_GERMAN){return 1;}
@@ -98,6 +102,14 @@ char char_conv( u8 character,u16 language){
 }
 #undef CC
 
+
+
+/*
+Decodes the special data field of the pokemon structure
+See https://bulbapedia.bulbagarden.net/wiki/Pokémon_data_structure_(Generation_III)
+
+
+*/
 u16 DecodeDataField(u16 checksum,u32 personality,u32 trainer_id,u32 *DataField){
 
 	u32 order = personality % 24;
@@ -266,7 +278,11 @@ u16 DecodeDataField(u16 checksum,u32 personality,u32 trainer_id,u32 *DataField){
     return 0;
 }
 
+/*
+Converts the Pokemonbuffer into the Pokemon struct
+https://bulbapedia.bulbagarden.net/wiki/Pokémon_data_structure_(Generation_III)
 
+*/
 struct Pokemon decode_Pokemon_structure(u16 *Pokemonbuffer){
 	struct Pokemon Pokemonstruct;
     u16* PokemonPtr = (u16* )&Pokemonstruct;
@@ -276,13 +292,17 @@ struct Pokemon decode_Pokemon_structure(u16 *Pokemonbuffer){
         //printf("Pokemonstruct addr : %p Value = %04x\n",PokemonPtr,*PokemonPtr);
         PokemonPtr++;
     }
+    //Converts Nickname in Pokemon letter format into ASCII format
     for(size_t i = 0; i < NICKNAME_LENGTH;i++){
         Pokemonstruct.nickname[i] = char_conv(Pokemonstruct.nickname[i],LANGUAGE_GERMAN);
     }
+    //Converts Trainer NAme in Pokemon letter format into ASCII format
     for(size_t i = 0;i<TRAINER_NAME_LENGTH;i++){
         Pokemonstruct.trainer_name[i] = char_conv(Pokemonstruct.trainer_name[i],LANGUAGE_GERMAN);
     }
     u32* DataField = (u32* )Pokemonstruct.data;
+
+    //Decodes the encrypted Datadield into a data field which contains the decoded Datafield attributes like IV and EVs
     DecodeDataField(Pokemonstruct.checksum,Pokemonstruct.personality,Pokemonstruct.trainer_id,DataField);
 
     return Pokemonstruct;

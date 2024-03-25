@@ -51,6 +51,8 @@ void* InitPStoPLBuffer(int fd){
 	unsigned page_size=sysconf(_SC_PAGESIZE);
 //	page_addr=(addr & ~(page_size-1));
 //	page_offset=addr-page_addr;
+
+ //Creates virtuel address space for the pointer to access the physical memory space
 	ptr=mmap(NULL,page_size,PROT_WRITE,MAP_SHARED,fd,(addr & ~(page_size-1)));
 	if((int)ptr==-1) {
 		perror("Error mmap WritePStoPl\n");
@@ -92,6 +94,8 @@ void* InitRingbufferMMap(int fd){
 	u32 page_size=sysconf(_SC_PAGESIZE);
 //	page_addr=(addr & ~(page_size-1));
 //	page_offset=(addr-page_addr)*4;
+
+	//Creates virtuel address space for the pointer to access the physical memory space
 	Ringbufferptr = mmap(NULL,page_size,PROT_READ|PROT_WRITE,MAP_SHARED,fd,(addr & ~(page_size-1)));
 	if((int)Ringbufferptr==-1) {
 		perror("Error mmap ReadtoRingbuffer =>");

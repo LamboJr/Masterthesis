@@ -23,8 +23,10 @@
 #define ADDR_OFFSET_EMPTY 1
 
 int server_fd, new_socket;
-
-
+/*
+ * This function initialises the Apllication as a Tcp Client.
+ * The function tries to establish a connection to the IP address 10.0.0.4 at Port 8080
+ */
 
 int TCP_Client_Init(){
     //int new_socket = 0;
@@ -66,7 +68,9 @@ int TCP_Client_Init(){
 }
 
 
-
+/*
+ * Initialises the Application as a TCP Server, reachable at IP address 10.0.0.2 at Port 8080
+ */
 int TCP_Server_Init() {
 
 
@@ -125,7 +129,12 @@ int TCP_Server_Init() {
 
     return 0;
 }
-
+/*
+ * This function is design to run in a separate thread
+ * It manages the exchnage of the two Pokemon data structures send within one data block request with a 0xCCCC frame.
+ * It Sends and Receives the assigned ID of the Exchange und Send a 200 Byte data buffer and received a 200 Byte data buffer viva TCP
+ *
+ */
 void *ExchangePokemonBufferTCP(void *ptr){
     // Accept an incoming connection
 	extern ThreadStatus Threadstatus;
@@ -163,6 +172,13 @@ void *ExchangePokemonBufferTCP(void *ptr){
 
 	pthread_exit(NULL);
 }
+
+//Similiar function to the one befor,
+// Can be used for any kind of other datablocks.
+//The data size of the exchanged data buffers is configurable
+//It also exchanges IDs
+//Designed to be run as a separate thread
+
 void *ExchangeBufferTCP(void *arg){
 	extern ThreadStatus Threadstatus;
 	Threadstatus = Running;
@@ -187,7 +203,10 @@ void *ExchangeBufferTCP(void *arg){
 	pthread_exit(NULL);
 }
 
-
+/*
+ * Function exchange assigned IDs without exchanging a buffer
+ * Threaded function
+ */
 void *ExchangeIDTCP(void *arg){
 	extern ThreadStatus Threadstatus;
 	Threadstatus = Running;printf("Tread is running\n");
@@ -208,12 +227,18 @@ void *ExchangeIDTCP(void *arg){
 	return NULL;
 }
 
+
+//Send ID.
+//Not meant to be threadeed
+//testing purpuse only
+
 void SendID(u8 ID){
 	u8 IDPtr[1] = {ID};
 	printf("Send TCP Connection ID %d\n",*IDPtr);
 	send(new_socket,IDPtr,sizeof(IDPtr),0);
 	return;
 }
+//receive ID, not meant to be threated, testing only
 u8 ReceiveID(){
 	u8 RecvID[1] = {0};
 	read(new_socket,RecvID,sizeof(RecvID));
@@ -221,6 +246,8 @@ u8 ReceiveID(){
 	return *RecvID;
 }
 
+// Sendthe Teamindex of the chosen Pokemon for th trade, with acknowledgement
+//not meant to be threated, testing only
 void SendTeamIndex(u8 TeamIndex){
 	u8 TeamIndexptr[1] = {TeamIndex};
 	printf("Send Team Index %d of Size %d Bytes\n",TeamIndex,sizeof(TeamIndexptr));
@@ -230,7 +257,8 @@ void SendTeamIndex(u8 TeamIndex){
 	printf("Client received Team Index %d \n",*RecTeamIndex);
 	return;
 }
-
+// Receive the Teamindex of the chosen Pokemon for the trade, with acknowledgment
+//not meant to be threaded, testing only
 u8 ReceiveTeamIndex(){
 	u8 TeamIndexptr[1];
 	read(new_socket,TeamIndexptr,sizeof(TeamIndexptr));
@@ -239,7 +267,12 @@ u8 ReceiveTeamIndex(){
 	send(new_socket,TeamIndexptr,sizeof(TeamIndexptr),0);
 	return TeamIndexptr[0];
 }
-
+/*
+ * Send Buffer over TCp connection
+ * not meant to be threaded
+ * with acknowledgment
+ * testing only
+ */
 void SendBufferTCP(u16 *BufferArg,size_t BufferArgSize){
 
 	printf("Send Buffer with size %d Bytes over Ethernet\n",BufferArgSize);
@@ -259,7 +292,12 @@ void SendBufferTCP(u16 *BufferArg,size_t BufferArgSize){
 
 	return;
 }
-
+/*
+ * receive Buffer over TCp connection
+ * not meant to be threaded
+ * with acknowledgment
+ * testing only
+ */
 void ReceiveBufferTCP(u16* BufferArg,size_t BufferArgSize){
 
 	read(new_socket, BufferArg, BufferArgSize);

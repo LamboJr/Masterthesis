@@ -1,3 +1,10 @@
+########
+Recording of a whole trade sequence as discribed in the thesis
+Master : Pokemon emerald on the Gameboy Advance SP
+Slave : Pokemon leafgreen on the Gameboy Advance
+For more info rely on the Appendix in the master thesis
+
+
 0000:0000        
 b9a0:b9a0        
 b9a0:b9a0        

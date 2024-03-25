@@ -35,11 +35,17 @@ extern ThreadData Threaddata;
 extern pthread_t thread1;
 extern int rc;
 
+//Main BackupHandler function
+//This functions runs a finite state amchine to keep track of the current communication phase
+//Dependending on the data pakets received from master, this Function generates a own data paket to send back to the master
+//If a master initializes the request of a specific data block. This function generates the correct response
+// If the master request a data block containing Pokemon data, this function calls all the neccessary functions to interact with the database
 
 u32 BackupTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 
 	static Syncstate s_syncstate = SearchState;
 
+	//FrameCounter indicating the number of the datapaket inside a dataframe
 	static u32 FrameCounter = 2;
 
 	u16 returnvalue = (u16)data ;
@@ -57,10 +63,10 @@ u32 BackupTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 
 	extern u16 PokemonTeamBuffer[3][100];
 
-
+	//Store current state of switches
 	Switches_State = (u8)(PL_to_PS_buffer_value & SWITCH_BITMASK);
-	//u8 Spotnumber = Switches_State%6;
-	//static u8* Spotptr = &Switches_State;
+
+	//Variable to store Spotnumber of Teammeber which is to be traded by the master
 	static u16 SpotNumber;
 
 	Resetbutton_State = (u8)((PL_to_PS_buffer_value & RESETBUTTON_STATE) >> 4);
@@ -73,33 +79,53 @@ u32 BackupTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 		return 0;
 	}
 
+	// If the Trade Button is pressed, this function generate a Data block which is send to the master
+	//This datablock specifies which teammember from the slave(this Board) is traded to the master,
+	//depending on the switch values
 	if ((DetectTradeButtonPress(Tradebutton_State) == 1) && (SendTradeDataStatus == NoRequest)){
 
-		//InitTradeBuffer((void *) Spotptr);
 		SpotNumber = Switches_State % 6;
 		GenerateTradeCommandBlock(0xAABB, SpotNumber);
 		//rc = pthread_create( &thread1, NULL, InitTradeBuffer, (void *)Spotptr);
 		SendTradeDataStatus = Active;
 	}
+
+	//update Framecounter
     if (FrameCounter == FRAME_LENGTH){
 		FrameCounter = 1;
 	}else{
 		FrameCounter++;
 	}
-    //printf("FC :%d ",FrameCounter);
+    //Begin Finite State machine
+    /*
+     * States:
+     *
+     * SearchState: Master searches for a connection to a communication partner
+     *
+     * handhsakeState : Communication partner is found, wait for successful handshake from master
+     *
+     * BlockRequestHandler : Handels a 0xCCCC BlockRequest made by the master(physical GBA)
+     *
+     * ExitState  : A 0x5FFF data paket was detected send by the master
+     *
+     * TradebuttonState : State which handels the Press of the tradebutton
+     *
+     * InitBlockState : Handles Data blocks send by the master without 0xCCCC Controlfield
+     *
+     * DataState : Main State, decodes the control field of every incoming data frame
+     * Depending on the received control field from the master, the State of the FSM is changed
+     *
+     */
 	switch(s_syncstate){
-
-	//if(s_syncstate == SearchState){
 	case SearchState : {
 		FrameCounter = FRAME_LENGTH;
 		returnvalue = 0xFFF8;
-		//Send ID and Connected Signal over TCP Thread
 		if( data == 0xB9A0){
 				s_syncstate =handshakeState;
 				printf("Enter HAndshake State\n");
 		}
 	}break;
-	// Calculate the frame counter depending on the  sysnc state
+	// Calculate the frame counter depending on the  sync state
 	case handshakeState :{
 	//else if (s_syncstate == handshakeState){
 		FrameCounter = FRAME_LENGTH;
@@ -384,6 +410,10 @@ u32 BackupTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 	//printf("FC : %d ",FrameCounter);
 	return returnvalue;
 }
+
+//Function that analyses a received data block initialized with 0xBBBB 0x0014 0x0080 0 0 0 0 0  frame from the master
+//Master send a trade command, indicating the option he chooses in the trade Menu
+
 RequestStatus InitBlockAnalyser(u32 Framecounter, u16 data){
 	static u8 bufferindex = 0;
 	static u8 DataFieldActive =0;
@@ -413,6 +443,11 @@ RequestStatus InitBlockAnalyser(u32 Framecounter, u16 data){
 
 
 }
+
+//This function analyses a data block received from the master which is requested with 0xCCCC-type frame
+// This function indentifies the Type and size of the received data block and processes it accordingly.
+// The received data are stored in corresponding buffers.
+
 
 RequestStatus BackupBlockRequestAnalyser(u32 Framecounter,u16 data){
 	//Function which safes the received Pokemondata(Master) in a corresponding data structure
@@ -513,6 +548,10 @@ RequestStatus BackupBlockRequestAnalyser(u32 Framecounter,u16 data){
 	}
 	return Pending;
 }
+
+//This Function Generates a Data block which is send to the master as a response of a block request.
+//Depending on the request Block type, a specific data block is created in response.
+
 void BackupGenerateBlockRequestResponse(BlockSizes Blocksize){
 	u16 BlocksizeByte = GetBlockSize(Blocksize);
 	static u8 TeamIndex = 0;
@@ -550,7 +589,8 @@ void BackupGenerateBlockRequestResponse(BlockSizes Blocksize){
 	return;
 }
 
-
+//The next tw functions Decode the received Pokemon Data structures from the Master and either printd them on the console
+//or print the to a text file
 void *DecodePokemonToFile(void *ptr){
 	u8* TeamIndexptr = (u8*) ptr;
 	PrintDecodedPokemonDataToFile(s_TradeHandlerMaster.PokemonTeam[*TeamIndexptr]);

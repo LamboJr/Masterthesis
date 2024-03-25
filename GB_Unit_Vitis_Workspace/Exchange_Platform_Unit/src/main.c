@@ -21,7 +21,7 @@
 
 
 
-//#define USE_TEST_DATA
+//#define UNIT_TEST
 
 FILE *PokemonFp;
 
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 #ifdef USE_TEST_DATA
 
-	//RunAllTests();
+	RunAllTests();
 	RunBackUpHandlerTests();
 	printf("Tests finished\n");
 	return 1;

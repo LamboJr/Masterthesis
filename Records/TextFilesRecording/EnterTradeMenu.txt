@@ -1,5 +1,5 @@
 #################################################################################################################
-###Both Players walking to Chair to Start Trade. Master wlaks first on left chair. Then Slave on right chair
+###Both Players walking to Chair to Start Trade. Master wlaks first on left chair. Then Slave walks to/on right chair
 #################################################################################################################
 
 961e:961e 	|	cafe:cafe 	|	0011:0011 	0000:0000 	0000:0000 	0000:0000 	0000:0000 	0000:0000 	0000:0000 	

@@ -18,7 +18,6 @@ There are two version. One prints the  Values to the stdout (console) and the ot
 
 */
 
-
 void PrintDecodedPokemonDataToFile(u16 *Pokemonbuffer){
 	extern FILE *PokemonFp;
 

@@ -96,7 +96,7 @@ void main_TradeHandlerTest()
 		data = (u16)((TESTDATA_ARRAY[i] >> 16) & 0xFFFF);
 		returnvalue = MainTradeHandler(data,0x0);
 	}
-/*	extern u16 ReceivedTeam[6][50];
+	extern u16 ReceivedTeam[6][50];
 	for(int u = 0;u <6;u++){
 		printf("ReceivedTeam[%d] = \n",u);
 		for (int i = 0; i < 50; i++){
@@ -107,7 +107,7 @@ void main_TradeHandlerTest()
 		}
 		printf("\n");
 		//decode_Pokemon_data(ReceivedTeam[u]);
-	}*/
+	}
 
 	return;
 }

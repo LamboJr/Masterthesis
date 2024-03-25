@@ -8,7 +8,6 @@
  */
 
 
-
 void concat(u16 *Buffer1, u16 *Buffer2,u16 *ResultBuffer,size_t Buffer1size,size_t Buffer2size) {
 	//printf("Size of Buffer 1: %d and Buffer2 : %d",Buffer1size,Buffer2size);
 	memcpy(ResultBuffer,Buffer1,Buffer1size*sizeof(u16));

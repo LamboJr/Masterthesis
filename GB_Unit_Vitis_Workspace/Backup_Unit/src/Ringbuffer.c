@@ -8,13 +8,14 @@ struct BufferType s_DataBuffer;
 // DEclare a buffer structure for a Buffer with Data to be send to Ringbuffer of HW
 struct BufferType s_ControlBuffer;
 
-
+// Reset bUFFER, buffer is specified in the arguments
 void ResetBuffer(struct BufferType *Buffer){
 	Buffer -> WriteIndex = 0;
 	Buffer -> ReadIndex = 0;
 	Buffer -> Empty = 1;
 	Buffer -> Full = 0;
 }
+// Read next element in Ringbuffer, buffer is specified in the arguments
 u16 ReadBuffer(struct BufferType *Buffer){
 	u16 returnvalue = 0;
 	Buffer->Full =0;
@@ -38,6 +39,7 @@ u16 ReadBuffer(struct BufferType *Buffer){
 	}
 
 }
+// Write data to ringbuffer, buffer is specified in the arguments
 s8 WriteBuffer(u16 datainput, struct BufferType *Buffer){
 	Buffer->Empty = 0;
 	if (Buffer->Full == 0){
@@ -66,12 +68,12 @@ s8 WriteBuffer(u16 datainput, struct BufferType *Buffer){
 		return 1;
 	}
 
-}
+}//Check if specified buffer is empty
 u8 BufferEmpty(struct BufferType *Buffer){
 	return Buffer->Empty;
 	//Return 1 if Buffer empty
 }
-
+// Chekc if specifies Buffer is full
 u8 BufferFull(struct BufferType *Buffer){
 	return Buffer->Full;
 }

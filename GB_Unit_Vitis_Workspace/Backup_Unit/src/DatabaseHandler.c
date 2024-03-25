@@ -13,6 +13,9 @@
 
 #define BUFFER_SIZE 50
 
+
+//Initialises a database. IF no Database exists a database with the corresponing name is created
+//Not really used in design
 void DatabaseInit(){
     sqlite3 *db;
     char *zErrMsg = 0;
@@ -45,7 +48,9 @@ void DatabaseInit(){
 }
 
 
-
+//Funtion which creates a new table in the database with the name given in the argument
+//The values of the buffer given in the other argument are stored as individual values in the database
+//Used to store 50 16-Bit Values which represent one Pokemon data structure in the database
 int DataBaseInsertBuffer(const char *Tablename,u16* buffer){
 
     // Open SQLite database or create if not exists
@@ -92,6 +97,9 @@ int DataBaseInsertBuffer(const char *Tablename,u16* buffer){
     return 0;
 }
 
+
+//Same as DatabaseInsertBuffer but is used for creating separate Threads
+// It used therefore a void pointer as arguments.
 void*  DataBaseInsertThread(void * arg){
 	ThreadData *Tdata= (ThreadData *)arg;
 	u16 Index = 1;
@@ -112,6 +120,10 @@ void*  DataBaseInsertThread(void * arg){
 	return NULL;
 
 }
+//This function reads all stored values from a table in the database.
+//The table is specifies with the argument String
+// The Array were the read data is stored is also passed as an argument by reference
+
 
 int DataBaseReadBuffer(u16 *buffer, const char *Tablename){
 	sqlite3 *db;
@@ -154,7 +166,8 @@ int DataBaseReadBuffer(u16 *buffer, const char *Tablename){
     sqlite3_close(db);
     return 0;
 }
-
+//This function deletes a table in the database.
+//It dearches for a tabel with the name specified in the function argument
 int DataBaseDropTable(char* Tablename){
 	char sql_drop_table[100];
 	 char *err_msg = 0;
@@ -180,7 +193,7 @@ int DataBaseDropTable(char* Tablename){
 	return 0;
 
 }
-
+//This function creates a new table in the database with the name specified with the argument String
 int create_table(sqlite3 *db, const char *Tablename) {
     char *err_msg = 0;
 
@@ -197,7 +210,7 @@ int create_table(sqlite3 *db, const char *Tablename) {
     printf("Table '%s' created successfully\n", Tablename);
     return 0;
 }
-
+//Function which prints all current tablenames of tables stored in the database
 int print_table_names(){
 	sqlite3 *db;
 		int ret;
@@ -232,6 +245,9 @@ int print_table_names(){
     return 0;
 }
 
+
+//Function checks is String used as argument is a valid tablename in the database
+//If matching tablename function return 0 else 1
 int validDataBaseEntry(char *CompareString){
 	sqlite3 *db;
 			int ret;

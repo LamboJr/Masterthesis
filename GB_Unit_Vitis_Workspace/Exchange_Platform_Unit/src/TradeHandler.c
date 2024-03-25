@@ -35,6 +35,17 @@ ThreadData Threaddata;
 pthread_t thread1;
 int rc;
 
+/*
+ * The fucntion handling th etrade process are very similar to the one in the Backup_Unit application
+ * The only main difference is, that instead of accessing the database to store and load the Pokemon data structure ,
+ * thios function uses separate Thread which exchnage the Pokemon data via TCP conncetion
+ * The structure and the functionality of the FSM is the same.
+ * Also the aux. functions used in this file are similar or the same as in the Backup_Unit BackupHandler.c file
+ * The only main difference in this FSM is that is has a separate State for handling the Exit frame 0x5FFF
+ * and the handshaking phase of the communication.
+ * The handshake and Exit are also exchanged via TCP to sync the trade sequence process
+ *
+ *  */
 
 u32 MainTradeHandler(u32 data,u32 PL_to_PS_buffer_value){
 

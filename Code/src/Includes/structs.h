@@ -3,6 +3,17 @@
 
 
 #include "constant.h"
+
+/*
+Struct for storing Pokemon Data.
+Different structs for different 
+see https://bulbapedia.bulbagarden.net/wiki/Pokémon_data_structure_(Generation_III)
+
+
+*/
+
+
+
 struct PPBonus {
   u8 move1:2;
   u8 move2:2;

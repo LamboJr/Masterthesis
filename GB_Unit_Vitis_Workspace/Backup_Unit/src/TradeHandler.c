@@ -36,7 +36,11 @@ pthread_t thread1;
 int rc;
 
 
-
+/*This Function converts the Block Request Size ( 1-4)
+ * into the actuall data block size in Bytes
+ * The Block request Size is send after a 0xCCCC control field
+ *
+ * */
 
 u16 GetBlockSize(BlockSizes BlockSize){
 	switch(BlockSize){
@@ -52,6 +56,11 @@ u16 GetBlockSize(BlockSizes BlockSize){
 	return 0;
 }
 
+/*
+ * This function updates the FrameCounter.
+ *
+ * */
+
 void UpdateFrameCounter(u32* FrameCounterPtr){
     if (*FrameCounterPtr == FRAME_LENGTH){
 		*FrameCounterPtr = 1;
@@ -60,6 +69,11 @@ void UpdateFrameCounter(u32* FrameCounterPtr){
 	}
     return;
 }
+
+/*
+ * This function detects if the reset button is pressed and released
+ *
+ * */
 
 u8 DetectResetButtonPress(u8 Button,char *ButtonType){
 	static u8 previousState = 0;
@@ -79,6 +93,11 @@ u8 DetectResetButtonPress(u8 Button,char *ButtonType){
 	}
 
 }
+
+/*
+ * This function detects if the trade button is pressed
+ */
+
 u8 DetectTradeButtonPress(u8 Button){
 	static u8 previousState = 0;
 	if ((previousState == 0) && (Button == 1) == 1){
@@ -97,6 +116,13 @@ u8 DetectTradeButtonPress(u8 Button){
 	}
 }
 
+/*
+ * This function is used to create a data block which contains the Tradecommand 0xAABB
+ * which indicates that a trade choice is made by the slave
+ * The Spotnumber specifies the Teammember which is traded to the Master( physical GBA)
+ *
+ * */
+
 void *InitTradeBuffer(void* ptr){
 	u8* Spotnumber = (u8*) ptr;
 	u16 Blocksize = 0x0014;
@@ -107,7 +133,12 @@ void *InitTradeBuffer(void* ptr){
 	printf("Finsihed\n");
 	return ptr;
 }
-
+/*
+ * Generates a datablock which is send to the master containing 20 Byte , so 10 16-Bit data packets
+ * The datablock contains a Tradecommand followed by the Tradecommand data
+ * This function calls subfunction to fill the Controlfield buffer and DataField buffer
+ *
+ */
 void GenerateTradeCommandBlock(u16 TradeCommand,u16 TradeCommandData){
 	u16 Blocksize = 0x0014;
 	u16 Databuffer[10] = {TradeCommand,TradeCommandData,0,0,0,0,0,0,0,0};
@@ -121,7 +152,10 @@ void GenerateTradeCommandBlock(u16 TradeCommand,u16 TradeCommandData){
 
 
 //Generates an Array buffer with the data to send back to master for initilizing a data Block Transfer from the Slave
-//The Array to be filles with data is passed by reference in the function arguments
+//Creates a typical 		0xBBBB (Blocksize) 0x0081 0x0000 0x0 0x0 x0 0x0 structure
+// see the 0xBBBB Frame meaning in the thesis
+//Fills the corresponding Controlfield buffer and data field buffer
+//The Buffer to be filled with data is passed by reference in the function arguments
 
 void GenerateBlockInit(u16 Blocksize){
 	WriteBuffer(0xBBBB, &s_ControlBuffer);
@@ -133,14 +167,21 @@ void GenerateBlockInit(u16 Blocksize){
 
 	return;
 }
-
+/*
+ * Creates an empty 9er frame to send to the master
+ * Fills the corresponding Controlfield buffer and data field buffer with 0x0 Values
+ *
+ * */
 void GenerateEmptyFrame(){
 	WriteBuffer(0, &s_ControlBuffer);
 	for (int i = 0;i < 7;i++){
 		WriteBuffer(0, &s_DataBuffer);
 	}
 }
-//Generates an Array buffer for data to send back to master for actually transfering the corresponding data
+//Generates an data block to send back to master for actually transferring the corresponding data
+//Fills the corresponding Controlfield buffer and data field buffer with data to be send to the master.
+// It determines the amount of 9er frame structures and the amount of 0x8888 control fields it needs to generate
+// The function fills the data field of the generated 9er frame structure  with the data to be transmitted
 //The Array to be filles with data is passed by reference in the function arguments
 void GenerateDataBlock(u16 Blocksize,u16 *Databuffer){
 	u16 AmountControlFields = 0;
@@ -171,6 +212,19 @@ void GenerateDataBlock(u16 Blocksize,u16 *Databuffer){
 	return;
 }
 
+/*
+ * This function calls subfunctions to generate a complete  Data block
+ * sturcture:
+ * empty frame
+ * empty frame
+ * 0xBBBB frame with the corresponding Blocksize
+ * empty frame
+ * empty frame
+ * specific amount of 0x8888 frames containing user data depending on the Block Request Size
+ * DEpending on the Block Request Size, different data structures are used to genarte the data pakets used to send.
+ * For example: Block_REQUEST_SIZE_200 generates a Data block containing two Pokemon data structures
+ *
+ */
 
 void GenerateBlockRequestResponse(BlockSizes Blocksize){
 	u16 BlocksizeByte = GetBlockSize(Blocksize);

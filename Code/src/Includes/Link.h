@@ -1,25 +1,11 @@
 #ifndef LINK_HEADER
 #define LINK_HEADER
-/*
-#include <stdio.h>
-#include <string.h>
-#include <stdio.h>
-#include <stdint.h>
-#include <stdlib.h>
 
-
-#include "linkcommand.h"
-#include "structs.h"
-
-#include "functions.h"
-#include "items.h"
-#include "Pokemonnames.h"
-#include "moves.h"
-#include "decode_Pokemon_structure.h"
-#include "decodeTrainderCard.h"*/
 #include "DataTypes.h"
 #include "constant.h"
 
+
+//Enum for the different Block Request Sizes. Send after the 0xCCCC control field
 typedef enum{
     BLOCK_REQ_SIZE_NONE, // Identical to 200
     BLOCK_REQ_SIZE_200, //xC8   //PokemonData
@@ -29,6 +15,8 @@ typedef enum{
 	BLOCK_SIZE_60,  //3C for initial block
 	BLOCK_SIZE_20
 }BlockSizes;
+
+
 typedef enum{
 	NoRequest,
 	Active,
@@ -60,6 +48,8 @@ typedef enum{
 	BlockSendState
 } DataState_State;
 
+
+ //Tradehandler struct. Has different flag for tracking the Tradehandling
 typedef struct TradeHandler{
 	u16 PokemonTeam[MAX_TEAM_SIZE][POKEMON_BUFFER_LENGTH];
 	u16 TrainerCard[TRAINER_BUFFER_SIZE];

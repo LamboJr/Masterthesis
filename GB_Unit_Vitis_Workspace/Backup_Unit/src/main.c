@@ -25,7 +25,7 @@
 
 #define MODE_TRADE 0
 
-//#define USE_TEST_DATA
+//#define UNIT_TEST
 
 FILE *PokemonFp;
 
@@ -34,9 +34,9 @@ char ChoosePokemon[100];
 int main(int argc, char *argv[])
 {
 
-#ifdef USE_TEST_DATA
+#ifdef UNIT_Test
 
-	//RunAllTests();
+	RunAllTests();
 	RunBackUpHandlerTests();
 	printf("Tests finished\n");
 	return 1;
@@ -123,13 +123,15 @@ int main(int argc, char *argv[])
 		printf("---------------------------------------------------------\n");
 		printf("Choose Pokemon \n");
 		printf("---------------------------------------------------------\n");
+		//Scan for Input of the program console
 		scanf("%s",ChoosePokemon);
+		//Check if chosed Pokemon name is valid, if not repeatd input scan
 		while (validDataBaseEntry(ChoosePokemon) == 1){
 			print_table_names();
 			printf("Choose Pokemon \n");
 			scanf("%s",ChoosePokemon);
 		}
-
+		//Read and Load specified Pokemon from the database
 		DataBaseReadBuffer(DBReadBuffer, ChoosePokemon);
 		for(int i = 1;i<= 50;i++){
 			if((i%10) == 0){printf("\n");}
@@ -153,13 +155,19 @@ int main(int argc, char *argv[])
 	extern u16 PokemonTeamBuffer[3][100];
 	size_t Buffersize = sizeof(Magikarp_pokemonbuffer)/sizeof(u16);
 	//printf("Size of : %d\n",Buffersize);
+
+	//Specify all the Teammembers displayed as the slave Pokemon team
 	concat(Magikarp_pokemonbuffer,DBReadBuffer, PokemonTeamBuffer[0],Buffersize,Buffersize);
 	concat(NoPokemon,NoPokemon, PokemonTeamBuffer[1],Buffersize,Buffersize);
 	concat(NoPokemon,NoPokemon, PokemonTeamBuffer[2],Buffersize,Buffersize);
 	while(1){
+		//Read PLtoPS AXI GPIO Value
 		PLtoPSBuffer_Value = ReadPltoPsBuffer(PltoPSbufferptr);
+		//Check if Ringbuffer PL to PS is empty. Read at offset = 1
 		if (ReadRingbuffer(Ringbufferptr,1) == 0){
+			//If not empty read from the Ringbuffer PL to PS
 			Inputdata = ReadRingbuffer(Ringbufferptr,0);
+			//Write Back data to the Ringbuffer PS to PL
 			WriteToRingbuffer(Ringbufferptr, BackupTradeHandler(Inputdata,PLtoPSBuffer_Value), 0);
 		}
 	}

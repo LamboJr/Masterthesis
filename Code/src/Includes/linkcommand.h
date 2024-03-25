@@ -1,25 +1,16 @@
 #ifndef LINK_CMD_HEADER
 #define LINK_CMD_HEADER
 
-#define LINKCMD_BLENDER_STOP            0x1111
+
 #define LINKCMD_SEND_LINK_TYPE          0x2222
-#define LINKCMD_BLENDER_SCORE_MISS      0x2345
+
 #define LINKCMD_READY_EXIT_STANDBY      0x2FFE
 #define LINKCMD_SEND_PACKET             0x2FFF
-#define LINKCMD_BLENDER_SEND_KEYS       0x4444
-#define LINKCMD_BLENDER_SCORE_BEST      0x4523
-#define LINKCMD_BLENDER_SCORE_GOOD      0x5432
-#define LINKCMD_DUMMY_1                 0x5555
-#define LINKCMD_DUMMY_2                 0x5566
+
 #define LINKCMD_READY_CLOSE_LINK        0x5FFF
-#define LINKCMD_SEND_EMPTY              0x6666
-#define LINKCMD_SEND_0xEE               0x7777
-#define LINKCMD_BLENDER_PLAY_AGAIN      0x7779
-#define LINKCMD_COUNTDOWN               0x7FFF
+
 #define LINKCMD_CONT_BLOCK              0x8888
-#define LINKCMD_BLENDER_NO_BERRIES      0x9999
-#define LINKCMD_BLENDER_NO_PBLOCK_SPACE 0xAAAA
-#define LINKCMD_SEND_ITEM               0xAAAB
+
 #define LINKCMD_READY_TO_TRADE          0xAABB
 #define LINKCMD_READY_FINISH_TRADE      0xABCD
 #define LINKCMD_INIT_BLOCK              0xBBBB
@@ -33,14 +24,15 @@
 #define LINKCMD_REQUEST_CANCEL          0xEEAA
 #define LINKCMD_BOTH_CANCEL_TRADE       0xEEBB
 #define LINKCMD_PARTNER_CANCEL_TRADE    0xEECC
-#define LINKCMD_NONE                    0xEFFF
+
 
 #define LINKTYPE_TRADE                 0x1111
 #define LINKTYPE_TRADE_CONNECTING      0x1122
 #define LINKTYPE_TRADE_SETUP           0x1133
 #define LINKTYPE_TRADE_DISCONNECTED    0x1144
+
+/* Info from unverified online source 
 #define LINKTYPE_BATTLE                0x2211
-#define LINKTYPE_UNUSED_BATTLE         0x2222 // Unused, inferred from gap
 #define LINKTYPE_SINGLE_BATTLE         0x2233
 #define LINKTYPE_DOUBLE_BATTLE         0x2244
 #define LINKTYPE_MULTI_BATTLE          0x2255
@@ -56,7 +48,7 @@
 #define LINKTYPE_EREADER_EM            0x5503
 #define LINKTYPE_CONTEST_GMODE         0x6601
 #define LINKTYPE_CONTEST_EMODE         0x6602
-
+*/
 
 #define MASTER_HANDSHAKE  0x8FFF
 #define SLAVE_HANDSHAKE   0xB9A0

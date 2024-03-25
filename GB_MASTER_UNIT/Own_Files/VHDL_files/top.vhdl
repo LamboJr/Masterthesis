@@ -192,7 +192,10 @@ fill_count => fill_count_PS_to_PL
 --    FrameCounter => Framecounter
 --);
          
-    
+---process only is used in ModeTrading
+-- This process detects a falling edge on the MS_SLV flag 
+-- It then start a counter.
+--After 3000 clock cycles the process initializes the transmission of a data paket via the UART Transmitter   
 Transmitter : process(clk)
 begin
 if rising_edge(clk) then
@@ -205,7 +208,8 @@ if rising_edge(clk) then
                 if send_delay_counter < send_delay-2 then
                     send_delay_counter <= send_delay_counter + 1;
                     r_TX_DV <= '0';
-                elsif send_delay_counter = send_delay -2 then    
+                elsif send_delay_counter = send_delay -2 then   
+                    -- Read new data paket from the Ringbuffer PS to PL 
                     rd_en_PS_to_PL <= '1';
                     r_TX_DV <= '0';
                     send_delay_counter <= send_delay_counter + 1;
@@ -214,7 +218,7 @@ if rising_edge(clk) then
                     send_delay_counter <= send_delay_counter + 1;
                     rd_en_PS_to_PL <= '0';
                 elsif send_delay_counter = send_delay then
-                
+                    --Start Transmisson via the UART Transmitter
                     r_TX_DV <= '1';
                     rd_en_PS_to_PL <= '0';
                     send_delay_counter <= send_delay_counter + 1;
@@ -265,6 +269,8 @@ sampling :  process (clk)
                         wr_en_PL_to_ps <= '0';
                 end if;
             else
+                --ModeTrading
+                --Only strores the received master paket int the RIngbuffer Pl to PS
                  if  w_RX_DV = '1' and i_enable = '0' and i_MS_SLV = '1' then
                     wr_data_PL_to_ps(15 downto 0) <= w_RX_WORD;
                     wr_data_PL_to_PS(31 downto 16) <= x"0000";
