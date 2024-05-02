@@ -1,18 +1,21 @@
-# Masterarbeit
+# Masterthesis
 Repository for all files used during the Masterthesis.
-add explanation for different folders and files
 
-# Code
-# PokemonDataStructure
-    Contains C Files for generating some Pokemon data structure with given values.
-# Client.c
-    Programm for connecting Petalinux-App with a Test TCP CLient
+## Code
+### PokemonDataStructure
+    Contains C Files for generating some Pokemon data structure with given values or decoding data arrays into the corresponding pokemon data structure
+### TCP_Test.c
+    Programm for connecting the Applications with a Test TCP Server/CLient
+### src
+    Contains common source files for the Vitis applications
+    This folder is imported in each Vitis appliction
+## GB_Unit_Vitis_Workspace
+    Vitis Project with Petalinux domain. Applications run on Board with Petalinux installed on SD Card
+## GB_Unit_prototype
+    Vitis Project without Petalinux for standalone App on bare-metall Board   
 
-# GB_MASTER_UNIT
- Vitis Project without Petalinux for standalone App on bare-metall Board.
+## GB_Master_Unit
+    Viavdo Project
 
-# Petalinux
-    Vitis Project with Petalinux domain. App runs on Board with Petalinux installed on SD Card
-
-# GB_UNIT_MASTER
-    Viavdo Project for custom Hardware for the FPGA.
+## Records
+    All records used for anaylsing the communication protocol
