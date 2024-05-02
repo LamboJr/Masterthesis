@@ -1,7 +1,7 @@
 # SRC folder
 This folder contains multiple source and header files uses in the vitis application
 
-## icludes 
+## includes 
 This folder contains all the neccessary header files
 
 ## Pokemon specfic
