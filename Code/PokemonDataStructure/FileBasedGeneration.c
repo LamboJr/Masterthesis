@@ -52,10 +52,10 @@ int main() {
         .held_item = ITEM_INDEX,
         .experience = EXPERIENCE,
         .pp_bonus = (struct PPBonus) {
-        .move1 = 0,
-        .move2 = 0,
-        .move3 = 0,
-        .move4 = 0
+        .move1 = 3,
+        .move2 = 3,
+        .move3 = 3,
+        .move4 = 3
         },
         .friendship = 0xff,
         .unknown = 0,

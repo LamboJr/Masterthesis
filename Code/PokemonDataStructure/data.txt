@@ -1,9 +1,10 @@
-Latios @ Shell Bell  
-Ability: Levitate  
-EVs: 124 HP / 132 Def / 252 SpA  
-Modest Nature  
+Blissey @ Leftovers  
+Ability: Natural Cure  
+Shiny: Yes  
+EVs: 252 HP / 4 SpA / 252 SpD  
+Calm Nature  
 IVs: 0 Atk  
-- Dragon Claw  
-- Ice Beam  
-- Thunderbolt  
-- Calm Mind
+- Aromatherapy  
+- Soft-Boiled  
+- Wish  
+- Thunderbolt

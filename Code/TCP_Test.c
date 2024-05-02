@@ -5,7 +5,7 @@
 #include <arpa/inet.h>
 #include <stdint.h>
 #include "PokemonDataStructure/Pokemonbuffer.h"
- #include "PokemonDataStructure/ReverseDecoding.h"
+ #include "PokemonDataStructure/Decoding.h"
 
 
  #define u8 uint8_t
@@ -17,6 +17,7 @@
 #define MAX_PENDING_CONNECTIONS 5
 //#define SERVER_ADDRESS "192.168.178.114"
 #define SERVER_ADDRESS "10.0.0.2"
+
 
 
 
@@ -60,8 +61,8 @@ uint16_t ReceivegenericBuffer[110];
 	        ReceiveBufferTCP(sock,ReceiveBuffer[TeamIndex++],sizeof(ReceiveBuffer[1]));
 
             if(1==1){
-                    SendBufferTCP(sock,Salamence_pokemonbuffer,sizeof(Salamence_pokemonbuffer));
-                    SendBufferTCP(sock,Latios_pokemonbuffer,sizeof(Latios_pokemonbuffer));
+                    SendBufferTCP(sock,Metagross_pokemonbuffer,sizeof(Metagross_pokemonbuffer));
+                    SendBufferTCP(sock,Blissey_pokemonbuffer,sizeof(Blissey_pokemonbuffer));
             }else{
                 SendBufferTCP(sock,NoPokemon,sizeof(NoPokemon));
                 SendBufferTCP(sock,NoPokemon,sizeof(NoPokemon));
@@ -70,8 +71,8 @@ uint16_t ReceivegenericBuffer[110];
         case 3 : {//Trainer Data
             SendID(sock,Received_iD);
             ReceiveBufferTCP(sock,ReceivegenericBuffer,100);
-            SendBufferTCP(sock,TrainerCardBuffer,100);
-            //SendBufferTCP(sock,ReceivegenericBuffer,100);
+            //SendBufferTCP(sock,TrainerCardBuffer,100);
+            SendBufferTCP(sock,ReceivegenericBuffer,100);
         }break;
         case 4 : {//Letter Data
             SendID(sock,Received_iD);
@@ -86,11 +87,11 @@ uint16_t ReceivegenericBuffer[110];
             SendBufferTCP(sock,ReceivegenericBuffer,40);
         }break;
         case 6 ... 8: {//Exit
-            sleep(5);
+            //sleep(5);
             SendID(sock,Received_iD);
         }break;
         case 9:{
-            sleep(2);
+            //sleep(2);
             SendID(sock,Received_iD);
             ReceiveBufferTCP(sock,ReceivegenericBuffer,60);
             for(int i = 0;i < 30;i++){
