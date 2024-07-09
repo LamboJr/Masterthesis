@@ -7,24 +7,24 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <time.h>
-#include "species.h"
-#include "items.h"
-#include "constants.h"
-#include "abilities.h"
-#include "experience_tables.h"
-#include "moves.h"
-#include "functions.h"
-#include "species_info.h"
+#include "PokemonHeader/species.h"
+#include "PokemonHeader/items.h"
+#include "PokemonHeader/constants.h"
+#include "PokemonHeader/abilities.h"
+#include "PokemonHeader/experience_tables.h"
+#include "PokemonHeader/moves.h"
+#include "PokemonHeader/pokemon_generation_functions.h"
+#include "PokemonHeader/species_info.h"
 //#include "natures.h"
-#include "parsing.h"
-#include "species_strings.h"
-#include "item_strings.h"
-#include "moves_strings.h"
-#include "defaults.h"
-#include "persVAl.h"
-#include "parsing_File.h"
+#include "PokemonHeader/parsing.h"
+#include "PokemonHeader/species_strings.h"
+#include "PokemonHeader/item_strings.h"
+#include "PokemonHeader/moves_strings.h"
+#include "PokemonHeader/defaults.h"
+#include "PokemonHeader/persVAl.h"
+#include "PokemonHeader/parsing_File.h"
 
-#include "Decoding.h"
+#include "PokemonHeader/decoding.h"
 
 #define DEBUG_PRINT
 

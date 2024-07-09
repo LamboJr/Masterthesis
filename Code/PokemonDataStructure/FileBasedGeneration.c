@@ -46,24 +46,27 @@ int main() {
 
     char Pokemon_name[20];
 
+    char nickname[NICKNAME_LENGTH] = NICKNAME;
+    char trainer_name[TRAINER_NAME_LENGTH] = TRAINER_NAME;
+
     // Construct Structure
     struct Growth growth = {
         .species = SPECIES,
         .held_item = ITEM_INDEX,
         .experience = EXPERIENCE,
         .pp_bonus = (struct PPBonus) {
-        .move1 = 3,
-        .move2 = 3,
-        .move3 = 3,
-        .move4 = 3
+        .move1 = PP_BONUS_MOVE1,
+        .move2 = PP_BONUS_MOVE2,
+        .move3 = PP_BONUS_MOVE3,
+        .move4 = PP_BONUS_MOVE4
         },
-        .friendship = 0xff,
+        .friendship = FRIENDSHIP,
         .unknown = 0,
     };
 
     struct Attacks attacks = {
         .moves = {MOVE1_INDEX, MOVE2_INDEX, MOVE3_INDEX, MOVE4_INDEX},
-        .pp = {5, 5, 5, 5}
+        .pp = {PP_MOVE1, PP_MOVE2, PP_MOVE3, PP_MOVE4}
     };
 
     struct Condition condition = {
@@ -73,12 +76,12 @@ int main() {
         .speed_ev = SPEED_EV,
         .special_attack_ev = SPEZ_ATTACK_EV,
         .special_defense_ev = SPEZ_DEFENSE_EV,
-        .coolness = 0,
-        .beauty = 0,
-        .cuteness = 0,
-        .smartness = 0,
-        .toughness = 0,
-        .feel = 0,
+        .coolness = COOLNESS,
+        .beauty = BEAUTY,
+        .cuteness = CUTENESS,
+        .smartness = SMARTNESS,
+        .toughness = TOUGHNESS,
+        .feel = FEEL,
     };
 
     struct Misc misc = {
@@ -104,31 +107,31 @@ int main() {
         .ability = ABILITY_PRIMARY
         },
         .ribbons = (struct Ribbons) {
-        .cool = 0,
-        .beauty = 0,
-        .cute = 0,
-        .smart = 0,
-        .tough = 0,
-        .champion = 0,
-        .winning = 0,
-        .victory = 0,
-        .artist = 0,
-        .effort = 0,
-        .special1 = 0,
-        .special2 = 0,
-        .special3 = 0,
-        .special4 = 0,
-        .special5 = 0,
-        .special6 = 0,
-        .padding = 0,
-        .obedience = 0
+        .cool = COOL_RIBBON,
+        .beauty = BEAUTY_RIBBON,
+        .cute = CUTE_RIBBON,
+        .smart = SMART_RIBBON,
+        .tough = TOUGH_RIBBON,
+        .champion = CHAMPION_RIBBON,
+        .winning = WINNING_RIBBON,
+        .victory = VICTORY_RIBBON,
+        .artist = ARTIST_RIBBON,
+        .effort = EFFORT_RIBBON,
+        .special1 = SPECIAL1_RIBBON,
+        .special2 = SPECIAL2_RIBBON,
+        .special3 = SPECIAL3_RIBBON,
+        .special4 = SPECIAL4_RIBBON,
+        .special5 = SPECIAL5_RIBBON,
+        .special6 = SPECIAL6_RIBBON,
+        .padding = PADDING_RIBBON,
+        .obedience = OBEDIENCE_RIBBON
         }
     };
 
     struct Pokemon pkmn = {
         .personality = 0,
         .trainer_id = TRAINER_ID,
-        .language = LANGUAGE_GERMAN,
+        .language = MET_LANGUAGE,
         .markings = MARKING_BULLET,
         .unknown = 0,
         .status = (struct Status) {

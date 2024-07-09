@@ -52,86 +52,87 @@ int main(int argc, char **argv) {
   assert(sizeof(struct Status) == 4);
   assert(sizeof(struct Pokemon) == 100);
 
-
+  char nickname[NICKNAME_LENGTH] = NICKNAME;
+  char trainer_name[TRAINER_NAME_LENGTH] = TRAINER_NAME;
 
   // Construct Structure
-  struct Growth growth = {
-    .species = SPECIES,
-    .held_item = ITEM_INDEX,
-    .experience = EXPERIENCE,
-    .pp_bonus = (struct PPBonus) {
-      .move1 = 0,
-      .move2 = 0,
-      .move3 = 0,
-      .move4 = 0
-    },
-    .friendship = 0xff,
-    .unknown = 0,
-  };
+    struct Growth growth = {
+        .species = SPECIES,
+        .held_item = ITEM_INDEX,
+        .experience = EXPERIENCE,
+        .pp_bonus = (struct PPBonus) {
+        .move1 = PP_BONUS_MOVE1,
+        .move2 = PP_BONUS_MOVE2,
+        .move3 = PP_BONUS_MOVE3,
+        .move4 = PP_BONUS_MOVE4
+        },
+        .friendship = FRIENDSHIP,
+        .unknown = 0,
+    };
 
-  struct Attacks attacks = {
-    .moves = {MOVE1_INDEX, MOVE2_INDEX, MOVE3_INDEX, MOVE4_INDEX},
-    .pp = {5, 5, 5, 5}
-  };
+    struct Attacks attacks = {
+        .moves = {MOVE1_INDEX, MOVE2_INDEX, MOVE3_INDEX, MOVE4_INDEX},
+        .pp = {PP_MOVE1, PP_MOVE2, PP_MOVE3, PP_MOVE4}
+    };
 
-  struct Condition condition = {
-    .hp_ev = HP_EV,
-    .attack_ev = ATTACK_EV,
-    .defense_ev = DEFENSE_EV,
-    .speed_ev = SPEED_EV,
-    .special_attack_ev = SPEZ_ATTACK_EV,
-    .special_defense_ev = SPEZ_DEFENSE_EV,
-    .coolness = 0x0,
-    .beauty = 0x0,
-    .cuteness = 0x0,
-    .smartness = 0x0,
-    .toughness = 0x0,
-    .feel = 0,
-  };
+    struct Condition condition = {
+        .hp_ev = HP_EV,
+        .attack_ev = ATTACK_EV,
+        .defense_ev = DEFENSE_EV,
+        .speed_ev = SPEED_EV,
+        .special_attack_ev = SPEZ_ATTACK_EV,
+        .special_defense_ev = SPEZ_DEFENSE_EV,
+        .coolness = COOLNESS,
+        .beauty = BEAUTY,
+        .cuteness = CUTENESS,
+        .smartness = SMARTNESS,
+        .toughness = TOUGHNESS,
+        .feel = FEEL,
+    };
 
-  struct Misc misc = {
-    .pokerus = (struct Pokerus) {
-      .days_remaining = 0x0,
-      .strain = 0x0,
-    },
-    .met_location = MET_LOCATION, // Fateful Encounter
-    .origins = (struct Origins) {
-      .level_met = MET_LEVEL,
-      .game_met = MET_GAME,
-      .pokeball_type = POKEBALL_CAUGHT,
-      .trainer_gender = TRAINER_MALE
-    },
-    .ivs = (struct IVs) {
-      .hp = HP_IV,
-      .attack = ATTACK_IV,
-      .defense = DEFENSE_IV,
-      .speed = SPEED_IV,
-      .special_attack = SPEZ_ATTACK_IV,
-      .special_defense = SPEZ_DEFENSE_IV,
-      .egg = 0,
-      .ability = ABILITY_PRIMARY
-    },
-    .ribbons = (struct Ribbons) {
-      .cool = 0,
-      .beauty = 0,
-      .cute = 0,
-      .smart = 0,
-      .tough = 0,
-      .champion = 0,
-      .winning = 0,
-      .victory = 0,
-      .artist = 0,
-      .effort = 0,
-      .special1 = 0,
-      .special2 = 0,
-      .special3 = 0,
-      .special4 = 0,
-      .special5 = 0,
-      .special6 = 0,
-      .padding = 0,
-      .obedience = 0
-    }
-  };
+    struct Misc misc = {
+        .pokerus = (struct Pokerus) {
+        .days_remaining = 0x0,
+        .strain = 0x0,
+        },
+        .met_location = MET_LOCATION, // Fateful Encounter
+        .origins = (struct Origins) {
+        .level_met = MET_LEVEL,
+        .game_met = MET_GAME,
+        .pokeball_type = POKEBALL_CAUGHT,
+        .trainer_gender = TRAINER_MALE
+        },
+        .ivs = (struct IVs) {
+        .hp = HP_IV,
+        .attack = ATTACK_IV,
+        .defense = DEFENSE_IV,
+        .speed = SPEED_IV,
+        .special_attack = SPEZ_ATTACK_IV,
+        .special_defense = SPEZ_DEFENSE_IV,
+        .egg = 0,
+        .ability = ABILITY_PRIMARY
+        },
+        .ribbons = (struct Ribbons) {
+        .cool = COOL_RIBBON,
+        .beauty = BEAUTY_RIBBON,
+        .cute = CUTE_RIBBON,
+        .smart = SMART_RIBBON,
+        .tough = TOUGH_RIBBON,
+        .champion = CHAMPION_RIBBON,
+        .winning = WINNING_RIBBON,
+        .victory = VICTORY_RIBBON,
+        .artist = ARTIST_RIBBON,
+        .effort = EFFORT_RIBBON,
+        .special1 = SPECIAL1_RIBBON,
+        .special2 = SPECIAL2_RIBBON,
+        .special3 = SPECIAL3_RIBBON,
+        .special4 = SPECIAL4_RIBBON,
+        .special5 = SPECIAL5_RIBBON,
+        .special6 = SPECIAL6_RIBBON,
+        .padding = PADDING_RIBBON,
+        .obedience = OBEDIENCE_RIBBON
+        }
+    };
 
   struct Pokemon pkmn = {
     .personality = 0,
