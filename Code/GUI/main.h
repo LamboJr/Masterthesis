@@ -113,6 +113,10 @@ class MyFrame : public wxFrame
 
 		wxStaticBitmap* m_PokemonSprite;
 
+		wxString ImageFolderPath;
+
+		void LoadSprite(const wxString& ImageName);
+
 
 		wxDECLARE_EVENT_TABLE();
 
@@ -121,6 +125,7 @@ class MyFrame : public wxFrame
 		void m_buttonGenerateOnButtonClick( wxCommandEvent& event ) ;
 
 		void EVsOnSpin(wxSpinEvent& event);
+		void SpeciesOnChoice(wxCommandEvent& event);
 
 		static const int MaxEvValue = 510;
 

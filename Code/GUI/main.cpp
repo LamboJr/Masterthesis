@@ -27,6 +27,11 @@ MyFrame::MyFrame( wxWindow* parent, wxWindowID id, const wxString& title, const 
 {
 	this->SetSizeHints( wxDefaultSize, wxDefaultSize );
 
+	//Define the folder where the sprites are stored
+	ImageFolderPath = wxT("PokemonSprites/");
+	wxImage::AddHandler(new wxPNGHandler);
+
+
 	wxBoxSizer* TopLevelSizer;
 	TopLevelSizer = new wxBoxSizer( wxVERTICAL );
 
@@ -366,6 +371,7 @@ MyFrame::MyFrame( wxWindow* parent, wxWindowID id, const wxString& title, const 
 	Layer1Sizer5->Add( m_PokemonSprite, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 
 
+
 	TopLevelSizer->Add( Layer1Sizer5, 0, wxEXPAND, 5 );
 
 	wxBoxSizer* Layer1Sizer6;
@@ -397,6 +403,8 @@ MyFrame::MyFrame( wxWindow* parent, wxWindowID id, const wxString& title, const 
 	m_spinCtrl_SpezAtk_EV->Connect( wxEVT_COMMAND_SPINCTRL_UPDATED, wxSpinEventHandler( MyFrame::EVsOnSpin ), NULL, this );
 	m_spinCtrl_SpezDef_EV->Connect( wxEVT_COMMAND_SPINCTRL_UPDATED, wxSpinEventHandler( MyFrame::EVsOnSpin ), NULL, this );
 	m_spinCtrl_Speed_EV->Connect( wxEVT_COMMAND_SPINCTRL_UPDATED, wxSpinEventHandler( MyFrame::EVsOnSpin ), NULL, this );
+
+	m_Choice_Species->Connect( wxEVT_COMMAND_CHOICE_SELECTED, wxCommandEventHandler( MyFrame::SpeciesOnChoice ), NULL, this );
 }
 
 MyFrame::~MyFrame()
@@ -420,7 +428,32 @@ void MyFrame::EVsOnSpin(wxSpinEvent& event)
         //wxMessageBox("The total EVs value cannot exceed 510.", "Limit Exceeded", wxOK | wxICON_INFORMATION);
     }
 }
+void MyFrame::SpeciesOnChoice(wxCommandEvent& event){
 
+	wxString speciesChoice = m_Choice_Species->GetStringSelection();
+	LoadSprite(speciesChoice);
+}
+
+void MyFrame::LoadSprite(const wxString& imageName){
+
+	std::string lowercaseImageName = std::string(imageName.mb_str());
+	lowercaseImageName[0] = tolower(lowercaseImageName[0]);
+	std::cout << lowercaseImageName << "\n";
+	wxString imagePath = ImageFolderPath + lowercaseImageName + "/front.png";
+	std::cout << imagePath << "\n";
+
+	if (wxFileExists(imagePath))
+    {
+        wxBitmap bitmap(imagePath, wxBITMAP_TYPE_PNG);
+        m_PokemonSprite->SetBitmap(bitmap);
+        Layout();
+    }
+    else
+    {
+        wxLogError("Image file %s not found!", imagePath);
+    }
+
+}
 
 void MyFrame::m_buttonGenerateOnButtonClick(wxCommandEvent& event){
 		//Get nickname from textfield
