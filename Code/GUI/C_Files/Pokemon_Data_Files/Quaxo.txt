@@ -1,0 +1,10 @@
+Poliwhirl @ Kings Rock  
+Ability: Water Absorb  
+Shiny: Yes  
+Happiness: 0  
+EVs: 236 HP / 140 SpA / 132 SpD  
+Naughty Nature  
+- Counter  
+- Hidden Power
+- Focus Punch  
+- Frustration
